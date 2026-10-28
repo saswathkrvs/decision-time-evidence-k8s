@@ -1,0 +1,6450 @@
+{
+ "T1_cells": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 39
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.000769,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 40
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.084443,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 39
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.000769,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 40
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.084443,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 55
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V1": 2,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 35,
+     "NEEDS_APPROVAL[R2]": 39
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.982403,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 56
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V1": 2,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 44,
+     "NEEDS_APPROVAL[R2]": 40
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.059444,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 31,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 19,
+     "V1": 2,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 19
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 41
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 9
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 9
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.982403,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 40,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 18,
+     "V1": 2,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 18
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 42
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 10
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 10
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.059444,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 88,
+     "NEEDS_APPROVAL[R2]": 32
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 88,
+     "NEEDS_APPROVAL[R2]": 32
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 10
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 10
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 43
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.904467,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 44
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.988141,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 43
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.904467,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 44
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.988141,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 43
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.904467,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 44
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.988141,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 39
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.000769,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 40
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.084443,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 39
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.000769,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 18,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 40
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 9.084443,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 44
+    },
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 55
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V1": 2,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 35,
+     "NEEDS_APPROVAL[R2]": 39
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.982403,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 45
+    },
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 56
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V1": 2,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 44,
+     "NEEDS_APPROVAL[R2]": 40
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.059444,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 27
+    },
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 44
+    },
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 31,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 19,
+     "V1": 2,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 19
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 41
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 9
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 9
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.982403,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 45
+    },
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 2,
+     "ALLOW[R7:rollout_complete]": 40,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 18,
+     "V1": 2,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 18
+     },
+     "V1": {
+      "inside_physical_rollout_interval": 2
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 16,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 42
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 10
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 10
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 2,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.059444,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 27
+    },
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 88,
+     "NEEDS_APPROVAL[R2]": 32
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 88,
+     "NEEDS_APPROVAL[R2]": 32
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 10
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 10
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 43
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.904467,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 44
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.988141,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 44
+    },
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 43
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.904467,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 45
+    },
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 44
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.988141,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 27
+    },
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 44
+    },
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 43
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.904467,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 45
+    },
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 14,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 44
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.988141,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G4": 27
+    },
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 12,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 45
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 5.880387,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 12,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 46
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 5.964061,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 33,
+     "NEEDS_APPROVAL[R2]": 57
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 21,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 21
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 12,
+     "ALLOW": 33,
+     "NEEDS_APPROVAL[R2]": 45
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 7
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 7
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 5.880387,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 42,
+     "NEEDS_APPROVAL[R2]": 58
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 12,
+     "ALLOW": 42,
+     "NEEDS_APPROVAL[R2]": 46
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 8
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 5.964061,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 22,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 22
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 90,
+     "NEEDS_APPROVAL[R2]": 30
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 8
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 90
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 31,
+     "NEEDS_APPROVAL[R2]": 59
+    },
+    "of_posed": 90
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 19,
+     "V2 (GT-3)": 12
+    },
+    "of_posed": 90,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 19
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 12
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 12,
+     "ALLOW": 31,
+     "NEEDS_APPROVAL[R2]": 47
+    },
+    "of_posed": 90
+   },
+   "late_correction_decisions": {
+    "count": 6,
+    "of_posed": 90
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 9
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 9
+   },
+   "not_posed": {
+    "before the patch request P": 30
+   },
+   "posed": 90,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 90
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 5.880387,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 90
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 100
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 40,
+     "NEEDS_APPROVAL[R2]": 60
+    },
+    "of_posed": 100
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 18,
+     "V2 (GT-3)": 22
+    },
+    "of_posed": 100,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 18
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 22
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 12,
+     "ALLOW": 40,
+     "NEEDS_APPROVAL[R2]": 48
+    },
+    "of_posed": 100
+   },
+   "late_correction_decisions": {
+    "count": 7,
+    "of_posed": 100
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 10
+    },
+    "of_requests_labelled_GT2": 28,
+    "total": 10
+   },
+   "not_posed": {
+    "before the patch request P": 20
+   },
+   "posed": 100,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 100
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 5.964061,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 100
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 88,
+     "NEEDS_APPROVAL[R2]": 32
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "GT-2-A": 20,
+     "V2 (GT-3)": 68
+    },
+    "of_posed": 120,
+    "reasons": {
+     "GT-2-A": {
+      "constructed mitigation opportunity": 20
+     },
+     "V2 (GT-3)": {
+      "outside the fault window": 68
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 88,
+     "NEEDS_APPROVAL[R2]": 32
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 10
+    },
+    "of_requests_labelled_GT2": 30,
+    "total": 10
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  }
+ ],
+ "T2_comparisons": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 90,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 100,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 90,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 100,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 90,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 100,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 90,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 100,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 90,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 100,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 90,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 100,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 4,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 4
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 90,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 4,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 4
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 100,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2
+    },
+    "differing_requests": 6,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 4
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 90,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2
+    },
+    "differing_requests": 6,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 4
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 100,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2,
+     "T_p blocks, T_w allows": 2
+    },
+    "differing_requests": 4,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2,
+     "T_p blocks, T_w allows": 2
+    },
+    "differing_requests": 8,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 4
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 90,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2,
+     "T_p blocks, T_w allows": 2
+    },
+    "differing_requests": 4,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p allows, T_w blocks": 2,
+     "T_p blocks, T_w allows": 2
+    },
+    "differing_requests": 8,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 4
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 100,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p blocks, T_w allows": 2
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p blocks, T_w allows": 2
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  }
+ ],
+ "T3_q1_checks": {
+  "agreement": null,
+  "check_1_append_only_corrections": [
+   {
+    "failures": [],
+    "n": 244,
+    "n_reached_by_late_k1": 84,
+    "observer": "poller",
+    "stores_rebuilt": 2,
+    "stream": "S0",
+    "x": 244,
+    "x_reached_by_late_k1": 84
+   },
+   {
+    "failures": [],
+    "n": 102,
+    "n_reached_by_late_k1": 38,
+    "observer": "poller",
+    "stores_rebuilt": 2,
+    "stream": "S30",
+    "x": 102,
+    "x_reached_by_late_k1": 38
+   },
+   {
+    "failures": [],
+    "n": 102,
+    "n_reached_by_late_k1": 38,
+    "observer": "poller",
+    "stores_rebuilt": 2,
+    "stream": "Snever",
+    "x": 102,
+    "x_reached_by_late_k1": 38
+   },
+   {
+    "failures": [],
+    "n": 324,
+    "n_reached_by_late_k1": 10,
+    "observer": "watch",
+    "stores_rebuilt": 2,
+    "stream": "S0",
+    "x": 324,
+    "x_reached_by_late_k1": 10
+   },
+   {
+    "failures": [],
+    "n": 324,
+    "n_reached_by_late_k1": 10,
+    "observer": "watch",
+    "stores_rebuilt": 2,
+    "stream": "S30",
+    "x": 324,
+    "x_reached_by_late_k1": 10
+   },
+   {
+    "failures": [],
+    "n": 324,
+    "n_reached_by_late_k1": 10,
+    "observer": "watch",
+    "stores_rebuilt": 2,
+    "stream": "Snever",
+    "x": 324,
+    "x_reached_by_late_k1": 10
+   }
+  ],
+  "check_1_note": "n counts every logged causal evaluation of the poller and watch stores at a cutoff before some K1 record's availability ('Every evaluation at a cutoff before that availability keeps its answer'); each is re-evaluated with every K1 record available after its cutoff removed. n_reached_by_late_k1: those a late K1 record reaches (stamp <= dispatch)",
+  "check_2_earlier_cutoff_invariance": [
+   {
+    "failures": [],
+    "n": 268,
+    "observer": "poller",
+    "stores_rebuilt": 68,
+    "stream": "S0",
+    "x_full_stream": 268,
+    "x_truncated": 268
+   },
+   {
+    "failures": [],
+    "n": 169,
+    "observer": "poller",
+    "stores_rebuilt": 49,
+    "stream": "S30",
+    "x_full_stream": 169,
+    "x_truncated": 169
+   },
+   {
+    "failures": [],
+    "n": 174,
+    "observer": "poller",
+    "stores_rebuilt": 47,
+    "stream": "Snever",
+    "x_full_stream": 174,
+    "x_truncated": 174
+   },
+   {
+    "failures": [],
+    "n": 210,
+    "observer": "watch",
+    "stores_rebuilt": 72,
+    "stream": "S0",
+    "x_full_stream": 210,
+    "x_truncated": 210
+   },
+   {
+    "failures": [],
+    "n": 197,
+    "observer": "watch",
+    "stores_rebuilt": 68,
+    "stream": "S30",
+    "x_full_stream": 197,
+    "x_truncated": 197
+   },
+   {
+    "failures": [],
+    "n": 210,
+    "observer": "watch",
+    "stores_rebuilt": 68,
+    "stream": "Snever",
+    "x_full_stream": 210,
+    "x_truncated": 210
+   }
+  ],
+  "check_2_sample": {
+   "contested_evaluations": 837,
+   "hindsight_not_checked": 1026,
+   "population": 4740,
+   "rest": 3903,
+   "rule": "all evaluations of contested decisions + Random(0).sample(sorted(rest), ceil(0.1 x len(rest))), per capture",
+   "sampled_from_rest": 391
+  },
+  "totals": {
+   "check_1_append_only_corrections": {
+    "n": 1420,
+    "n_reached_by_late_k1": 190,
+    "x": 1420,
+    "x_reached_by_late_k1": 190
+   },
+   "check_2_earlier_cutoff_invariance": {
+    "n": 1228,
+    "x": 1228
+   }
+  }
+ },
+ "T4_sensitivities": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 2,
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 55
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V1": 2,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V1": {
+       "inside_physical_rollout_interval": 2
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 2,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 33,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 21,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 21
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 7
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 7
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 2,
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 56
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V1": 2,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V1": {
+       "inside_physical_rollout_interval": 2
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 2,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 42,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 8
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 90,
+      "NEEDS_APPROVAL[R2]": 30
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 22,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 22
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 8
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 8
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 2,
+      "ALLOW[R7:rollout_complete]": 31,
+      "NEEDS_APPROVAL[R2]": 57
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 19,
+      "V1": 2,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 19
+      },
+      "V1": {
+       "inside_physical_rollout_interval": 2
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 9
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 9
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 2,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 31,
+      "NEEDS_APPROVAL[R2]": 59
+     },
+     "of_posed": 90
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 19,
+      "V2 (GT-3)": 12
+     },
+     "of_posed": 90,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 19
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 12
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 9
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 9
+    },
+    "posed": 90,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 90
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 2,
+      "ALLOW[R7:rollout_complete]": 40,
+      "NEEDS_APPROVAL[R2]": 58
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 18,
+      "V1": 2,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 18
+      },
+      "V1": {
+       "inside_physical_rollout_interval": 2
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 10
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 10
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 2,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 40,
+      "NEEDS_APPROVAL[R2]": 60
+     },
+     "of_posed": 100
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 18,
+      "V2 (GT-3)": 22
+     },
+     "of_posed": 100,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 18
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 22
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 10
+     },
+     "of_requests_labelled_GT2": 28,
+     "total": 10
+    },
+    "posed": 100,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 100
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 88,
+      "NEEDS_APPROVAL[R2]": 32
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 10
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 10
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 88,
+      "NEEDS_APPROVAL[R2]": 32
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "GT-2-A": 20,
+      "V2 (GT-3)": 68
+     },
+     "of_posed": 120,
+     "reasons": {
+      "GT-2-A": {
+       "constructed mitigation opportunity": 20
+      },
+      "V2 (GT-3)": {
+       "outside the fault window": 68
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 10
+     },
+     "of_requests_labelled_GT2": 30,
+     "total": 10
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "Snever"
+  }
+ ],
+ "U_executions": [],
+ "adapter": "governance-stage2-adapter-v0.1-dev",
+ "capture": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "H": "2026-10-20T07:51:47.806958Z",
+  "H_by_observer": {
+   "poller": "2026-10-20T07:51:48.177854Z",
+   "watch": "2026-10-20T07:51:47.806958Z"
+  },
+  "P": "2026-10-20T07:50:02.943211Z",
+  "actions": [
+   "A"
+  ],
+  "b_targets_not_posable": {},
+  "b_targets_posable": 120,
+  "binding": {
+   "changed_revision": 2,
+   "deployment_name": "recommendationservice",
+   "deployment_uid": "d1b8c1ab-8e55-44f5-934a-13bd00aa352a",
+   "generation": 1,
+   "pod_template_hash": "794bf474c7",
+   "replicaset_uid": "3499ada1-cf48-4b8e-aa55-b4d8bb517f89",
+   "revision": 1,
+   "rollback": "revision 2 -> 1",
+   "service": "recommendationservice",
+   "source_record": "api:58eccb4d-16d4-41db-87f3-9759dd69751c/13"
+  },
+  "capture": "D1-002",
+  "changed_service": "recommendationservice",
+  "conditions": [
+   "T_p",
+   "L_p",
+   "T_w",
+   "L_w",
+   "c-hind",
+   "T@F600",
+   "L@F600"
+  ],
+  "delta_s": [
+   0
+  ],
+  "observers": [
+   "poller",
+   "watch"
+  ],
+  "replica_floor_by_service": {},
+  "requests": 120,
+  "service_deployments": {
+   "otel-collector": "otel-collector",
+   "productcatalogservice": "productcatalogservice",
+   "recommendationservice": "recommendationservice"
+  },
+  "streams": [
+   "S0",
+   "S30",
+   "Snever"
+  ]
+ },
+ "cells": "all",
+ "clock_band": {
+  "band_available": true,
+  "band_ns": 1237734353,
+  "band_s": 1.237735,
+  "band_us": 1237735,
+  "intersection_empty": false,
+  "intersection_ns": [
+   -113591785,
+   -61141528
+  ],
+  "readings_rejected": 0,
+  "readings_used": 20,
+  "rule": "theta = host wall clock - node clock; one reading (host send, node date, host receive) bounds theta to [send - node, receive - node]; b_c = 1 s (kubelet stamp resolution) + the widest offset bound, read as the largest |bound| over every usable reading of the capture (start and end), so that b_c covers the offset itself as well as its uncertainty; no correction is applied to any timestamp",
+  "stamp_resolution_ns": 1000000000,
+  "union_ns": [
+   -237734353,
+   49139878
+  ],
+  "widest_bound_ns": 237734353
+ },
+ "creation_ceiling_clamps": {
+  "poller": 2,
+  "watch": 22
+ },
+ "cross_observer_agreement": {
+  "computed": false,
+  "reason": "no answered recheck tick or no planned change",
+  "semantics": "never reconstruction"
+ },
+ "decision_logs": {
+  "directory": "decision_logs",
+  "index_file": "decision_log_index.json",
+  "per_observer": [
+   {
+    "evaluations": 3714,
+    "facts": 1906,
+    "file": "D1-002.poller.jsonl.gz",
+    "lines": 9594,
+    "lines_by_kind": {
+     "clamp": 2,
+     "evaluation": 3714,
+     "fact": 1906,
+     "k1": 5,
+     "meta": 1,
+     "request": 3960,
+     "schedule": 6
+    },
+    "observer": "poller",
+    "requests": 3960,
+    "seconds": null
+   },
+   {
+    "evaluations": 2052,
+    "facts": 5467,
+    "file": "D1-002.watch.jsonl.gz",
+    "lines": 9711,
+    "lines_by_kind": {
+     "clamp": 22,
+     "evaluation": 2052,
+     "fact": 5467,
+     "k1": 6,
+     "meta": 1,
+     "request": 2160,
+     "schedule": 3
+    },
+    "observer": "watch",
+    "requests": 2160,
+    "seconds": null
+   }
+  ]
+ },
+ "decision_phase": {
+  "clamps": {
+   "poller": 2,
+   "watch": 22
+  },
+  "dropped_kinds": {
+   "poller": {},
+   "watch": {
+    "EndpointSlice": 678
+   }
+  },
+  "k1": {
+   "poller": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 0,
+    "dropped": 0,
+    "observations": 5,
+    "pods": 4,
+    "records": 251,
+    "skipped": 0
+   },
+   "watch": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 1,
+    "dropped": 0,
+    "observations": 6,
+    "pods": 4,
+    "records": 734,
+    "skipped": 0
+   }
+  },
+  "r2_starts": null,
+  "units": [
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 18498,
+     "x": 18498
+    },
+    "evaluations": 1706,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 1364,
+     "x": 1364
+    },
+    "relevant_subjects": 6,
+    "stream": "S0"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 10872,
+     "x": 10872
+    },
+    "evaluations": 1004,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 662,
+     "x": 662
+    },
+    "relevant_subjects": 6,
+    "stream": "S30"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 10872,
+     "x": 10872
+    },
+    "evaluations": 1004,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 662,
+     "x": 662
+    },
+    "relevant_subjects": 6,
+    "stream": "Snever"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 7450,
+     "x": 7450
+    },
+    "evaluations": 684,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 684,
+     "x": 684
+    },
+    "relevant_subjects": 6,
+    "stream": "S0"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 7450,
+     "x": 7450
+    },
+    "evaluations": 684,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 684,
+     "x": 684
+    },
+    "relevant_subjects": 6,
+    "stream": "S30"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 7450,
+     "x": 7450
+    },
+    "evaluations": 684,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 684,
+     "x": 684
+    },
+    "relevant_subjects": 6,
+    "stream": "Snever"
+   }
+  ]
+ },
+ "design_check": {
+  "arm": "D",
+  "per_comparison": {
+   "H-G4": {
+    "contested": 232,
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "posed": 620
+   }
+  },
+  "primary_cells": {
+   "H-G4": {
+    "action": "A",
+    "delta_s": [
+     0
+    ],
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "streams": [
+     "S30",
+     "Snever"
+    ]
+   }
+  },
+  "rule": "record timing only, before any label",
+  "thresholds": {
+   "applied_by": "design_check_verdict over the arm's included captures",
+   "share_of_captures_with_one_at_least": 0.5,
+   "total_at_least": 30
+  }
+ },
+ "inputs": {
+  "accepted_evidence": {
+   "api_available_ns_vs_payload_mismatch": 0,
+   "change_available_vs_receipt_mismatch": 0,
+   "rows_by_kind": {
+    "api_observation": 854,
+    "change_receipt": 2,
+    "configuration": 1
+   }
+  },
+  "answered_recheck_ticks": 0,
+  "requests_target_block": 120,
+  "watch_snapshots": {
+   "api_available_ns_vs_payload_mismatch": 0,
+   "change_available_vs_receipt_mismatch": 0,
+   "rows_by_kind": {
+    "api_observation": 2885
+   }
+  }
+ },
+ "k1": {
+  "poller": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 0,
+   "dropped": 0,
+   "observations": 5,
+   "pods": 4,
+   "records": 251,
+   "skipped": 0
+  },
+  "watch": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 1,
+   "dropped": 0,
+   "observations": 6,
+   "pods": 4,
+   "records": 734,
+   "skipped": 0
+  }
+ },
+ "labels": {
+  "clock_band_us": 1237735,
+  "fault": {
+   "active_end": "2026-10-20T07:50:44.231486Z",
+   "active_start": "2026-10-20T07:50:24.228490Z",
+   "kill_receipts": [],
+   "latency_effect_established": true,
+   "pod_uid": "d19311dd-e7d1-44c2-b4eb-831e1b47062d",
+   "present": true,
+   "selected_by": "replacement_uid",
+   "service": "recommendationservice",
+   "type": null
+  },
+  "floors": {},
+  "label_horizon": "2026-10-20T07:51:47.922616Z",
+  "notes": {
+   "k1_union_counts": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 0,
+    "dropped": 0,
+    "observations": 6,
+    "pods": 4,
+    "records": 264,
+    "skipped": 0
+   }
+  },
+  "physical_rollout_interval": {
+   "R_us": "2026-10-20T07:50:03.060327Z",
+   "desired_new_replicas": 1,
+   "end_basis": "old-revision request end",
+   "end_us": "2026-10-20T07:50:27.804026Z",
+   "last_old_served_end_us": "2026-10-20T07:50:27.804026Z",
+   "new_hash": "b64dbbc96",
+   "new_ready_complete_us": "2026-10-20T07:50:09.000000Z",
+   "old_hash": "794bf474c7"
+  },
+  "pods": [
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "otel-collector-6f888bf78f-bml8d",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:48:14.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "otel-collector",
+    "template_hash": "6f888bf78f",
+    "uid": "1ed2954b-d51a-4fac-9973-0cbb585266c2"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "productcatalogservice-789956f46-wwtpn",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:48:16.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "productcatalogservice",
+    "template_hash": "789956f46",
+    "uid": "ec09574a-98cd-47aa-93a3-6a759450189d"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": "deletionTimestamp - grace",
+    "deletion_request": "2026-10-20T07:50:09.000000Z",
+    "gone_after": "2026-10-20T07:50:31.246779Z",
+    "name": "recommendationservice-794bf474c7-gflxc",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:48:26.000000Z",
+      "ready"
+     ],
+     [
+      "2026-10-20T07:50:30.000000Z",
+      "not_ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "794bf474c7",
+    "uid": "a9ca5506-f40f-4c98-9e6f-149ebec76d04"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "recommendationservice-b64dbbc96-cjfc9",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:50:03.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-20T07:50:09.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "b64dbbc96",
+    "uid": "d19311dd-e7d1-44c2-b4eb-831e1b47062d"
+   }
+  ],
+  "rule": "labels never use R1-R7, a store or a view's knowledge rule"
+ },
+ "late_corrections": [
+  {
+   "condition": "L@F600",
+   "observer": "poller",
+   "posed": 310,
+   "reached_by_late_correction": 13
+  },
+  {
+   "condition": "L_p",
+   "observer": "poller",
+   "posed": 930,
+   "reached_by_late_correction": 39
+  },
+  {
+   "condition": "T@F600",
+   "observer": "poller",
+   "posed": 310,
+   "reached_by_late_correction": 13
+  },
+  {
+   "condition": "T_p",
+   "observer": "poller",
+   "posed": 930,
+   "reached_by_late_correction": 39
+  },
+  {
+   "condition": "c-hind",
+   "observer": "poller",
+   "posed": 930,
+   "reached_by_late_correction": 39
+  },
+  {
+   "condition": "L_w",
+   "observer": "watch",
+   "posed": 930,
+   "reached_by_late_correction": 21
+  },
+  {
+   "condition": "T_w",
+   "observer": "watch",
+   "posed": 930,
+   "reached_by_late_correction": 21
+  }
+ ],
+ "measured_lags": {
+  "clock_band_us": 1237735,
+  "kill_to_not_ready_stamp": {
+   "max_s": null,
+   "median_s": null,
+   "min_s": null,
+   "n": 0
+  },
+  "poller_pod_list_intervals": {
+   "max_s": 3.188618,
+   "median_s": 2.445826,
+   "min_s": 2.336568,
+   "n": 79
+  },
+  "recheck_read_latency": {
+   "max_s": null,
+   "median_s": null,
+   "min_s": null,
+   "n": 0
+  },
+  "rule": "no timestamp corrected",
+  "transition_to_first_availability": {
+   "poller": {
+    "max_s": 20.582496,
+    "median_s": 1.582496,
+    "min_s": 0.68862,
+    "n": 11
+   },
+   "recheck": {
+    "max_s": null,
+    "median_s": null,
+    "min_s": null,
+    "n": 0
+   },
+   "watch": {
+    "max_s": 19.486589,
+    "median_s": 0.486589,
+    "min_s": 0.074254,
+    "n": 11
+   }
+  }
+ },
+ "plan": {
+  "path": "phase3/stage2_plan.json"
+ },
+ "plan_cells": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "E_s": 120.0,
+  "actions": [
+   "A"
+  ],
+  "arm": "D",
+  "conditions": [
+   "T_p",
+   "L_p",
+   "T_w",
+   "L_w",
+   "c-hind",
+   "T@F600",
+   "L@F600"
+  ],
+  "delta_s": [
+   0
+  ],
+  "observers": [
+   "poller",
+   "watch"
+  ],
+  "replica_floor_by_service": {},
+  "replicas": {
+   "productcatalogservice": 1,
+   "recommendationservice": 1
+  },
+  "scenario": "D1",
+  "streams": [
+   "S0",
+   "S30",
+   "Snever"
+  ]
+ },
+ "primary_sums": {
+  "H-G4": {
+   "cells": {
+    "Delta_s": [
+     0,
+     5,
+     30
+    ],
+    "action": "A",
+    "delta_s": [
+     0
+    ],
+    "streams": [
+     "S30",
+     "Snever"
+    ]
+   },
+   "conditions": {
+    "T_p": {
+     "GT2": 172,
+     "M": 52,
+     "U": 8,
+     "cells": 6,
+     "posed": 620
+    },
+    "T_w": {
+     "GT2": 172,
+     "M": 46,
+     "U": 0,
+     "cells": 6,
+     "posed": 620
+    }
+   },
+   "decisions_compared": 620,
+   "identical_first_verdicts_and_dispositions": false
+  }
+ },
+ "python": "3.11",
+ "transitions": {
+  "by_kind": {
+   "deployment_progressing": 5,
+   "pod_created": 2,
+   "pod_deletion_requested": 2,
+   "pod_lastTransitionTime": 4,
+   "replicaset_created": 2
+  },
+  "counted_transitions": 15,
+  "deletion_stamps_not_counted": [],
+  "rule": "counted objects = the changed service's Pods and the bound Deployment; stamps are the sources' own fields; a deletion request (deletionTimestamp - grace) earlier than the last record without deletionTimestamp by more than the clock band is inconsistent with the records and not counted (listed)"
+ },
+ "validity_fields": {
+  "complete_status": "finished",
+  "raw_capture": "D1-002",
+  "runner_reasons": [],
+  "runner_valid": true
+ }
+}

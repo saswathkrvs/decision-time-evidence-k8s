@@ -1,0 +1,1228 @@
+{
+ "D1-001": {
+  "started_at": "2026-10-20T07:14:19.409547Z",
+  "finished_at": "2026-10-20T07:18:02.208004Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.216554,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1535122937,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 50993159,
+    "denominator": 2
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D1-002": {
+  "started_at": "2026-10-20T07:48:12.020460Z",
+  "finished_at": "2026-10-20T07:51:52.519801Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.912653,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1237734353,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 57036436,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D1-003": {
+  "started_at": "2026-10-20T07:58:52.228597Z",
+  "finished_at": "2026-10-20T08:02:31.470201Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.966276,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1220119179,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 36845916,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D1-004": {
+  "started_at": "2026-10-20T08:07:49.023809Z",
+  "finished_at": "2026-10-20T08:11:27.498360Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.997545,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1229898539,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 44066197,
+    "denominator": 2
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D1-005": {
+  "started_at": "2026-10-20T08:11:59.916454Z",
+  "finished_at": "2026-10-20T08:15:42.179796Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.105207,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1413431430,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 33934732,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D1-006": {
+  "started_at": "2026-10-20T08:19:03.765104Z",
+  "finished_at": "2026-10-20T08:22:45.880175Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.724749,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1351238098,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 31935913,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D2-001": {
+  "started_at": "2026-10-19T19:31:04.167338Z",
+  "finished_at": "2026-10-19T19:35:25.237337Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "latency_effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.777421,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1322633155,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "active_minus_nominal_median_ns": {
+    "numerator": 8662957,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "latency_effect_threshold_not_met_or_unavailable"
+   ],
+   "kind": null
+  }
+ },
+ "D2-002": {
+  "started_at": "2026-10-20T07:37:29.306426Z",
+  "finished_at": "2026-10-20T07:41:24.769372Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 4.05623,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 2286955027,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 28021244,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "D2-003": {
+  "started_at": "2026-10-20T10:54:16.519403Z",
+  "finished_at": "2026-10-20T10:58:04.236818Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.854325,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1133190254,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 48351083,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "G1-001": {
+  "started_at": "2026-10-20T08:23:40.983865Z",
+  "finished_at": "2026-10-20T08:29:00.505259Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "latency_effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.908803,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 93,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 354.4464,
+   "median": 26.7591,
+   "min": 15.2036,
+   "n": 299
+  },
+  "clock_band_ns": 1289629475,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "active_minus_nominal_median_ns": {
+    "numerator": 13957184,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "latency_effect_threshold_not_met_or_unavailable"
+   ],
+   "kind": null
+  }
+ },
+ "G1-002": {
+  "started_at": "2026-10-20T08:52:36.311436Z",
+  "finished_at": "2026-10-20T08:57:53.789875Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.910188,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 98,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 273.7925,
+   "median": 28.3501,
+   "min": 15.2244,
+   "n": 297
+  },
+  "clock_band_ns": 1346781485,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 80982377,
+    "denominator": 2
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "G1-003": {
+  "started_at": "2026-10-20T09:14:16.713210Z",
+  "finished_at": "2026-10-20T09:19:37.171305Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "latency_effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.766025,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 98,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 416.5922,
+   "median": 29.244,
+   "min": 14.6044,
+   "n": 299
+  },
+  "clock_band_ns": 1221542701,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "active_minus_nominal_median_ns": {
+    "numerator": 23559121,
+    "denominator": 2
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "latency_effect_threshold_not_met_or_unavailable"
+   ],
+   "kind": null
+  }
+ },
+ "G1-004": {
+  "started_at": "2026-10-20T09:21:56.734286Z",
+  "finished_at": "2026-10-20T09:27:18.559912Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "latency_effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.982204,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 95,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 350.8935,
+   "median": 27.9992,
+   "min": 15.2047,
+   "n": 301
+  },
+  "clock_band_ns": 1210185541,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "active_minus_nominal_median_ns": {
+    "numerator": 19692719,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "latency_effect_threshold_not_met_or_unavailable"
+   ],
+   "kind": null
+  }
+ },
+ "G1-005": {
+  "started_at": "2026-10-20T09:30:33.638533Z",
+  "finished_at": "2026-10-20T09:35:54.219264Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.7797,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 94,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 286.4565,
+   "median": 28.0249,
+   "min": 16.0559,
+   "n": 295
+  },
+  "clock_band_ns": 1284513809,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 48442735,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "G2-001": {
+  "started_at": "2026-10-20T08:45:45.952191Z",
+  "finished_at": "2026-10-20T08:51:03.004642Z",
+  "status": "invalid",
+  "validity": {
+   "valid": false,
+   "reasons": [
+    "scenario_error:RuntimeError('the kill command exited 1 (ground_truth/raw/kill-001.stderr)')",
+    "kill_exit_code=1",
+    "activation_not_verified"
+   ],
+   "notes": [
+    "effect_not_established",
+    "recovery_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.847526,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 40,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 364.9493,
+   "median": 27.435200000000002,
+   "min": 16.476,
+   "n": 296
+  },
+  "clock_band_ns": 1318151257,
+  "fault_control_evaluation_summary": {
+   "activation_verified": false,
+   "effect_established": false,
+   "recovery_established": false,
+   "fault_control_passed": false,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "control_or_identity_not_established",
+    "activation_not_established",
+    "no_target_probe_inside_not_ready_window",
+    "no_failed_or_slowed_target_probe_while_not_ready",
+    "service_recovery_not_established"
+   ],
+   "control_passed": false,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G2-002": {
+  "started_at": "2026-10-20T09:08:22.226288Z",
+  "finished_at": "2026-10-20T09:13:39.678304Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.004559,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 92,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 530.3478,
+   "median": 30.3569,
+   "min": 14.3324,
+   "n": 297
+  },
+  "clock_band_ns": 1291158953,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G2-003": {
+  "started_at": "2026-10-20T10:10:17.496362Z",
+  "finished_at": "2026-10-20T10:15:35.785404Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.830037,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 93,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 418.5822,
+   "median": 27.765349999999998,
+   "min": 16.937,
+   "n": 298
+  },
+  "clock_band_ns": 1543328558,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G2-004": {
+  "started_at": "2026-10-20T10:34:31.184745Z",
+  "finished_at": "2026-10-20T10:39:51.891266Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.215467,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 93,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 350.5456,
+   "median": 27.8988,
+   "min": 16.6563,
+   "n": 299
+  },
+  "clock_band_ns": 1284026055,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G2-005": {
+  "started_at": "2026-10-20T10:46:02.845622Z",
+  "finished_at": "2026-10-20T10:51:20.873423Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.946744,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 94,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 412.2129,
+   "median": 28.5149,
+   "min": 16.2427,
+   "n": 297
+  },
+  "clock_band_ns": 1365052553,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G2-006": {
+  "started_at": "2026-10-20T11:04:15.733450Z",
+  "finished_at": "2026-10-20T11:09:56.367019Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 6.420838,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 0.978947,
+   "recheck_expected_ticks_in_window": 95,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 1064.9989,
+   "median": 34.6776,
+   "min": 17.1051,
+   "n": 314
+  },
+  "clock_band_ns": 1201200523,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G3-001": {
+  "started_at": "2026-10-20T08:36:01.063905Z",
+  "finished_at": "2026-10-20T08:41:42.838053Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.974044,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 76,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 496.2335,
+   "median": 35.924099999999996,
+   "min": 16.5677,
+   "n": 316
+  },
+  "clock_band_ns": 1467440705,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "no_target_probe_inside_not_ready_window",
+    "no_failed_or_slowed_target_probe_while_not_ready"
+   ],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G3-002": {
+  "started_at": "2026-10-20T09:53:29.284537Z",
+  "finished_at": "2026-10-20T09:58:52.156581Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.729757,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 76,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 227.0229,
+   "median": 28.25685,
+   "min": 15.3149,
+   "n": 298
+  },
+  "clock_band_ns": 1504926755,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "no_target_probe_inside_not_ready_window",
+    "no_failed_or_slowed_target_probe_while_not_ready"
+   ],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G3-003": {
+  "started_at": "2026-10-20T10:23:44.922943Z",
+  "finished_at": "2026-10-20T10:29:18.838826Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": [
+    "effect_not_established"
+   ]
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.253145,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 75,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 841.0716,
+   "median": 28.7972,
+   "min": 15.6457,
+   "n": 311
+  },
+  "clock_band_ns": 1593792609,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "no_target_probe_inside_not_ready_window",
+    "no_failed_or_slowed_target_probe_while_not_ready"
+   ],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ },
+ "G4-001": {
+  "started_at": "2026-10-20T09:42:49.733803Z",
+  "finished_at": "2026-10-20T09:48:07.610218Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.064575,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 85,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 358.2815,
+   "median": 27.4169,
+   "min": 16.0427,
+   "n": 297
+  },
+  "clock_band_ns": 1504547385,
+  "fault_control_evaluation_summary": {
+   "activation_verified": null,
+   "latency_effect_established": null,
+   "recovery_established": null,
+   "fault_control_passed": null,
+   "active_minus_nominal_median_ns": null,
+   "effect_threshold_ns": null,
+   "reasons": null,
+   "kind": "sham_schedule_no_worker"
+  }
+ },
+ "G4-002": {
+  "started_at": "2026-10-20T10:03:20.542959Z",
+  "finished_at": "2026-10-20T10:08:35.743330Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 2.919115,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 85,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 468.1304,
+   "median": 27.42,
+   "min": 16.6462,
+   "n": 295
+  },
+  "clock_band_ns": 1211768551,
+  "fault_control_evaluation_summary": {
+   "activation_verified": null,
+   "latency_effect_established": null,
+   "recovery_established": null,
+   "fault_control_passed": null,
+   "active_minus_nominal_median_ns": null,
+   "effect_threshold_ns": null,
+   "reasons": null,
+   "kind": "sham_schedule_no_worker"
+  }
+ },
+ "G4-003": {
+  "started_at": "2026-10-20T10:17:52.925872Z",
+  "finished_at": "2026-10-20T10:23:09.331444Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.127178,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 85,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 396.5996,
+   "median": 27.3348,
+   "min": 15.2018,
+   "n": 296
+  },
+  "clock_band_ns": 1442759657,
+  "fault_control_evaluation_summary": {
+   "activation_verified": null,
+   "latency_effect_established": null,
+   "recovery_established": null,
+   "fault_control_passed": null,
+   "active_minus_nominal_median_ns": null,
+   "effect_threshold_ns": null,
+   "reasons": null,
+   "kind": "sham_schedule_no_worker"
+  }
+ },
+ "P1-D1-001": {
+  "started_at": "2026-10-19T17:28:48.093220Z",
+  "finished_at": "2026-10-19T17:33:00.486210Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 4.246109,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": null,
+   "recheck_expected_ticks_in_window": null,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   }
+  },
+  "recheck_read_latency_ms": null,
+  "clock_band_ns": 1429487575,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "active_minus_nominal_median_ns": {
+    "numerator": 75737924,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "kind": null
+  }
+ },
+ "P2-G2-001": {
+  "started_at": "2026-10-19T17:37:08.200029Z",
+  "finished_at": "2026-10-19T17:43:01.320181Z",
+  "status": "finished",
+  "validity": {
+   "valid": true,
+   "reasons": [],
+   "notes": []
+  },
+  "observer_checks": {
+   "poller_max_pod_list_gap_in_window_seconds": 3.510691,
+   "watch_max_gap_overlap_in_window_seconds": 0.0,
+   "watch_manifest_continuity_gaps": 0,
+   "recheck_answered_fraction_in_window": 1.0,
+   "recheck_expected_ticks_in_window": 81,
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": 0.9
+   }
+  },
+  "recheck_read_latency_ms": {
+   "max": 624.0948,
+   "median": 34.1455,
+   "min": 16.0678,
+   "n": 329
+  },
+  "clock_band_ns": 1456235109,
+  "fault_control_evaluation_summary": {
+   "activation_verified": true,
+   "effect_established": true,
+   "recovery_established": true,
+   "fault_control_passed": true,
+   "not_ready_minus_nominal_median_ns": null,
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [],
+   "control_passed": true,
+   "kind": "container_kill",
+   "schema": "container_kill_fault_control_v1"
+  }
+ }
+}

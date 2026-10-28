@@ -1,0 +1,579 @@
+{
+ "kind": "stage2_diagnosis_control_one_capture",
+ "version": "stage2-diagnosis-control-v1",
+ "capture": {
+  "directory": "D2-001",
+  "capture_json": true,
+  "incident_id": "D2",
+  "arm": "D",
+  "scenario": "D2",
+  "kind": "study",
+  "pilot": false,
+  "mode": "live",
+  "slot": "D2.1",
+  "attempt": 1
+ },
+ "section10": {
+  "rule_1": {
+   "rule": "inclusion rule 1",
+   "checks": {
+    "status_finished": true,
+    "marker_complete": true,
+    "runner_validity_true": true,
+    "namespace_ownership_verified": true,
+    "teardown_not_refused": true
+   },
+   "passed": true,
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "runner_validity": {
+    "valid": true,
+    "reasons": [],
+    "notes": [
+     "latency_effect_not_established"
+    ]
+   },
+   "teardown_refused": null
+  },
+  "rule_2": {
+   "rule": "inclusion rule 2",
+   "arm": "D",
+   "window": {
+    "definition": "[T0 - 10 s, recovery_end] (inclusion rule 2)",
+    "lead_seconds": 10.0,
+    "from_monotonic_ns": 464820579018500,
+    "to_monotonic_ns": 464906824398500,
+    "from_wall_ns": 1792438408050329000,
+    "to_wall_ns": 1792438494297011000,
+    "seconds": 86.24538
+   },
+   "thresholds": {
+    "poller_max_pod_list_interval_seconds": 15,
+    "watch_max_continuity_gap_seconds": 5,
+    "recheck_min_answered_tick_fraction": null
+   },
+   "poller": {
+    "source": "context/observations.jsonl snapshot records (resource pods), response_received_at (host wall clock)",
+    "records_present": true,
+    "pod_list_receipts": 80,
+    "pod_list_receipts_in_window": 29,
+    "max_pod_list_gap_in_window_seconds": 3.777421,
+    "max_pod_list_interval_touching_window_seconds": 3.777421,
+    "touching_interval_unbounded": false,
+    "max_pod_list_interval_whole_collection_seconds": 4.413279,
+    "manifest": {
+     "collector": "collect_deployment_history_v1_1",
+     "status": "finished",
+     "stop_reason": "sample_limit",
+     "successful_snapshots": 320,
+     "snapshots_requested": 320,
+     "errors": 0
+    }
+   },
+   "watch": {
+    "source": "context/watch_events.jsonl continuity_gap records (gap_from / gap_to monotonic ns)",
+    "records_present": true,
+    "kinds": [
+     "pods",
+     "deployments",
+     "replicasets",
+     "endpointslices",
+     "poddisruptionbudgets"
+    ],
+    "max_gap_overlap_in_window_seconds": 0.0,
+    "max_gap_overlap_detected_variant_seconds": 0.0,
+    "per_kind": {
+     "deployments": {
+      "max_gap_overlap_seconds": 0.0,
+      "reason": null,
+      "detected_variant_seconds": 0.0
+     },
+     "endpointslices": {
+      "max_gap_overlap_seconds": 0.0,
+      "reason": null,
+      "detected_variant_seconds": 0.0
+     },
+     "poddisruptionbudgets": {
+      "max_gap_overlap_seconds": 0.0,
+      "reason": null,
+      "detected_variant_seconds": 0.0
+     },
+     "pods": {
+      "max_gap_overlap_seconds": 0.0,
+      "reason": null,
+      "detected_variant_seconds": 0.0
+     },
+     "replicasets": {
+      "max_gap_overlap_seconds": 0.0,
+      "reason": null,
+      "detected_variant_seconds": 0.0
+     }
+    },
+    "pods_max_gap_overlap_seconds": 0.0,
+    "manifest": {
+     "collector": "watch-v1",
+     "status": "finished",
+     "stop_reason": "stop_file"
+    },
+    "manifest_continuity_gaps": 0
+   },
+   "recheck": null,
+   "checks": {
+    "poller": true,
+    "watch": true
+   },
+   "passed": true
+  },
+  "excluded_by_rules_1_2": false,
+  "pending": [
+   "rule 3 (arm D: the bridge inclusion items 2-3, decided by the diagnosis control's validity-only mode on the converted capture; corrected 19 Oct 2026, it was wrongly attributed to the converter)"
+  ],
+  "semantics": "inputs of inclusion rules 1 and 2, compared mechanically with the plan's thresholds; nothing else is interpreted"
+ },
+ "category": "excluded",
+ "reasons": [
+  "poller: fault manipulation not confirmed: latency_effect_established=False",
+  "watch: fault manipulation not confirmed: latency_effect_established=False"
+ ],
+ "inclusion": {
+  "rules_1_2": {
+   "passed": true,
+   "reasons": [],
+   "rule_2": {
+    "passed": true,
+    "checks": {
+     "poller": true,
+     "watch": true
+    }
+   }
+  },
+  "rule_3": {
+   "poller": {
+    "included": false,
+    "reasons": [
+     "fault manipulation not confirmed: latency_effect_established=False"
+    ]
+   },
+   "watch": {
+    "included": false,
+    "reasons": [
+     "fault manipulation not confirmed: latency_effect_established=False"
+    ]
+   }
+  },
+  "primary": false,
+  "secondary_rule": {
+   "poller": {
+    "admitted": false,
+    "reasons": [
+     "active - nominal median shift 8.663 ms vs effect threshold 20.000 ms",
+     "evaluator reasons ['latency_effect_threshold_not_met_or_unavailable']: effect reasons ['latency_effect_threshold_not_met_or_unavailable'] (the secondary rule requires exactly ['nonfunctional_nominal_or_active_target_responses'] among the effect reasons and no unknown reason)"
+    ],
+    "checks": [
+     {
+      "check": "rule 1",
+      "passed": true,
+      "detail": "COMPLETE.txt with status=finished; runner validity true"
+     },
+     {
+      "check": "fault capture",
+      "passed": true,
+      "detail": "labels.fault_present true, fault target recorded"
+     },
+     {
+      "check": "evaluation file",
+      "passed": true,
+      "detail": "ground_truth/fault_control_evaluation.json (schema bounded_cpu_fault_control_v1, SHA-256 345b2cac6dfd7e78…)"
+     },
+     {
+      "check": "activation_verified",
+      "passed": true,
+      "detail": "activation_verified=True"
+     },
+     {
+      "check": "support_checks",
+      "passed": true,
+      "detail": "support_checks nominal=True, active=True, recovery=True (target successes: nominal 40, active 19, recovery 30)"
+     },
+     {
+      "check": "nominal target responses functional",
+      "passed": true,
+      "detail": "recommendationservice nominal all_attempted_functional=True (outcomes {'ok': 40})"
+     },
+     {
+      "check": "shift >= threshold",
+      "passed": false,
+      "detail": "active - nominal median shift 8.663 ms vs effect threshold 20.000 ms"
+     },
+     {
+      "check": "latency_effect_established false",
+      "passed": true,
+      "detail": "latency_effect_established=False"
+     },
+     {
+      "check": "only the functional reason",
+      "passed": false,
+      "detail": "evaluator reasons ['latency_effect_threshold_not_met_or_unavailable']: effect reasons ['latency_effect_threshold_not_met_or_unavailable'] (the secondary rule requires exactly ['nonfunctional_nominal_or_active_target_responses'] among the effect reasons and no unknown reason)"
+     },
+     {
+      "check": "evaluation summary agrees",
+      "passed": true,
+      "detail": "ground_truth.json evaluation_summary agrees with the evaluation file"
+     },
+     {
+      "check": "sighted truth Pod",
+      "passed": true,
+      "detail": "fault target Pod is a sighted Pod"
+     },
+     {
+      "check": "rule 3",
+      "passed": true,
+      "detail": "change of productcatalogservice verified"
+     }
+    ],
+    "notes": []
+   },
+   "watch": {
+    "admitted": false,
+    "reasons": [
+     "active - nominal median shift 8.663 ms vs effect threshold 20.000 ms",
+     "evaluator reasons ['latency_effect_threshold_not_met_or_unavailable']: effect reasons ['latency_effect_threshold_not_met_or_unavailable'] (the secondary rule requires exactly ['nonfunctional_nominal_or_active_target_responses'] among the effect reasons and no unknown reason)"
+    ],
+    "checks": [
+     {
+      "check": "rule 1",
+      "passed": true,
+      "detail": "COMPLETE.txt with status=finished; runner validity true"
+     },
+     {
+      "check": "fault capture",
+      "passed": true,
+      "detail": "labels.fault_present true, fault target recorded"
+     },
+     {
+      "check": "evaluation file",
+      "passed": true,
+      "detail": "ground_truth/fault_control_evaluation.json (schema bounded_cpu_fault_control_v1, SHA-256 345b2cac6dfd7e78…)"
+     },
+     {
+      "check": "activation_verified",
+      "passed": true,
+      "detail": "activation_verified=True"
+     },
+     {
+      "check": "support_checks",
+      "passed": true,
+      "detail": "support_checks nominal=True, active=True, recovery=True (target successes: nominal 40, active 19, recovery 30)"
+     },
+     {
+      "check": "nominal target responses functional",
+      "passed": true,
+      "detail": "recommendationservice nominal all_attempted_functional=True (outcomes {'ok': 40})"
+     },
+     {
+      "check": "shift >= threshold",
+      "passed": false,
+      "detail": "active - nominal median shift 8.663 ms vs effect threshold 20.000 ms"
+     },
+     {
+      "check": "latency_effect_established false",
+      "passed": true,
+      "detail": "latency_effect_established=False"
+     },
+     {
+      "check": "only the functional reason",
+      "passed": false,
+      "detail": "evaluator reasons ['latency_effect_threshold_not_met_or_unavailable']: effect reasons ['latency_effect_threshold_not_met_or_unavailable'] (the secondary rule requires exactly ['nonfunctional_nominal_or_active_target_responses'] among the effect reasons and no unknown reason)"
+     },
+     {
+      "check": "evaluation summary agrees",
+      "passed": true,
+      "detail": "ground_truth.json evaluation_summary agrees with the evaluation file"
+     },
+     {
+      "check": "sighted truth Pod",
+      "passed": true,
+      "detail": "fault target Pod is a sighted Pod"
+     },
+     {
+      "check": "rule 3",
+      "passed": true,
+      "detail": "change of productcatalogservice verified"
+     }
+    ],
+    "notes": []
+   }
+  },
+  "secondary": false,
+  "reasons": [
+   "poller: fault manipulation not confirmed: latency_effect_established=False",
+   "watch: fault manipulation not confirmed: latency_effect_established=False"
+  ],
+  "rule": "rules 1-2 from capture.json section10; rule 3 = context_bridge.inclusion on the poller's and on the watch's input (truth Pod sighted by both); the secondary rule (context_bridge.inclusion_secondary) on both, in its own secondary table"
+ },
+ "evaluator_only": {
+  "truth_entity": "Pod/714246e4-8952-4ca0-a69c-748086471751",
+  "truth_source": "ground_truth.json observed.fault_target.pod_uid",
+  "onset": "2026-10-19T19:33:58.050954Z",
+  "onset_source": "ground_truth.json timeline_host.fault_launch.host_utc",
+  "labels": {
+   "fault_present": true,
+   "fault_type": "F1",
+   "root_cause_service": "recommendationservice",
+   "change_services": [
+    "productcatalogservice"
+   ],
+   "role": "control: the change is unrelated and over before any probe or target request"
+  },
+  "fault_target": {
+   "service": "recommendationservice",
+   "pod_name": "recommendationservice-794bf474c7-tmfkm",
+   "pod_uid": "714246e4-8952-4ca0-a69c-748086471751",
+   "selection_receipt_id": "target-pods-001",
+   "ready_pod_uids_at_selection": {
+    "714246e4-8952-4ca0-a69c-748086471751": "recommendationservice-794bf474c7-tmfkm"
+   },
+   "selected_by": "newest_ready_pod"
+  },
+  "evaluation_summary": {
+   "activation_verified": true,
+   "latency_effect_established": false,
+   "recovery_established": true,
+   "fault_control_passed": false,
+   "active_minus_nominal_median_ns": {
+    "numerator": 8662957,
+    "denominator": 1
+   },
+   "effect_threshold_ns": {
+    "numerator": 20000000,
+    "denominator": 1
+   },
+   "reasons": [
+    "latency_effect_threshold_not_met_or_unavailable"
+   ],
+   "kind": null
+  },
+  "note": "read from ground_truth/ for scoring only; never passed to a policy"
+ },
+ "loaders": {
+  "poller": {
+   "observer": "poller",
+   "loader": "stage2-diagnosis-loader-v1",
+   "basis": [
+    "snapshot_receipt"
+   ],
+   "files": [
+    "evidence/accepted_evidence.jsonl"
+   ],
+   "sightings": 860,
+   "deleted_events": 0,
+   "complete_lists": null,
+   "collection_id": "efb904fa-5b9b-431a-8987-c542caf04442",
+   "clamps": [
+    {
+     "record_id": "api:efb904fa-5b9b-431a-8987-c542caf04442/385",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "022-replicasets",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.911315Z",
+     "ceiling_minus_observed_us": 88685
+    }
+   ],
+   "clamp_rule": "non-Pod creation ceiling clamped to the observation time: starts_at = min(creationTimestamp + 1 s, observed_at); gate v1's build_observations would raise 'starts_at cannot be later than observed_at'",
+   "api_rows_available_mismatch": 0
+  },
+  "watch": {
+   "observer": "watch",
+   "loader": "stage2-diagnosis-loader-v1",
+   "basis": [
+    "watch_cache_snapshot"
+   ],
+   "files": [
+    "evidence/stage2/api_observation.watch_cache_snapshot.jsonl"
+   ],
+   "sightings": 3401,
+   "deleted_events": 0,
+   "complete_lists": null,
+   "collection_id": "85673a67-8b40-4273-bc3f-ec5624b3838f",
+   "clamps": [
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/94/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/94",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.136855Z",
+     "ceiling_minus_observed_us": 863145
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/96/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/96",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.152462Z",
+     "ceiling_minus_observed_us": 847538
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/97/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/97",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.152633Z",
+     "ceiling_minus_observed_us": 847367
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/99/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/99",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.325403Z",
+     "ceiling_minus_observed_us": 674597
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/101/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/101",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.336953Z",
+     "ceiling_minus_observed_us": 663047
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/103/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/103",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.337457Z",
+     "ceiling_minus_observed_us": 662543
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/105/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/105",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.339140Z",
+     "ceiling_minus_observed_us": 660860
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/107/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/107",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.339803Z",
+     "ceiling_minus_observed_us": 660197
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/109/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/109",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.340130Z",
+     "ceiling_minus_observed_us": 659870
+    },
+    {
+     "record_id": "watchsnap:85673a67-8b40-4273-bc3f-ec5624b3838f/111/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "kind": "ReplicaSet",
+     "subject": "ReplicaSet/6f5c4e93-ab50-4b60-8e10-d2ec18d4d37c",
+     "name": "productcatalogservice-6d7686498f",
+     "snapshot_id": "85673a67-8b40-4273-bc3f-ec5624b3838f/111",
+     "predicates": [
+      "STATE",
+      "GENERATION"
+     ],
+     "creation_timestamp": "2026-10-19T19:32:25.000000Z",
+     "creation_ceiling": "2026-10-19T19:32:26.000000Z",
+     "observed_at": "2026-10-19T19:32:25.340849Z",
+     "ceiling_minus_observed_us": 659151
+    }
+   ],
+   "clamp_rule": "non-Pod creation ceiling clamped to the observation time: starts_at = min(creationTimestamp + 1 s, observed_at); gate v1's build_observations would raise 'starts_at cannot be later than observed_at'",
+   "api_rows_available_mismatch": 0
+  }
+ },
+ "clock_band": {
+  "band_available": true,
+  "band_ns": 1322633155,
+  "widest_bound_ns": 322633155,
+  "union_ns": [
+   -322633155,
+   61590404
+  ],
+  "intersection_empty": false,
+  "readings_used": 20
+ },
+ "provenance": {
+  "environment": {
+   "python": "3.11.15",
+   "numpy": "2.4.4",
+   "networkx": "3.6.1"
+  }
+ }
+}

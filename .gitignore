@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+rerun/
+# the captures are archived at Zenodo; unpack them here, but do not commit them
+phase3/captures/
+phase3/captures_stage2/
+results/evidence-index-pilot-002/
+data/

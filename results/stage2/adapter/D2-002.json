@@ -1,0 +1,5935 @@
+{
+ "T1_cells": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "S30",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 120
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V2 (GT-3)": 120
+    },
+    "of_posed": 120,
+    "reasons": {
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 120
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 120
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 120
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:rollout_complete]": 110,
+     "CENSORED": 10
+    },
+    "of_posed": 120
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "U": 1,
+     "V2 (GT-3)": 109
+    },
+    "of_posed": 120,
+    "reasons": {
+     "U": {
+      "beyond_label_evidence": 1
+     },
+     "V2 (GT-3)": {
+      "fault not on a new-revision Pod of the changed service": 109
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ALLOW": 110,
+     "none (posed after H)": 10
+    },
+    "of_posed": 120
+   },
+   "late_correction_decisions": {
+    "count": 0,
+    "of_posed": 120
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 120,
+   "requests": 120,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 120
+   },
+   "waiting_seconds": {
+    "censored": 10,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 120
+   }
+  }
+ ],
+ "T2_comparisons": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 120,
+   "stream": "Snever"
+  }
+ ],
+ "T3_q1_checks": {
+  "agreement": null,
+  "check_1_append_only_corrections": [
+   {
+    "failures": [],
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "observer": "poller",
+    "stores_rebuilt": 0,
+    "stream": "S0",
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   },
+   {
+    "failures": [],
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "observer": "poller",
+    "stores_rebuilt": 0,
+    "stream": "S30",
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   },
+   {
+    "failures": [],
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "observer": "poller",
+    "stores_rebuilt": 0,
+    "stream": "Snever",
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   },
+   {
+    "failures": [],
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "observer": "watch",
+    "stores_rebuilt": 0,
+    "stream": "S0",
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   },
+   {
+    "failures": [],
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "observer": "watch",
+    "stores_rebuilt": 0,
+    "stream": "S30",
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   },
+   {
+    "failures": [],
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "observer": "watch",
+    "stores_rebuilt": 0,
+    "stream": "Snever",
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   }
+  ],
+  "check_1_note": "n counts every logged causal evaluation of the poller and watch stores at a cutoff before some K1 record's availability ('Every evaluation at a cutoff before that availability keeps its answer'); each is re-evaluated with every K1 record available after its cutoff removed. n_reached_by_late_k1: those a late K1 record reaches (stamp <= dispatch)",
+  "check_2_earlier_cutoff_invariance": [
+   {
+    "failures": [],
+    "n": 153,
+    "observer": "poller",
+    "stores_rebuilt": 51,
+    "stream": "S0",
+    "x_full_stream": 153,
+    "x_truncated": 153
+   },
+   {
+    "failures": [],
+    "n": 61,
+    "observer": "poller",
+    "stores_rebuilt": 33,
+    "stream": "S30",
+    "x_full_stream": 61,
+    "x_truncated": 61
+   },
+   {
+    "failures": [],
+    "n": 75,
+    "observer": "poller",
+    "stores_rebuilt": 34,
+    "stream": "Snever",
+    "x_full_stream": 75,
+    "x_truncated": 75
+   },
+   {
+    "failures": [],
+    "n": 69,
+    "observer": "watch",
+    "stores_rebuilt": 50,
+    "stream": "S0",
+    "x_full_stream": 69,
+    "x_truncated": 69
+   },
+   {
+    "failures": [],
+    "n": 68,
+    "observer": "watch",
+    "stores_rebuilt": 51,
+    "stream": "S30",
+    "x_full_stream": 68,
+    "x_truncated": 68
+   },
+   {
+    "failures": [],
+    "n": 64,
+    "observer": "watch",
+    "stores_rebuilt": 44,
+    "stream": "Snever",
+    "x_full_stream": 64,
+    "x_truncated": 64
+   }
+  ],
+  "check_2_sample": {
+   "contested_evaluations": 0,
+   "hindsight_not_checked": 1050,
+   "population": 4900,
+   "rest": 4900,
+   "rule": "all evaluations of contested decisions + Random(0).sample(sorted(rest), ceil(0.1 x len(rest))), per capture",
+   "sampled_from_rest": 490
+  },
+  "totals": {
+   "check_1_append_only_corrections": {
+    "n": 0,
+    "n_reached_by_late_k1": 0,
+    "x": 0,
+    "x_reached_by_late_k1": 0
+   },
+   "check_2_earlier_cutoff_invariance": {
+    "n": 490,
+    "x": 490
+   }
+  }
+ },
+ "T4_sensitivities": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 5,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 120
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "V2 (GT-3)": 120
+     },
+     "of_posed": 120,
+     "reasons": {
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 120
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:rollout_complete]": 110,
+      "CENSORED": 10
+     },
+     "of_posed": 120
+    },
+    "executions_by_label": {
+     "counts": {
+      "U": 1,
+      "V2 (GT-3)": 109
+     },
+     "of_posed": 120,
+     "reasons": {
+      "U": {
+       "beyond_label_evidence": 1
+      },
+      "V2 (GT-3)": {
+       "fault not on a new-revision Pod of the changed service": 109
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 120,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 120
+    }
+   },
+   "stream": "Snever"
+  }
+ ],
+ "U_executions": [
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T@F600",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L@F600",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_p",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_p",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "c-hind",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "S30"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "T_w",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 30,
+   "action": "A",
+   "condition": "L_w",
+   "delta_s": 0,
+   "dispatch": "2026-10-20T07:41:06.406922Z",
+   "k": 110,
+   "reason": "beyond_label_evidence",
+   "stream": "Snever"
+  }
+ ],
+ "adapter": "governance-stage2-adapter-v0.1-dev",
+ "capture": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "H": "2026-10-20T07:41:06.691762Z",
+  "H_by_observer": {
+   "poller": "2026-10-20T07:41:06.691762Z",
+   "watch": "2026-10-20T07:41:18.246900Z"
+  },
+  "P": "2026-10-20T07:38:41.553471Z",
+  "actions": [
+   "A"
+  ],
+  "b_targets_not_posable": {},
+  "b_targets_posable": 120,
+  "binding": {
+   "changed_revision": 2,
+   "deployment_name": "productcatalogservice",
+   "deployment_uid": "33a6127a-874c-43d3-8390-4edbda588981",
+   "generation": 1,
+   "pod_template_hash": "789956f46",
+   "replicaset_uid": "052dda90-2b8a-4707-8528-4b6395bf6531",
+   "revision": 1,
+   "rollback": "revision 2 -> 1",
+   "service": "productcatalogservice",
+   "source_record": "api:0516b79f-08d5-4df8-a7d3-1ecb309a556f/12"
+  },
+  "capture": "D2-002",
+  "changed_service": "productcatalogservice",
+  "conditions": [
+   "T_p",
+   "L_p",
+   "T_w",
+   "L_w",
+   "c-hind",
+   "T@F600",
+   "L@F600"
+  ],
+  "delta_s": [
+   0
+  ],
+  "observers": [
+   "poller",
+   "watch"
+  ],
+  "replica_floor_by_service": {},
+  "requests": 120,
+  "service_deployments": {
+   "otel-collector": "otel-collector",
+   "productcatalogservice": "productcatalogservice",
+   "recommendationservice": "recommendationservice"
+  },
+  "streams": [
+   "S0",
+   "S30",
+   "Snever"
+  ]
+ },
+ "cells": "all",
+ "clock_band": {
+  "band_available": true,
+  "band_ns": 2286955027,
+  "band_s": 2.286956,
+  "band_us": 2286956,
+  "intersection_empty": true,
+  "intersection_ns": null,
+  "readings_rejected": 0,
+  "readings_used": 20,
+  "rule": "theta = host wall clock - node clock; one reading (host send, node date, host receive) bounds theta to [send - node, receive - node]; b_c = 1 s (kubelet stamp resolution) + the widest offset bound, read as the largest |bound| over every usable reading of the capture (start and end), so that b_c covers the offset itself as well as its uncertainty; no correction is applied to any timestamp",
+  "stamp_resolution_ns": 1000000000,
+  "union_ns": [
+   -1286955027,
+   39532288
+  ],
+  "widest_bound_ns": 1286955027
+ },
+ "creation_ceiling_clamps": {
+  "poller": 0,
+  "watch": 18
+ },
+ "cross_observer_agreement": {
+  "computed": false,
+  "reason": "no answered recheck tick or no planned change",
+  "semantics": "never reconstruction"
+ },
+ "decision_logs": {
+  "directory": "decision_logs",
+  "index_file": "decision_log_index.json",
+  "per_observer": [
+   {
+    "evaluations": 3850,
+    "facts": 1911,
+    "file": "D2-002.poller.jsonl.gz",
+    "lines": 9733,
+    "lines_by_kind": {
+     "evaluation": 3850,
+     "fact": 1911,
+     "k1": 5,
+     "meta": 1,
+     "request": 3960,
+     "schedule": 6
+    },
+    "observer": "poller",
+    "requests": 3960,
+    "seconds": null
+   },
+   {
+    "evaluations": 2100,
+    "facts": 4362,
+    "file": "D2-002.watch.jsonl.gz",
+    "lines": 8649,
+    "lines_by_kind": {
+     "clamp": 18,
+     "evaluation": 2100,
+     "fact": 4362,
+     "k1": 5,
+     "meta": 1,
+     "request": 2160,
+     "schedule": 3
+    },
+    "observer": "watch",
+    "requests": 2160,
+    "seconds": null
+   }
+  ]
+ },
+ "decision_phase": {
+  "clamps": {
+   "poller": 0,
+   "watch": 18
+  },
+  "dropped_kinds": {
+   "poller": {},
+   "watch": {
+    "EndpointSlice": 723
+   }
+  },
+  "k1": {
+   "poller": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 0,
+    "dropped": 0,
+    "observations": 5,
+    "pods": 4,
+    "records": 241,
+    "skipped": 0
+   },
+   "watch": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 2,
+    "dropped": 1,
+    "observations": 5,
+    "pods": 4,
+    "records": 758,
+    "skipped": 0
+   }
+  },
+  "r2_starts": null,
+  "units": [
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 18200,
+     "x": 18200
+    },
+    "evaluations": 1750,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 1400,
+     "x": 1400
+    },
+    "relevant_subjects": 6,
+    "stream": "S0"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 10500,
+     "x": 10500
+    },
+    "evaluations": 1050,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 700,
+     "x": 700
+    },
+    "relevant_subjects": 6,
+    "stream": "S30"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 10500,
+     "x": 10500
+    },
+    "evaluations": 1050,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 700,
+     "x": 700
+    },
+    "relevant_subjects": 6,
+    "stream": "Snever"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 7000,
+     "x": 7000
+    },
+    "evaluations": 700,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 700,
+     "x": 700
+    },
+    "relevant_subjects": 6,
+    "stream": "S0"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 7000,
+     "x": 7000
+    },
+    "evaluations": 700,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 700,
+     "x": 700
+    },
+    "relevant_subjects": 6,
+    "stream": "S30"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 7000,
+     "x": 7000
+    },
+    "evaluations": 700,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 700,
+     "x": 700
+    },
+    "relevant_subjects": 6,
+    "stream": "Snever"
+   }
+  ]
+ },
+ "design_check": {
+  "arm": "D",
+  "per_comparison": {
+   "H-G4": {
+    "contested": 0,
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "posed": 720
+   }
+  },
+  "primary_cells": {
+   "H-G4": {
+    "action": "A",
+    "delta_s": [
+     0
+    ],
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "streams": [
+     "S30",
+     "Snever"
+    ]
+   }
+  },
+  "rule": "record timing only, before any label",
+  "thresholds": {
+   "applied_by": "design_check_verdict over the arm's included captures",
+   "share_of_captures_with_one_at_least": 0.5,
+   "total_at_least": 30
+  }
+ },
+ "inputs": {
+  "accepted_evidence": {
+   "api_available_ns_vs_payload_mismatch": 0,
+   "change_available_vs_receipt_mismatch": 0,
+   "rows_by_kind": {
+    "api_observation": 859,
+    "change_receipt": 2,
+    "configuration": 1
+   }
+  },
+  "answered_recheck_ticks": 0,
+  "requests_target_block": 120,
+  "watch_snapshots": {
+   "api_available_ns_vs_payload_mismatch": 0,
+   "change_available_vs_receipt_mismatch": 0,
+   "rows_by_kind": {
+    "api_observation": 3076
+   }
+  }
+ },
+ "k1": {
+  "poller": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 0,
+   "dropped": 0,
+   "observations": 5,
+   "pods": 4,
+   "records": 241,
+   "skipped": 0
+  },
+  "watch": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 2,
+   "dropped": 1,
+   "observations": 5,
+   "pods": 4,
+   "records": 758,
+   "skipped": 0
+  }
+ },
+ "labels": {
+  "clock_band_us": 2286956,
+  "fault": {
+   "active_end": "2026-10-20T07:40:34.787832Z",
+   "active_start": "2026-10-20T07:40:14.784976Z",
+   "kill_receipts": [],
+   "latency_effect_established": true,
+   "pod_uid": "6ae4cc3d-bf23-4777-8e42-d35810f90185",
+   "present": true,
+   "selected_by": "newest_ready_pod",
+   "service": "recommendationservice",
+   "type": null
+  },
+  "floors": {},
+  "label_horizon": "2026-10-20T07:41:06.383918Z",
+  "notes": {
+   "k1_union_counts": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 2,
+    "dropped": 1,
+    "observations": 5,
+    "pods": 4,
+    "records": 254,
+    "skipped": 0
+   }
+  },
+  "physical_rollout_interval": {
+   "R_us": "2026-10-20T07:38:41.669479Z",
+   "desired_new_replicas": 1,
+   "end_basis": "last new Pod Ready stamp",
+   "end_us": "2026-10-20T07:38:42.000000Z",
+   "last_old_served_end_us": "2026-10-20T07:38:40.840681Z",
+   "new_hash": "6d7686498f",
+   "new_ready_complete_us": "2026-10-20T07:38:42.000000Z",
+   "old_hash": "789956f46"
+  },
+  "pods": [
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "otel-collector-6f888bf78f-bm9tf",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:37:31.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "otel-collector",
+    "template_hash": "6f888bf78f",
+    "uid": "fd891420-e6cb-475f-959e-eda0aa4a82c3"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "productcatalogservice-6d7686498f-6nkxm",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:38:42.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-20T07:38:42.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "productcatalogservice",
+    "template_hash": "6d7686498f",
+    "uid": "71b95216-5168-4e68-a4fe-ee556ac769e6"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": "deletionTimestamp - grace",
+    "deletion_request": "2026-10-20T07:38:42.000000Z",
+    "gone_after": "2026-10-20T07:38:43.616462Z",
+    "name": "productcatalogservice-789956f46-x75qg",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:37:32.000000Z",
+      "ready"
+     ],
+     [
+      "2026-10-20T07:38:43.000000Z",
+      "not_ready"
+     ]
+    ],
+    "service": "productcatalogservice",
+    "template_hash": "789956f46",
+    "uid": "d9f5ec09-a39b-4d9a-8875-6e03b538fb0b"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "recommendationservice-794bf474c7-gl8f7",
+    "ready_transitions": [
+     [
+      "2026-10-20T07:37:44.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "794bf474c7",
+    "uid": "6ae4cc3d-bf23-4777-8e42-d35810f90185"
+   }
+  ],
+  "rule": "labels never use R1-R7, a store or a view's knowledge rule"
+ },
+ "late_corrections": [
+  {
+   "condition": "L@F600",
+   "observer": "poller",
+   "posed": 360,
+   "reached_by_late_correction": 0
+  },
+  {
+   "condition": "L_p",
+   "observer": "poller",
+   "posed": 1080,
+   "reached_by_late_correction": 0
+  },
+  {
+   "condition": "T@F600",
+   "observer": "poller",
+   "posed": 360,
+   "reached_by_late_correction": 0
+  },
+  {
+   "condition": "T_p",
+   "observer": "poller",
+   "posed": 1080,
+   "reached_by_late_correction": 0
+  },
+  {
+   "condition": "c-hind",
+   "observer": "poller",
+   "posed": 1080,
+   "reached_by_late_correction": 0
+  },
+  {
+   "condition": "L_w",
+   "observer": "watch",
+   "posed": 1080,
+   "reached_by_late_correction": 0
+  },
+  {
+   "condition": "T_w",
+   "observer": "watch",
+   "posed": 1080,
+   "reached_by_late_correction": 0
+  }
+ ],
+ "measured_lags": {
+  "clock_band_us": 2286956,
+  "kill_to_not_ready_stamp": {
+   "max_s": null,
+   "median_s": null,
+   "min_s": null,
+   "n": 0
+  },
+  "poller_pod_list_intervals": {
+   "max_s": 3.176785,
+   "median_s": 2.4109,
+   "min_s": 2.338707,
+   "n": 79
+  },
+  "recheck_read_latency": {
+   "max_s": null,
+   "median_s": null,
+   "min_s": null,
+   "n": 0
+  },
+  "rule": "no timestamp corrected",
+  "transition_to_first_availability": {
+   "poller": {
+    "max_s": 2.725953,
+    "median_s": 2.044701,
+    "min_s": 0.470118,
+    "n": 8
+   },
+   "recheck": {
+    "max_s": null,
+    "median_s": null,
+    "min_s": null,
+    "n": 0
+   },
+   "watch": {
+    "max_s": 0.685227,
+    "median_s": 0.23917,
+    "min_s": -0.292022,
+    "n": 8
+   }
+  }
+ },
+ "plan": {
+  "path": "phase3/stage2_plan.json"
+ },
+ "plan_cells": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "E_s": 120.0,
+  "actions": [
+   "A"
+  ],
+  "arm": "D",
+  "conditions": [
+   "T_p",
+   "L_p",
+   "T_w",
+   "L_w",
+   "c-hind",
+   "T@F600",
+   "L@F600"
+  ],
+  "delta_s": [
+   0
+  ],
+  "observers": [
+   "poller",
+   "watch"
+  ],
+  "replica_floor_by_service": {},
+  "replicas": {
+   "productcatalogservice": 1,
+   "recommendationservice": 1
+  },
+  "scenario": "D2",
+  "streams": [
+   "S0",
+   "S30",
+   "Snever"
+  ]
+ },
+ "primary_sums": {
+  "H-G4": {
+   "cells": {
+    "Delta_s": [
+     0,
+     5,
+     30
+    ],
+    "action": "A",
+    "delta_s": [
+     0
+    ],
+    "streams": [
+     "S30",
+     "Snever"
+    ]
+   },
+   "conditions": {
+    "T_p": {
+     "GT2": 0,
+     "M": 0,
+     "U": 0,
+     "cells": 6,
+     "posed": 720
+    },
+    "T_w": {
+     "GT2": 0,
+     "M": 0,
+     "U": 0,
+     "cells": 6,
+     "posed": 720
+    }
+   },
+   "decisions_compared": 720,
+   "identical_first_verdicts_and_dispositions": true
+  }
+ },
+ "python": "3.11",
+ "transitions": {
+  "by_kind": {
+   "deployment_progressing": 4,
+   "pod_created": 2,
+   "pod_deletion_requested": 1,
+   "pod_lastTransitionTime": 3,
+   "replicaset_created": 2
+  },
+  "counted_transitions": 12,
+  "deletion_stamps_not_counted": [
+   {
+    "last_record_without_deletion": "2026-10-20T07:38:42.581645Z",
+    "pod": "Pod/d9f5ec09-a39b-4d9a-8875-6e03b538fb0b",
+    "stamp": "2026-10-20T07:38:38.000000Z"
+   }
+  ],
+  "rule": "counted objects = the changed service's Pods and the bound Deployment; stamps are the sources' own fields; a deletion request (deletionTimestamp - grace) earlier than the last record without deletionTimestamp by more than the clock band is inconsistent with the records and not counted (listed)"
+ },
+ "validity_fields": {
+  "complete_status": "finished",
+  "raw_capture": "D2-002",
+  "runner_reasons": [],
+  "runner_valid": true
+ }
+}

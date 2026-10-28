@@ -1,0 +1,694 @@
+{
+    "plan_id": "stage2-captures-v0.1",
+    "written": "2026-10-19",
+    "layout_note": "Field names follow phase3/incident_plan.json (Phase 3, unchanged) where they mean the same thing: change {service, kind, at, settle_seconds}, trigger_request_index, reference_block, target_block, context_poll, probes.",
+    "topology": "Online Boutique v0.10.6 two-service subset exactly as in infrastructure/rollout-telemetry (otel-collector with the file-reader tooling sidecar, recommendationservice in Python, productcatalogservice in Go). One fresh namespace per attempt. Images, probes, resources, environment and the rolling-update strategy (maxSurge 1, maxUnavailable 0) unchanged in both arms.",
+    "services": {
+        "recommendationservice": {
+            "runtime": "Python",
+            "faults": [
+                "F1",
+                "F2"
+            ]
+        },
+        "productcatalogservice": {
+            "runtime": "Go",
+            "faults": [
+                "F2"
+            ]
+        }
+    },
+    "defaults": {
+        "collector_manifest": "infrastructure/rollout-telemetry/collector.json",
+        "rollout_patch": "infrastructure/rollout-telemetry/rollout-patch.json",
+        "rollout_patch_semantics": "Pod-template annotation aiops.project/revision 1 -> 2 (the Phase-3 patch): the changed service's Pods are replaced, same image and environment",
+        "namespace_prefix": "aiops-s2",
+        "capture_id": "'<scenario>-<NNN>' as in Phase 3 (e.g. 'G2-001'); NNN counts that scenario's study attempts from 001 and is never reused. Pilots: 'P<k>-<scenario>-<NNN>'. The capture_id is the capture directory name and the string hashed by the target draw.",
+        "reference_block": {
+            "requests": 60,
+            "think_seconds": 0.5,
+            "client": "scripts/rollout_telemetry_client.py with the Phase-3 reference replacements (phase3/run_incident.py REFERENCE_REPLACEMENTS: 120 -> 60 requests, deadline 150 -> 75 s)"
+        },
+        "gap_after_reference_seconds": 10,
+        "trigger_request_index": 30,
+        "trigger_semantics": "T0 = host receipt of target-block request 30's client line (Phase 3, unchanged)",
+        "probes": {
+            "helper": "scripts/fault_effect_probe_v2.py serve (persistent, in the collector's file-reader), unchanged",
+            "period_seconds": 1.0,
+            "drain_seconds": 5,
+            "recovery_seconds": 30,
+            "note": "Blocks as in phase3/incident_plan.json defaults.probes (nominal, pre_fault, active, drain, recovery)"
+        },
+        "clock_probes": {
+            "pairs": 10,
+            "when": [
+                "capture start",
+                "capture end"
+            ],
+            "command": "docker --context desktop-linux exec aiops-context-pilot-control-plane date +%s.%N, bracketed by host wall-clock reads",
+            "rule": "each pair bounds theta = host - node to [send - node, receive - node]; clock band b_c = 1 s + the widest offset bound; no timestamp is corrected"
+        },
+        "side_poll_seconds": 3,
+        "metrics_every_side_polls": 2,
+        "post_grace_seconds": 5,
+        "teardown": "scale_to_zero (Phase 3's ownership-checked teardown; arm G also leaves the PDBs to the namespace)"
+    },
+    "faults": {
+        "F1": {
+            "kind": "cpu_busy_worker_same_container",
+            "helper": "scripts/fault_control_remote.py (worker/inspect/observe/terminate), unchanged",
+            "observer": "scripts/fault_observer_v2.py, persistent in-Pod observer, unchanged",
+            "evaluator": "src/aiops_kg/fault_control.py evaluate_fault_control, unchanged",
+            "services": [
+                "recommendationservice"
+            ],
+            "service_restriction": "binds to recommendation_server.py and requires the 200m CPU limit (scripts/fault_control_remote.py lines 18, 137, 199)",
+            "duration_seconds": 20,
+            "alarm_seconds": 25,
+            "host_intervention_seconds": 30
+        },
+        "F2": {
+            "kind": "container_kill",
+            "mechanism": "SIGKILL of the target's container through the kind node's runtime: docker --context desktop-linux exec aiops-context-pilot-control-plane crictl stop --timeout 0 <container id>; the kubelet restarts it (restartPolicy Always)",
+            "container": "server",
+            "container_selection": "the running container whose crictl labels io.kubernetes.pod.name, io.kubernetes.pod.namespace and io.kubernetes.container.name name the target, and whose io.kubernetes.pod.uid equals the target Pod's API UID",
+            "services": [
+                "recommendationservice",
+                "productcatalogservice"
+            ],
+            "activation": "the target container's restartCount increments and its lastState.terminated.finishedAt is stamped inside the planned window, as recorded by the watch",
+            "effect": "the target Pod's direct probes fail or slow while it is not Ready",
+            "recovery": "Ready=True again and probes OK",
+            "evaluator": "src/aiops_kg/fault_control_kill.py (not yet written; piloted at P2)",
+            "tooling_facts_from_smoke_test": "crictl presence in the node container, the container name and the kubelet's restart and Ready timing: smoke test S-2"
+        }
+    },
+    "target_rules": {
+        "replacement_uid": "Phase 3's rule after a same-service change (phase3/run_incident.py select_target): the newest Ready replacement Pod, i.e. a Ready Pod of the changed service whose UID was absent before the patch; with one replica it is the only one. selected_by = 'replacement_uid'.",
+        "newest_ready_pod": "Phase 3's rule for an unchanged faulted service (phase3/run_incident.py select_target with no replacements): the newest Ready Pod; with one replica it is the only Ready Pod. selected_by = 'newest_ready_pod'.",
+        "random_ready_replica": {
+            "candidates": {
+                "replacement_pods": "the Ready Pods of the changed service whose UIDs were absent before the patch, at the draw",
+                "ready_pods_of_service": "the Ready Pods of the faulted service at the draw (old and new revisions alike)"
+            },
+            "order": "candidates sorted by metadata.uid (Python string order)",
+            "seed": "random.Random(int(hashlib.sha256(capture_id.encode('utf-8')).hexdigest(), 16))",
+            "draw": "rng.choice(candidates_sorted_by_uid), one draw per capture",
+            "why": "so that the faulty replica is not the newest Pod by construction (the newest-Pod confound)",
+            "logged": "the candidate list, the seed's hex digest and the drawn UID are logged before the fault starts; the log, not a recomputation, is the record",
+            "example": {
+                "capture_id": "G2-001",
+                "candidate_uids": [
+                    "c41d8e2b-5a6f-4e3d-b2a1-9f8e7d6c5b03",
+                    "0f3c2a54-6b1d-4c7e-9a10-3d2b8e5f7a01",
+                    "7a9e4c11-2f3b-4d5a-8c6e-1b0d9f8e7c02"
+                ],
+                "sha256_prefix": "bacf5c2bf876e0fd",
+                "drawn_uid": "7a9e4c11-2f3b-4d5a-8c6e-1b0d9f8e7c02",
+                "note": "computed with CPython 3.11"
+            }
+        }
+    },
+    "arms": {
+        "D": {
+            "purpose": "Q-D (the diagnosis boundary under a watch collector) and H-G4 for action A in the Stage-1 setting",
+            "applications_manifest": "infrastructure/rollout-telemetry/applications.json",
+            "applications_manifest_sha256": "dfb369114c9d54565c56e8e51142db2ea4aa3c0fc60be4883e6b54fccb23a1b7",
+            "replicas": {
+                "recommendationservice": 1,
+                "productcatalogservice": 1
+            },
+            "pod_disruption_budgets": false,
+            "replica_floor_by_service": {},
+            "replica_floor_note": "gate v1 default replica_floor 1 (src/aiops_kg/policy_gate.py GateConfig), as in Stage 1",
+            "schedule": {
+                "source": "Phase 3, unchanged (phase3/incident_plan.json defaults)",
+                "reference_requests": 60,
+                "gap_after_reference_seconds": 10,
+                "target_block": {
+                    "requests": 120,
+                    "think_seconds": 0.5,
+                    "client": "scripts/rollout_telemetry_client.py unchanged"
+                },
+                "trigger_request_index": 30
+            },
+            "observers": {
+                "poller": {
+                    "script": "scripts/collect_deployment_history_v1_1.py",
+                    "samples": 80,
+                    "interval_seconds": 2,
+                    "duration_seconds": 360,
+                    "include_nodes": true
+                },
+                "watch": {
+                    "kinds": [
+                        "pods",
+                        "replicasets",
+                        "deployments",
+                        "endpointslices"
+                    ],
+                    "via": "one kubectl proxy on loopback; LIST then WATCH with bookmarks; relist and a continuity gap on any error",
+                    "cache_snapshots": "at every event and every 1 s while the watch is open",
+                    "script": "scripts/collect_watch_v1.py (not yet written)"
+                },
+                "recheck": null
+            },
+            "actions": [
+                "A"
+            ],
+            "change_record_streams": [
+                "S0",
+                "S30",
+                "Snever"
+            ],
+            "conditions": [
+                "T_p",
+                "L_p",
+                "T_w",
+                "L_w",
+                "c-hind",
+                "T@F600 (S0 only)",
+                "L@F600 (S0 only)"
+            ],
+            "diagnosis": {
+                "bridge": "context-bridge-v1 (policies latest_state, temporal_join, bitemporal_abstain; F = 600 s primary, 30 s sensitivity; hindsight reference)",
+                "cutoff_offsets_seconds": [
+                    0,
+                    5,
+                    30,
+                    60
+                ],
+                "h_d_cells": "complete stream, Delta in {30, 60} s",
+                "observers": [
+                    "poller",
+                    "watch"
+                ]
+            },
+            "inclusion": "inclusion rules 1-3: COMPLETE.txt with status=finished and runner validity; observer continuity (rule 2); the bridge's rule 3.1 items 2-3 as written (activation and effect established; truth Pod sighted by both observers) in its own secondary table"
+        },
+        "G": {
+            "purpose": "Q-G (late decisions on multi-replica services with real late corrections, against a fresh-state recheck and a watch collector)",
+            "applications_manifest": "infrastructure/stage2/applications_multi.json",
+            "applications_manifest_sha256": "20d5328af5c36ecea4908d3d54d51d1c12bc482be0a7456e25a28304c216d4ce",
+            "applications_manifest_generator": "infrastructure/stage2/make_manifests.py (from the single-replica manifest; --check verifies)",
+            "replicas": {
+                "recommendationservice": 3,
+                "productcatalogservice": 2
+            },
+            "pod_disruption_budgets": true,
+            "pdb_max_unavailable": 1,
+            "replica_floor_by_service": {
+                "recommendationservice": 2,
+                "productcatalogservice": 1
+            },
+            "replica_floor_note": "R3 floor = replicas - maxUnavailable, set through gate v1's replica_floor_by_service; every other gate parameter at Stage 1's values",
+            "schedule": {
+                "source": "the target-block length and the poller window were set at the pilots",
+                "reference_requests": 60,
+                "gap_after_reference_seconds": 10,
+                "target_block": {
+                    "requests": 180,
+                    "think_seconds": 0.5,
+                    "client": "scripts/rollout_telemetry_client.py with its request count raised by the asserted exact replacements below (each must occur exactly once), as the reference client is derived",
+                    "client_replacements": [
+                        [
+                            "    deadline = time.monotonic() + 150\n",
+                            "    deadline = time.monotonic() + 225\n"
+                        ],
+                        [
+                            "    for index in range(1, 121):\n",
+                            "    for index in range(1, 181):\n"
+                        ],
+                        [
+                            "        if index < 120:\n",
+                            "        if index < 180:\n"
+                        ],
+                        [
+                            "    return 0 if attempted == successes == 120 and flushed else 2\n",
+                            "    return 0 if attempted == successes == 180 and flushed else 2\n"
+                        ]
+                    ]
+                },
+                "trigger_request_index": 30
+            },
+            "observers": {
+                "poller": {
+                    "script": "scripts/collect_deployment_history_v1_1.py",
+                    "samples": 120,
+                    "interval_seconds": 2,
+                    "duration_seconds": 480,
+                    "include_nodes": true
+                },
+                "watch": {
+                    "kinds": [
+                        "pods",
+                        "replicasets",
+                        "deployments",
+                        "endpointslices"
+                    ],
+                    "via": "one kubectl proxy on loopback; LIST then WATCH with bookmarks; relist and a continuity gap on any error",
+                    "cache_snapshots": "at every event and every 1 s while the watch is open",
+                    "script": "scripts/collect_watch_v1.py (not yet written)"
+                },
+                "recheck": {
+                    "period_seconds": 1.0,
+                    "window": "from T0 - 30 s to the end of recovery",
+                    "reads": "Deployments, ReplicaSets and Pods of both services and their PodDisruptionBudgets, through the same kubectl proxy",
+                    "record": "request start, response receipt, acceptance, SHA-256 of the raw bytes, projected objects; never interpreted live",
+                    "script": "scripts/recheck_loop_v1.py (not yet written)"
+                }
+            },
+            "probe_addressing": "active and recovery probes address the target Pod's IP (scripts/fault_effect_probe_v2.py recommendation_address / catalog_address, lines 47-49); through the Service a fault on one of three replicas would reach about a third of the probes",
+            "actions": [
+                "A",
+                "B"
+            ],
+            "change_record_streams": [
+                "S0",
+                "Snever"
+            ],
+            "primary_stream": "S0",
+            "conditions": [
+                "T_p",
+                "L_p",
+                "R",
+                "T_w",
+                "L_w",
+                "L-kappa",
+                "c-hind",
+                "T@F600 (S0 only)",
+                "L@F600 (S0 only)"
+            ],
+            "inclusion": "inclusion rules 1, 2 and 4: COMPLETE.txt with status=finished and runner validity; observer continuity (rule 2); fault scenarios need activation verified (F1: the unchanged evaluator; F2) and, after a change, a valid change with replacement Pods; an established effect is NOT required"
+        }
+    },
+    "scenarios": [
+        {
+            "id": "D1",
+            "arm": "D",
+            "label": "Recommendation rollout, then a CPU fault on the replacement Pod (the I2/I6 design)",
+            "slots": 6,
+            "slot_ids": [
+                "D1.1",
+                "D1.2",
+                "D1.3",
+                "D1.4",
+                "D1.5",
+                "D1.6"
+            ],
+            "change": {
+                "service": "recommendationservice",
+                "kind": "rollout",
+                "at": "T0"
+            },
+            "fault": {
+                "type": "F1",
+                "service": "recommendationservice",
+                "start": {
+                    "after": "T0",
+                    "offset_seconds": 20
+                },
+                "duration_seconds": 20
+            },
+            "target": {
+                "rule": "replacement_uid",
+                "service": "recommendationservice"
+            },
+            "role": "diagnosis boundary (H-D); the faulty Pod is the newest Pod by design, as in Phase 3",
+            "runnable": true
+        },
+        {
+            "id": "D2",
+            "arm": "D",
+            "label": "Catalog rollout settled before the target block, then a CPU fault on the recommendation Pod (the I7 design)",
+            "slots": 2,
+            "slot_ids": [
+                "D2.1",
+                "D2.2"
+            ],
+            "change": {
+                "service": "productcatalogservice",
+                "kind": "rollout",
+                "at": "reference_end",
+                "settle_seconds": 30
+            },
+            "fault": {
+                "type": "F1",
+                "service": "recommendationservice",
+                "start": {
+                    "after": "T0",
+                    "offset_seconds": 20
+                },
+                "duration_seconds": 20
+            },
+            "target": {
+                "rule": "newest_ready_pod",
+                "service": "recommendationservice"
+            },
+            "role": "control: the change is unrelated and over before any probe or target request",
+            "runnable": true
+        },
+        {
+            "id": "G1",
+            "arm": "G",
+            "label": "Recommendation rollout, then a CPU fault on a random replacement replica",
+            "slots": 5,
+            "slot_ids": [
+                "G1.1",
+                "G1.2",
+                "G1.3",
+                "G1.4",
+                "G1.5"
+            ],
+            "change": {
+                "service": "recommendationservice",
+                "kind": "rollout",
+                "at": "T0"
+            },
+            "fault": {
+                "type": "F1",
+                "service": "recommendationservice",
+                "start": {
+                    "after": "change_rollout_returned",
+                    "offset_seconds": 5
+                },
+                "duration_seconds": 20,
+                "start_semantics": "event-driven, as I7's settle: F1 starts 5 s after the rollout wait returns"
+            },
+            "target": {
+                "rule": "random_ready_replica",
+                "service": "recommendationservice",
+                "candidates": "replacement_pods"
+            },
+            "role": "a GT-2-B opportunity on one of three replicas after a completed rollout",
+            "runnable": true
+        },
+        {
+            "id": "G2",
+            "arm": "G",
+            "label": "Recommendation rollout with a container kill of a random Ready replica mid-rollout",
+            "slots": 5,
+            "slot_ids": [
+                "G2.1",
+                "G2.2",
+                "G2.3",
+                "G2.4",
+                "G2.5"
+            ],
+            "change": {
+                "service": "recommendationservice",
+                "kind": "rollout",
+                "at": "T0"
+            },
+            "fault": {
+                "type": "F2",
+                "service": "recommendationservice",
+                "start": {
+                    "after": "T0",
+                    "offset_seconds": 27
+                }
+            },
+            "target": {
+                "rule": "random_ready_replica",
+                "service": "recommendationservice",
+                "candidates": "replacement_pods"
+            },
+            "role": "K1 late corrections inside a rollout; the replica floor (2 of 3) can bind",
+            "runnable": true
+        },
+        {
+            "id": "G3",
+            "arm": "G",
+            "label": "Catalog rollout with a container kill of a random Ready catalog replica",
+            "slots": 3,
+            "slot_ids": [
+                "G3.1",
+                "G3.2",
+                "G3.3"
+            ],
+            "change": {
+                "service": "productcatalogservice",
+                "kind": "rollout",
+                "at": "T0"
+            },
+            "fault": {
+                "type": "F2",
+                "service": "productcatalogservice",
+                "start": {
+                    "after": "T0",
+                    "offset_seconds": 10
+                }
+            },
+            "target": {
+                "rule": "random_ready_replica",
+                "service": "productcatalogservice",
+                "candidates": "replacement_pods"
+            },
+            "role": "the second service (Go) with a fault; the floor (1 of 2) can bind",
+            "runnable": true
+        },
+        {
+            "id": "G4",
+            "arm": "G",
+            "label": "Benign recommendation rollout, no fault (sham schedule)",
+            "slots": 3,
+            "slot_ids": [
+                "G4.1",
+                "G4.2",
+                "G4.3"
+            ],
+            "change": {
+                "service": "recommendationservice",
+                "kind": "rollout",
+                "at": "T0"
+            },
+            "fault": null,
+            "sham_schedule": {
+                "as": "Phase 3's I1: identical probe blocks as if a fault started at T0 + 20 s for 20 s; no worker, no kill",
+                "start": {
+                    "after": "T0",
+                    "offset_seconds": 20
+                },
+                "duration_seconds": 20
+            },
+            "target": null,
+            "role": "benign control: unsafe executions without any fault",
+            "runnable": true
+        }
+    ],
+    "posing": {
+        "requests": "target-block requests k = 1 ... K (K = 120 in arm D, 180 in arm G); t_k = the client root span's start",
+        "knowledge_cutoff_offsets_seconds": [
+            0,
+            5,
+            30
+        ],
+        "knowledge_cutoff_rule": "kappa = t_k + Delta (the Stage-1 grid); action B is posed at kappa_B = max(t_k + Delta, a_k), a_k = the span's measured acquisition time",
+        "dispatch_delays_seconds": {
+            "D": [
+                0
+            ],
+            "G": [
+                0,
+                10,
+                30,
+                80
+            ]
+        },
+        "dispatch_rule": "x = kappa + delta; first evaluation with the records available at kappa, asking whether the action is safe at x",
+        "expiry_seconds": 120,
+        "source": "Stage 2 study protocol"
+    },
+    "attempts": {
+        "study_slots": 24,
+        "max_study_attempts": 32,
+        "max_attempts_per_slot": 2,
+        "second_attempt_rule": "the second attempt of a slot only after an exclusion of the first; a slot excluded twice is reported as 'not collected' (inclusion rule 5)",
+        "no_selective_repeat": "no attempt is excluded, repeated or replaced because of any decision, label or ranking (inclusion rule 6)",
+        "pilots": {
+            "max": 3,
+            "P1": "a D1 capture with both observers",
+            "P2": "a G2 capture with the kill, the recheck loop and 3 replicas",
+            "P3": "only if P1 or P2 fails for a tooling reason",
+            "study": false,
+            "readable_for": "tooling facts only: observer completeness and gaps, recheck latency, kill activation, schedule timing, capture duration and size, contested-decision counts; no condition evaluated, no label computed"
+        }
+    },
+    "observer_validity": {
+        "window": "[T0 - 10 s, end of recovery]",
+        "poller_max_pod_list_interval_seconds": 15,
+        "watch_max_continuity_gap_seconds": 5,
+        "recheck_min_answered_tick_fraction": 0.9,
+        "source": "inclusion rule 2; thresholds confirmed at the pilots, never loosened after the first study attempt"
+    },
+    "run_order": [
+        {
+            "position": 1,
+            "slot_id": "D2.1",
+            "scenario": "D2",
+            "arm": "D",
+            "first_attempt_capture_id": "D2-001"
+        },
+        {
+            "position": 2,
+            "slot_id": "D1.2",
+            "scenario": "D1",
+            "arm": "D",
+            "first_attempt_capture_id": "D1-001"
+        },
+        {
+            "position": 3,
+            "slot_id": "D2.2",
+            "scenario": "D2",
+            "arm": "D",
+            "first_attempt_capture_id": "D2-002"
+        },
+        {
+            "position": 4,
+            "slot_id": "D1.4",
+            "scenario": "D1",
+            "arm": "D",
+            "first_attempt_capture_id": "D1-002"
+        },
+        {
+            "position": 5,
+            "slot_id": "D1.3",
+            "scenario": "D1",
+            "arm": "D",
+            "first_attempt_capture_id": "D1-003"
+        },
+        {
+            "position": 6,
+            "slot_id": "D1.6",
+            "scenario": "D1",
+            "arm": "D",
+            "first_attempt_capture_id": "D1-004"
+        },
+        {
+            "position": 7,
+            "slot_id": "D1.1",
+            "scenario": "D1",
+            "arm": "D",
+            "first_attempt_capture_id": "D1-005"
+        },
+        {
+            "position": 8,
+            "slot_id": "D1.5",
+            "scenario": "D1",
+            "arm": "D",
+            "first_attempt_capture_id": "D1-006"
+        },
+        {
+            "position": 9,
+            "slot_id": "G1.5",
+            "scenario": "G1",
+            "arm": "G",
+            "first_attempt_capture_id": "G1-001"
+        },
+        {
+            "position": 10,
+            "slot_id": "G3.3",
+            "scenario": "G3",
+            "arm": "G",
+            "first_attempt_capture_id": "G3-001"
+        },
+        {
+            "position": 11,
+            "slot_id": "G2.5",
+            "scenario": "G2",
+            "arm": "G",
+            "first_attempt_capture_id": "G2-001"
+        },
+        {
+            "position": 12,
+            "slot_id": "G1.3",
+            "scenario": "G1",
+            "arm": "G",
+            "first_attempt_capture_id": "G1-002"
+        },
+        {
+            "position": 13,
+            "slot_id": "G2.2",
+            "scenario": "G2",
+            "arm": "G",
+            "first_attempt_capture_id": "G2-002"
+        },
+        {
+            "position": 14,
+            "slot_id": "G1.2",
+            "scenario": "G1",
+            "arm": "G",
+            "first_attempt_capture_id": "G1-003"
+        },
+        {
+            "position": 15,
+            "slot_id": "G1.4",
+            "scenario": "G1",
+            "arm": "G",
+            "first_attempt_capture_id": "G1-004"
+        },
+        {
+            "position": 16,
+            "slot_id": "G1.1",
+            "scenario": "G1",
+            "arm": "G",
+            "first_attempt_capture_id": "G1-005"
+        },
+        {
+            "position": 17,
+            "slot_id": "G4.2",
+            "scenario": "G4",
+            "arm": "G",
+            "first_attempt_capture_id": "G4-001"
+        },
+        {
+            "position": 18,
+            "slot_id": "G3.1",
+            "scenario": "G3",
+            "arm": "G",
+            "first_attempt_capture_id": "G3-002"
+        },
+        {
+            "position": 19,
+            "slot_id": "G4.1",
+            "scenario": "G4",
+            "arm": "G",
+            "first_attempt_capture_id": "G4-002"
+        },
+        {
+            "position": 20,
+            "slot_id": "G2.3",
+            "scenario": "G2",
+            "arm": "G",
+            "first_attempt_capture_id": "G2-003"
+        },
+        {
+            "position": 21,
+            "slot_id": "G4.3",
+            "scenario": "G4",
+            "arm": "G",
+            "first_attempt_capture_id": "G4-003"
+        },
+        {
+            "position": 22,
+            "slot_id": "G3.2",
+            "scenario": "G3",
+            "arm": "G",
+            "first_attempt_capture_id": "G3-003"
+        },
+        {
+            "position": 23,
+            "slot_id": "G2.4",
+            "scenario": "G2",
+            "arm": "G",
+            "first_attempt_capture_id": "G2-004"
+        },
+        {
+            "position": 24,
+            "slot_id": "G2.1",
+            "scenario": "G2",
+            "arm": "G",
+            "first_attempt_capture_id": "G2-005"
+        }
+    ]
+}

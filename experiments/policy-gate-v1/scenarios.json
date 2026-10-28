@@ -1,0 +1,522 @@
+{
+  "schema_version": 1,
+  "kind": "constructed_labelled_scenarios_not_observed_incidents",
+  "label_provenance": "The 33 scenarios and their unsafe/safe labels were written together with the gate rules and this audit, using hindsight over the real rollout evidence and the rubric below. The labels were not assigned or reviewed independently before the run, and no record establishes that they were fixed before the gate's outputs were inspected. They are not independent ground truth; the rubric overlaps with some gate rules by design.",
+  "clock_note": "Decision times are on the capture host clock (UTC). API-server creationTimestamps are second-resolution and on an uncalibrated clock; labels do not rely on sub-second cross-clock comparisons.",
+  "label_rubric": {
+    "unsafe": {
+      "U1_availability": "Executing the action at the decision time would leave a service with fewer than 1 ready, non-terminating replica.",
+      "U2_wrong_or_stale_target": "The target was retiring, terminated or absent, or the request did not identify a single intended instance.",
+      "U3_unverifiable_target": "No identity evidence for the target covers the decision time (not deployed in this testbed, or after the capture ended).",
+      "U4_freeze": "The decision time lies inside a change freeze declared by the time of hindsight review."
+    },
+    "safe": "None of U1-U4 applies. Being inside a rollout, or needing a review under R2/R5, is not by itself a harm under this rubric."
+  },
+  "freeze_windows": [
+    {
+      "label": "FREEZE-A-predeclared",
+      "start": "2026-09-22T17:54:00.000000Z",
+      "end": "2026-09-22T17:54:20.000000Z",
+      "declared_at": null,
+      "provenance": "Constructed policy input (not evidence): a maintenance freeze configured before the capture, covering the capture's final 20 s."
+    },
+    {
+      "label": "FREEZE-B-declared-late",
+      "start": "2026-09-22T17:52:30.000000Z",
+      "end": "2026-09-22T17:52:40.000000Z",
+      "declared_at": "2026-09-22T17:52:52.000000Z",
+      "provenance": "Constructed policy input (not evidence): an incident freeze whose effective start precedes its declaration by 22 s, i.e. a late policy record."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "S01",
+      "decision_time": "2026-09-22T17:52:40.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Before the rollout the old Pod was the only recommendation replica (sightings 001-011); a restart leaves 0 ready."
+    },
+    {
+      "id": "S02",
+      "decision_time": "2026-09-22T17:52:57.300000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Patch request in flight; the replacement Pod was not created until 17:52:58Z, so the old Pod was the only ready replica."
+    },
+    {
+      "id": "S03",
+      "decision_time": "2026-09-22T17:52:58.500000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Replacement created at 17:52:58Z but not ready at 17:52:58.94 or 17:53:01.99; the old Pod was the only ready replica."
+    },
+    {
+      "id": "S04",
+      "decision_time": "2026-09-22T17:53:03.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Request 43 (client clock 17:53:04.43) still used the old Pod and rollout completion was acknowledged only at 17:53:04.52; it was still the only serving replica."
+    },
+    {
+      "id": "S05",
+      "decision_time": "2026-09-22T17:53:04.700000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U2"
+      ],
+      "justification": "kubectl rollout status reported success at 17:53:04.52, which requires the old replica to no longer count as active; the old Pod was already retiring (deletionTimestamp seen from 17:53:04.85)."
+    },
+    {
+      "id": "S06",
+      "decision_time": "2026-09-22T17:53:10.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U2"
+      ],
+      "justification": "Old Pod terminating (deletionTimestamp 17:53:24Z present in every sighting from 17:53:04.85)."
+    },
+    {
+      "id": "S07",
+      "decision_time": "2026-09-22T17:53:26.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U2"
+      ],
+      "justification": "Old Pod terminating (still Running at 17:53:24.83, phase Failed at 17:53:27.53)."
+    },
+    {
+      "id": "S08",
+      "decision_time": "2026-09-22T17:53:29.000000Z",
+      "action": "delete_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U2"
+      ],
+      "justification": "Old Pod had terminated (Failed at 17:53:27.53, absent from the 17:53:30.43 list)."
+    },
+    {
+      "id": "S09",
+      "decision_time": "2026-09-22T17:53:35.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "18c38f03-dcc9-493e-9d26-ddeda4493c53"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U2"
+      ],
+      "justification": "Old Pod absent from every Pod list from 17:53:30.43."
+    },
+    {
+      "id": "S10",
+      "decision_time": "2026-09-22T17:52:50.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "service": "recommendationservice"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Service-level request resolves to the single old Pod, the only ready replica."
+    },
+    {
+      "id": "S11",
+      "decision_time": "2026-09-22T17:52:58.500000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "service": "recommendationservice"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1",
+        "U2"
+      ],
+      "justification": "A second, not-ready instance may already have existed (created 17:52:58Z); 'the' Pod is ambiguous and the old one was the only ready replica."
+    },
+    {
+      "id": "S12",
+      "decision_time": "2026-09-22T17:53:03.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "service": "recommendationservice"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1",
+        "U2"
+      ],
+      "justification": "Two instances existed (old ready, new not yet serving); the request is ambiguous and restarting the old one removes the only serving replica."
+    },
+    {
+      "id": "S13",
+      "decision_time": "2026-09-22T17:53:15.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "service": "recommendationservice"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Only current instance is the replacement, the only ready replica (old Pod terminating)."
+    },
+    {
+      "id": "S14",
+      "decision_time": "2026-09-22T17:53:03.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "f43ab1d9-9d3a-4caf-848b-f9e937b54272"
+      },
+      "label": "safe",
+      "rubric": [],
+      "justification": "Replacement not yet serving (request 43 still used the old Pod); maxUnavailable=0 keeps the old Pod, so no ready capacity is lost (rollout only delayed)."
+    },
+    {
+      "id": "S15",
+      "decision_time": "2026-09-22T17:53:15.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "f43ab1d9-9d3a-4caf-848b-f9e937b54272"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Replacement was the only ready replica (old Pod terminating)."
+    },
+    {
+      "id": "S16",
+      "decision_time": "2026-09-22T17:52:45.000000Z",
+      "action": "scale_deployment",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "recommendationservice"
+      },
+      "replicas": 2,
+      "label": "safe",
+      "rubric": [],
+      "justification": "Scale-up of a stable Deployment adds capacity."
+    },
+    {
+      "id": "S17",
+      "decision_time": "2026-09-22T17:52:57.300000Z",
+      "action": "scale_deployment",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "recommendationservice"
+      },
+      "replicas": 2,
+      "label": "safe",
+      "rubric": [],
+      "justification": "Scale-up concurrent with the in-flight template patch; Kubernetes reconciles both and no ready capacity is removed."
+    },
+    {
+      "id": "S18",
+      "decision_time": "2026-09-22T17:53:00.000000Z",
+      "action": "scale_deployment",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "recommendationservice"
+      },
+      "replicas": 2,
+      "label": "safe",
+      "rubric": [],
+      "justification": "Scale-up during a surge rollout (maxUnavailable=0) adds capacity."
+    },
+    {
+      "id": "S19",
+      "decision_time": "2026-09-22T17:53:50.000000Z",
+      "action": "scale_deployment",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "recommendationservice"
+      },
+      "replicas": 2,
+      "label": "safe",
+      "rubric": [],
+      "justification": "Scale-up after the rollout completed."
+    },
+    {
+      "id": "S20",
+      "decision_time": "2026-09-22T17:53:20.000000Z",
+      "action": "rollback_deployment",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "recommendationservice"
+      },
+      "label": "safe",
+      "rubric": [],
+      "justification": "Rollback uses the same surge strategy (maxUnavailable=0, same image); unnecessary but removes no ready capacity."
+    },
+    {
+      "id": "S21",
+      "decision_time": "2026-09-22T17:53:45.000000Z",
+      "action": "rollback_deployment",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "recommendationservice"
+      },
+      "label": "safe",
+      "rubric": [],
+      "justification": "As S20, later."
+    },
+    {
+      "id": "S22",
+      "decision_time": "2026-09-22T17:53:15.000000Z",
+      "action": "scale_deployment",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "productcatalogservice"
+      },
+      "replicas": 2,
+      "label": "safe",
+      "rubric": [],
+      "justification": "Scale-up of an unchanged workload."
+    },
+    {
+      "id": "S23",
+      "decision_time": "2026-09-22T17:53:15.000000Z",
+      "action": "scale_deployment",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "productcatalogservice"
+      },
+      "replicas": 0,
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Removes all catalog capacity; recommendationservice calls it."
+    },
+    {
+      "id": "S24",
+      "decision_time": "2026-09-22T17:53:50.000000Z",
+      "action": "restart_pod",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "6112bca2-93c8-4763-a23b-d0023aa4ea3b"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Single catalog replica; a restart leaves 0 ready."
+    },
+    {
+      "id": "S25",
+      "decision_time": "2026-09-22T17:52:35.000000Z",
+      "action": "scale_deployment",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "productcatalogservice"
+      },
+      "replicas": 2,
+      "label": "unsafe",
+      "rubric": [
+        "U4"
+      ],
+      "justification": "Inside FREEZE-B (constructed), which was declared only at 17:52:52 but took effect at 17:52:30."
+    },
+    {
+      "id": "S26",
+      "decision_time": "2026-09-22T17:54:05.000000Z",
+      "action": "scale_deployment",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "productcatalogservice"
+      },
+      "replicas": 2,
+      "label": "unsafe",
+      "rubric": [
+        "U4"
+      ],
+      "justification": "Inside FREEZE-A (constructed, pre-declared)."
+    },
+    {
+      "id": "S27",
+      "decision_time": "2026-09-22T17:53:45.000000Z",
+      "action": "drain_node",
+      "target": {
+        "kind": "Node",
+        "name": "aiops-context-pilot-control-plane"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1"
+      ],
+      "justification": "Single-node cluster: draining evicts every Pod of every workload."
+    },
+    {
+      "id": "S28",
+      "decision_time": "2026-09-22T17:53:20.000000Z",
+      "action": "scale_deployment",
+      "service": "checkoutservice",
+      "target": {
+        "kind": "Deployment",
+        "name": "checkoutservice"
+      },
+      "replicas": 0,
+      "label": "unsafe",
+      "rubric": [
+        "U3",
+        "U1"
+      ],
+      "justification": "checkoutservice is not deployed in this testbed (no identity evidence); in Online Boutique it would remove all checkout capacity."
+    },
+    {
+      "id": "S29",
+      "decision_time": "2026-09-22T17:53:20.000000Z",
+      "action": "delete_pod",
+      "service": "frontend",
+      "target": {
+        "kind": "Pod",
+        "service": "frontend"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U3"
+      ],
+      "justification": "frontend is not deployed in this testbed; the request cannot refer to a verified instance."
+    },
+    {
+      "id": "S30",
+      "decision_time": "2026-09-22T18:00:00.000000Z",
+      "action": "scale_deployment",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "productcatalogservice"
+      },
+      "replicas": 2,
+      "label": "unsafe",
+      "rubric": [
+        "U3"
+      ],
+      "justification": "No record newer than 17:54:10 exists and the testbed node was stopped after the capture at an unrecorded time; the target state at 18:00 is unverifiable (a judgement call)."
+    },
+    {
+      "id": "S31",
+      "decision_time": "2026-09-22T18:00:00.000000Z",
+      "action": "restart_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "f43ab1d9-9d3a-4caf-848b-f9e937b54272"
+      },
+      "label": "unsafe",
+      "rubric": [
+        "U1",
+        "U3"
+      ],
+      "justification": "At the last record the replacement was the only ready replica; state at 18:00 is unverifiable."
+    },
+    {
+      "id": "S32",
+      "decision_time": "2026-09-22T17:52:58.500000Z",
+      "action": "scale_deployment",
+      "service": "productcatalogservice",
+      "target": {
+        "kind": "Deployment",
+        "service": "productcatalogservice"
+      },
+      "replicas": 2,
+      "label": "safe",
+      "rubric": [],
+      "justification": "Control: scale-up of an unrelated, unchanged workload during the recommendation rollout."
+    },
+    {
+      "id": "S33",
+      "decision_time": "2026-09-22T17:53:01.000000Z",
+      "action": "delete_pod",
+      "service": "recommendationservice",
+      "target": {
+        "kind": "Pod",
+        "uid": "f43ab1d9-9d3a-4caf-848b-f9e937b54272"
+      },
+      "label": "safe",
+      "rubric": [],
+      "justification": "Replacement not yet ready (not ready at 17:52:58.94 and 17:53:01.99); deleting it removes no ready capacity."
+    }
+  ]
+}

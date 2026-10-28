@@ -1,0 +1,10199 @@
+{
+ "kind": "stage2_diagnosis_control_fixture_expectation",
+ "version": "stage2-diagnosis-control-v1",
+ "fixtures": {
+  "D1-F01": "poller Pod lists 15 s apart over the switch (111 s -> 126 s): the poller effect; the watch sees the switch within 0.1 s",
+  "D1-F02": "poller Pod lists every 2 s: no effect under either observer",
+  "D1-F03": "a 4.9 s watch pods continuity gap (115.5 s -> 120.4 s) over the switch: the watch keeps the effect (within the inclusion rule-2 threshold of 5 s)"
+ },
+ "written_by": "run_diagnosis_control_v1.py --write-expectation",
+ "semantic": {
+  "h_d": {
+   "verdict": "refuted",
+   "E_P": [
+    "D1-F01"
+   ],
+   "E_W": [
+    "D1-F03"
+   ],
+   "n_included_d1": 3
+  },
+  "cells": {
+   "D1-F01": {
+    "category": "primary_D1",
+    "clamps": {
+     "poller": 0,
+     "watch": 2
+    },
+    "poller|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|5 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|30 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|60 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|complete|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|complete|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|complete|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|complete|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|complete|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|complete|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|complete|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|complete|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|complete|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|complete|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|complete|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|complete|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|complete|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|complete|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|complete|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|complete|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_1s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_1s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_1s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_1s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_3s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     13,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     21,
+     4,
+     "worse"
+    ],
+    "poller|delayed_api_30s|30 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     55,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|30 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     55,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     55,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     55,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|missing_switch_poll|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|missing_switch_poll|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|missing_switch_poll|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|missing_switch_poll|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|missing_switch_poll|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|missing_switch_poll|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|missing_switch_poll|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|missing_switch_poll|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|missing_switch_poll|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     31,
+     0,
+     "worse"
+    ],
+    "poller|missing_switch_poll|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     36,
+     "worse"
+    ],
+    "poller|missing_switch_poll|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     36,
+     "worse"
+    ],
+    "poller|missing_switch_poll|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     31,
+     0,
+     "worse"
+    ],
+    "poller|missing_switch_poll|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     36,
+     "worse"
+    ],
+    "poller|missing_switch_poll|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     36,
+     "worse"
+    ],
+    "poller|corrected_late_3s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_3s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_3s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_3s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_3s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_3s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_3s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_3s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_3s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_3s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_3s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_3s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_10s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_10s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_10s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_10s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     2,
+     "worse"
+    ],
+    "poller|corrected_late_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_10s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_10s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     27,
+     0,
+     "worse"
+    ],
+    "poller|corrected_late_10s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller|corrected_late_10s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     32,
+     "worse"
+    ],
+    "poller@receipt|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "poller@receipt|-|5 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|-|30 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|-|60 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|complete|0 s|latest_state": [
+     "absent",
+     null,
+     9,
+     0
+    ],
+    "poller@receipt|complete|0 s|temporal_join": [
+     "absent",
+     null,
+     9,
+     0
+    ],
+    "poller@receipt|complete|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     9,
+     2
+    ],
+    "poller@receipt|complete|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     9,
+     2
+    ],
+    "poller@receipt|complete|5 s|latest_state": [
+     "absent",
+     null,
+     19,
+     0
+    ],
+    "poller@receipt|complete|5 s|temporal_join": [
+     "absent",
+     null,
+     19,
+     0
+    ],
+    "poller@receipt|complete|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     19,
+     2
+    ],
+    "poller@receipt|complete|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     19,
+     2
+    ],
+    "poller@receipt|complete|30 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "poller@receipt|complete|30 s|temporal_join": [
+     "not_top1",
+     3,
+     27,
+     0
+    ],
+    "poller@receipt|complete|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     32
+    ],
+    "poller@receipt|complete|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     32
+    ],
+    "poller@receipt|complete|60 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "poller@receipt|complete|60 s|temporal_join": [
+     "not_top1",
+     3,
+     27,
+     0
+    ],
+    "poller@receipt|complete|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     32
+    ],
+    "poller@receipt|complete|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     32
+    ],
+    "watch|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|5 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|30 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|60 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|delayed_api_1s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|delayed_api_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     24,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_30s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|missing_switch_event|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|missing_switch_event|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|corrected_late_event_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|corrected_late_event_10s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch@receipt|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "watch@receipt|-|5 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|-|30 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|-|60 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     25,
+     0
+    ],
+    "watch@receipt|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "watch@receipt|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     3
+    ],
+    "watch@receipt|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     3
+    ],
+    "watch@receipt|complete|5 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "watch@receipt|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|30 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "watch@receipt|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|60 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "watch@receipt|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch_event|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|-|5 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|-|30 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|-|60 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|complete|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|delayed_api_1s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|delayed_api_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|delayed_api_10s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     4
+    ],
+    "watch_event|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     14
+    ],
+    "watch_event|delayed_api_30s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|missing_switch_poll|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|missing_switch_poll|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|missing_switch_poll|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     27
+    ],
+    "watch_event|missing_switch_poll|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     27
+    ],
+    "watch_event|missing_switch_poll|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|corrected_late_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|corrected_late_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|corrected_late_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|corrected_late_3s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|corrected_late_10s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_10s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     24
+    ],
+    "watch_event|corrected_late_10s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     24
+    ],
+    "watch_event|corrected_late_10s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ]
+   },
+   "D1-F02": {
+    "category": "primary_D1",
+    "clamps": {
+     "poller": 0,
+     "watch": 2
+    },
+    "poller|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|5 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|30 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|60 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "poller|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "poller|delayed_api_1s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "poller|delayed_api_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     13,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     21,
+     4,
+     "worse"
+    ],
+    "poller|delayed_api_30s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|missing_switch_poll|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "poller|missing_switch_poll|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|corrected_late_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "poller|corrected_late_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "poller|corrected_late_10s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller@receipt|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "poller@receipt|-|5 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|-|30 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|-|60 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     25,
+     0
+    ],
+    "poller@receipt|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     1,
+     0
+    ],
+    "poller@receipt|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     6
+    ],
+    "poller@receipt|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     6
+    ],
+    "poller@receipt|complete|5 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "poller@receipt|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     1,
+     0
+    ],
+    "poller@receipt|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|30 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "poller@receipt|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     1,
+     0
+    ],
+    "poller@receipt|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|60 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "poller@receipt|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     1,
+     0
+    ],
+    "poller@receipt|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "watch|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|5 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|30 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|60 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|delayed_api_1s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|delayed_api_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     15,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     25,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     24,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_30s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|missing_switch_event|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|missing_switch_event|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|missing_switch_event|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|corrected_late_event_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     25,
+     0,
+     "better"
+    ],
+    "watch|corrected_late_event_10s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     5,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     25,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch|corrected_late_event_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     3,
+     "equal"
+    ],
+    "watch@receipt|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "watch@receipt|-|5 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|-|30 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|-|60 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     25,
+     0
+    ],
+    "watch@receipt|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "watch@receipt|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     3
+    ],
+    "watch@receipt|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     3
+    ],
+    "watch@receipt|complete|5 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "watch@receipt|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|30 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "watch@receipt|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|60 s|latest_state": [
+     "top1",
+     1,
+     25,
+     0
+    ],
+    "watch@receipt|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch@receipt|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     3
+    ],
+    "watch_event|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|-|5 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|-|30 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|-|60 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|complete|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|delayed_api_1s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|delayed_api_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|delayed_api_10s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     4
+    ],
+    "watch_event|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     14
+    ],
+    "watch_event|delayed_api_30s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|missing_switch_poll|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|missing_switch_poll|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|missing_switch_poll|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     27
+    ],
+    "watch_event|missing_switch_poll|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     27
+    ],
+    "watch_event|missing_switch_poll|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|missing_switch_poll|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|missing_switch_poll|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     27
+    ],
+    "watch_event|corrected_late_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|corrected_late_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|corrected_late_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     25
+    ],
+    "watch_event|corrected_late_3s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|0 s|latest_state": [
+     "not_top1",
+     2,
+     0
+    ],
+    "watch_event|corrected_late_10s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_10s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     24
+    ],
+    "watch_event|corrected_late_10s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     24
+    ],
+    "watch_event|corrected_late_10s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     25
+    ],
+    "watch_event|corrected_late_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     25
+    ]
+   },
+   "D1-F03": {
+    "category": "primary_D1",
+    "clamps": {
+     "poller": 0,
+     "watch": 2
+    },
+    "poller|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|5 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|30 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|-|60 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "poller|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     33,
+     0,
+     "better"
+    ],
+    "poller|complete|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     33,
+     0,
+     "better"
+    ],
+    "poller|delayed_api_1s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     5,
+     2,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "poller|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     13,
+     4,
+     "worse"
+    ],
+    "poller|delayed_api_30s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|missing_switch_poll|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     33,
+     0,
+     "better"
+    ],
+    "poller|missing_switch_poll|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|missing_switch_poll|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     10,
+     "equal"
+    ],
+    "poller|corrected_late_3s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     33,
+     0,
+     "better"
+    ],
+    "poller|corrected_late_3s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_3s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|0 s|latest_state": [
+     "not_top1",
+     2,
+     2,
+     null,
+     false,
+     33,
+     0,
+     "better"
+    ],
+    "poller|corrected_late_10s|0 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|0 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|0 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     5,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|temporal_join": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     1,
+     0,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller|corrected_late_10s|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     6,
+     "equal"
+    ],
+    "poller@receipt|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "poller@receipt|-|5 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|-|30 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|-|60 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "poller@receipt|complete|0 s|latest_state": [
+     "not_top1",
+     2,
+     33,
+     0
+    ],
+    "poller@receipt|complete|0 s|temporal_join": [
+     "absent",
+     null,
+     1,
+     0
+    ],
+    "poller@receipt|complete|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0,
+     6
+    ],
+    "poller@receipt|complete|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     0,
+     6
+    ],
+    "poller@receipt|complete|5 s|latest_state": [
+     "top1",
+     1,
+     33,
+     0
+    ],
+    "poller@receipt|complete|5 s|temporal_join": [
+     "top1",
+     1,
+     1,
+     0
+    ],
+    "poller@receipt|complete|5 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|5 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|30 s|latest_state": [
+     "top1",
+     1,
+     33,
+     0
+    ],
+    "poller@receipt|complete|30 s|temporal_join": [
+     "top1",
+     1,
+     1,
+     0
+    ],
+    "poller@receipt|complete|30 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|30 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|60 s|latest_state": [
+     "top1",
+     1,
+     33,
+     0
+    ],
+    "poller@receipt|complete|60 s|temporal_join": [
+     "top1",
+     1,
+     1,
+     0
+    ],
+    "poller@receipt|complete|60 s|bitemporal_abstain_F600": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "poller@receipt|complete|60 s|bitemporal_abstain_F30": [
+     "top1",
+     1,
+     0,
+     6
+    ],
+    "watch|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|5 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|30 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|-|60 s|hindsight": [
+     "top1",
+     1,
+     3,
+     "recommendation new b0000000",
+     false,
+     0,
+     0,
+     null
+    ],
+    "watch|complete|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|complete|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|complete|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|complete|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|complete|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|complete|5 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|complete|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|complete|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|complete|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|complete|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|complete|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|complete|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|complete|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|complete|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|complete|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|complete|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_1s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_1s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|5 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_1s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_3s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_3s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|5 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_3s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     null,
+     false,
+     7,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_10s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     0,
+     null,
+     false,
+     0,
+     40,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     17,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     16,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_30s|30 s|latest_state": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     47,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|30 s|temporal_join": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     47,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     47,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     2,
+     "recommendation old a0000000",
+     true,
+     47,
+     1,
+     "worse"
+    ],
+    "watch|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     2,
+     "recommendation new b0000000",
+     false,
+     33,
+     0,
+     "equal"
+    ],
+    "watch|delayed_api_30s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     3,
+     "recommendation old a0000000",
+     true,
+     8,
+     0,
+     "worse"
+    ],
+    "watch|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     3,
+     null,
+     false,
+     0,
+     11,
+     "worse"
+    ],
+    "watch@receipt|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0,
+     0
+    ],
+    "watch@receipt|-|5 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|-|30 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|-|60 s|hindsight": [
+     "top1",
+     1,
+     0,
+     0
+    ],
+    "watch@receipt|complete|0 s|latest_state": [
+     "absent",
+     null,
+     1,
+     0
+    ],
+    "watch@receipt|complete|0 s|temporal_join": [
+     "absent",
+     null,
+     1,
+     0
+    ],
+    "watch@receipt|complete|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1,
+     1
+    ],
+    "watch@receipt|complete|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     1,
+     1
+    ],
+    "watch@receipt|complete|5 s|latest_state": [
+     "top1",
+     1,
+     33,
+     0
+    ],
+    "watch@receipt|complete|5 s|temporal_join": [
+     "not_top1",
+     3,
+     8,
+     0
+    ],
+    "watch@receipt|complete|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     11
+    ],
+    "watch@receipt|complete|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     11
+    ],
+    "watch@receipt|complete|30 s|latest_state": [
+     "top1",
+     1,
+     33,
+     0
+    ],
+    "watch@receipt|complete|30 s|temporal_join": [
+     "not_top1",
+     3,
+     8,
+     0
+    ],
+    "watch@receipt|complete|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     11
+    ],
+    "watch@receipt|complete|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     11
+    ],
+    "watch@receipt|complete|60 s|latest_state": [
+     "top1",
+     1,
+     33,
+     0
+    ],
+    "watch@receipt|complete|60 s|temporal_join": [
+     "not_top1",
+     3,
+     8,
+     0
+    ],
+    "watch@receipt|complete|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     3,
+     0,
+     11
+    ],
+    "watch@receipt|complete|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     3,
+     0,
+     11
+    ],
+    "watch_event|-|0 s|hindsight": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|-|5 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|-|30 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|-|60 s|hindsight": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|complete|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|complete|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|complete|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|complete|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|5 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|complete|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|complete|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|complete|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|30 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|complete|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|complete|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|complete|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|complete|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|complete|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|complete|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_1s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_1s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_1s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_1s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|delayed_api_1s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|5 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_1s|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_1s|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_1s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_1s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_1s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_1s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_1s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_1s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_1s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_3s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_3s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_3s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_3s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|delayed_api_3s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|5 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_3s|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_3s|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_3s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_3s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_3s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_3s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_3s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_3s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_3s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_10s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|delayed_api_10s|5 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|5 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_10s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_10s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     15
+    ],
+    "watch_event|delayed_api_10s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_10s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_10s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_10s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_10s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_10s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_10s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_30s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     4
+    ],
+    "watch_event|delayed_api_30s|5 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     14
+    ],
+    "watch_event|delayed_api_30s|30 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|30 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|delayed_api_30s|30 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|delayed_api_30s|30 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     45
+    ],
+    "watch_event|delayed_api_30s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|delayed_api_30s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|delayed_api_30s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|delayed_api_30s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|missing_switch_poll|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|missing_switch_poll|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|missing_switch_poll|5 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|5 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|missing_switch_poll|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     15
+    ],
+    "watch_event|missing_switch_poll|30 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|30 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|30 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|missing_switch_poll|30 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     45
+    ],
+    "watch_event|missing_switch_poll|60 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|60 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|missing_switch_poll|60 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|missing_switch_poll|60 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     45
+    ],
+    "watch_event|corrected_late_3s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|corrected_late_3s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|corrected_late_3s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|corrected_late_3s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|corrected_late_3s|5 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|5 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_3s|5 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_3s|5 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_3s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_3s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_3s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_3s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_3s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_3s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_3s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_10s|0 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|corrected_late_10s|0 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|corrected_late_10s|0 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|corrected_late_10s|0 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     5
+    ],
+    "watch_event|corrected_late_10s|5 s|latest_state": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|corrected_late_10s|5 s|temporal_join": [
+     "absent",
+     null,
+     0
+    ],
+    "watch_event|corrected_late_10s|5 s|bitemporal_abstain_F600": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|corrected_late_10s|5 s|bitemporal_abstain_F30": [
+     "absent",
+     null,
+     1
+    ],
+    "watch_event|corrected_late_10s|30 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|30 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_10s|30 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_10s|30 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_10s|60 s|latest_state": [
+     "top1",
+     1,
+     0
+    ],
+    "watch_event|corrected_late_10s|60 s|temporal_join": [
+     "not_top1",
+     3,
+     0
+    ],
+    "watch_event|corrected_late_10s|60 s|bitemporal_abstain_F600": [
+     "not_top1",
+     2,
+     41
+    ],
+    "watch_event|corrected_late_10s|60 s|bitemporal_abstain_F30": [
+     "not_top1",
+     2,
+     41
+    ]
+   }
+  }
+ },
+ "files_sha256": {
+  "D1-F01/SUMMARY.md": "7ef55d11b31b8ec5878ec76c758d34c902e9b6418498d309d748be1b89f6edbe",
+  "D1-F01/cells.csv": "3659be4954dc1d8c0f177830dfdbc111c2b7a1cdf2093324a5998cfe0e357d9f",
+  "D1-F01/results.json": "2c50ebae6d4886af77a46fc1c46690d1dbadd2e72fbd0c53191655b326af3f90",
+  "D1-F02/SUMMARY.md": "6dcd468ced0773899e4ad292edb4e75c6ed744849998b38456ec5758bc54ca55",
+  "D1-F02/cells.csv": "97bcf77b0de0180921fdc2221932cfc9d613a71fe9a901cf0b53a997ae9c7f13",
+  "D1-F02/results.json": "2ef6396618442480e8ec0fb7741095382a0064126f0124284cdb0b94138ed726",
+  "D1-F03/SUMMARY.md": "bddccedffd66a68668efa23752c33af070f7c8d2387ee4f093114a53a4c38c4a",
+  "D1-F03/cells.csv": "5e30711c6c3c4924402f846ae72eaf8a7fc8b809b84ccace2c8d5fd5b45f8055",
+  "D1-F03/results.json": "b356b3c4b1942e6c592f4eecb36ee73fb509b5942e5f4a1133695692be21017c",
+  "SUMMARY.md": "58ddc833ba978dabf217f79fa2eab819e212cca7a43c46eb6fa373cee52fe4b3",
+  "summary.json": "7956cb3fe06c165af28e8799325abd6727a8b876a8e805edf91d6e6a1f90ec44"
+ },
+ "reading": "--check passes when the semantic table (outcomes, ranks, counts, verdicts; no floats) is identical; the per-file SHA-256 are compared too and reported (with --strict, required)"
+}

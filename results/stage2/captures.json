@@ -1,0 +1,439 @@
+{
+ "description": "Every follow-up capture attempt, the scenario and slot it filled, and whether it is included. Populations list the included captures per scenario in plan order (the order the bootstrap resamples).",
+ "attempts": [
+  {
+   "capture": "D1-001",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": "D1.2",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D1-002",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": "D1.4",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D1-003",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": "D1.3",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D1-004",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": "D1.6",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D1-005",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": "D1.1",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D1-006",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": "D1.5",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D2-001",
+   "scenario": "D2",
+   "arm": "D",
+   "slot": "D2.1",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": false,
+   "population": null,
+   "reasons": [
+    "diagnosis control: poller: fault manipulation not confirmed: latency_effect_established=False",
+    "diagnosis control: watch: fault manipulation not confirmed: latency_effect_established=False"
+   ]
+  },
+  {
+   "capture": "D2-002",
+   "scenario": "D2",
+   "arm": "D",
+   "slot": "D2.2",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "D2-003",
+   "scenario": "D2",
+   "arm": "D",
+   "slot": "D2.1",
+   "attempt": 2,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "D",
+   "reasons": []
+  },
+  {
+   "capture": "G1-001",
+   "scenario": "G1",
+   "arm": "G",
+   "slot": "G1.5",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G1-002",
+   "scenario": "G1",
+   "arm": "G",
+   "slot": "G1.3",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G1-003",
+   "scenario": "G1",
+   "arm": "G",
+   "slot": "G1.2",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G1-004",
+   "scenario": "G1",
+   "arm": "G",
+   "slot": "G1.4",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G1-005",
+   "scenario": "G1",
+   "arm": "G",
+   "slot": "G1.1",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G2-001",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": "G2.5",
+   "attempt": 1,
+   "kind": "study",
+   "status": "invalid",
+   "marker": "INVALID.txt",
+   "included": false,
+   "population": null,
+   "reasons": [
+    "marker INVALID.txt with status 'invalid' (COMPLETE.txt with status=finished required)",
+    "failed checks: marker_complete, runner_validity_true, status_finished"
+   ]
+  },
+  {
+   "capture": "G2-002",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": "G2.2",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G2-003",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": "G2.3",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G2-004",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": "G2.4",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G2-005",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": "G2.1",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G2-006",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": "G2.5",
+   "attempt": 2,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G3-001",
+   "scenario": "G3",
+   "arm": "G",
+   "slot": "G3.3",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G3-002",
+   "scenario": "G3",
+   "arm": "G",
+   "slot": "G3.1",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G3-003",
+   "scenario": "G3",
+   "arm": "G",
+   "slot": "G3.2",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G4-001",
+   "scenario": "G4",
+   "arm": "G",
+   "slot": "G4.2",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G4-002",
+   "scenario": "G4",
+   "arm": "G",
+   "slot": "G4.1",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "G4-003",
+   "scenario": "G4",
+   "arm": "G",
+   "slot": "G4.3",
+   "attempt": 1,
+   "kind": "study",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": true,
+   "population": "G",
+   "reasons": []
+  },
+  {
+   "capture": "P1-D1-001",
+   "scenario": "D1",
+   "arm": "D",
+   "slot": null,
+   "attempt": null,
+   "kind": "pilot",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": false,
+   "population": null,
+   "reasons": [
+    "pilot capture (not among the study's captures)"
+   ]
+  },
+  {
+   "capture": "P2-G2-001",
+   "scenario": "G2",
+   "arm": "G",
+   "slot": null,
+   "attempt": null,
+   "kind": "pilot",
+   "status": "finished",
+   "marker": "COMPLETE.txt",
+   "included": false,
+   "population": null,
+   "reasons": [
+    "pilot capture (not among the study's captures)"
+   ]
+  }
+ ],
+ "populations": {
+  "G": [
+   {
+    "scenario": "G1",
+    "captures": [
+     "G1-005",
+     "G1-003",
+     "G1-002",
+     "G1-004",
+     "G1-001"
+    ]
+   },
+   {
+    "scenario": "G2",
+    "captures": [
+     "G2-005",
+     "G2-002",
+     "G2-003",
+     "G2-004",
+     "G2-006"
+    ]
+   },
+   {
+    "scenario": "G3",
+    "captures": [
+     "G3-002",
+     "G3-003",
+     "G3-001"
+    ]
+   },
+   {
+    "scenario": "G4",
+    "captures": [
+     "G4-002",
+     "G4-001",
+     "G4-003"
+    ]
+   }
+  ],
+  "D": [
+   {
+    "scenario": "D1",
+    "captures": [
+     "D1-005",
+     "D1-001",
+     "D1-003",
+     "D1-002",
+     "D1-006",
+     "D1-004"
+    ]
+   },
+   {
+    "scenario": "D2",
+    "captures": [
+     "D2-003",
+     "D2-002"
+    ]
+   }
+  ]
+ }
+}

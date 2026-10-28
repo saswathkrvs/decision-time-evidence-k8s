@@ -1,0 +1,7334 @@
+{
+ "T1_cells": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {
+     "H-G2": 3
+    },
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L-kappa",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 2,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 2,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "L_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 2,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.06,
+    "median": 3.06,
+    "min": 0.06,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.56,
+    "median": 0.31,
+    "min": 0.06,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {
+     "H-G3": 4,
+     "H-G3 (T_w, R) secondary": 2
+    },
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "CENSORED": 1,
+     "DENY[R3]": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 1,
+    "expired": 0,
+    "max": 27.060001,
+    "median": 0.56,
+    "min": 0.06,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {
+     "H-G3": 4,
+     "H-G3 (T_w, R) secondary": 3
+    },
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "CENSORED": 3,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 5,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 3,
+    "expired": 0,
+    "max": 20.060001,
+    "median": 13.560001,
+    "min": 0.06,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 2,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.06,
+    "median": 3.06,
+    "min": 0.06,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.56,
+    "median": 0.31,
+    "min": 0.06,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "CENSORED": 1,
+     "DENY[R3]": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 1,
+    "expired": 0,
+    "max": 27.060001,
+    "median": 0.56,
+    "min": 0.06,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "R",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "CENSORED": 3,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 5,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 3,
+    "expired": 0,
+    "max": 20.060001,
+    "median": 13.560001,
+    "min": 0.06,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T@F600",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "action A secondary (H-G4)": 3
+    },
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "action A secondary (H-G4)": 3
+    },
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G3": 4,
+     "H-G4": 4
+    },
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {
+     "H-G2": 3,
+     "H-G3": 4,
+     "H-G4": 4
+    },
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 8.801,
+    "median": 3.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_p",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 3.0025,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "action A secondary (H-G4)": 3
+    },
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "action A secondary (H-G4)": 3
+    },
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G3 (T_w, R) secondary": 2,
+     "H-G4": 4
+    },
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 2,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {
+     "H-G3 (T_w, R) secondary": 3,
+     "H-G4": 4
+    },
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 1,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 7.120012,
+    "median": 2.120012,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "neutral": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "neutral": {
+      "healthy replica restarted with the floor kept": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 2,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "T_w",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "ALLOW[R7:no_visible_change]": 1,
+     "DENY[R3]": 2,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {
+     "V-target": 1
+    },
+    "of_posed": 5,
+    "reasons": {
+     "V-target": {
+      "gone": 1
+     }
+    }
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 1,
+     "ALLOW": 1,
+     "DENY": 1,
+     "NEEDS_APPROVAL[R2]": 2
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 1,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.420001,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.801,
+    "median": 1.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "DENY[R1]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 5,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "DENY": 2,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.0015,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "DENY[R1]": 3,
+     "DENY[R3]": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 5,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "DENY": 4,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "S0",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 6.801,
+    "median": 1.801,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 4
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 4,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "NEEDS_APPROVAL[R2]": 4
+    },
+    "of_posed": 4
+   },
+   "late_correction_decisions": {
+    "count": 3,
+    "of_posed": 4
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {
+    "before the patch request P": 1
+   },
+   "posed": 4,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V1"
+    ],
+    "of_posed": 4
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 4
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 0,
+   "dispositions": {
+    "counts": {
+     "DENY[R1]": 1,
+     "DENY[R3]": 3,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 5,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "ABSTAIN": 2,
+     "DENY": 2,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 2.0015,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "condition": "c-hind",
+   "contested_decisions": {
+    "counts": {},
+    "of_posed": 5
+   },
+   "delta_s": 10,
+   "dispositions": {
+    "counts": {
+     "DENY[R1]": 3,
+     "DENY[R3]": 1,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "endpointslice_disagreements_among_executions": 0,
+   "executions_by_label": {
+    "counts": {},
+    "of_posed": 5,
+    "reasons": {}
+   },
+   "first_verdicts": {
+    "counts": {
+     "DENY": 4,
+     "NEEDS_APPROVAL[R2]": 1
+    },
+    "of_posed": 5
+   },
+   "late_correction_decisions": {
+    "count": 4,
+    "of_posed": 5
+   },
+   "missed_opportunities": {
+    "by_disposition": {},
+    "of_requests_labelled_GT2": 0,
+    "total": 0
+   },
+   "not_posed": {},
+   "posed": 5,
+   "requests": 5,
+   "stream": "Snever",
+   "unsafe_executions": {
+    "count": 0,
+    "labels": [
+     "V-target",
+     "V-floor"
+    ],
+    "of_posed": 5
+   },
+   "waiting_seconds": {
+    "censored": 0,
+    "expired": 0,
+    "max": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 5
+   }
+  }
+ ],
+ "T2_comparisons": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L_p"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "L_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "L-kappa"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 3,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 3
+    }
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "ABSTAIN->DENY": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p allows, R blocks": 1
+    },
+    "differing_requests": 4,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 2,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p allows, R blocks": 1
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 3,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 3
+    }
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "ABSTAIN->DENY": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_p allows, R blocks": 1
+    },
+    "differing_requests": 4,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 2,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_p allows, R blocks": 1
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 3,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 3
+    }
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 1,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_w allows, R blocks": 1
+    },
+    "differing_requests": 3,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 2
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_w allows, R blocks": 1
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "DENY->ABSTAIN": 1
+    }
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 3,
+    "severity_only_by_type": {
+     "ABSTAIN->NEEDS_APPROVAL": 3
+    }
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 1,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {
+     "T_w allows, R blocks": 1
+    },
+    "differing_requests": 3,
+    "severity_only_by_type": {
+     "DENY->CENSORED": 2
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {
+     "T_w allows, R blocks": 1
+    },
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "DENY->ABSTAIN": 1
+    }
+   },
+   "pair": [
+    "T_w",
+    "R"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 1,
+    "severity_only_by_type": {
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "ABSTAIN->DENY": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 1,
+    "severity_only_by_type": {
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "ABSTAIN->DENY": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 0,
+    "severity_only_by_type": {}
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 4,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 0,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 1,
+    "severity_only_by_type": {
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "ABSTAIN->DENY": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "delta_s": 10,
+   "disposition": {
+    "block_allow_by_direction": {},
+    "differing_requests": 1,
+    "severity_only_by_type": {
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "first_verdict": {
+    "block_allow_by_direction": {},
+    "differing_requests": 2,
+    "severity_only_by_type": {
+     "ABSTAIN->DENY": 1,
+     "DENY->NEEDS_APPROVAL": 1
+    }
+   },
+   "pair": [
+    "T_p",
+    "T_w"
+   ],
+   "posed_in_both": 5,
+   "stream": "Snever"
+  }
+ ],
+ "T3_q1_checks": {
+  "agreement": null,
+  "check_1_append_only_corrections": [
+   {
+    "failures": [],
+    "n": 436,
+    "n_reached_by_late_k1": 388,
+    "observer": "poller",
+    "stores_rebuilt": 8,
+    "stream": "S0",
+    "x": 436,
+    "x_reached_by_late_k1": 388
+   },
+   {
+    "failures": [],
+    "n": 214,
+    "n_reached_by_late_k1": 190,
+    "observer": "poller",
+    "stores_rebuilt": 8,
+    "stream": "Snever",
+    "x": 214,
+    "x_reached_by_late_k1": 190
+   },
+   {
+    "failures": [],
+    "n": 260,
+    "n_reached_by_late_k1": 202,
+    "observer": "watch",
+    "stores_rebuilt": 11,
+    "stream": "S0",
+    "x": 260,
+    "x_reached_by_late_k1": 202
+   },
+   {
+    "failures": [],
+    "n": 260,
+    "n_reached_by_late_k1": 202,
+    "observer": "watch",
+    "stores_rebuilt": 11,
+    "stream": "Snever",
+    "x": 260,
+    "x_reached_by_late_k1": 202
+   }
+  ],
+  "check_2_earlier_cutoff_invariance": [
+   {
+    "failures": [],
+    "n": 208,
+    "observer": "poller",
+    "stores_rebuilt": 39,
+    "stream": "S0",
+    "x_full_stream": 208,
+    "x_truncated": 208
+   },
+   {
+    "failures": [],
+    "n": 183,
+    "observer": "poller",
+    "stores_rebuilt": 36,
+    "stream": "Snever",
+    "x_full_stream": 183,
+    "x_truncated": 183
+   },
+   {
+    "failures": [],
+    "n": 151,
+    "observer": "watch",
+    "stores_rebuilt": 47,
+    "stream": "S0",
+    "x_full_stream": 151,
+    "x_truncated": 151
+   },
+   {
+    "failures": [],
+    "n": 151,
+    "observer": "watch",
+    "stores_rebuilt": 48,
+    "stream": "Snever",
+    "x_full_stream": 151,
+    "x_truncated": 151
+   },
+   {
+    "failures": [],
+    "n": 79,
+    "observer": "recheck",
+    "stream": "*",
+    "x_full_stream": 79,
+    "x_truncated": 79
+   }
+  ],
+  "check_2_sample": {
+   "contested_evaluations": 704,
+   "hindsight_not_checked": 145,
+   "population": 1377,
+   "rest": 673,
+   "rule": "all evaluations of contested decisions + Random(0).sample(sorted(rest), ceil(0.1 x len(rest))), per capture",
+   "sampled_from_rest": 68
+  },
+  "totals": {
+   "check_1_append_only_corrections": {
+    "n": 1170,
+    "n_reached_by_late_k1": 982,
+    "x": 1170,
+    "x_reached_by_late_k1": 982
+   },
+   "check_2_earlier_cutoff_invariance": {
+    "n": 772,
+    "x": 772
+   }
+  }
+ },
+ "T4_sensitivities": [
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "T_p",
+   "delta_s": 10,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "T_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "neutral": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "neutral": {
+       "healthy replica restarted with the floor kept": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "neutral": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "neutral": {
+       "healthy replica restarted with the floor kept": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "T_p",
+   "delta_s": 10,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "V-target": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "V-target": {
+       "gone": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 1,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "T@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "V-target": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "V-target": {
+       "gone": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 1,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 10,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "neutral": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "neutral": {
+       "healthy replica restarted with the floor kept": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "neutral": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "neutral": {
+       "healthy replica restarted with the floor kept": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "L_p",
+   "delta_s": 10,
+   "heading": "F = 600 s",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "V-target": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "V-target": {
+       "gone": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 1,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "L@F600",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "V-target": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "V-target": {
+       "gone": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 1,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 10,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "neutral": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "neutral": {
+       "healthy replica restarted with the floor kept": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "DENY[R1]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 5,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "L_p",
+   "delta_s": 10,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "V-target": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "V-target": {
+       "gone": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 1,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "DENY[R1]": 3,
+      "DENY[R3]": 1,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 5,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "S0"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "A",
+   "beside": "L_p",
+   "delta_s": 10,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "NEEDS_APPROVAL[R2]": 4
+     },
+     "of_posed": 4
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 4,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 4,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V1"
+     ],
+     "of_posed": 4
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "L_p",
+   "delta_s": 0,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "neutral": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "neutral": {
+       "healthy replica restarted with the floor kept": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "DENY[R1]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 5,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "Snever"
+  },
+  {
+   "Delta_s": 0,
+   "action": "B",
+   "beside": "L_p",
+   "delta_s": 10,
+   "heading": "hindsight, not a live read",
+   "primary": {
+    "dispositions": {
+     "counts": {
+      "ALLOW[R7:no_visible_change]": 1,
+      "DENY[R3]": 3,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {
+      "V-target": 1
+     },
+     "of_posed": 5,
+     "reasons": {
+      "V-target": {
+       "gone": 1
+      }
+     }
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 1,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "sensitivity": "c-hind",
+   "sensitivity_cell": {
+    "dispositions": {
+     "counts": {
+      "DENY[R1]": 3,
+      "DENY[R3]": 1,
+      "NEEDS_APPROVAL[R2]": 1
+     },
+     "of_posed": 5
+    },
+    "executions_by_label": {
+     "counts": {},
+     "of_posed": 5,
+     "reasons": {}
+    },
+    "missed_opportunities": {
+     "by_disposition": {},
+     "of_requests_labelled_GT2": 0,
+     "total": 0
+    },
+    "posed": 5,
+    "unsafe_executions": {
+     "count": 0,
+     "labels": [
+      "V-target",
+      "V-floor"
+     ],
+     "of_posed": 5
+    }
+   },
+   "stream": "Snever"
+  }
+ ],
+ "U_executions": [],
+ "capture": {
+  "Delta_s": [
+   0
+  ],
+  "H": "2026-10-19T12:00:40.060001Z",
+  "H_by_observer": {
+   "poller": "2026-10-19T12:00:40.801000Z",
+   "recheck": "2026-10-19T12:00:40.060001Z",
+   "watch": "2026-10-19T12:00:40.300010Z"
+  },
+  "P": "2026-10-19T12:00:10.000000Z",
+  "actions": [
+   "A",
+   "B"
+  ],
+  "b_targets_not_posable": {},
+  "b_targets_posable": 5,
+  "binding": {
+   "changed_revision": 2,
+   "deployment_name": "recommendationservice",
+   "deployment_uid": "53f56a46-bbaa-44a9-898d-250e63dc8b87",
+   "generation": 1,
+   "pod_template_hash": "rech1",
+   "replicaset_uid": "541c5a13-52a1-4b7d-856e-0f6bca846f52",
+   "revision": 1,
+   "rollback": "revision 2 -> 1",
+   "service": "recommendationservice",
+   "source_record": "api:fx000003-0000-4000-8000-000000000003/9"
+  },
+  "capture": "FX-G2-001",
+  "changed_service": "recommendationservice",
+  "conditions": [
+   "T_p",
+   "L_p",
+   "R",
+   "T_w",
+   "L_w",
+   "L-kappa",
+   "c-hind",
+   "T@F600",
+   "L@F600"
+  ],
+  "delta_s": [
+   0,
+   10
+  ],
+  "observers": [
+   "poller",
+   "watch",
+   "recheck"
+  ],
+  "replica_floor_by_service": {
+   "productcatalogservice": 1,
+   "recommendationservice": 2
+  },
+  "requests": 5,
+  "service_deployments": {
+   "productcatalogservice": "productcatalogservice",
+   "recommendationservice": "recommendationservice"
+  },
+  "streams": [
+   "S0",
+   "Snever"
+  ]
+ },
+ "creation_ceiling_clamps": {
+  "poller": 2,
+  "recheck": 0,
+  "watch": 6
+ },
+ "cross_observer_agreement": {
+  "computed": true,
+  "per_observer": {
+   "poller": {
+    "bound_deployment_rollout_state": {
+     "n": 33,
+     "store_unknown": 0,
+     "x": 32
+    },
+    "pod_state": {
+     "by_response_state": {
+      "not_ready": {
+       "n": 9,
+       "x": 7
+      },
+      "ready": {
+       "n": 165,
+       "x": 162
+      }
+     },
+     "n": 174,
+     "store_unknown": 2,
+     "x": 169
+    }
+   },
+   "watch": {
+    "bound_deployment_rollout_state": {
+     "n": 33,
+     "store_unknown": 0,
+     "x": 33
+    },
+    "pod_state": {
+     "by_response_state": {
+      "not_ready": {
+       "n": 9,
+       "x": 9
+      },
+      "ready": {
+       "n": 165,
+       "x": 165
+      }
+     },
+     "n": 174,
+     "store_unknown": 0,
+     "x": 174
+    }
+   }
+  },
+  "responses": 33,
+  "semantics": "never reconstruction: different observation streams; a disagreement is not a replay failure",
+  "store": "two-clock (A1), stream S0, F = 30 s, as of each response receipt x_R <= H"
+ },
+ "decision_logs": [
+  {
+   "evaluations": 879,
+   "facts": 742,
+   "lines_by_kind": {
+    "clamp": 2,
+    "evaluation": 879,
+    "fact": 742,
+    "k1": 15,
+    "meta": 1,
+    "request": 200,
+    "schedule": 8
+   },
+   "observer": "poller",
+   "requests": 200
+  },
+  {
+   "evaluations": 83,
+   "facts": 603,
+   "lines_by_kind": {
+    "evaluation": 83,
+    "fact": 603,
+    "k1": 15,
+    "meta": 1,
+    "r2_start": 149,
+    "request": 20
+   },
+   "observer": "recheck",
+   "requests": 20
+  },
+  {
+   "evaluations": 560,
+   "facts": 2976,
+   "lines_by_kind": {
+    "clamp": 6,
+    "evaluation": 560,
+    "fact": 2976,
+    "k1": 18,
+    "meta": 1,
+    "request": 80,
+    "schedule": 4
+   },
+   "observer": "watch",
+   "requests": 80
+  }
+ ],
+ "decision_phase": {
+  "clamps": {
+   "poller": 2,
+   "recheck": 0,
+   "watch": 6
+  },
+  "dropped_kinds": {
+   "poller": {},
+   "watch": {
+    "EndpointSlice": 166,
+    "PodDisruptionBudget": 166
+   }
+  },
+  "k1": {
+   "poller": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 1,
+    "dropped": 0,
+    "observations": 15,
+    "pods": 8,
+    "records": 109,
+    "skipped": 0
+   },
+   "recheck": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 3,
+    "dropped": 0,
+    "observations": 15,
+    "pods": 8,
+    "records": 174,
+    "skipped": 0
+   },
+   "watch": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 6,
+    "dropped": 0,
+    "observations": 18,
+    "pods": 8,
+    "records": 489,
+    "skipped": 0
+   }
+  },
+  "r2_starts": 149,
+  "units": [
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 11019,
+     "x": 11019
+    },
+    "evaluations": 565,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 492,
+     "x": 492
+    },
+    "relevant_subjects": 10,
+    "stream": "S0"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 6068,
+     "x": 6068
+    },
+    "evaluations": 314,
+    "observer": "poller",
+    "provenance": {
+     "failures": [],
+     "n": 242,
+     "x": 242
+    },
+    "relevant_subjects": 10,
+    "stream": "Snever"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 5566,
+     "x": 5566
+    },
+    "evaluations": 280,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 280,
+     "x": 280
+    },
+    "relevant_subjects": 10,
+    "stream": "S0"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 5566,
+     "x": 5566
+    },
+    "evaluations": 280,
+    "observer": "watch",
+    "provenance": {
+     "failures": [],
+     "n": 280,
+     "x": 280
+    },
+    "relevant_subjects": 10,
+    "stream": "Snever"
+   },
+   {
+    "engines": {
+     "disagreements": 0,
+     "n": 1084,
+     "x": 1084
+    },
+    "evaluations": 83,
+    "observer": "recheck",
+    "provenance": {
+     "failures": [],
+     "n": 83,
+     "x": 83
+    },
+    "stream": "*"
+   }
+  ]
+ },
+ "design_check": {
+  "arm": "G",
+  "per_comparison": {
+   "H-G2": {
+    "contested": 3,
+    "pair": [
+     "T_p",
+     "L-kappa"
+    ],
+    "posed": 5
+   },
+   "H-G3": {
+    "contested": 8,
+    "pair": [
+     "T_p",
+     "R"
+    ],
+    "posed": 10
+   },
+   "H-G3 (T_w, R) secondary": {
+    "contested": 5,
+    "pair": [
+     "T_w",
+     "R"
+    ],
+    "posed": 10
+   },
+   "H-G4": {
+    "contested": 8,
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "posed": 10
+   },
+   "action A secondary (H-G4)": {
+    "contested": 6,
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "posed": 8
+   }
+  },
+  "primary_cells": {
+   "H-G2": {
+    "action": "B",
+    "delta_s": [
+     10,
+     30,
+     80
+    ],
+    "pair": [
+     "T_p",
+     "L-kappa"
+    ],
+    "stream": "S0"
+   },
+   "H-G3": {
+    "action": "B",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "pair": [
+     "T_p",
+     "R"
+    ],
+    "stream": "S0"
+   },
+   "H-G3 (T_w, R) secondary": {
+    "action": "B",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "pair": [
+     "T_w",
+     "R"
+    ],
+    "stream": "S0"
+   },
+   "H-G4": {
+    "action": "B",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "stream": "S0"
+   },
+   "action A secondary (H-G4)": {
+    "action": "A",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "pair": [
+     "T_p",
+     "T_w"
+    ],
+    "stream": "S0"
+   }
+  },
+  "rule": "record timing only, before any label",
+  "thresholds": {
+   "applied_by": "design_check_verdict over the arm's included captures",
+   "share_of_captures_with_one_at_least": 0.5,
+   "total_at_least": 30
+  }
+ },
+ "k1": {
+  "poller": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 1,
+   "dropped": 0,
+   "observations": 15,
+   "pods": 8,
+   "records": 109,
+   "skipped": 0
+  },
+  "recheck": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 3,
+   "dropped": 0,
+   "observations": 15,
+   "pods": 8,
+   "records": 174,
+   "skipped": 0
+  },
+  "watch": {
+   "clamped_beyond_band": 0,
+   "clock_clamped": 6,
+   "dropped": 0,
+   "observations": 18,
+   "pods": 8,
+   "records": 489,
+   "skipped": 0
+  }
+ },
+ "labels": {
+  "clock_band_us": 1250000,
+  "fault": {
+   "active_end": "2026-10-19T12:00:15.050000Z",
+   "active_start": "2026-10-19T12:00:14.900000Z",
+   "kill_receipts": [
+    {
+     "end": "2026-10-19T12:00:15.050000Z",
+     "id": "kill-001",
+     "start": "2026-10-19T12:00:14.900000Z"
+    }
+   ],
+   "latency_effect_established": null,
+   "pod_uid": "2543333a-b1e1-4727-804a-85d2e8f42de3",
+   "present": true,
+   "selected_by": "random_ready_replica",
+   "service": "recommendationservice",
+   "type": "F2"
+  },
+  "floors": {
+   "productcatalogservice": 1,
+   "recommendationservice": 2
+  },
+  "label_horizon": "2026-10-19T12:00:40.060000Z",
+  "notes": {
+   "k1_union_counts": {
+    "clamped_beyond_band": 0,
+    "clock_clamped": 6,
+    "dropped": 0,
+    "observations": 18,
+    "pods": 8,
+    "records": 306,
+    "skipped": 0
+   }
+  },
+  "physical_rollout_interval": {
+   "R_us": "2026-10-19T12:00:10.200000Z",
+   "desired_new_replicas": 3,
+   "end_basis": "last new Pod Ready stamp",
+   "end_us": "2026-10-19T12:00:19.000000Z",
+   "last_old_served_end_us": "2026-10-19T12:00:15.515000Z",
+   "new_hash": "rech2",
+   "new_ready_complete_us": "2026-10-19T12:00:19.000000Z",
+   "old_hash": "rech1"
+  },
+  "pods": [
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "productcatalogservice-proh1-aaaaa",
+    "ready_transitions": [
+     [
+      "2026-10-19T11:50:10.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "productcatalogservice",
+    "template_hash": "proh1",
+    "uid": "a1f70723-dfb3-4ac4-8002-46a15829a3b7"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "productcatalogservice-proh1-bbbbb",
+    "ready_transitions": [
+     [
+      "2026-10-19T11:50:10.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "productcatalogservice",
+    "template_hash": "proh1",
+    "uid": "379cd214-3a31-44be-87f1-d26a567d7931"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": "deletionTimestamp - grace",
+    "deletion_request": "2026-10-19T12:00:13.000000Z",
+    "gone_after": "2026-10-19T12:00:14.020000Z",
+    "name": "recommendationservice-rech1-aaaaa",
+    "ready_transitions": [
+     [
+      "2026-10-19T11:50:10.000000Z",
+      "ready"
+     ],
+     [
+      "2026-10-19T12:00:13.000000Z",
+      "not_ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "rech1",
+    "uid": "02f4e37a-fe99-4d30-8aa3-58f639cb8cdf"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": "deletionTimestamp - grace",
+    "deletion_request": "2026-10-19T12:00:16.000000Z",
+    "gone_after": "2026-10-19T12:00:17.020000Z",
+    "name": "recommendationservice-rech1-bbbbb",
+    "ready_transitions": [
+     [
+      "2026-10-19T11:50:10.000000Z",
+      "ready"
+     ],
+     [
+      "2026-10-19T12:00:16.000000Z",
+      "not_ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "rech1",
+    "uid": "21f8aa18-097e-45e4-87cf-d690def2867d"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": "deletionTimestamp - grace",
+    "deletion_request": "2026-10-19T12:00:19.000000Z",
+    "gone_after": "2026-10-19T12:00:20.020000Z",
+    "name": "recommendationservice-rech1-ccccc",
+    "ready_transitions": [
+     [
+      "2026-10-19T11:50:10.000000Z",
+      "ready"
+     ],
+     [
+      "2026-10-19T12:00:19.000000Z",
+      "not_ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "rech1",
+    "uid": "76251bc3-d6c0-4e29-87dd-838d04bd0881"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "recommendationservice-rech2-ddddd",
+    "ready_transitions": [
+     [
+      "2026-10-19T12:00:10.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-19T12:00:13.000000Z",
+      "ready"
+     ],
+     [
+      "2026-10-19T12:00:15.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-19T12:00:16.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-19T12:00:18.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "rech2",
+    "uid": "2543333a-b1e1-4727-804a-85d2e8f42de3"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "recommendationservice-rech2-eeeee",
+    "ready_transitions": [
+     [
+      "2026-10-19T12:00:13.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-19T12:00:16.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "rech2",
+    "uid": "ce8da7b7-d93a-4309-8c6b-e0e2e1d7ba27"
+   },
+   {
+    "deletion_bracket": null,
+    "deletion_note": null,
+    "deletion_request": null,
+    "gone_after": null,
+    "name": "recommendationservice-rech2-fffff",
+    "ready_transitions": [
+     [
+      "2026-10-19T12:00:16.000000Z",
+      "not_ready"
+     ],
+     [
+      "2026-10-19T12:00:19.000000Z",
+      "ready"
+     ]
+    ],
+    "service": "recommendationservice",
+    "template_hash": "rech2",
+    "uid": "868ca236-bfb8-4a28-8fc3-d55d85ea8f74"
+   }
+  ],
+  "rule": "labels never use R1-R7, a store or a view's knowledge rule"
+ },
+ "late_corrections": [
+  {
+   "condition": "L-kappa",
+   "observer": "poller",
+   "posed": 36,
+   "reached_by_late_correction": 28
+  },
+  {
+   "condition": "L@F600",
+   "observer": "poller",
+   "posed": 18,
+   "reached_by_late_correction": 14
+  },
+  {
+   "condition": "L_p",
+   "observer": "poller",
+   "posed": 36,
+   "reached_by_late_correction": 28
+  },
+  {
+   "condition": "T@F600",
+   "observer": "poller",
+   "posed": 18,
+   "reached_by_late_correction": 14
+  },
+  {
+   "condition": "T_p",
+   "observer": "poller",
+   "posed": 36,
+   "reached_by_late_correction": 28
+  },
+  {
+   "condition": "c-hind",
+   "observer": "poller",
+   "posed": 36,
+   "reached_by_late_correction": 28
+  },
+  {
+   "condition": "R",
+   "observer": "recheck",
+   "posed": 18,
+   "reached_by_late_correction": 11
+  },
+  {
+   "condition": "L_w",
+   "observer": "watch",
+   "posed": 36,
+   "reached_by_late_correction": 18
+  },
+  {
+   "condition": "T_w",
+   "observer": "watch",
+   "posed": 36,
+   "reached_by_late_correction": 18
+  }
+ ],
+ "measured_lags": {
+  "clock_band_us": 1250000,
+  "kill_to_not_ready_stamp": {
+   "max_s": -0.05,
+   "median_s": -0.05,
+   "min_s": -0.05,
+   "n": 1
+  },
+  "poller_pod_list_intervals": {
+   "max_s": 2.0,
+   "median_s": 2.0,
+   "min_s": 2.0,
+   "n": 20
+  },
+  "recheck_read_latency": {
+   "max_s": null,
+   "median_s": null,
+   "min_s": null,
+   "n": 0
+  },
+  "rule": "no timestamp corrected",
+  "transition_to_first_availability": {
+   "poller": {
+    "max_s": 2.003,
+    "median_s": 1.003,
+    "min_s": 0.0025,
+    "n": 22
+   },
+   "recheck": {
+    "max_s": 1.060001,
+    "median_s": 1.060001,
+    "min_s": 0.060001,
+    "n": 22
+   },
+   "watch": {
+    "max_s": 0.420001,
+    "median_s": 0.170012,
+    "min_s": 0.020001,
+    "n": 22
+   }
+  }
+ },
+ "plan_cells": {
+  "Delta_s": [
+   0
+  ],
+  "E_s": 120.0,
+  "actions": [
+   "A",
+   "B"
+  ],
+  "arm": "G",
+  "conditions": [
+   "T_p",
+   "L_p",
+   "R",
+   "T_w",
+   "L_w",
+   "L-kappa",
+   "c-hind",
+   "T@F600",
+   "L@F600"
+  ],
+  "delta_s": [
+   0,
+   10
+  ],
+  "observers": [
+   "poller",
+   "watch",
+   "recheck"
+  ],
+  "replica_floor_by_service": {
+   "productcatalogservice": 1,
+   "recommendationservice": 2
+  },
+  "replicas": {
+   "productcatalogservice": 2,
+   "recommendationservice": 3
+  },
+  "scenario": "G2",
+  "streams": [
+   "S0",
+   "Snever"
+  ]
+ },
+ "primary_sums": {
+  "H-G2": {
+   "cells": {
+    "Delta_s": [
+     0
+    ],
+    "action": "B",
+    "delta_s": [
+     10,
+     30,
+     80
+    ],
+    "streams": [
+     "S0"
+    ]
+   },
+   "conditions": {
+    "L-kappa": {
+     "GT2": 0,
+     "M": 0,
+     "U": 1,
+     "cells": 1,
+     "posed": 5
+    },
+    "T_p": {
+     "GT2": 0,
+     "M": 0,
+     "U": 1,
+     "cells": 1,
+     "posed": 5
+    }
+   },
+   "decisions_compared": 5,
+   "identical_first_verdicts_and_dispositions": true
+  },
+  "H-G3": {
+   "cells": {
+    "Delta_s": [
+     0
+    ],
+    "action": "B",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "streams": [
+     "S0"
+    ]
+   },
+   "conditions": {
+    "R": {
+     "GT2": 0,
+     "M": 0,
+     "U": 0,
+     "cells": 2,
+     "posed": 10
+    },
+    "T_p": {
+     "GT2": 0,
+     "M": 0,
+     "U": 1,
+     "cells": 2,
+     "posed": 10
+    }
+   },
+   "decisions_compared": 10,
+   "identical_first_verdicts_and_dispositions": false
+  },
+  "H-G3 (T_w, R) secondary": {
+   "cells": {
+    "Delta_s": [
+     0
+    ],
+    "action": "B",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "streams": [
+     "S0"
+    ]
+   },
+   "conditions": {
+    "R": {
+     "GT2": 0,
+     "M": 0,
+     "U": 0,
+     "cells": 2,
+     "posed": 10
+    },
+    "T_w": {
+     "GT2": 0,
+     "M": 0,
+     "U": 1,
+     "cells": 2,
+     "posed": 10
+    }
+   },
+   "decisions_compared": 10,
+   "identical_first_verdicts_and_dispositions": false
+  },
+  "H-G4": {
+   "cells": {
+    "Delta_s": [
+     0
+    ],
+    "action": "B",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "streams": [
+     "S0"
+    ]
+   },
+   "conditions": {
+    "T_p": {
+     "GT2": 0,
+     "M": 0,
+     "U": 1,
+     "cells": 2,
+     "posed": 10
+    },
+    "T_w": {
+     "GT2": 0,
+     "M": 0,
+     "U": 1,
+     "cells": 2,
+     "posed": 10
+    }
+   },
+   "decisions_compared": 10,
+   "identical_first_verdicts_and_dispositions": false
+  },
+  "action A secondary (H-G4)": {
+   "cells": {
+    "Delta_s": [
+     0
+    ],
+    "action": "A",
+    "delta_s": [
+     0,
+     10,
+     30,
+     80
+    ],
+    "streams": [
+     "S0"
+    ]
+   },
+   "conditions": {
+    "T_p": {
+     "GT2": 0,
+     "M": 0,
+     "U": 0,
+     "cells": 2,
+     "posed": 8
+    },
+    "T_w": {
+     "GT2": 0,
+     "M": 0,
+     "U": 0,
+     "cells": 2,
+     "posed": 8
+    }
+   },
+   "decisions_compared": 8,
+   "identical_first_verdicts_and_dispositions": true
+  }
+ },
+ "transitions": {
+  "by_kind": {
+   "deployment_progressing": 3,
+   "pod_created": 6,
+   "pod_deletion_requested": 3,
+   "pod_finishedAt": 1,
+   "pod_lastTransitionTime": 14,
+   "pod_startedAt": 1,
+   "replicaset_created": 2
+  },
+  "counted_transitions": 30,
+  "deletion_stamps_not_counted": [],
+  "rule": "counted objects = the changed service's Pods and the bound Deployment; stamps are the sources' own fields; a deletion request (deletionTimestamp - grace) earlier than the last record without deletionTimestamp by more than the clock band is inconsistent with the records and not counted (listed)"
+ }
+}

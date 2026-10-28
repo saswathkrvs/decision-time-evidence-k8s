@@ -1,0 +1,5 @@
+# Python 3.11 or later. Versions used for the published outputs (Python 3.11.15); the outputs were checked again
+# with Python 3.13, numpy 2.5.3, networkx 3.7 and pandas 3.0.5.
+numpy>=2.0        # 2.4.4
+networkx>=3.0     # 3.6.1
+pandas>=2.2       # imported by src/aiops_kg/graph_rank.py

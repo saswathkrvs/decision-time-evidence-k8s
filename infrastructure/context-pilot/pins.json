@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-09-22",
+  "kind_version": "v0.33.0",
+  "kind_windows_amd64_sha256": "4b22adaa135368c5a465d56bbd8e520cbea87272a06ca00b6078e7b81515c9fc",
+  "kind_binary_url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.33.0/kind-windows-amd64",
+  "kind_checksum_url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.33.0/kind-windows-amd64.sha256sum",
+  "kind_release_url": "https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0",
+  "node_image": "kindest/node:v1.34.11@sha256:44e222ee2132dab25ff87301682f89eb82c7880ea3a1bf543bfe9708fd08d67d",
+  "workload_image": "registry.k8s.io/pause:3.10@sha256:ee6521f290b2168b6e0935a181d4cff9be1ac3f505666ef0e3c98fae8199917a",
+  "workload_digest_source": "Official registry manifest metadata inspected with docker buildx imagetools inspect registry.k8s.io/pause:3.10",
+  "client_observed": "kubectl v1.34.1 windows/amd64",
+  "purpose": "Local disposable identity and rollout pilot, not an RCA benchmark"
+}
