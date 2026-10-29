@@ -1,0 +1,6366 @@
+{
+ "source": "results/stage2/adapter/*.json; analysis.tables reproduces every published value",
+ "comparisons": {
+  "recheck": {
+   "title": "Two-clock poller vs fresh recheck; restart in arm G",
+   "X": "T_p",
+   "Y": "R",
+   "population": "G",
+   "totals": {
+    "U_X": 110,
+    "U_Y": 0,
+    "M_X": 115,
+    "M_Y": 85,
+    "posed": 34392,
+    "GT2": 124
+   },
+   "D_U": {
+    "point": -110,
+    "interval_95": [
+     -121,
+     -100
+    ],
+    "interval_98_33": [
+     -123,
+     -97
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   },
+   "D_M": {
+    "point": 30,
+    "interval_95": [
+     0,
+     68
+    ],
+    "interval_98_33": [
+     0,
+     76
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "per_capture": [
+    {
+     "capture": "G1-005",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 0,
+     "M_X": 51,
+     "M_Y": 40,
+     "posed": 2160,
+     "GT2": 56,
+     "d_U": -1,
+     "d_M": 11
+    },
+    {
+     "capture": "G1-003",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -2,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-002",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 64,
+     "M_Y": 45,
+     "posed": 2160,
+     "GT2": 68,
+     "d_U": 0,
+     "d_M": 19
+    },
+    {
+     "capture": "G1-004",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -1,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-001",
+     "scenario": "G1",
+     "U_X": 5,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -5,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-005",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": -3,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-002",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": -3,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-003",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-004",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-006",
+     "scenario": "G2",
+     "U_X": 4,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -4,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-002",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": -28,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-003",
+     "scenario": "G3",
+     "U_X": 29,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2136,
+     "GT2": 0,
+     "d_U": -29,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-001",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": -28,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-002",
+     "scenario": "G4",
+     "U_X": 2,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -2,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-001",
+     "scenario": "G4",
+     "U_X": 3,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -3,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-003",
+     "scenario": "G4",
+     "U_X": 1,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -1,
+     "d_M": 0
+    }
+   ],
+   "leave_one_capture_out": [
+    {
+     "removed": "G1-005",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 0,
+     "M_X": 64,
+     "M_Y": 45,
+     "posed": 32232,
+     "D_U": -109,
+     "D_U_95": [
+      -120,
+      -98
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 19,
+     "D_M_95": [
+      0,
+      57
+     ]
+    },
+    {
+     "removed": "G1-003",
+     "scenario": "G1",
+     "U_X": 108,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -108,
+     "D_U_95": [
+      -119,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      60
+     ]
+    },
+    {
+     "removed": "G1-002",
+     "scenario": "G1",
+     "U_X": 110,
+     "U_Y": 0,
+     "M_X": 51,
+     "M_Y": 40,
+     "posed": 32232,
+     "D_U": -110,
+     "D_U_95": [
+      -120,
+      -100
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 11,
+     "D_M_95": [
+      0,
+      33
+     ]
+    },
+    {
+     "removed": "G1-004",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -109,
+     "D_U_95": [
+      -120,
+      -98
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      60
+     ]
+    },
+    {
+     "removed": "G1-001",
+     "scenario": "G1",
+     "U_X": 105,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -105,
+     "D_U_95": [
+      -113,
+      -96
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      60
+     ]
+    },
+    {
+     "removed": "G2-005",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32244,
+     "D_U": -107,
+     "D_U_95": [
+      -118,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G2-002",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32244,
+     "D_U": -107,
+     "D_U_95": [
+      -118,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G2-003",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32268,
+     "D_U": -110,
+     "D_U_95": [
+      -120,
+      -100
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G2-004",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32244,
+     "D_U": -110,
+     "D_U_95": [
+      -120,
+      -100
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G2-006",
+     "scenario": "G2",
+     "U_X": 106,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -106,
+     "D_U_95": [
+      -117,
+      -96
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G3-002",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32268,
+     "D_U": -82,
+     "D_U_95": [
+      -93,
+      -71
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G3-003",
+     "scenario": "G3",
+     "U_X": 81,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32256,
+     "D_U": -81,
+     "D_U_95": [
+      -92,
+      -71
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G3-001",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32268,
+     "D_U": -82,
+     "D_U_95": [
+      -93,
+      -71
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G4-002",
+     "scenario": "G4",
+     "U_X": 108,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -108,
+     "D_U_95": [
+      -120,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G4-001",
+     "scenario": "G4",
+     "U_X": 107,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -107,
+     "D_U_95": [
+      -118,
+      -96.975
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    },
+    {
+     "removed": "G4-003",
+     "scenario": "G4",
+     "U_X": 109,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -109,
+     "D_U_95": [
+      -120,
+      -98
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ]
+    }
+   ],
+   "leave_one_capture_out_summary": {
+    "D_U_range": [
+     -110,
+     -81
+    ],
+    "D_U_interval_excludes_0_in": 16,
+    "of": 16
+   },
+   "per_scenario": {
+    "G1": {
+     "scenario": "recommendation rollout, CPU fault",
+     "captures": 5,
+     "U_X": 9,
+     "U_Y": 0,
+     "M_X": 115,
+     "M_Y": 85,
+     "posed": 10800,
+     "D_U": -9,
+     "D_U_95": [
+      -17,
+      -3
+     ],
+     "D_M": 30,
+     "D_M_95": [
+      0,
+      68
+     ],
+     "captures_X_more_equal_fewer": [
+      4,
+      1,
+      0
+     ]
+    },
+    "G2": {
+     "scenario": "recommendation rollout, container termination",
+     "captures": 5,
+     "U_X": 10,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 10728,
+     "D_U": -10,
+     "D_U_95": [
+      -17,
+      -3
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      3,
+      2,
+      0
+     ]
+    },
+    "G3": {
+     "scenario": "catalog rollout, container termination",
+     "captures": 3,
+     "U_X": 85,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 6384,
+     "D_U": -85,
+     "D_U_95": [
+      -87,
+      -84
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      3,
+      0,
+      0
+     ]
+    },
+    "G4": {
+     "scenario": "benign rollout",
+     "captures": 3,
+     "U_X": 6,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 6480,
+     "D_U": -6,
+     "D_U_95": [
+      -9,
+      -3
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      3,
+      0,
+      0
+     ]
+    }
+   },
+   "without_G3": {
+    "captures": 13,
+    "U_X": 25,
+    "U_Y": 0,
+    "M_X": 115,
+    "M_Y": 85,
+    "posed": 28008,
+    "D_U": -25,
+    "D_U_95": [
+     -36,
+     -14
+    ],
+    "D_U_98_33": [
+     -39,
+     -12
+    ],
+    "D_M": 30,
+    "D_M_95": [
+     0,
+     68
+    ],
+    "captures_X_more_equal_fewer": [
+     10,
+     3,
+     0
+    ]
+   }
+  },
+  "approval_reuse": {
+   "title": "Two-clock poller vs approval reuse; restart in arm G",
+   "X": "T_p",
+   "Y": "L-kappa",
+   "population": "G",
+   "totals": {
+    "U_X": 110,
+    "U_Y": 1462,
+    "M_X": 92,
+    "M_Y": 93,
+    "posed": 25794,
+    "GT2": 93
+   },
+   "D_U": {
+    "point": 1352,
+    "interval_95": [
+     1300,
+     1396
+    ],
+    "interval_98_33": [
+     1287,
+     1403
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   },
+   "D_M": {
+    "point": -1,
+    "interval_95": [
+     -3,
+     0
+    ],
+    "interval_98_33": [
+     -3,
+     0
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "per_capture": [
+    {
+     "capture": "G1-005",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 82,
+     "M_X": 41,
+     "M_Y": 42,
+     "posed": 1620,
+     "GT2": 42,
+     "d_U": 81,
+     "d_M": -1
+    },
+    {
+     "capture": "G1-003",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 87,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 85,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-002",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 75,
+     "M_X": 51,
+     "M_Y": 51,
+     "posed": 1620,
+     "GT2": 51,
+     "d_U": 75,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-004",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 91,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 90,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-001",
+     "scenario": "G1",
+     "U_X": 5,
+     "U_Y": 87,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 82,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-005",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 90,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1611,
+     "GT2": 0,
+     "d_U": 87,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-002",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 87,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1611,
+     "GT2": 0,
+     "d_U": 84,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-003",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 62,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1593,
+     "GT2": 0,
+     "d_U": 62,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-004",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 86,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1611,
+     "GT2": 0,
+     "d_U": 86,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-006",
+     "scenario": "G2",
+     "U_X": 4,
+     "U_Y": 90,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 86,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-002",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 120,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1593,
+     "GT2": 0,
+     "d_U": 92,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-003",
+     "scenario": "G3",
+     "U_X": 29,
+     "U_Y": 123,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1602,
+     "GT2": 0,
+     "d_U": 94,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-001",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 118,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1593,
+     "GT2": 0,
+     "d_U": 90,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-002",
+     "scenario": "G4",
+     "U_X": 2,
+     "U_Y": 85,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 83,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-001",
+     "scenario": "G4",
+     "U_X": 3,
+     "U_Y": 95,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 92,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-003",
+     "scenario": "G4",
+     "U_X": 1,
+     "U_Y": 84,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1620,
+     "GT2": 0,
+     "d_U": 83,
+     "d_M": 0
+    }
+   ],
+   "leave_one_capture_out": [
+    {
+     "removed": "G1-005",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 1380,
+     "M_X": 51,
+     "M_Y": 51,
+     "posed": 24174,
+     "D_U": 1271,
+     "D_U_95": [
+      1216,
+      1315
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ]
+    },
+    {
+     "removed": "G1-003",
+     "scenario": "G1",
+     "U_X": 108,
+     "U_Y": 1375,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1267,
+     "D_U_95": [
+      1213,
+      1311
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-002",
+     "scenario": "G1",
+     "U_X": 110,
+     "U_Y": 1387,
+     "M_X": 41,
+     "M_Y": 42,
+     "posed": 24174,
+     "D_U": 1277,
+     "D_U_95": [
+      1225,
+      1317
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-004",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 1371,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1262,
+     "D_U_95": [
+      1210,
+      1301
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-001",
+     "scenario": "G1",
+     "U_X": 105,
+     "U_Y": 1375,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1270,
+     "D_U_95": [
+      1216,
+      1313
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-005",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 1372,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24183,
+     "D_U": 1265,
+     "D_U_95": [
+      1214,
+      1308
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-002",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 1375,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24183,
+     "D_U": 1268,
+     "D_U_95": [
+      1215,
+      1312
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-003",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 1400,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24201,
+     "D_U": 1290,
+     "D_U_95": [
+      1264,
+      1317
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-004",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 1376,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24183,
+     "D_U": 1266,
+     "D_U_95": [
+      1214,
+      1310
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-006",
+     "scenario": "G2",
+     "U_X": 106,
+     "U_Y": 1372,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1266,
+     "D_U_95": [
+      1214,
+      1310
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G3-002",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 1342,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24201,
+     "D_U": 1260,
+     "D_U_95": [
+      1206,
+      1304
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G3-003",
+     "scenario": "G3",
+     "U_X": 81,
+     "U_Y": 1339,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24192,
+     "D_U": 1258,
+     "D_U_95": [
+      1204,
+      1301
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G3-001",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 1344,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24201,
+     "D_U": 1262,
+     "D_U_95": [
+      1209,
+      1305
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G4-002",
+     "scenario": "G4",
+     "U_X": 108,
+     "U_Y": 1377,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1269,
+     "D_U_95": [
+      1216,
+      1312
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G4-001",
+     "scenario": "G4",
+     "U_X": 107,
+     "U_Y": 1367,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1260,
+     "D_U_95": [
+      1208,
+      1300
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G4-003",
+     "scenario": "G4",
+     "U_X": 109,
+     "U_Y": 1378,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 24174,
+     "D_U": 1269,
+     "D_U_95": [
+      1215,
+      1312
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    }
+   ],
+   "leave_one_capture_out_summary": {
+    "D_U_range": [
+     1258,
+     1290
+    ],
+    "D_U_interval_excludes_0_in": 16,
+    "of": 16
+   },
+   "per_scenario": {
+    "G1": {
+     "scenario": "recommendation rollout, CPU fault",
+     "captures": 5,
+     "U_X": 9,
+     "U_Y": 422,
+     "M_X": 92,
+     "M_Y": 93,
+     "posed": 8100,
+     "D_U": 413,
+     "D_U_95": [
+      392,
+      435
+     ],
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      0,
+      5
+     ]
+    },
+    "G2": {
+     "scenario": "recommendation rollout, container termination",
+     "captures": 5,
+     "U_X": 10,
+     "U_Y": 415,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 8046,
+     "D_U": 405,
+     "D_U_95": [
+      357,
+      432
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      0,
+      5
+     ]
+    },
+    "G3": {
+     "scenario": "catalog rollout, container termination",
+     "captures": 3,
+     "U_X": 85,
+     "U_Y": 361,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 4788,
+     "D_U": 276,
+     "D_U_95": [
+      270,
+      282
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      0,
+      3
+     ]
+    },
+    "G4": {
+     "scenario": "benign rollout",
+     "captures": 3,
+     "U_X": 6,
+     "U_Y": 264,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 4860,
+     "D_U": 258,
+     "D_U_95": [
+      249,
+      276
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      0,
+      3
+     ]
+    }
+   },
+   "without_G3": {
+    "captures": 13,
+    "U_X": 25,
+    "U_Y": 1101,
+    "M_X": 92,
+    "M_Y": 93,
+    "posed": 21006,
+    "D_U": 1076,
+    "D_U_95": [
+     1020,
+     1119
+    ],
+    "D_U_98_33": [
+     1007,
+     1127
+    ],
+    "D_M": -1,
+    "D_M_95": [
+     -3,
+     0
+    ],
+    "captures_X_more_equal_fewer": [
+     0,
+     0,
+     13
+    ]
+   }
+  },
+  "watch_G": {
+   "title": "Two-clock watch vs two-clock poller; restart in arm G",
+   "X": "T_w",
+   "Y": "T_p",
+   "population": "G",
+   "totals": {
+    "U_X": 110,
+    "U_Y": 110,
+    "M_X": 113,
+    "M_Y": 115,
+    "posed": 34392,
+    "GT2": 124
+   },
+   "D_U": {
+    "point": 0,
+    "interval_95": [
+     0,
+     0
+    ],
+    "interval_98_33": [
+     0,
+     0
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "D_M": {
+    "point": -2,
+    "interval_95": [
+     -4,
+     0
+    ],
+    "interval_98_33": [
+     -5,
+     0
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "per_capture": [
+    {
+     "capture": "G1-005",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 50,
+     "M_Y": 51,
+     "posed": 2160,
+     "GT2": 56,
+     "d_U": 0,
+     "d_M": -1
+    },
+    {
+     "capture": "G1-003",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-002",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 63,
+     "M_Y": 64,
+     "posed": 2160,
+     "GT2": 68,
+     "d_U": 0,
+     "d_M": -1
+    },
+    {
+     "capture": "G1-004",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-001",
+     "scenario": "G1",
+     "U_X": 5,
+     "U_Y": 5,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-005",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 3,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-002",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 3,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-003",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-004",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-006",
+     "scenario": "G2",
+     "U_X": 4,
+     "U_Y": 4,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-002",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 28,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-003",
+     "scenario": "G3",
+     "U_X": 29,
+     "U_Y": 29,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2136,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-001",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 28,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-002",
+     "scenario": "G4",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-001",
+     "scenario": "G4",
+     "U_X": 3,
+     "U_Y": 3,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-003",
+     "scenario": "G4",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    }
+   ],
+   "leave_one_capture_out": [
+    {
+     "removed": "G1-005",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 109,
+     "M_X": 63,
+     "M_Y": 64,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-003",
+     "scenario": "G1",
+     "U_X": 108,
+     "U_Y": 108,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G1-002",
+     "scenario": "G1",
+     "U_X": 110,
+     "U_Y": 110,
+     "M_X": 50,
+     "M_Y": 51,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-004",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 109,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G1-001",
+     "scenario": "G1",
+     "U_X": 105,
+     "U_Y": 105,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G2-005",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 107,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32244,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G2-002",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 107,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32244,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G2-003",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 110,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32268,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G2-004",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 110,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32244,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G2-006",
+     "scenario": "G2",
+     "U_X": 106,
+     "U_Y": 106,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G3-002",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 82,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32268,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G3-003",
+     "scenario": "G3",
+     "U_X": 81,
+     "U_Y": 81,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32256,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G3-001",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 82,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32268,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G4-002",
+     "scenario": "G4",
+     "U_X": 108,
+     "U_Y": 108,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G4-001",
+     "scenario": "G4",
+     "U_X": 107,
+     "U_Y": 107,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    },
+    {
+     "removed": "G4-003",
+     "scenario": "G4",
+     "U_X": 109,
+     "U_Y": 109,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 32232,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ]
+    }
+   ],
+   "leave_one_capture_out_summary": {
+    "D_U_range": [
+     0,
+     0
+    ],
+    "D_U_interval_excludes_0_in": 0,
+    "of": 16
+   },
+   "per_scenario": {
+    "G1": {
+     "scenario": "recommendation rollout, CPU fault",
+     "captures": 5,
+     "U_X": 9,
+     "U_Y": 9,
+     "M_X": 113,
+     "M_Y": 115,
+     "posed": 10800,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": -2,
+     "D_M_95": [
+      -4,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      5,
+      0
+     ]
+    },
+    "G2": {
+     "scenario": "recommendation rollout, container termination",
+     "captures": 5,
+     "U_X": 10,
+     "U_Y": 10,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 10728,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      5,
+      0
+     ]
+    },
+    "G3": {
+     "scenario": "catalog rollout, container termination",
+     "captures": 3,
+     "U_X": 85,
+     "U_Y": 85,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 6384,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      3,
+      0
+     ]
+    },
+    "G4": {
+     "scenario": "benign rollout",
+     "captures": 3,
+     "U_X": 6,
+     "U_Y": 6,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 6480,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      3,
+      0
+     ]
+    }
+   },
+   "without_G3": {
+    "captures": 13,
+    "U_X": 25,
+    "U_Y": 25,
+    "M_X": 113,
+    "M_Y": 115,
+    "posed": 28008,
+    "D_U": 0,
+    "D_U_95": [
+     0,
+     0
+    ],
+    "D_U_98_33": [
+     0,
+     0
+    ],
+    "D_M": -2,
+    "D_M_95": [
+     -4,
+     0
+    ],
+    "captures_X_more_equal_fewer": [
+     0,
+     13,
+     0
+    ]
+   }
+  },
+  "watch_D": {
+   "title": "Two-clock watch vs two-clock poller; rollback in arm D",
+   "X": "T_w",
+   "Y": "T_p",
+   "population": "D",
+   "totals": {
+    "U_X": 0,
+    "U_Y": 50,
+    "M_X": 628,
+    "M_Y": 662,
+    "posed": 5158,
+    "GT2": 1340
+   },
+   "D_U": {
+    "point": 50,
+    "interval_95": [
+     44,
+     56
+    ],
+    "interval_98_33": [
+     42,
+     58
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   },
+   "D_M": {
+    "point": -34,
+    "interval_95": [
+     -36,
+     -30
+    ],
+    "interval_98_33": [
+     -36,
+     -28
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   },
+   "per_capture": [
+    {
+     "capture": "D1-005",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 8,
+     "M_X": 104,
+     "M_Y": 110,
+     "posed": 620,
+     "GT2": 210,
+     "d_U": 8,
+     "d_M": -6
+    },
+    {
+     "capture": "D1-001",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 6,
+     "M_X": 110,
+     "M_Y": 114,
+     "posed": 620,
+     "GT2": 224,
+     "d_U": 6,
+     "d_M": -4
+    },
+    {
+     "capture": "D1-003",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 10,
+     "M_X": 106,
+     "M_Y": 112,
+     "posed": 620,
+     "GT2": 228,
+     "d_U": 10,
+     "d_M": -6
+    },
+    {
+     "capture": "D1-002",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 8,
+     "M_X": 100,
+     "M_Y": 106,
+     "posed": 620,
+     "GT2": 226,
+     "d_U": 8,
+     "d_M": -6
+    },
+    {
+     "capture": "D1-006",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 10,
+     "M_X": 108,
+     "M_Y": 114,
+     "posed": 620,
+     "GT2": 228,
+     "d_U": 10,
+     "d_M": -6
+    },
+    {
+     "capture": "D1-004",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 8,
+     "M_X": 100,
+     "M_Y": 106,
+     "posed": 618,
+     "GT2": 224,
+     "d_U": 8,
+     "d_M": -6
+    },
+    {
+     "capture": "D2-003",
+     "scenario": "D2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 720,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "D2-002",
+     "scenario": "D2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 720,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    }
+   ],
+   "leave_one_capture_out": [
+    {
+     "removed": "D1-005",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 42,
+     "M_X": 524,
+     "M_Y": 552,
+     "posed": 4538,
+     "D_U": 42,
+     "D_U_95": [
+      36,
+      48
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -28,
+     "D_M_95": [
+      -30,
+      -24
+     ]
+    },
+    {
+     "removed": "D1-001",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 44,
+     "M_X": 518,
+     "M_Y": 548,
+     "posed": 4538,
+     "D_U": 44,
+     "D_U_95": [
+      40,
+      48
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -30,
+     "D_M_95": [
+      -30,
+      -30
+     ]
+    },
+    {
+     "removed": "D1-003",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 40,
+     "M_X": 522,
+     "M_Y": 550,
+     "posed": 4538,
+     "D_U": 40,
+     "D_U_95": [
+      34,
+      46
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -28,
+     "D_M_95": [
+      -30,
+      -24
+     ]
+    },
+    {
+     "removed": "D1-002",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 42,
+     "M_X": 528,
+     "M_Y": 556,
+     "posed": 4538,
+     "D_U": 42,
+     "D_U_95": [
+      36,
+      48
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -28,
+     "D_M_95": [
+      -30,
+      -24
+     ]
+    },
+    {
+     "removed": "D1-006",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 40,
+     "M_X": 520,
+     "M_Y": 548,
+     "posed": 4538,
+     "D_U": 40,
+     "D_U_95": [
+      34,
+      46
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -28,
+     "D_M_95": [
+      -30,
+      -24
+     ]
+    },
+    {
+     "removed": "D1-004",
+     "scenario": "D1",
+     "U_X": 0,
+     "U_Y": 42,
+     "M_X": 528,
+     "M_Y": 556,
+     "posed": 4540,
+     "D_U": 42,
+     "D_U_95": [
+      36,
+      48
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -28,
+     "D_M_95": [
+      -30,
+      -24
+     ]
+    },
+    {
+     "removed": "D2-003",
+     "scenario": "D2",
+     "U_X": 0,
+     "U_Y": 50,
+     "M_X": 628,
+     "M_Y": 662,
+     "posed": 4438,
+     "D_U": 50,
+     "D_U_95": [
+      44,
+      56
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -34,
+     "D_M_95": [
+      -36,
+      -30
+     ]
+    },
+    {
+     "removed": "D2-002",
+     "scenario": "D2",
+     "U_X": 0,
+     "U_Y": 50,
+     "M_X": 628,
+     "M_Y": 662,
+     "posed": 4438,
+     "D_U": 50,
+     "D_U_95": [
+      44,
+      56
+     ],
+     "D_U_excludes_0": true,
+     "D_M": -34,
+     "D_M_95": [
+      -36,
+      -30
+     ]
+    }
+   ],
+   "leave_one_capture_out_summary": {
+    "D_U_range": [
+     40,
+     50
+    ],
+    "D_U_interval_excludes_0_in": 8,
+    "of": 8
+   },
+   "per_scenario": {
+    "D1": {
+     "scenario": "recommendation rollout, CPU fault (one replica)",
+     "captures": 6,
+     "U_X": 0,
+     "U_Y": 50,
+     "M_X": 628,
+     "M_Y": 662,
+     "posed": 3718,
+     "D_U": 50,
+     "D_U_95": [
+      44,
+      56
+     ],
+     "D_M": -34,
+     "D_M_95": [
+      -36,
+      -30
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      0,
+      6
+     ]
+    },
+    "D2": {
+     "scenario": "settled catalog rollout, CPU fault",
+     "captures": 2,
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1440,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      2,
+      0
+     ]
+    }
+   }
+  },
+  "watch_vs_recheck": {
+   "title": "Two-clock watch vs fresh recheck; restart in arm G (secondary)",
+   "X": "T_w",
+   "Y": "R",
+   "population": "G",
+   "totals": {
+    "U_X": 110,
+    "U_Y": 0,
+    "M_X": 113,
+    "M_Y": 85,
+    "posed": 34392,
+    "GT2": 124
+   },
+   "D_U": {
+    "point": -110,
+    "interval_95": [
+     -121,
+     -100
+    ],
+    "interval_98_33": [
+     -123,
+     -97
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   },
+   "D_M": {
+    "point": 28,
+    "interval_95": [
+     0,
+     64
+    ],
+    "interval_98_33": [
+     0,
+     72
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "per_capture": [
+    {
+     "capture": "G1-005",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 0,
+     "M_X": 50,
+     "M_Y": 40,
+     "posed": 2160,
+     "GT2": 56,
+     "d_U": -1,
+     "d_M": 10
+    },
+    {
+     "capture": "G1-003",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -2,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-002",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 63,
+     "M_Y": 45,
+     "posed": 2160,
+     "GT2": 68,
+     "d_U": 0,
+     "d_M": 18
+    },
+    {
+     "capture": "G1-004",
+     "scenario": "G1",
+     "U_X": 1,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -1,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-001",
+     "scenario": "G1",
+     "U_X": 5,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -5,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-005",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": -3,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-002",
+     "scenario": "G2",
+     "U_X": 3,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": -3,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-003",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-004",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2148,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-006",
+     "scenario": "G2",
+     "U_X": 4,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -4,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-002",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": -28,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-003",
+     "scenario": "G3",
+     "U_X": 29,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2136,
+     "GT2": 0,
+     "d_U": -29,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-001",
+     "scenario": "G3",
+     "U_X": 28,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2124,
+     "GT2": 0,
+     "d_U": -28,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-002",
+     "scenario": "G4",
+     "U_X": 2,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -2,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-001",
+     "scenario": "G4",
+     "U_X": 3,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -3,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-003",
+     "scenario": "G4",
+     "U_X": 1,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 2160,
+     "GT2": 0,
+     "d_U": -1,
+     "d_M": 0
+    }
+   ],
+   "leave_one_capture_out": [
+    {
+     "removed": "G1-005",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 0,
+     "M_X": 63,
+     "M_Y": 45,
+     "posed": 32232,
+     "D_U": -109,
+     "D_U_95": [
+      -120,
+      -98
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 18,
+     "D_M_95": [
+      0,
+      54
+     ]
+    },
+    {
+     "removed": "G1-003",
+     "scenario": "G1",
+     "U_X": 108,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -108,
+     "D_U_95": [
+      -119,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      56
+     ]
+    },
+    {
+     "removed": "G1-002",
+     "scenario": "G1",
+     "U_X": 110,
+     "U_Y": 0,
+     "M_X": 50,
+     "M_Y": 40,
+     "posed": 32232,
+     "D_U": -110,
+     "D_U_95": [
+      -120,
+      -100
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 10,
+     "D_M_95": [
+      0,
+      30
+     ]
+    },
+    {
+     "removed": "G1-004",
+     "scenario": "G1",
+     "U_X": 109,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -109,
+     "D_U_95": [
+      -120,
+      -98
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      56
+     ]
+    },
+    {
+     "removed": "G1-001",
+     "scenario": "G1",
+     "U_X": 105,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -105,
+     "D_U_95": [
+      -113,
+      -96
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      56
+     ]
+    },
+    {
+     "removed": "G2-005",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32244,
+     "D_U": -107,
+     "D_U_95": [
+      -118,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G2-002",
+     "scenario": "G2",
+     "U_X": 107,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32244,
+     "D_U": -107,
+     "D_U_95": [
+      -118,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G2-003",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32268,
+     "D_U": -110,
+     "D_U_95": [
+      -120,
+      -100
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G2-004",
+     "scenario": "G2",
+     "U_X": 110,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32244,
+     "D_U": -110,
+     "D_U_95": [
+      -120,
+      -100
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G2-006",
+     "scenario": "G2",
+     "U_X": 106,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -106,
+     "D_U_95": [
+      -117,
+      -96
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G3-002",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32268,
+     "D_U": -82,
+     "D_U_95": [
+      -93,
+      -71
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G3-003",
+     "scenario": "G3",
+     "U_X": 81,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32256,
+     "D_U": -81,
+     "D_U_95": [
+      -92,
+      -71
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G3-001",
+     "scenario": "G3",
+     "U_X": 82,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32268,
+     "D_U": -82,
+     "D_U_95": [
+      -93,
+      -71
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G4-002",
+     "scenario": "G4",
+     "U_X": 108,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -108,
+     "D_U_95": [
+      -120,
+      -97
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G4-001",
+     "scenario": "G4",
+     "U_X": 107,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -107,
+     "D_U_95": [
+      -118,
+      -96.975
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    },
+    {
+     "removed": "G4-003",
+     "scenario": "G4",
+     "U_X": 109,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 32232,
+     "D_U": -109,
+     "D_U_95": [
+      -120,
+      -98
+     ],
+     "D_U_excludes_0": true,
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ]
+    }
+   ],
+   "leave_one_capture_out_summary": {
+    "D_U_range": [
+     -110,
+     -81
+    ],
+    "D_U_interval_excludes_0_in": 16,
+    "of": 16
+   },
+   "per_scenario": {
+    "G1": {
+     "scenario": "recommendation rollout, CPU fault",
+     "captures": 5,
+     "U_X": 9,
+     "U_Y": 0,
+     "M_X": 113,
+     "M_Y": 85,
+     "posed": 10800,
+     "D_U": -9,
+     "D_U_95": [
+      -17,
+      -3
+     ],
+     "D_M": 28,
+     "D_M_95": [
+      0,
+      64
+     ],
+     "captures_X_more_equal_fewer": [
+      4,
+      1,
+      0
+     ]
+    },
+    "G2": {
+     "scenario": "recommendation rollout, container termination",
+     "captures": 5,
+     "U_X": 10,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 10728,
+     "D_U": -10,
+     "D_U_95": [
+      -17,
+      -3
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      3,
+      2,
+      0
+     ]
+    },
+    "G3": {
+     "scenario": "catalog rollout, container termination",
+     "captures": 3,
+     "U_X": 85,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 6384,
+     "D_U": -85,
+     "D_U_95": [
+      -87,
+      -84
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      3,
+      0,
+      0
+     ]
+    },
+    "G4": {
+     "scenario": "benign rollout",
+     "captures": 3,
+     "U_X": 6,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 6480,
+     "D_U": -6,
+     "D_U_95": [
+      -9,
+      -3
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      3,
+      0,
+      0
+     ]
+    }
+   },
+   "without_G3": {
+    "captures": 13,
+    "U_X": 25,
+    "U_Y": 0,
+    "M_X": 113,
+    "M_Y": 85,
+    "posed": 28008,
+    "D_U": -25,
+    "D_U_95": [
+     -36,
+     -14
+    ],
+    "D_U_98_33": [
+     -39,
+     -12
+    ],
+    "D_M": 28,
+    "D_M_95": [
+     0,
+     64
+    ],
+    "captures_X_more_equal_fewer": [
+     10,
+     3,
+     0
+    ]
+   }
+  },
+  "watch_G_rollback": {
+   "title": "Two-clock watch vs two-clock poller; rollback in arm G (secondary)",
+   "X": "T_w",
+   "Y": "T_p",
+   "population": "G",
+   "totals": {
+    "U_X": 2,
+    "U_Y": 2,
+    "M_X": 585,
+    "M_Y": 586,
+    "posed": 31352,
+    "GT2": 928
+   },
+   "D_U": {
+    "point": 0,
+    "interval_95": [
+     0,
+     0
+    ],
+    "interval_98_33": [
+     0,
+     0
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "D_M": {
+    "point": -1,
+    "interval_95": [
+     -3,
+     0
+    ],
+    "interval_98_33": [
+     -3,
+     0
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "per_capture": [
+    {
+     "capture": "G1-005",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 296,
+     "M_Y": 297,
+     "posed": 1960,
+     "GT2": 464,
+     "d_U": 0,
+     "d_M": -1
+    },
+    {
+     "capture": "G1-003",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-002",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 289,
+     "M_Y": 289,
+     "posed": 1960,
+     "GT2": 464,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-004",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G1-001",
+     "scenario": "G1",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-005",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1956,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-002",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-003",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-004",
+     "scenario": "G2",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G2-006",
+     "scenario": "G2",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-002",
+     "scenario": "G3",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-003",
+     "scenario": "G3",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1956,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G3-001",
+     "scenario": "G3",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-002",
+     "scenario": "G4",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-001",
+     "scenario": "G4",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    },
+    {
+     "capture": "G4-003",
+     "scenario": "G4",
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 1960,
+     "GT2": 0,
+     "d_U": 0,
+     "d_M": 0
+    }
+   ],
+   "leave_one_capture_out": [
+    {
+     "removed": "G1-005",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 289,
+     "M_Y": 289,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ]
+    },
+    {
+     "removed": "G1-003",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-002",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 296,
+     "M_Y": 297,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-004",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G1-001",
+     "scenario": "G1",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-005",
+     "scenario": "G2",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29396,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-002",
+     "scenario": "G2",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-003",
+     "scenario": "G2",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-004",
+     "scenario": "G2",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G2-006",
+     "scenario": "G2",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G3-002",
+     "scenario": "G3",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G3-003",
+     "scenario": "G3",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29396,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G3-001",
+     "scenario": "G3",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G4-002",
+     "scenario": "G4",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G4-001",
+     "scenario": "G4",
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    },
+    {
+     "removed": "G4-003",
+     "scenario": "G4",
+     "U_X": 2,
+     "U_Y": 2,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 29392,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_U_excludes_0": false,
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ]
+    }
+   ],
+   "leave_one_capture_out_summary": {
+    "D_U_range": [
+     0,
+     0
+    ],
+    "D_U_interval_excludes_0_in": 0,
+    "of": 16
+   },
+   "per_scenario": {
+    "G1": {
+     "scenario": "recommendation rollout, CPU fault",
+     "captures": 5,
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 585,
+     "M_Y": 586,
+     "posed": 9800,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": -1,
+     "D_M_95": [
+      -3,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      5,
+      0
+     ]
+    },
+    "G2": {
+     "scenario": "recommendation rollout, container termination",
+     "captures": 5,
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 9796,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      5,
+      0
+     ]
+    },
+    "G3": {
+     "scenario": "catalog rollout, container termination",
+     "captures": 3,
+     "U_X": 0,
+     "U_Y": 0,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 5876,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      3,
+      0
+     ]
+    },
+    "G4": {
+     "scenario": "benign rollout",
+     "captures": 3,
+     "U_X": 1,
+     "U_Y": 1,
+     "M_X": 0,
+     "M_Y": 0,
+     "posed": 5880,
+     "D_U": 0,
+     "D_U_95": [
+      0,
+      0
+     ],
+     "D_M": 0,
+     "D_M_95": [
+      0,
+      0
+     ],
+     "captures_X_more_equal_fewer": [
+      0,
+      3,
+      0
+     ]
+    }
+   },
+   "without_G3": {
+    "captures": 13,
+    "U_X": 2,
+    "U_Y": 2,
+    "M_X": 585,
+    "M_Y": 586,
+    "posed": 25476,
+    "D_U": 0,
+    "D_U_95": [
+     0,
+     0
+    ],
+    "D_U_98_33": [
+     0,
+     0
+    ],
+    "D_M": -1,
+    "D_M_95": [
+     -3,
+     0
+    ],
+    "captures_X_more_equal_fewer": [
+     0,
+     13,
+     0
+    ]
+   }
+  }
+ },
+ "restart_arm_G_conditions": {
+  "cells": {
+   "action": "B",
+   "stream": "S0",
+   "Delta_s": [
+    0,
+    5,
+    30
+   ],
+   "delta_s": [
+    0,
+    10,
+    30,
+    80
+   ]
+  },
+  "per_capture": {
+   "G1-005": {
+    "scenario": "G1",
+    "T_p": {
+     "U": 1,
+     "M": 51,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 1,
+     "M": 41,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 1,
+     "M": 51,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 1,
+     "M": 41,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 1,
+     "M": 50,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 1,
+     "M": 40,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 1,
+     "M": 50,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 1,
+     "M": 40,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 40,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 38,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 82,
+     "M": 52,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 82,
+     "M": 42,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 51,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 41,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 118,
+     "M": 51,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 118,
+     "M": 41,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 118,
+     "M": 51,
+     "GT2": 56,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 118,
+     "M": 41,
+     "GT2": 42,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G1-003": {
+    "scenario": "G1",
+    "T_p": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G1-002": {
+    "scenario": "G1",
+    "T_p": {
+     "U": 0,
+     "M": 64,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 0,
+     "M": 51,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 0,
+     "M": 64,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 0,
+     "M": 51,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 0,
+     "M": 63,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 0,
+     "M": 50,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 0,
+     "M": 63,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 0,
+     "M": 50,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 45,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 44,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 75,
+     "M": 64,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 75,
+     "M": 51,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 64,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 51,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 75,
+     "M": 64,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 75,
+     "M": 51,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 75,
+     "M": 64,
+     "GT2": 68,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 75,
+     "M": 51,
+     "GT2": 51,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G1-004": {
+    "scenario": "G1",
+    "T_p": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 91,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 91,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 91,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 91,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 91,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 91,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G1-001": {
+    "scenario": "G1",
+    "T_p": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 5,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G2-005": {
+    "scenario": "G2",
+    "T_p": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 116,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 116,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 116,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 116,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    }
+   },
+   "G2-002": {
+    "scenario": "G2",
+    "T_p": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 87,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    }
+   },
+   "G2-003": {
+    "scenario": "G2",
+    "T_p": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 62,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 62,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 62,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 62,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 62,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 62,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    }
+   },
+   "G2-004": {
+    "scenario": "G2",
+    "T_p": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 86,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 86,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2148,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1611,
+     "cells": 9
+    }
+   },
+   "G2-006": {
+    "scenario": "G2",
+    "T_p": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 4,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 90,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G3-002": {
+    "scenario": "G3",
+    "T_p": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 120,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    }
+   },
+   "G3-003": {
+    "scenario": "G3",
+    "T_p": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 29,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 123,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 123,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 123,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 123,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 123,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2136,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 123,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1602,
+     "cells": 9
+    }
+   },
+   "G3-001": {
+    "scenario": "G3",
+    "T_p": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 28,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 118,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 118,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 132,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 132,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 132,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2124,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 132,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1593,
+     "cells": 9
+    }
+   },
+   "G4-002": {
+    "scenario": "G4",
+    "T_p": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 2,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 85,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 85,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 85,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 85,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 85,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 85,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G4-001": {
+    "scenario": "G4",
+    "T_p": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 3,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 95,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 95,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 95,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 95,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 95,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 95,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   },
+   "G4-003": {
+    "scenario": "G4",
+    "T_p": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_p (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_p": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_p (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T_w": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T_w (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L_w": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L_w (delta > 0)": {
+     "U": 1,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "R": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "R (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L-kappa": {
+     "U": 84,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L-kappa (delta > 0)": {
+     "U": 84,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "c-hind": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "c-hind (delta > 0)": {
+     "U": 0,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "T@F600": {
+     "U": 84,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "T@F600 (delta > 0)": {
+     "U": 84,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    },
+    "L@F600": {
+     "U": 84,
+     "M": 0,
+     "GT2": 0,
+     "posed": 2160,
+     "cells": 12
+    },
+    "L@F600 (delta > 0)": {
+     "U": 84,
+     "M": 0,
+     "GT2": 0,
+     "posed": 1620,
+     "cells": 9
+    }
+   }
+  },
+  "totals": {
+   "T_p": {
+    "U": 110,
+    "M": 115,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "T_p (delta > 0)": {
+    "U": 110,
+    "M": 92,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "L_p": {
+    "U": 110,
+    "M": 115,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "L_p (delta > 0)": {
+    "U": 110,
+    "M": 92,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "T_w": {
+    "U": 110,
+    "M": 113,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "T_w (delta > 0)": {
+    "U": 110,
+    "M": 90,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "L_w": {
+    "U": 110,
+    "M": 113,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "L_w (delta > 0)": {
+    "U": 110,
+    "M": 90,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "R": {
+    "U": 0,
+    "M": 85,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "R (delta > 0)": {
+    "U": 0,
+    "M": 82,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "L-kappa": {
+    "U": 1462,
+    "M": 116,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "L-kappa (delta > 0)": {
+    "U": 1462,
+    "M": 93,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "c-hind": {
+    "U": 0,
+    "M": 115,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "c-hind (delta > 0)": {
+    "U": 0,
+    "M": 92,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "T@F600": {
+    "U": 1572,
+    "M": 115,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "T@F600 (delta > 0)": {
+    "U": 1572,
+    "M": 92,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   },
+   "L@F600": {
+    "U": 1572,
+    "M": 115,
+    "GT2": 124,
+    "posed": 34392,
+    "cells": 192
+   },
+   "L@F600 (delta > 0)": {
+    "U": 1572,
+    "M": 92,
+    "GT2": 93,
+    "posed": 25794,
+    "cells": 144
+   }
+  },
+  "by_delay_and_cutoff": {
+   "T_p": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 30,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 57,
+     "M": 60,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 53,
+     "M": 52,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "L_p": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 30,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 57,
+     "M": 60,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 53,
+     "M": 52,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "T_w": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 28,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 57,
+     "M": 59,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 53,
+     "M": 51,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "L_w": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 28,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 57,
+     "M": 59,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 53,
+     "M": 51,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "R": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 0,
+     "M": 20,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 0,
+     "M": 44,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 0,
+     "M": 37,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 4,
+     "posed": 11464
+    }
+   },
+   "L-kappa": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 622,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 730,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 798,
+     "M": 60,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 664,
+     "M": 53,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "c-hind": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 0,
+     "M": 30,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 0,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 0,
+     "M": 60,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 0,
+     "M": 52,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 0,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "T@F600": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 30,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 677,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 785,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 828,
+     "M": 60,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 704,
+     "M": 52,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 40,
+     "M": 3,
+     "posed": 11464
+    }
+   },
+   "L@F600": {
+    "delta 0 s": {
+     "U": 0,
+     "M": 23,
+     "posed": 8598
+    },
+    "delta 10 s": {
+     "U": 110,
+     "M": 30,
+     "posed": 8598
+    },
+    "delta 30 s": {
+     "U": 677,
+     "M": 31,
+     "posed": 8598
+    },
+    "delta 80 s": {
+     "U": 785,
+     "M": 31,
+     "posed": 8598
+    },
+    "cutoff +0 s": {
+     "U": 828,
+     "M": 60,
+     "posed": 11464
+    },
+    "cutoff +5 s": {
+     "U": 704,
+     "M": 52,
+     "posed": 11464
+    },
+    "cutoff +30 s": {
+     "U": 40,
+     "M": 3,
+     "posed": 11464
+    }
+   }
+  }
+ }
+}

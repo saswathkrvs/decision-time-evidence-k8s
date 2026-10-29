@@ -19,17 +19,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -49,9 +45,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -94,17 +92,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -124,9 +118,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -169,17 +165,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -198,9 +190,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -241,17 +235,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -271,9 +261,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -316,17 +308,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -346,9 +334,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -391,17 +381,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -420,9 +406,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -464,18 +452,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V1": 2,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -498,9 +482,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -544,18 +530,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V1": 2,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -578,9 +560,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -623,17 +607,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -652,9 +632,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -696,18 +678,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 3,
+     "GT-2-A": 14,
      "V1": 2,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 3
+      "constructed mitigation opportunity": 14
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -730,9 +708,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 19
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 19
    },
    "not_posed": {
     "before the patch request P": 30
@@ -776,18 +756,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 3,
+     "GT-2-A": 14,
      "V1": 2,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 3
+      "constructed mitigation opportunity": 14
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -810,9 +786,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 19
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 19
    },
    "not_posed": {
     "before the patch request P": 20
@@ -855,17 +833,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 4,
+     "GT-2-A": 19,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 4
+      "constructed mitigation opportunity": 19
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -884,9 +858,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 20
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 20
    },
    "not_posed": {},
    "posed": 120,
@@ -927,17 +903,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -957,9 +929,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1002,17 +976,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -1032,9 +1002,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1077,17 +1049,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -1106,9 +1074,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1149,17 +1119,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -1179,9 +1145,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1224,17 +1192,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -1254,9 +1218,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1299,17 +1265,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -1328,9 +1290,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1371,17 +1335,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -1401,9 +1361,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1446,17 +1408,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -1476,9 +1434,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1521,17 +1481,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -1550,9 +1506,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1593,17 +1551,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -1623,9 +1577,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1668,17 +1624,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -1698,9 +1650,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1743,17 +1697,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -1772,9 +1722,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1815,17 +1767,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -1845,9 +1793,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1890,17 +1840,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -1920,9 +1866,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1965,17 +1913,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -1994,9 +1938,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2040,18 +1986,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V1": 2,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -2074,9 +2016,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2122,18 +2066,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V1": 2,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -2156,9 +2096,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2203,17 +2145,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -2232,9 +2170,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2278,18 +2218,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 3,
+     "GT-2-A": 14,
      "V1": 2,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 3
+      "constructed mitigation opportunity": 14
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -2312,9 +2248,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 19
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 19
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2360,18 +2298,14 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 3,
+     "GT-2-A": 14,
      "V1": 2,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 3
+      "constructed mitigation opportunity": 14
      },
      "V1": {
       "inside_physical_rollout_interval": 2
@@ -2394,9 +2328,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 19
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 19
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2441,17 +2377,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 4,
+     "GT-2-A": 19,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 4
+      "constructed mitigation opportunity": 19
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -2470,9 +2402,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 20
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 20
    },
    "not_posed": {},
    "posed": 120,
@@ -2513,17 +2447,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -2543,9 +2473,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2588,17 +2520,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -2618,9 +2546,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2663,17 +2593,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -2692,9 +2618,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2737,17 +2665,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -2767,9 +2691,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2814,17 +2740,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -2844,9 +2766,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2891,17 +2815,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -2920,9 +2840,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2965,17 +2887,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -2995,9 +2913,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3042,17 +2962,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -3072,9 +2988,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3119,17 +3037,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -3148,9 +3062,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -3191,17 +3107,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -3221,9 +3133,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3266,17 +3180,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -3296,9 +3206,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3341,17 +3253,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -3370,9 +3278,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -3413,17 +3323,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -3443,9 +3349,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3488,17 +3396,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 5,
+     "GT-2-A": 16,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 5
+      "constructed mitigation opportunity": 16
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -3518,9 +3422,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 17
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 17
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3563,17 +3469,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 6,
+     "GT-2-A": 21,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 6
+      "constructed mitigation opportunity": 21
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -3592,9 +3494,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 18
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -3635,17 +3539,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 3,
+     "GT-2-A": 14,
      "V2 (GT-3)": 17
     },
     "of_posed": 90,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 3
+      "constructed mitigation opportunity": 14
      },
      "V2 (GT-3)": {
       "outside the fault window": 17
@@ -3665,9 +3565,11 @@
     "of_posed": 90
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 19
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 19
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3710,17 +3612,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 11,
-     "U": 3,
+     "GT-2-A": 14,
      "V2 (GT-3)": 26
     },
     "of_posed": 100,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 11
-     },
-     "U": {
-      "rollout_end_within_band": 3
+      "constructed mitigation opportunity": 14
      },
      "V2 (GT-3)": {
       "outside the fault window": 26
@@ -3740,9 +3638,11 @@
     "of_posed": 100
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 11,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 19
+    },
+    "of_requests_labelled_GT2": 33,
+    "total": 19
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3785,17 +3685,13 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "GT-2-A": 15,
-     "U": 4,
+     "GT-2-A": 19,
      "V2 (GT-3)": 69
     },
     "of_posed": 120,
     "reasons": {
      "GT-2-A": {
-      "constructed mitigation opportunity": 15
-     },
-     "U": {
-      "rollout_end_within_band": 4
+      "constructed mitigation opportunity": 19
      },
      "V2 (GT-3)": {
       "outside the fault window": 69
@@ -3814,9 +3710,11 @@
     "of_posed": 120
    },
    "missed_opportunities": {
-    "by_disposition": {},
-    "of_requests_labelled_GT2": 15,
-    "total": 0
+    "by_disposition": {
+     "NEEDS_APPROVAL[R2]": 20
+    },
+    "of_requests_labelled_GT2": 39,
+    "total": 20
    },
    "not_posed": {},
    "posed": 120,
@@ -4603,17 +4501,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -4621,9 +4515,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4645,17 +4541,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -4663,9 +4555,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4694,17 +4588,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -4712,9 +4602,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -4736,17 +4628,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -4754,9 +4642,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -4785,17 +4675,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -4803,9 +4689,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -4827,17 +4715,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -4845,9 +4729,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -4876,17 +4762,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -4894,9 +4776,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4918,17 +4802,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -4936,9 +4816,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4967,17 +4849,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -4985,9 +4863,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5009,17 +4889,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -5027,9 +4903,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5058,17 +4936,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5076,9 +4950,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5100,17 +4976,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5118,9 +4990,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5149,17 +5023,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -5167,9 +5037,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5191,17 +5063,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -5209,9 +5077,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5240,17 +5110,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -5258,9 +5124,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5282,17 +5150,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -5300,9 +5164,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5331,17 +5197,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5349,9 +5211,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5373,17 +5237,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5391,9 +5251,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5423,18 +5285,14 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V1": 2,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V1": {
        "inside_physical_rollout_interval": 2
@@ -5445,9 +5303,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5469,17 +5329,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -5487,9 +5343,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5519,18 +5377,14 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V1": 2,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V1": {
        "inside_physical_rollout_interval": 2
@@ -5541,9 +5395,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5565,17 +5421,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 5,
+      "GT-2-A": 16,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 5
+       "constructed mitigation opportunity": 16
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -5583,9 +5435,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 17
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 17
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5614,17 +5468,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5632,9 +5482,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5656,17 +5508,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 6,
+      "GT-2-A": 21,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 6
+       "constructed mitigation opportunity": 21
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5674,9 +5522,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 18
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5706,18 +5556,14 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 3,
+      "GT-2-A": 14,
       "V1": 2,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 3
+       "constructed mitigation opportunity": 14
       },
       "V1": {
        "inside_physical_rollout_interval": 2
@@ -5728,9 +5574,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 19
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 19
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5752,17 +5600,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 3,
+      "GT-2-A": 14,
       "V2 (GT-3)": 17
      },
      "of_posed": 90,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 3
+       "constructed mitigation opportunity": 14
       },
       "V2 (GT-3)": {
        "outside the fault window": 17
@@ -5770,9 +5614,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 19
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 19
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5802,18 +5648,14 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 3,
+      "GT-2-A": 14,
       "V1": 2,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 3
+       "constructed mitigation opportunity": 14
       },
       "V1": {
        "inside_physical_rollout_interval": 2
@@ -5824,9 +5666,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 19
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 19
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5848,17 +5692,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 11,
-      "U": 3,
+      "GT-2-A": 14,
       "V2 (GT-3)": 26
      },
      "of_posed": 100,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 11
-      },
-      "U": {
-       "rollout_end_within_band": 3
+       "constructed mitigation opportunity": 14
       },
       "V2 (GT-3)": {
        "outside the fault window": 26
@@ -5866,9 +5706,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 11,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 19
+     },
+     "of_requests_labelled_GT2": 33,
+     "total": 19
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5897,17 +5739,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 4,
+      "GT-2-A": 19,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 4
+       "constructed mitigation opportunity": 19
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5915,9 +5753,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 20
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 20
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5939,17 +5779,13 @@
     },
     "executions_by_label": {
      "counts": {
-      "GT-2-A": 15,
-      "U": 4,
+      "GT-2-A": 19,
       "V2 (GT-3)": 69
      },
      "of_posed": 120,
      "reasons": {
       "GT-2-A": {
-       "constructed mitigation opportunity": 15
-      },
-      "U": {
-       "rollout_end_within_band": 4
+       "constructed mitigation opportunity": 19
       },
       "V2 (GT-3)": {
        "outside the fault window": 69
@@ -5957,9 +5793,11 @@
      }
     },
     "missed_opportunities": {
-     "by_disposition": {},
-     "of_requests_labelled_GT2": 15,
-     "total": 0
+     "by_disposition": {
+      "NEEDS_APPROVAL[R2]": 20
+     },
+     "of_requests_labelled_GT2": 39,
+     "total": 20
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5973,2548 +5811,7 @@
    "stream": "Snever"
   }
  ],
- "U_executions": [
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S30"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.549976Z",
-   "k": 88,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137742Z",
-   "k": 89,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.650652Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.248478Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.754785Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.548643Z",
-   "k": 79,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.137402Z",
-   "k": 80,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.647974Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153472Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.738123Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:20.636649Z",
-   "k": 31,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.143043Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:21.648152Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.153144Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:22.688561Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T08:14:23.201428Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  }
- ],
+ "U_executions": [],
  "adapter": "governance-stage2-adapter-v0.1-dev",
  "capture": {
   "Delta_s": [
@@ -8883,8 +6180,8 @@
    "R_us": "2026-10-20T08:13:50.419416Z",
    "desired_new_replicas": 1,
    "end_basis": "old-revision request end",
-   "end_us": "2026-10-20T08:14:21.871663Z",
-   "last_old_served_end_us": "2026-10-20T08:14:21.871663Z",
+   "end_us": "2026-10-20T08:14:03.101565Z",
+   "last_old_served_end_us": "2026-10-20T08:14:03.101565Z",
    "new_hash": "b64dbbc96",
    "new_ready_complete_us": "2026-10-20T08:14:02.000000Z",
    "old_hash": "794bf474c7"
@@ -9112,15 +6409,15 @@
    },
    "conditions": {
     "T_p": {
-     "GT2": 74,
-     "M": 0,
+     "GT2": 210,
+     "M": 110,
      "U": 8,
      "cells": 6,
      "posed": 620
     },
     "T_w": {
-     "GT2": 74,
-     "M": 0,
+     "GT2": 210,
+     "M": 104,
      "U": 0,
      "cells": 6,
      "posed": 620
@@ -9130,7 +6427,7 @@
    "identical_first_verdicts_and_dispositions": false
   }
  },
- "python": "3.11",
+ "python": "3.13",
  "transitions": {
   "by_kind": {
    "deployment_progressing": 5,

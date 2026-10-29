@@ -1,7 +1,7 @@
 # Decision-time evidence for Kubernetes diagnosis and remediation
 
-Code, per-capture outputs and table scripts for the paper *Decision-Time Evidence for Kubernetes Diagnosis and
-Remediation: A Matched-Baseline Study*.
+Code, per-capture outputs and table scripts for the paper *When Does Decision-Time Evidence Matter? A Controlled
+Replay Study of Kubernetes Diagnosis and Remediation*.
 
 Kubernetes rollouts of two Online Boutique services were recorded on a single-node kind cluster. Every record keeps
 two times: when the observed state held (valid time) and when the record reached the pipeline (availability time).
@@ -20,20 +20,22 @@ remediation gate; proposed actions are counterfactual and never executed. The ra
 | `experiments/policy-gate-live-v1/` | development gate analysis: label-free, over nine real rollouts |
 | `experiments/governance-pilot-v0/` | development matched rollback pilot |
 | `experiments/policy-gate-v1/`, `experiments/replay-policy-v1/`, `experiments/attribution-lag-v1/` | the analyses of the 22 Sep 2026 rollout that the development stage builds on; the outputs of the first two are kept in their folders (the gate analysis reads them) |
-| `experiments/governance-stage2/` | follow-up governance adapter: decision logs, outcome labels, design check and comparisons, per capture |
-| `experiments/diagnosis-control-v1/` | follow-up diagnosis control (arm D) |
-| `analysis/` | every table and number of the paper, recomputed from `results/` (`tables.py`, `stats.py`), and a comparison of rerun outputs with `results/` (`compare_outputs.py`) |
+| `experiments/governance-stage2/` | follow-up governance adapter: decision logs, outcome labels, design check and comparisons, per capture; further replays of the arm-G restart decisions (`govstage2/replays.py`, `run_replays.py`): the views at the recheck's instants and with its lag, the valid-time and end-of-capture audit replays, the thinned and delayed poller, and the check of the labels against traffic and probes |
+| `experiments/diagnosis-control-v1/` | follow-up diagnosis control (arm D) and the diagnosis stress test (`run_diagnosis_stress.py`) |
+| `analysis/` | every table, number and figure of the paper, recomputed from `results/` (`paper_numbers.py`, `tables.py`, `figures.py`, `stats.py`), the summaries of the replay analyses (`capture_stats.py`, `replay_summary.py`, `by_delay.py`, `stress_summary.py`), and a comparison of rerun outputs with `results/` (`compare_outputs.py`) |
 | `results/` | the per-capture outputs (below) |
 | `tests/` | unit and end-to-end tests on constructed fixtures |
 
-## Reproduce the tables (no captures needed)
+## Reproduce the paper's numbers (no captures needed)
 
 ```
-python -m analysis.tables --check
+python -m analysis.paper_numbers --check
+python -m analysis.figures --out figures          # Figures 2-5; needs matplotlib
 ```
 
-This prints Tables 2 and 3 and every number quoted in the text, computed from `results/`, and compares each with
-the published value. It needs only the standard library.
+The first recomputes every number of the paper from `results/` and compares each with the published value; it needs
+only the standard library. It includes the check of `analysis.tables`, which covers the captures, the observers, the
+principal comparisons and the diagnosis (`python -m analysis.tables --check` runs it alone).
 
 ## The captures
 
@@ -49,11 +51,10 @@ data/raw/rollout-telemetry/pilot-001/                  the 22 Sep 2026 rollout
 ```
 
 Each capture holds the collectors' records (`MANIFEST.json` lists every file with its size and SHA-256), the
-sources that ran (`sources/`) and the evaluation-only ground truth (`ground_truth/`, never a model input). For
-publication, local file paths and the capture host's user name were removed, and descriptive text in the capture
-runner's own records and scripts was tidied (comments and notes shortened, status labels renamed, bookkeeping
-entries removed). No measured value, timestamp or identifier was changed, and this repository reproduces every
-published number from the archive. The formats are described in `phase3/CAPTURE_FORMAT.md` and
+sources that ran (`sources/`) and the evaluation-only ground truth (`ground_truth/`, never a model input). Local
+file paths and the capture host's user name are not included; measured values, timestamps and identifiers are as
+recorded, and this repository reproduces every published number from the archive, whose own README describes its
+contents. The formats are described in `phase3/CAPTURE_FORMAT.md` and
 `phase3/CAPTURE_FORMAT_STAGE2.md`. The analyses read a capture only after conversion, which writes
 `<capture>/evidence/` and changes nothing else.
 
@@ -62,7 +63,7 @@ published number from the archive. The formats are described in `phase3/CAPTURE_
 Python 3.11 or later, `pip install -r requirements.txt`, and the captures unpacked as above. Commands run from the
 repository root; every output directory must not exist yet. The runs are deterministic.
 
-**Follow-up stage (Tables 2 and 3).**
+**Follow-up stage (the governance adapter and the diagnosis control).**
 
 ```
 python phase3/convert_stage2.py --capture phase3/captures_stage2/G1-001
@@ -80,6 +81,27 @@ Convert each capture once; the adapter runs on every included capture (`results/
 takes about 2 minutes per arm-D capture and about 45 minutes per arm-G capture for the adapter, and about
 2.5 minutes for the diagnosis control on the nine arm-D captures. The adapter also writes the decision logs
 (`decision_logs/*.jsonl.gz`, one per observer) that its counts are computed from.
+
+**Replay analyses of the follow-up captures.** `<follow-up>` is the folder holding the converted follow-up
+captures (`<capture>/evidence`, for example `phase3/captures_stage2`) and `<development>` the converted development
+captures (`phase3/captures`). Outputs go to `results/stage2/analyses/`.
+
+```
+python -m analysis.capture_stats                                                         # per_capture_stats.json
+python experiments/governance-stage2/run_replays.py --captures-root <follow-up>              # replays/<capture>.json
+python experiments/governance-stage2/run_replays.py --captures-root <follow-up> --latency    # latency/<capture>.json
+python experiments/governance-stage2/run_replays.py --captures-root <follow-up> --surrogate  # surrogate/<capture>.json
+python -m analysis.replay_summary                                                        # replays_summary.json
+python -m analysis.by_delay                                                              # by_delay.json
+python experiments/diagnosis-control-v1/run_diagnosis_stress.py --captures-root <follow-up> \
+    --dev-captures-root <development>                                                    # diagnosis_stress.json
+python -m analysis.stress_summary                                                        # diagnosis_stress_summary.json
+```
+
+The three `run_replays.py` passes skip a capture whose output exists, so an interrupted run continues where it
+stopped; each checks that its replay of the published views reproduces the adapter's counts. One core takes about
+1 to 3 minutes per capture for the replays, 1 to 2 minutes for the latency pass, under a minute for the label check
+and about 2 minutes for the stress test on 13 captures; the summaries take about a second each.
 
 **Development stage.**
 
@@ -115,6 +137,11 @@ the few that read the 22 Sep rollout or a converted capture are skipped.
 | `results/stage2/diagnosis/` | the diagnosis control per arm-D capture and its summary |
 | `results/development/diagnosis/<ID>.json` | the development diagnosis of the five fault captures |
 | `results/development/gate_audit.json`, `rollback_pilot.json` | the development gate analysis and the matched rollback pilot |
+| `results/stage2/analyses/per_capture_stats.json` | the principal comparisons per capture and per scenario, with leave-one-capture-out and the comparison without scenario G3; every view's counts by dispatch delay and cutoff |
+| `results/stage2/analyses/replays/<ID>.json` | per arm-G capture: the replayed views (two-clock and latest-snapshot gates at the recheck's instants, with the recheck's lag, thinned poller, valid-time replay), their decisions' counts per cell, agreement with the published views, the audit replays and the poll intervals |
+| `results/stage2/analyses/latency/<ID>.json`, `surrogate/<ID>.json` | the gate with every poller record available 5 s and 30 s later; the label check (EndpointSlice, server spans, probes) at every execution instant |
+| `results/stage2/analyses/replays_summary.json`, `by_delay.json` | the sums and paired comparisons of the replays; every view's posed decisions, executions, unsafe executions and missed opportunities by dispatch delay and cutoff |
+| `results/stage2/analyses/diagnosis_stress.json`, `diagnosis_stress_summary.json` | the diagnosis stress test: every (capture, family, delay, cutoff, policy) cell and each capture's Pod-list intervals, and their summary |
 
 These are the outputs the code here writes; for the gate analysis and the pilot, the published files keep the
 analysis keys of the tools' `results.json`. All times are host times unless a field says otherwise.

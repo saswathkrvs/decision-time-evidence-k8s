@@ -19,20 +19,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 13,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 93
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 13
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 93
      }
     }
    },
@@ -60,7 +52,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 13,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -295,20 +287,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 101
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 101
      }
     }
    },
@@ -336,7 +320,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -571,20 +555,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 12
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -610,7 +586,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 12,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -1747,20 +1723,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 75
+     "V1": 2,
+     "V2 (GT-3)": 92
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 14
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 92
      }
     }
    },
@@ -1788,7 +1760,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 14,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -1895,16 +1867,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "V1": 2,
-     "V2 (GT-3)": 92
+     "V2 (GT-3)": 94
     },
     "of_posed": 150,
     "reasons": {
-     "V1": {
-      "inside_physical_rollout_interval": 2
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 92
+      "F2 kill: rollback is not its mitigation": 94
      }
     }
    },
@@ -1932,7 +1900,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 2,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -2035,20 +2003,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 85
+     "V1": 2,
+     "V2 (GT-3)": 100
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 12
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 100
      }
     }
    },
@@ -2076,7 +2040,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 12,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -2183,16 +2147,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "V1": 2,
-     "V2 (GT-3)": 100
+     "V2 (GT-3)": 102
     },
     "of_posed": 160,
     "reasons": {
-     "V1": {
-      "inside_physical_rollout_interval": 2
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 100
+      "F2 kill: rollback is not its mitigation": 102
      }
     }
    },
@@ -2220,7 +2180,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 2,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -2322,20 +2282,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 149
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 149
      }
     }
    },
@@ -2361,7 +2313,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -3484,20 +3436,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 13,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 93
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 13
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 93
      }
     }
    },
@@ -3525,7 +3469,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 13,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -3558,20 +3502,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 52,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -3598,7 +3534,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -3762,20 +3698,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 101
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 101
      }
     }
    },
@@ -3803,7 +3731,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -3836,20 +3764,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 52,
-     "V2 (GT-3)": 103
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -3876,7 +3796,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -4040,20 +3960,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 12
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -4079,7 +3991,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 12,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -4112,20 +4024,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 23,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -4150,7 +4054,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -5197,20 +5101,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 13,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 93
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 13
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 93
      }
     }
    },
@@ -5238,7 +5134,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 13,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -5271,20 +5167,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 52,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -5311,7 +5199,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -5463,20 +5351,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 101
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 101
      }
     }
    },
@@ -5504,7 +5384,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -5537,20 +5417,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 52,
-     "V2 (GT-3)": 103
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -5577,7 +5449,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -5729,20 +5601,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 12
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -5768,7 +5632,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 12,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -5801,20 +5665,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 23,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -5839,7 +5695,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -6785,20 +6641,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 75
+     "V1": 2,
+     "V2 (GT-3)": 92
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 14
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 92
      }
     }
    },
@@ -6826,7 +6678,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 14,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -6860,20 +6712,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 52,
-     "V2 (GT-3)": 95
+     "V1": 2,
+     "V2 (GT-3)": 148
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
      "V1": {
-      "inside_physical_rollout_interval": 52
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 148
      }
     }
    },
@@ -6900,7 +6748,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -7053,20 +6901,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 85
+     "V1": 2,
+     "V2 (GT-3)": 100
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 12
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 100
      }
     }
    },
@@ -7094,7 +6938,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 12,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -7128,20 +6972,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 52,
-     "V2 (GT-3)": 103
+     "V1": 2,
+     "V2 (GT-3)": 158
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 52
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 158
      }
     }
    },
@@ -7168,7 +7008,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -7320,20 +7160,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 149
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 149
      }
     }
    },
@@ -7359,7 +7191,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -7392,20 +7224,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 23,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -7430,7 +7254,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -8379,20 +8203,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -8420,7 +8236,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -8453,20 +8269,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 2,
-     "V1": 52,
-     "V2 (GT-3)": 96
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 2
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 96
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -8493,7 +8301,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -8645,20 +8453,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 104
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 14
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 104
      }
     }
    },
@@ -8686,7 +8486,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 14,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -8719,20 +8519,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 52,
-     "V2 (GT-3)": 104
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 104
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -8759,7 +8551,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -8911,20 +8703,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 15,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 153
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 153
      }
     }
    },
@@ -8950,7 +8734,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -8983,20 +8767,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 23,
-     "V2 (GT-3)": 153
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 153
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -9021,7 +8797,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -9964,20 +9740,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -10005,7 +9773,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -10038,20 +9806,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 2,
-     "V1": 52,
-     "V2 (GT-3)": 96
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 2
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 96
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -10078,7 +9838,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -10230,20 +9990,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 104
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 14
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 104
      }
     }
    },
@@ -10271,7 +10023,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 14,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -10304,20 +10056,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 52,
-     "V2 (GT-3)": 104
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 104
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -10344,7 +10088,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -10496,20 +10240,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 15,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 153
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 153
      }
     }
    },
@@ -10535,7 +10271,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -10568,20 +10304,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 23,
-     "V2 (GT-3)": 153
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 153
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -10606,7 +10334,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -11549,20 +11277,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 15,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -11590,7 +11310,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -11624,20 +11344,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 15,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 115
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 115
      }
     }
    },
@@ -11665,7 +11377,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -11698,20 +11410,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 11,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -11738,7 +11442,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -11838,20 +11542,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 15,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 106
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 106
      }
     }
    },
@@ -11879,7 +11575,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -11913,20 +11609,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 104
+     "V2 (GT-3)": 125
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 104
+      "F2 kill: rollback is not its mitigation": 125
      }
     }
    },
@@ -11954,7 +11642,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -11987,20 +11675,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 11,
-     "V2 (GT-3)": 143
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 143
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -12027,7 +11707,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -12127,20 +11807,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 16,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 155
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 155
      }
     }
    },
@@ -12166,7 +11838,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -12200,20 +11872,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 15,
-     "V2 (GT-3)": 153
+     "V2 (GT-3)": 174
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 153
+      "F2 kill: rollback is not its mitigation": 174
      }
     }
    },
@@ -12239,7 +11903,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13269,20 +12933,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 15,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -13310,7 +12966,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13344,20 +13000,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 15,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 115
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 115
      }
     }
    },
@@ -13385,7 +13033,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13418,20 +13066,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 11,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -13458,7 +13098,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13558,20 +13198,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 15,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 106
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 106
      }
     }
    },
@@ -13599,7 +13231,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13633,20 +13265,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 104
+     "V2 (GT-3)": 125
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 104
+      "F2 kill: rollback is not its mitigation": 125
      }
     }
    },
@@ -13674,7 +13298,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13707,20 +13331,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 11,
-     "V2 (GT-3)": 143
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 143
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -13747,7 +13363,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13847,20 +13463,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 16,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 155
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 155
      }
     }
    },
@@ -13886,7 +13494,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -13920,20 +13528,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 6,
-     "V1": 15,
-     "V2 (GT-3)": 153
+     "V2 (GT-3)": 174
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 6
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 153
+      "F2 kill: rollback is not its mitigation": 174
      }
     }
    },
@@ -13959,7 +13559,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -14953,20 +14553,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 13,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 93
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 13
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 93
      }
     }
    },
@@ -14994,7 +14586,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 13,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -15027,20 +14619,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 52,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -15067,7 +14651,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -15231,20 +14815,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 101
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 101
      }
     }
    },
@@ -15272,7 +14848,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -15305,20 +14881,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 52,
-     "V2 (GT-3)": 103
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -15345,7 +14913,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -15509,20 +15077,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 12
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -15548,7 +15108,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 12,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -15581,20 +15141,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 23,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -15619,7 +15171,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -16668,20 +16220,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 13,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 93
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 13
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 93
      }
     }
    },
@@ -16709,7 +16253,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 13,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -16744,20 +16288,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 52,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -16784,7 +16320,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -16942,20 +16478,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 101
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 101
      }
     }
    },
@@ -16983,7 +16511,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -17018,20 +16546,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 52,
-     "V2 (GT-3)": 103
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -17058,7 +16578,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -17216,20 +16736,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 150
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 12
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -17255,7 +16767,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 12,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -17290,20 +16802,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 23,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -17328,7 +16832,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -18323,20 +17827,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 75
+     "V1": 2,
+     "V2 (GT-3)": 92
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 14
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 92
      }
     }
    },
@@ -18364,7 +17864,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 14,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -18398,20 +17898,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 52,
-     "V2 (GT-3)": 95
+     "V1": 2,
+     "V2 (GT-3)": 148
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
      "V1": {
-      "inside_physical_rollout_interval": 52
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 148
      }
     }
    },
@@ -18438,7 +17934,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -18591,20 +18087,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 12,
-     "V2 (GT-3)": 85
+     "V1": 2,
+     "V2 (GT-3)": 100
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 12
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 100
      }
     }
    },
@@ -18632,7 +18124,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 12,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -18666,20 +18158,16 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 52,
-     "V2 (GT-3)": 103
+     "V1": 2,
+     "V2 (GT-3)": 158
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
      "V1": {
-      "inside_physical_rollout_interval": 52
+      "inside_physical_rollout_interval": 2
      },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 158
      }
     }
    },
@@ -18706,7 +18194,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 2,
     "labels": [
      "V1"
     ],
@@ -18858,20 +18346,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 11,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 149
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 11
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 149
      }
     }
    },
@@ -18897,7 +18377,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 11,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -18930,20 +18410,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 23,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -18968,7 +18440,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -19919,20 +19391,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -19960,7 +19424,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -19995,20 +19459,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 2,
-     "V1": 52,
-     "V2 (GT-3)": 96
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 2
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 96
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -20035,7 +19491,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -20193,20 +19649,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 104
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 14
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 104
      }
     }
    },
@@ -20234,7 +19682,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 14,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -20269,20 +19717,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 52,
-     "V2 (GT-3)": 104
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 104
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -20309,7 +19749,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -20467,20 +19907,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 15,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 153
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 153
      }
     }
    },
@@ -20506,7 +19938,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -20541,20 +19973,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 23,
-     "V2 (GT-3)": 153
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 153
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -20579,7 +20003,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -21562,20 +20986,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -21603,7 +21019,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -21636,20 +21052,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 2,
-     "V1": 52,
-     "V2 (GT-3)": 96
+     "V2 (GT-3)": 150
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 2
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 96
+      "F2 kill: rollback is not its mitigation": 150
      }
     }
    },
@@ -21676,7 +21084,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -21828,20 +21236,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 14,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 104
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 14
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 104
      }
     }
    },
@@ -21869,7 +21269,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 14,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -21902,20 +21302,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 52,
-     "V2 (GT-3)": 104
+     "V2 (GT-3)": 160
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 52
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 104
+      "F2 kill: rollback is not its mitigation": 160
      }
     }
    },
@@ -21942,7 +21334,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 52,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -22094,20 +21486,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 15,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 153
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 15
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 153
      }
     }
    },
@@ -22133,7 +21517,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 15,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -22166,20 +21550,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 4,
-     "V1": 23,
-     "V2 (GT-3)": 153
+     "V2 (GT-3)": 180
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 4
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 23
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 153
+      "F2 kill: rollback is not its mitigation": 180
      }
     }
    },
@@ -22204,7 +21580,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 23,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -23147,20 +22523,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -23188,7 +22556,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -23222,20 +22590,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 18,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 116
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 18
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 116
      }
     }
    },
@@ -23263,7 +22623,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 18,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -23415,20 +22775,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 106
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 106
      }
     }
    },
@@ -23456,7 +22808,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -23490,20 +22842,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 17,
-     "V2 (GT-3)": 103
+     "V2 (GT-3)": 125
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 17
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 125
      }
     }
    },
@@ -23531,7 +22875,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 17,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -23683,20 +23027,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 17,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 155
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 17
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 155
      }
     }
    },
@@ -23722,7 +23058,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 17,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -23756,20 +23092,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 17,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 174
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 17
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 174
      }
     }
    },
@@ -23795,7 +23123,7 @@
    "requests": 180,
    "stream": "S0",
    "unsafe_executions": {
-    "count": 17,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -24744,20 +24072,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 75
+     "V2 (GT-3)": 96
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 75
+      "F2 kill: rollback is not its mitigation": 96
      }
     }
    },
@@ -24785,7 +24105,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -24819,20 +24139,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 3,
-     "V1": 18,
-     "V2 (GT-3)": 95
+     "V2 (GT-3)": 116
     },
     "of_posed": 150,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 3
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 18
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 95
+      "F2 kill: rollback is not its mitigation": 116
      }
     }
    },
@@ -24860,7 +24172,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 18,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -25012,20 +24324,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 16,
-     "V2 (GT-3)": 85
+     "V2 (GT-3)": 106
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 16
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 85
+      "F2 kill: rollback is not its mitigation": 106
      }
     }
    },
@@ -25053,7 +24357,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 16,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -25087,20 +24391,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 17,
-     "V2 (GT-3)": 103
+     "V2 (GT-3)": 125
     },
     "of_posed": 160,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 17
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 103
+      "F2 kill: rollback is not its mitigation": 125
      }
     }
    },
@@ -25128,7 +24424,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 17,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -25280,20 +24576,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 17,
-     "V2 (GT-3)": 133
+     "V2 (GT-3)": 155
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 17
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 133
+      "F2 kill: rollback is not its mitigation": 155
      }
     }
    },
@@ -25319,7 +24607,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 17,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -25353,20 +24641,12 @@
    "endpointslice_disagreements_among_executions": 0,
    "executions_by_label": {
     "counts": {
-     "U": 5,
-     "V1": 17,
-     "V2 (GT-3)": 152
+     "V2 (GT-3)": 174
     },
     "of_posed": 180,
     "reasons": {
-     "U": {
-      "rollout_end_within_band": 5
-     },
-     "V1": {
-      "inside_physical_rollout_interval": 17
-     },
      "V2 (GT-3)": {
-      "F2 kill: rollback is not its mitigation": 152
+      "F2 kill: rollback is not its mitigation": 174
      }
     }
    },
@@ -25392,7 +24672,7 @@
    "requests": 180,
    "stream": "Snever",
    "unsafe_executions": {
-    "count": 17,
+    "count": 0,
     "labels": [
      "V1"
     ],
@@ -33728,20 +33008,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 13,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 93
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 13
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 93
       }
      }
     },
@@ -33752,7 +33024,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 13,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -33770,20 +33042,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 13,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 93
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 13
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 93
       }
      }
     },
@@ -33794,7 +33058,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 13,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -33818,20 +33082,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 52,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 150
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -33842,7 +33098,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -33859,20 +33115,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 52,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 150
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -33883,7 +33131,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34044,20 +33292,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 11,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 101
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 11
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 101
       }
      }
     },
@@ -34068,7 +33308,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 11,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34086,20 +33326,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 11,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 101
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 11
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 101
       }
      }
     },
@@ -34110,7 +33342,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 11,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34134,20 +33366,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 52,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 160
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 160
       }
      }
     },
@@ -34158,7 +33382,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34175,20 +33399,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 52,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 160
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 160
       }
      }
     },
@@ -34199,7 +33415,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34360,20 +33576,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 12,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 150
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 12
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -34384,7 +33592,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 12,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34402,20 +33610,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 12,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 150
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 12
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -34426,7 +33626,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 12,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34450,20 +33650,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 23,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 180
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 23
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 180
       }
      }
     },
@@ -34474,7 +33666,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 23,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -34491,20 +33683,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 23,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 180
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 23
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 180
       }
      }
     },
@@ -34515,7 +33699,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 23,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -35652,20 +34836,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 13,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 93
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 13
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 93
       }
      }
     },
@@ -35676,7 +34852,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 13,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -35694,20 +34870,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 13,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 93
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 13
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 93
       }
      }
     },
@@ -35718,7 +34886,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 13,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -35742,20 +34910,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 52,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 150
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -35766,7 +34926,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -35783,20 +34943,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 52,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 150
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -35807,7 +34959,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -35968,20 +35120,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 11,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 101
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 11
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 101
       }
      }
     },
@@ -35992,7 +35136,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 11,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36010,20 +35154,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 11,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 101
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 11
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 101
       }
      }
     },
@@ -36034,7 +35170,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 11,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36058,20 +35194,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 52,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 160
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 160
       }
      }
     },
@@ -36082,7 +35210,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36099,20 +35227,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 52,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 160
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 160
       }
      }
     },
@@ -36123,7 +35243,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36284,20 +35404,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 12,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 150
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 12
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -36308,7 +35420,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 12,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36326,20 +35438,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 12,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 150
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 12
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -36350,7 +35454,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 12,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36374,20 +35478,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 23,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 180
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 23
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 180
       }
      }
     },
@@ -36398,7 +35494,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 23,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -36415,20 +35511,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 23,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 180
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 23
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 180
       }
      }
     },
@@ -36439,7 +35527,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 23,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37576,20 +36664,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 13,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 93
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 13
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 93
       }
      }
     },
@@ -37600,7 +36680,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 13,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37618,20 +36698,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 16,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 96
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 16
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 96
       }
      }
     },
@@ -37642,7 +36714,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 16,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37666,20 +36738,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 52,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 150
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -37690,7 +36754,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37708,20 +36772,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 18,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 116
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 18
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 116
       }
      }
     },
@@ -37732,7 +36788,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 18,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37883,20 +36939,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 11,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 101
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 11
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 101
       }
      }
     },
@@ -37907,7 +36955,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 11,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37925,20 +36973,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 16,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 106
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 16
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 106
       }
      }
     },
@@ -37949,7 +36989,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 16,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -37973,20 +37013,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 52,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 160
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 52
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 160
       }
      }
     },
@@ -37997,7 +37029,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 52,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -38015,20 +37047,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 17,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 125
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 17
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 125
       }
      }
     },
@@ -38039,7 +37063,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 17,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -38190,20 +37214,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 12,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 150
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 12
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 150
       }
      }
     },
@@ -38214,7 +37230,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 12,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -38232,20 +37248,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 17,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 155
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 17
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 155
       }
      }
     },
@@ -38256,7 +37264,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 17,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -38280,20 +37288,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 23,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 180
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 23
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 180
       }
      }
     },
@@ -38304,7 +37304,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 23,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -38322,20 +37322,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 17,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 174
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 17
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 174
       }
      }
     },
@@ -38346,7 +37338,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 17,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -39394,20 +38386,16 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 14,
-      "V2 (GT-3)": 75
+      "V1": 2,
+      "V2 (GT-3)": 92
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
       "V1": {
-       "inside_physical_rollout_interval": 14
+       "inside_physical_rollout_interval": 2
       },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 92
       }
      }
     },
@@ -39418,7 +38406,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 14,
+     "count": 2,
      "labels": [
       "V1"
      ],
@@ -39436,20 +38424,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 16,
-      "V2 (GT-3)": 75
+      "V2 (GT-3)": 96
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 16
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 75
+       "F2 kill: rollback is not its mitigation": 96
       }
      }
     },
@@ -39460,7 +38440,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 16,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -39485,20 +38465,16 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 52,
-      "V2 (GT-3)": 95
+      "V1": 2,
+      "V2 (GT-3)": 148
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
       "V1": {
-       "inside_physical_rollout_interval": 52
+       "inside_physical_rollout_interval": 2
       },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 148
       }
      }
     },
@@ -39509,7 +38485,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 52,
+     "count": 2,
      "labels": [
       "V1"
      ],
@@ -39527,20 +38503,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 3,
-      "V1": 18,
-      "V2 (GT-3)": 95
+      "V2 (GT-3)": 116
      },
      "of_posed": 150,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 3
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 18
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 95
+       "F2 kill: rollback is not its mitigation": 116
       }
      }
     },
@@ -39551,7 +38519,7 @@
     },
     "posed": 150,
     "unsafe_executions": {
-     "count": 18,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -39703,20 +38671,16 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 12,
-      "V2 (GT-3)": 85
+      "V1": 2,
+      "V2 (GT-3)": 100
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
       "V1": {
-       "inside_physical_rollout_interval": 12
+       "inside_physical_rollout_interval": 2
       },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 100
       }
      }
     },
@@ -39727,7 +38691,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 12,
+     "count": 2,
      "labels": [
       "V1"
      ],
@@ -39745,20 +38709,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 16,
-      "V2 (GT-3)": 85
+      "V2 (GT-3)": 106
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 16
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 85
+       "F2 kill: rollback is not its mitigation": 106
       }
      }
     },
@@ -39769,7 +38725,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 16,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -39794,20 +38750,16 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 52,
-      "V2 (GT-3)": 103
+      "V1": 2,
+      "V2 (GT-3)": 158
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
       "V1": {
-       "inside_physical_rollout_interval": 52
+       "inside_physical_rollout_interval": 2
       },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 158
       }
      }
     },
@@ -39818,7 +38770,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 52,
+     "count": 2,
      "labels": [
       "V1"
      ],
@@ -39836,20 +38788,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 17,
-      "V2 (GT-3)": 103
+      "V2 (GT-3)": 125
      },
      "of_posed": 160,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 17
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 103
+       "F2 kill: rollback is not its mitigation": 125
       }
      }
     },
@@ -39860,7 +38804,7 @@
     },
     "posed": 160,
     "unsafe_executions": {
-     "count": 17,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -40011,20 +38955,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 11,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 149
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 11
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 149
       }
      }
     },
@@ -40035,7 +38971,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 11,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -40053,20 +38989,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 17,
-      "V2 (GT-3)": 133
+      "V2 (GT-3)": 155
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 17
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 133
+       "F2 kill: rollback is not its mitigation": 155
       }
      }
     },
@@ -40077,7 +39005,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 17,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -40101,20 +39029,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 23,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 180
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 23
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 180
       }
      }
     },
@@ -40125,7 +39045,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 23,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -40143,20 +39063,12 @@
     },
     "executions_by_label": {
      "counts": {
-      "U": 5,
-      "V1": 17,
-      "V2 (GT-3)": 152
+      "V2 (GT-3)": 174
      },
      "of_posed": 180,
      "reasons": {
-      "U": {
-       "rollout_end_within_band": 5
-      },
-      "V1": {
-       "inside_physical_rollout_interval": 17
-      },
       "V2 (GT-3)": {
-       "F2 kill: rollback is not its mitigation": 152
+       "F2 kill: rollback is not its mitigation": 174
       }
      }
     },
@@ -40167,7 +39079,7 @@
     },
     "posed": 180,
     "unsafe_executions": {
-     "count": 17,
+     "count": 0,
      "labels": [
       "V1"
      ],
@@ -41206,286 +40118,6 @@
  "U_executions": [
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "T_p",
    "delta_s": 10,
@@ -41596,286 +40228,6 @@
   },
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "L_p",
    "delta_s": 10,
@@ -41982,156 +40334,6 @@
    "dispatch": "2026-10-20T10:36:26.908225Z",
    "k": 15,
    "reason": "floor_count_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
    "stream": "S0"
   },
   {
@@ -42276,566 +40478,6 @@
   },
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "T@F600",
    "delta_s": 10,
@@ -42972,286 +40614,6 @@
    "dispatch": "2026-10-20T10:36:41.266376Z",
    "k": 4,
    "reason": "target_deletion_request_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L@F600",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
    "stream": "S0"
   },
   {
@@ -43396,286 +40758,6 @@
   },
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "T_p",
    "delta_s": 10,
@@ -43786,286 +40868,6 @@
   },
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_p",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "L_p",
    "delta_s": 10,
@@ -44172,156 +40974,6 @@
    "dispatch": "2026-10-20T10:36:26.908225Z",
    "k": 15,
    "reason": "floor_count_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L-kappa",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
    "stream": "Snever"
   },
   {
@@ -44466,1456 +41118,6 @@
   },
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.246852Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.481577Z",
-   "k": 77,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "c-hind",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.497697Z",
-   "k": 28,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 100,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 100,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 81,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 82,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 85,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 42,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 42,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 90,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 72,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 72,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 32,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 33,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 34,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 35,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 36,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 37,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 30,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 37,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 42,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 42,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 22,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 22,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 23,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.464532Z",
-   "k": 23,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.479027Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "R",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:58.463148Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "T_w",
    "delta_s": 10,
@@ -46022,256 +41224,6 @@
    "dispatch": "2026-10-20T10:36:26.908225Z",
    "k": 15,
    "reason": "floor_count_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "S0"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
    "stream": "S0"
   },
   {
@@ -46386,256 +41338,6 @@
   },
   {
    "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "T_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
    "action": "B",
    "condition": "T_w",
    "delta_s": 10,
@@ -46742,256 +41444,6 @@
    "dispatch": "2026-10-20T10:36:26.908225Z",
    "k": 15,
    "reason": "floor_count_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.362622Z",
-   "k": 101,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.874425Z",
-   "k": 102,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.382051Z",
-   "k": 103,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.889074Z",
-   "k": 104,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.396224Z",
-   "k": 105,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.527582Z",
-   "k": 83,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 0,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.033232Z",
-   "k": 84,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.290337Z",
-   "k": 91,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.796580Z",
-   "k": 92,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.301975Z",
-   "k": 93,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.807744Z",
-   "k": 94,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.314261Z",
-   "k": 95,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.450543Z",
-   "k": 73,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.958560Z",
-   "k": 74,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.466346Z",
-   "k": 75,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 5,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.972761Z",
-   "k": 76,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.105579Z",
-   "k": 43,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:56.613164Z",
-   "k": 44,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.159531Z",
-   "k": 45,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:57.666066Z",
-   "k": 46,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 0,
-   "dispatch": "2026-10-20T10:36:58.175184Z",
-   "k": 47,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.467666Z",
-   "k": 24,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:56.973360Z",
-   "k": 25,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.480650Z",
-   "k": 26,
-   "reason": "rollout_end_within_band",
-   "stream": "Snever"
-  },
-  {
-   "Delta_s": 30,
-   "action": "A",
-   "condition": "L_w",
-   "delta_s": 10,
-   "dispatch": "2026-10-20T10:36:57.992299Z",
-   "k": 27,
-   "reason": "rollout_end_within_band",
    "stream": "Snever"
   },
   {
@@ -47664,9 +42116,9 @@
   "physical_rollout_interval": {
    "R_us": "2026-10-20T10:36:19.740229Z",
    "desired_new_replicas": 3,
-   "end_basis": "old-revision request end",
-   "end_us": "2026-10-20T10:36:57.323314Z",
-   "last_old_served_end_us": "2026-10-20T10:36:57.323314Z",
+   "end_basis": "last new Pod Ready stamp",
+   "end_us": "2026-10-20T10:36:40.000000Z",
+   "last_old_served_end_us": "2026-10-20T10:36:36.376880Z",
    "new_hash": "b64dbbc96",
    "new_ready_complete_us": "2026-10-20T10:36:40.000000Z",
    "old_hash": "794bf474c7"
@@ -48174,14 +42626,14 @@
     "T_p": {
      "GT2": 0,
      "M": 0,
-     "U": 163,
+     "U": 0,
      "cells": 12,
      "posed": 1960
     },
     "T_w": {
      "GT2": 0,
      "M": 0,
-     "U": 172,
+     "U": 0,
      "cells": 12,
      "posed": 1960
     }

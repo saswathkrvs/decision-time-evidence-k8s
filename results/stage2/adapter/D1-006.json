@@ -46,10 +46,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -119,10 +119,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -191,10 +191,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -262,10 +262,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -335,10 +335,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -407,10 +407,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -483,10 +483,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -561,10 +561,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -633,10 +633,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -709,10 +709,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 16
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 16
+    "of_requests_labelled_GT2": 37,
+    "total": 20
    },
    "not_posed": {
     "before the patch request P": 30
@@ -787,10 +787,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 15
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 15
+    "of_requests_labelled_GT2": 38,
+    "total": 20
    },
    "not_posed": {
     "before the patch request P": 20
@@ -859,10 +859,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 15
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 15
+    "of_requests_labelled_GT2": 39,
+    "total": 20
    },
    "not_posed": {},
    "posed": 120,
@@ -930,10 +930,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1003,10 +1003,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1075,10 +1075,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1146,10 +1146,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1219,10 +1219,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1291,10 +1291,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1362,10 +1362,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1435,10 +1435,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1507,10 +1507,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1578,10 +1578,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1651,10 +1651,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1723,10 +1723,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -1794,10 +1794,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -1867,10 +1867,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -1939,10 +1939,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2017,10 +2017,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2097,10 +2097,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2171,10 +2171,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2249,10 +2249,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 16
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 16
+    "of_requests_labelled_GT2": 37,
+    "total": 20
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2329,10 +2329,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 15
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 15
+    "of_requests_labelled_GT2": 38,
+    "total": 20
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2403,10 +2403,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 15
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 15
+    "of_requests_labelled_GT2": 39,
+    "total": 20
    },
    "not_posed": {},
    "posed": 120,
@@ -2474,10 +2474,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2547,10 +2547,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2619,10 +2619,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2692,10 +2692,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2767,10 +2767,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -2841,10 +2841,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -2914,10 +2914,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -2989,10 +2989,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3063,10 +3063,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -3134,10 +3134,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3207,10 +3207,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3279,10 +3279,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -3350,10 +3350,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 14
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 14
+    "of_requests_labelled_GT2": 37,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3423,10 +3423,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 13
+    "of_requests_labelled_GT2": 38,
+    "total": 18
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3495,10 +3495,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 13
+     "NEEDS_APPROVAL[R2]": 18
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 13
+    "of_requests_labelled_GT2": 39,
+    "total": 18
    },
    "not_posed": {},
    "posed": 120,
@@ -3566,10 +3566,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 16
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 16
+    "of_requests_labelled_GT2": 37,
+    "total": 20
    },
    "not_posed": {
     "before the patch request P": 30
@@ -3639,10 +3639,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 15
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 33,
-    "total": 15
+    "of_requests_labelled_GT2": 38,
+    "total": 20
    },
    "not_posed": {
     "before the patch request P": 20
@@ -3711,10 +3711,10 @@
    },
    "missed_opportunities": {
     "by_disposition": {
-     "NEEDS_APPROVAL[R2]": 15
+     "NEEDS_APPROVAL[R2]": 20
     },
-    "of_requests_labelled_GT2": 34,
-    "total": 15
+    "of_requests_labelled_GT2": 39,
+    "total": 20
    },
    "not_posed": {},
    "posed": 120,
@@ -4516,10 +4516,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4556,10 +4556,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4603,10 +4603,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -4643,10 +4643,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -4690,10 +4690,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -4730,10 +4730,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -4777,10 +4777,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4817,10 +4817,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -4864,10 +4864,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -4904,10 +4904,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -4951,10 +4951,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -4991,10 +4991,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5038,10 +5038,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5078,10 +5078,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5125,10 +5125,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5165,10 +5165,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5212,10 +5212,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5252,10 +5252,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5304,10 +5304,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5344,10 +5344,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 14
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 14
+     "of_requests_labelled_GT2": 37,
+     "total": 18
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5396,10 +5396,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5436,10 +5436,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 13
+     "of_requests_labelled_GT2": 38,
+     "total": 18
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5483,10 +5483,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5523,10 +5523,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 13
+      "NEEDS_APPROVAL[R2]": 18
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 13
+     "of_requests_labelled_GT2": 39,
+     "total": 18
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5575,10 +5575,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 16
+      "NEEDS_APPROVAL[R2]": 20
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 16
+     "of_requests_labelled_GT2": 37,
+     "total": 20
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5615,10 +5615,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 16
+      "NEEDS_APPROVAL[R2]": 20
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 16
+     "of_requests_labelled_GT2": 37,
+     "total": 20
     },
     "posed": 90,
     "unsafe_executions": {
@@ -5667,10 +5667,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 15
+      "NEEDS_APPROVAL[R2]": 20
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 15
+     "of_requests_labelled_GT2": 38,
+     "total": 20
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5707,10 +5707,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 15
+      "NEEDS_APPROVAL[R2]": 20
      },
-     "of_requests_labelled_GT2": 33,
-     "total": 15
+     "of_requests_labelled_GT2": 38,
+     "total": 20
     },
     "posed": 100,
     "unsafe_executions": {
@@ -5754,10 +5754,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 15
+      "NEEDS_APPROVAL[R2]": 20
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 15
+     "of_requests_labelled_GT2": 39,
+     "total": 20
     },
     "posed": 120,
     "unsafe_executions": {
@@ -5794,10 +5794,10 @@
     },
     "missed_opportunities": {
      "by_disposition": {
-      "NEEDS_APPROVAL[R2]": 15
+      "NEEDS_APPROVAL[R2]": 20
      },
-     "of_requests_labelled_GT2": 34,
-     "total": 15
+     "of_requests_labelled_GT2": 39,
+     "total": 20
     },
     "posed": 120,
     "unsafe_executions": {
@@ -6180,8 +6180,8 @@
    "R_us": "2026-10-20T08:20:57.869090Z",
    "desired_new_replicas": 1,
    "end_basis": "old-revision request end",
-   "end_us": "2026-10-20T08:21:19.520225Z",
-   "last_old_served_end_us": "2026-10-20T08:21:19.520225Z",
+   "end_us": "2026-10-20T08:21:05.470652Z",
+   "last_old_served_end_us": "2026-10-20T08:21:05.470652Z",
    "new_hash": "b64dbbc96",
    "new_ready_complete_us": "2026-10-20T08:21:04.000000Z",
    "old_hash": "794bf474c7"
@@ -6409,15 +6409,15 @@
    },
    "conditions": {
     "T_p": {
-     "GT2": 200,
-     "M": 86,
+     "GT2": 228,
+     "M": 114,
      "U": 10,
      "cells": 6,
      "posed": 620
     },
     "T_w": {
-     "GT2": 200,
-     "M": 80,
+     "GT2": 228,
+     "M": 108,
      "U": 0,
      "cells": 6,
      "posed": 620
@@ -6427,7 +6427,7 @@
    "identical_first_verdicts_and_dispositions": false
   }
  },
- "python": "3.11",
+ "python": "3.13",
  "transitions": {
   "by_kind": {
    "deployment_progressing": 5,

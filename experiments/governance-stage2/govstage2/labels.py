@@ -10,7 +10,7 @@ Sources (final record versions, spans and fault records; no store and no view's 
   Deployment's manifest; when that instant is not inside [last record without deletionTimestamp - b_c, first record
   with it + b_c] the bracket itself is used and every instant inside it is U (recorded);
 - spans: the server spans of the changed service (Pod UID x the Pod's pod-template-hash) for the physical rollout
-  interval; the patch response R (the patch row);
+  interval, gRPC health checks (the kubelet's probes) excluded; the patch response R (the patch row);
 - EndpointSlice readiness from the watch's events and list objects, as received (the cross-check of action B);
 - the fault records: the F1 worker window and target (ground_truth/ground_truth.json: timeline_host active_start /
   active_end, observed.fault_target, evaluation_summary.latency_effect_established), the F2 kill receipt
@@ -20,8 +20,8 @@ Sources (final record versions, spans and fault records; no store and no view's 
 Labels at an instant x (host clock). Kubelet and span stamps are on the node clock: any label boundary within b_c of a
 decision instant makes that decision's label U. Host-clock boundaries (R, the worker window) are compared exactly.
 
-Action A: [P, R) U; [R, end] V1, where end = the later of (i) the end of the last request served by a Pod of the old
-revision and (ii) the last new Pod's Ready stamp, read as the first instant after R at which the Deployment's desired
+Action A: [P, R) U; [R, end] V1, where end = the later of (i) the end of the last workload request (not a health
+check) served by a Pod of the old revision and (ii) the last new Pod's Ready stamp, read as the first instant after R at which the Deployment's desired
 number of new-revision Pods are Ready at once by the kubelet history (so a new Pod killed mid-rollout counts with its
 return to Ready); after end: GT-2-A (complete, inside the worker window, the fault on a new-revision Pod of the
 changed service, effect established), U (the same without an established effect), late ALLOW (at or after
@@ -212,7 +212,7 @@ class Labeller:
                 self.desired = (resource.get("spec") or {}).get("replicas", self.desired)
         old_served = [s.end_us for s in inputs.spans.all_servers(self.service)
                       if s.pod_uid in self.pods and self.pods[s.pod_uid].template_hash == self.old_hash
-                      and self.old_hash is not None]
+                      and self.old_hash is not None and not s.health_check]
         last_old = max(old_served) if old_served else None
         new_pods = [p for p in self.pods.values() if p.service == self.service and p.template_hash == self.new_hash
                     and self.new_hash is not None]

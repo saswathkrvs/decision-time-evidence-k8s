@@ -1,0 +1,515 @@
+{
+ "capture": "G1-005",
+ "scenario": "G1",
+ "latencies_s": [
+  5,
+  30
+ ],
+ "seconds": {
+  "T_p": 30.2,
+  "T_p[event-time]": 19.9,
+  "T_p[late 5]": 30.4,
+  "T_p[late 30]": 43.4
+ },
+ "conditions": {
+  "T_p": {
+   "posed": 2160,
+   "U": 1,
+   "M": 51,
+   "GT2": 56,
+   "executions": 634,
+   "executions_by_label": {
+    "GT-2-B": 5,
+    "U": 9,
+    "V-target": 1,
+    "neutral": 619
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "U": 0,
+     "M": 10,
+     "GT2": 14
+    },
+    "10 s": {
+     "U": 1,
+     "M": 13,
+     "GT2": 14
+    },
+    "30 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    },
+    "80 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    }
+   },
+   "by_cell": {
+    "cutoff +0 s | delta 0 s": {
+     "posed": 180,
+     "executions": 90,
+     "U": 0,
+     "M": 5,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 10 s": {
+     "posed": 180,
+     "executions": 108,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +5 s | delta 0 s": {
+     "posed": 180,
+     "executions": 90,
+     "U": 0,
+     "M": 5,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 10 s": {
+     "posed": 180,
+     "executions": 109,
+     "U": 1,
+     "M": 5,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +30 s | delta 0 s": {
+     "posed": 180,
+     "executions": 115,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 10 s": {
+     "posed": 180,
+     "executions": 122,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    }
+   }
+  },
+  "T_p[event-time]": {
+   "posed": 2160,
+   "U": 1,
+   "M": 51,
+   "GT2": 56,
+   "executions": 634,
+   "executions_by_label": {
+    "GT-2-B": 5,
+    "U": 9,
+    "V-target": 1,
+    "neutral": 619
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "U": 0,
+     "M": 10,
+     "GT2": 14
+    },
+    "10 s": {
+     "U": 1,
+     "M": 13,
+     "GT2": 14
+    },
+    "30 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    },
+    "80 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    }
+   },
+   "by_cell": {
+    "cutoff +0 s | delta 0 s": {
+     "posed": 180,
+     "executions": 90,
+     "U": 0,
+     "M": 5,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 10 s": {
+     "posed": 180,
+     "executions": 108,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +5 s | delta 0 s": {
+     "posed": 180,
+     "executions": 90,
+     "U": 0,
+     "M": 5,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 10 s": {
+     "posed": 180,
+     "executions": 109,
+     "U": 1,
+     "M": 5,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +30 s | delta 0 s": {
+     "posed": 180,
+     "executions": 115,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 10 s": {
+     "posed": 180,
+     "executions": 122,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    }
+   }
+  },
+  "T_p[late 5]": {
+   "posed": 2160,
+   "U": 1,
+   "M": 51,
+   "GT2": 56,
+   "executions": 634,
+   "executions_by_label": {
+    "GT-2-B": 5,
+    "U": 9,
+    "V-target": 1,
+    "neutral": 619
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "U": 0,
+     "M": 10,
+     "GT2": 14
+    },
+    "10 s": {
+     "U": 1,
+     "M": 13,
+     "GT2": 14
+    },
+    "30 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    },
+    "80 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    }
+   },
+   "by_cell": {
+    "cutoff +0 s | delta 0 s": {
+     "posed": 180,
+     "executions": 90,
+     "U": 0,
+     "M": 5,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 10 s": {
+     "posed": 180,
+     "executions": 108,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +5 s | delta 0 s": {
+     "posed": 180,
+     "executions": 90,
+     "U": 0,
+     "M": 5,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 10 s": {
+     "posed": 180,
+     "executions": 109,
+     "U": 1,
+     "M": 5,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +30 s | delta 0 s": {
+     "posed": 180,
+     "executions": 115,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 10 s": {
+     "posed": 180,
+     "executions": 122,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    }
+   }
+  },
+  "T_p[late 30]": {
+   "posed": 2160,
+   "U": 0,
+   "M": 56,
+   "GT2": 56,
+   "executions": 0,
+   "executions_by_label": {},
+   "by_dispatch_delay": {
+    "0 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    },
+    "10 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    },
+    "30 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    },
+    "80 s": {
+     "U": 0,
+     "M": 14,
+     "GT2": 14
+    }
+   },
+   "by_cell": {
+    "cutoff +0 s | delta 0 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 10 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +0 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 8,
+     "GT2": 8
+    },
+    "cutoff +5 s | delta 0 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 10 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +5 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 6,
+     "GT2": 6
+    },
+    "cutoff +30 s | delta 0 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 10 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 30 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    },
+    "cutoff +30 s | delta 80 s": {
+     "posed": 180,
+     "executions": 0,
+     "U": 0,
+     "M": 0,
+     "GT2": 0
+    }
+   }
+  }
+ },
+ "event_time_vs": {
+  "T_p": {
+   "posed": 2160,
+   "first_verdict_differs": 2,
+   "disposition_differs": 60,
+   "execution_differs": 0
+  },
+  "T_p[late 5]": {
+   "posed": 2160,
+   "first_verdict_differs": 80,
+   "disposition_differs": 108,
+   "execution_differs": 0
+  },
+  "T_p[late 30]": {
+   "posed": 2160,
+   "first_verdict_differs": 910,
+   "disposition_differs": 1080,
+   "execution_differs": 634
+  }
+ }
+}

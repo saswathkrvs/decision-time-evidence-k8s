@@ -131,6 +131,12 @@ class ServerSpan:
     end_us: int
     acquired_us: int
     evidence_id: str
+    name: str = ""
+
+    @property
+    def health_check(self) -> bool:
+        """A gRPC health check (the kubelet's probe), not a request of the workload."""
+        return "grpc.health.v1.Health/Check" in self.name
 
 
 @dataclass
@@ -160,7 +166,7 @@ def _span_from_row(row) -> tuple[str, ServerSpan | None, dict]:
         server = ServerSpan(attributes["service.name"], attributes.get("k8s.pod.uid"), span["spanId"],
                             int(span["startTimeUnixNano"]) // 1000, int(span.get("endTimeUnixNano") or
                                                                         span["startTimeUnixNano"]) // 1000,
-                            ns_to_us(row["available_ns"]), record["evidence_id"])
+                            ns_to_us(row["available_ns"]), record["evidence_id"], span.get("name") or "")
     return payload["trace_id"], server, payload
 
 

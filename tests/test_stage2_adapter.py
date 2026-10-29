@@ -41,8 +41,8 @@ if str(ADAPTER_DIR) not in sys.path:
 
 from govstage2 import checks2, design, engine2, mapping2, pipeline as P  # noqa: E402
 from govstage2 import conditions as C, fixtures as FX  # noqa: E402
-from govstage2.capture import (SeparationError, decision_guard, manifest_grace_seconds, read_decision_inputs,  # noqa
-                               read_label_inputs)
+from govstage2.capture import (SeparationError, ServerSpan, decision_guard, manifest_grace_seconds,  # noqa
+                               read_decision_inputs, read_label_inputs)
 from govstage2.common import EXPECTATION_FILE, Refused, dt, iter_gzip_records  # noqa: E402
 from govstage2.engine2 import LogIndex, SealedLogError, UnsealedLogError  # noqa: E402
 from govstage2.forward import ForwardGraphStore, ForwardOperationalView, ForwardSqliteStore, build_forward_store  # noqa
@@ -166,7 +166,7 @@ def kill(tmp_path_factory):
     capture = P.build_capture(inputs, plan_doc, conditions=["T_p", "T_w"])
     labeller = Labeller.build(capture, inputs, read_label_inputs(converted, converted.parent),
                               manifest_grace_seconds(inputs.configuration))
-    return {"world": world, "labeller": labeller, "uid": lambda key: world.params[key][1]["uid"]}
+    return {"world": world, "labeller": labeller, "inputs": inputs, "uid": lambda key: world.params[key][1]["uid"]}
 
 
 @pytest.fixture(scope="module")
@@ -443,6 +443,30 @@ def test_labels_action_a_rollout_interval(kill):
              ((95.0, 92.0), ("V2 (GT-3)", "outside the fault window"))]
     for (x, kappa), expected in cases:
         assert lab.label_a(T(x), None if kappa is None else T(kappa)) == expected, x
+
+
+def test_labels_action_a_rollout_end_ignores_health_checks(kill):
+    """A health check answered by an old-revision Pod at 10 s does not extend KILL's rollout (end 4.0); a workload
+    request answered by the same Pod at the same instant does (end 10.0)."""
+    lab, inputs = kill["labeller"], kill["inputs"]
+    old = sorted(uid for uid, p in lab.pods.items() if p.service == REC and p.template_hash == lab.old_hash)[0]
+
+    class WithLateSpan:
+        def __init__(self, extra):
+            self.extra = extra
+
+        def all_servers(self, service):
+            return list(inputs.spans.all_servers(service)) + ([self.extra] if service == self.extra.service else [])
+    try:
+        for name, end in (("/grpc.health.v1.Health/Check", 4.0),
+                          ("/hipstershop.RecommendationService/ListRecommendations", 10.0)):
+            span = ServerSpan(REC, old, "late-span", T(9.99), T(10.0), T(10.0), "late-span", name)
+            assert span.health_check == ("Health/Check" in name)
+            lab._rollout(dataclasses.replace(inputs, spans=WithLateSpan(span)))
+            assert s(lab.rollout["end_us"]) == end, name
+    finally:
+        lab._rollout(inputs)
+    assert s(lab.rollout["end_us"]) == 4.0
 
 
 def test_labels_action_b_kill_floor_neutral_band_and_endpointslices(kill):

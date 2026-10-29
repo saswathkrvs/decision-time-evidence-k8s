@@ -174,7 +174,7 @@ def compute(results) -> OrderedDict:
         by_scenario[s] = [sum(r["U_X"] for r in rows), sum(r["U_Y"] for r in rows)]
     rest = [r for r in rc["per_capture"] if r["scenario"] != "G3"]
     out["recheck_by_scenario"] = by_scenario
-    out["recheck_without_catalog_termination"] = {
+    out["recheck_without_G3"] = {
         "unsafe": [sum(r["U_X"] for r in rest), sum(r["U_Y"] for r in rest)], "posed": sum(r["posed"] for r in rest),
         "captures": len(rest), "more": sum(1 for r in rest if r["U_X"] > r["U_Y"]),
         "equal": sum(1 for r in rest if r["U_X"] == r["U_Y"])}
@@ -261,14 +261,14 @@ EXPECTED = OrderedDict([
     ("table3", {"recheck": {"unsafe": [110, 0], "posed": 34392, "missed": [115, 85], "eligible": 124},
                 "approval_reuse": {"unsafe": [110, 1462], "posed": 25794, "missed": [92, 93], "eligible": 93},
                 "watch_G": {"unsafe": [110, 110], "posed": 34392, "missed": [113, 115], "eligible": 124},
-                "watch_D": {"unsafe": [0, 50], "posed": 5158, "missed": [268, 296], "eligible": 948}}),
+                "watch_D": {"unsafe": [0, 50], "posed": 5158, "missed": [628, 662], "eligible": 1340}}),
     ("recheck_text", {"paired": [13, 3, 0], "difference": [110, [100, 121]], "contested": [14778, 34392, 16, 16],
                       "eligible_captures": 2}),
     ("recheck_by_scenario", {"G1": [9, 0], "G2": [10, 0], "G3": [85, 0], "G4": [6, 0]}),
-    ("recheck_without_catalog_termination", {"unsafe": [25, 0], "posed": 28008, "captures": 13, "more": 10, "equal": 3}),
+    ("recheck_without_G3", {"unsafe": [25, 0], "posed": 28008, "captures": 13, "more": 10, "equal": 3}),
     ("approval_reuse_text", {"fewer_in_every_capture": True, "difference": [1352, [1300, 1396]], "excludes_0_98_33": True}),
     ("watch_D_text", {"difference": [50, [44, 56]]}),
-    ("watch_G_rollback", {"unsafe": [2663, 2585], "posed": 31352}),
+    ("watch_G_rollback", {"unsafe": [2, 2], "posed": 31352}),
     ("primary_design_checks_pass", True),
     ("matched_views", {"first_verdict": 0, "disposition": 0}),
     ("reconstruction_checks_pass", {"append_only": True, "earlier_cutoff": True, "provenance": True, "graph_sqlite": True}),
@@ -326,8 +326,8 @@ def render(o: dict) -> str:
                      du["interval_98_33"][1], c["paired"]["more"], c["paired"]["equal"], c["paired"]["fewer"],
                      c["design_check"]["contested"], c["design_check"]["posed"], c["design_check"]["captures_with_one"],
                      c["design_check"]["captures"], c["label"]))
-    L += ["  Recheck comparison by scenario (poller vs recheck): %s; without catalog terminations %s"
-          % (o["recheck_by_scenario"], o["recheck_without_catalog_termination"]),
+    L += ["  Recheck comparison by scenario (poller vs recheck): %s; without G3 %s"
+          % (o["recheck_by_scenario"], o["recheck_without_G3"]),
           "  Matched latest-snapshot views: %s; reconstruction checks pass: %s" % (o["matched_views"],
                                                                                 o["reconstruction_checks_pass"]),
           "  Follow-up diagnosis: %s" % o["followup_diagnosis"], "",
