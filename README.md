@@ -37,7 +37,8 @@ the published value. It needs only the standard library.
 
 ## The captures
 
-The raw captures are archived at Zenodo, doi:[to be added on publication]. Unpack the archive at the repository root;
+The raw captures are archived at Zenodo, [doi:10.5281/zenodo.23756543](https://doi.org/10.5281/zenodo.23756543).
+Unpack the archive at the repository root;
 it adds
 
 ```
@@ -48,11 +49,13 @@ data/raw/rollout-telemetry/pilot-001/                  the 22 Sep 2026 rollout
 ```
 
 Each capture holds the collectors' records (`MANIFEST.json` lists every file with its size and SHA-256), the
-sources that ran (`sources/`) and the evaluation-only ground truth (`ground_truth/`, never a model input). The
-archive's README lists the edits made for publication (local paths, references to internal working documents, the
-runners' bookkeeping entries); measured values, timestamps and identifiers are unchanged. The formats are described
-in `phase3/CAPTURE_FORMAT.md` and `phase3/CAPTURE_FORMAT_STAGE2.md`. The analyses read a capture only after
-conversion, which writes `<capture>/evidence/` and changes nothing else.
+sources that ran (`sources/`) and the evaluation-only ground truth (`ground_truth/`, never a model input). For
+publication, local file paths and the capture host's user name were removed, and descriptive text in the capture
+runner's own records and scripts was tidied (comments and notes shortened, status labels renamed, bookkeeping
+entries removed). No measured value, timestamp or identifier was changed, and this repository reproduces every
+published number from the archive. The formats are described in `phase3/CAPTURE_FORMAT.md` and
+`phase3/CAPTURE_FORMAT_STAGE2.md`. The analyses read a capture only after conversion, which writes
+`<capture>/evidence/` and changes nothing else.
 
 ## Rerun the analyses
 
