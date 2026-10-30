@@ -107,15 +107,16 @@ def pod_list_intervals(api) -> dict:
             "max_s": round(max(gaps), 3) if gaps else None}
 
 
-def poller_context(capture, inputs, *, api=None, k1_rows=None):
-    """(the poller store's context in stream S0, the K1 index of the changed service's Pods: (stamp, available))."""
+def poller_context(capture, inputs, *, api=None, k1_rows=None, stream=STREAM):
+    """(the poller store's context in ``stream`` (default S0), the K1 index of the changed service's Pods:
+    (stamp, available))."""
     gated, _ = gate_records(inputs.poller_api if api is None else api)
     records = tuple(inputs.base_records) + tuple(gated)
     rows = inputs.k1_rows["poller"] if k1_rows is None else k1_rows
     k1_obs, extraction = k1_for_store(rows, snapshot_pod_rows(gated, "poller"), band_us=inputs.band_us)
     uids = service_pod_uids(inputs, capture.changed_service)
     k1_index = sorted((o["stamp_us"], o["available_at_us"]) for o in extraction["observations"] if o["pod_uid"] in uids)
-    ctx = ObserverContext(capture, "poller", STREAM_BY_NAME[STREAM], records, k1_obs, ClampLog(), None)
+    ctx = ObserverContext(capture, "poller", STREAM_BY_NAME[stream], records, k1_obs, ClampLog(), None)
     return ctx, k1_index
 
 

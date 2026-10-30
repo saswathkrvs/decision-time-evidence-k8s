@@ -6,14 +6,16 @@
 Runs the check of :mod:`analysis.tables` (captures, observers, principal comparisons, development diagnosis) and
 reads the replay analyses in ``results/stage2/analyses/`` (written by the commands in the README):
 ``per_capture_stats.json``, ``replays_summary.json``, ``by_delay.json``, ``diagnosis_stress_summary.json`` and the
-per-capture ``replays/`` and ``surrogate/`` files, plus the governance adapter's outputs (``results/stage2/adapter/``:
-cells, labels and rollout timing), the diagnosis control's outputs (``results/stage2/diagnosis/``) and the capture
-summaries. Standard library only.
+per-capture ``replays/`` and ``surrogate/`` files, ``diagnosis_stress.json``, ``sweeps_summary.json`` (coverage,
+parameter sweep, receipt-time audit, store size, diagnosis robustness), plus the governance adapter's outputs
+(``results/stage2/adapter/``: cells, labels and rollout timing), the diagnosis control's outputs
+(``results/stage2/diagnosis/``) and the capture summaries. Standard library only.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import statistics
 import sys
 from collections import OrderedDict
@@ -102,13 +104,13 @@ def numbers(results: Path) -> OrderedDict:
     n["Table 2: terminated target out of service (s), G2 and G3"] = OrderedDict(
         (s, [v["min"], v["max"]]) for s, v in delay["fault_not_ready_s_by_scenario"].items())
 
-    # Table 3: unsafe executions by scenario, missed opportunities, executions
+    # Table 3: invalid executions by scenario, missed opportunities, executions
     def unsafe(view, capture):
         if view in summ["per_capture_U"][capture]:
             return summ["per_capture_U"][capture][view]
         return cond[capture][view]["U"]
     views = ("T_p", "L_p", "T_w", "T_p+lag", "T_p@R", "R", "L-kappa")
-    n["Table 3 unsafe (G1, G2, G3, G4, all)"] = OrderedDict(
+    n["Table 3 invalid (G1, G2, G3, G4, all)"] = OrderedDict(
         (v, [sum(unsafe(v, c) for c in pops[s]) for s in SCENARIOS_G] + [delay[v]["total"]["U"]]) for v in views)
     n["Table 3 missed / executions"] = OrderedDict(
         (v, [delay[v]["total"]["M"], delay[v]["total"]["executions"]]) for v in views)
@@ -118,7 +120,7 @@ def numbers(results: Path) -> OrderedDict:
     n["T_p and L_p: decisions that differ (first verdict, disposition, execution)"] = [
         summ["agreement"]["T_p vs L_p"][k] for k in ("first_verdict_differs", "disposition_differs",
                                                      "execution_differs")]
-    n["T_w and T_p: same unsafe count in every capture"] = all(
+    n["T_w and T_p: same invalid count in every capture"] = all(
         cond[c]["T_w"]["U"] == cond[c]["T_p"]["U"] for s in SCENARIOS_G for c in pops[s])
     n["posed restart decisions per arm-G capture (range)"] = _range([cond[c]["T_p"]["posed"] for c in g_caps])
     replays = {c: _load(a / "replays" / (c + ".json"))["conditions"] for c in g_caps}
@@ -138,7 +140,7 @@ def numbers(results: Path) -> OrderedDict:
         uncertain[v] = sum(replays[c][v]["executions_by_label"].get("U", 0) for c in g_caps)
     floor_violations += sum(r["executions_by_label"].get("V-floor", 0) for c in g_caps for r in replays[c].values())
     n["Table 3 uncertain executions"] = uncertain
-    n["uncertain executions that could be unsafe"] = could_be_unsafe
+    n["uncertain executions that could be invalid"] = could_be_unsafe
     n["restart executions labelled V-floor, every view"] = floor_violations
     reasons, after_start, fault_pod, deleted_old = {}, [], 0, 0
     for c in g_caps:
@@ -153,7 +155,7 @@ def numbers(results: Path) -> OrderedDict:
             q = pods.get(e["target_uid"]) or {}
             fault_pod += e["target_uid"] == (lab.get("fault") or {}).get("pod_uid")
             deleted_old += bool(q.get("deletion_request")) and q.get("template_hash") == pr["old_hash"]
-    n["unsafe two-clock restarts: terminating, gone; fault's Pod; rollout-deleted old Pods; last (s)"] = [
+    n["invalid two-clock restarts: terminating, gone; fault's Pod; rollout-deleted old Pods; last (s)"] = [
         [reasons.get("terminating", 0), reasons.get("gone", 0)], fault_pod, deleted_old, round(max(after_start), 1)]
     effect = [c for c in pops["G1"] if (_load(results / "stage2/adapter" / (c + ".json"))["labels"].get("fault")
                                         or {}).get("latency_effect_established")]
@@ -161,7 +163,7 @@ def numbers(results: Path) -> OrderedDict:
         sorted(effect), OrderedDict(sorted((r["capture"], r["GT2"]) for r in comp["recheck"]["per_capture"]
                                            if r["GT2"]))]
 
-    # Table 4 and Section 5.1
+    # Table 5 and Section 5.1
     rc = comp["recheck"]
 
     def flip(iv):
@@ -178,29 +180,29 @@ def numbers(results: Path) -> OrderedDict:
     n["recheck leave-one-out: range, intervals excluding 0"] = [flip(lo["D_U_range"]),
                                                                [lo["D_U_interval_excludes_0_in"], lo["of"]]]
     wo = rc["without_G3"]
-    n["recheck without G3: unsafe, captures, difference [95%], more/equal/fewer"] = [
+    n["recheck without G3: invalid, captures, difference [95%], more/equal/fewer"] = [
         [wo["U_X"], wo["U_Y"]], wo["captures"], [-wo["D_U"], flip(wo["D_U_95"])], wo["captures_X_more_equal_fewer"]]
     n["recheck missed: difference [95%]"] = [rc["D_M"]["point"], rc["D_M"]["interval_95"]]
     pair = summ["paired"]
-    n["T_p vs T_p@R: unsafe, missed, difference [95%], captures"] = [
+    n["T_p vs T_p@R: invalid, missed, difference [95%], captures"] = [
         pair["T_p minus T_p@R"][k] for k in ("U", "M")] + [[pair["T_p minus T_p@R"]["D_U"],
                                                            pair["T_p minus T_p@R"]["D_U_95"]],
                                                           pair["T_p minus T_p@R"]["captures_a_more_equal_fewer"]]
     p = pair["T_p@R minus R"]
-    n["T_p@R vs R: unsafe, missed, difference [95%], missed difference [95%], captures"] = [
+    n["T_p@R vs R: invalid, missed, difference [95%], missed difference [95%], captures"] = [
         p["U"], p["M"], [p["D_U"], p["D_U_95"]], [p["D_M"], p["D_M_95"]], p["captures_a_more_equal_fewer"]]
     p = pair["T_p minus T_p+lag"]
-    n["T_p+lag vs T_p: unsafe, missed, difference [95%], captures (T_p+lag more/equal/fewer)"] = [
+    n["T_p+lag vs T_p: invalid, missed, difference [95%], captures (T_p+lag more/equal/fewer)"] = [
         p["U"][::-1], p["M"][::-1], [-p["D_U"], flip(p["D_U_95"])], p["captures_a_more_equal_fewer"][::-1]]
     ar = comp["approval_reuse"]
-    n["approval reuse vs T_p (delays > 0): unsafe, posed, difference [95%], 98.33% excludes 0, captures, missed"] = [
+    n["approval reuse vs T_p (delays > 0): invalid, posed, difference [95%], 98.33% excludes 0, captures, missed"] = [
         [ar["totals"]["U_Y"], ar["totals"]["U_X"]], ar["totals"]["posed"],
         [ar["D_U"]["point"], ar["D_U"]["interval_95"]], ar["D_U"]["excludes_0_98_33"],
         sum(1 for r in ar["per_capture"] if r["U_Y"] > r["U_X"]), [ar["totals"]["M_Y"], ar["totals"]["M_X"]]]
     for key, label in (("watch_G", "restart, arm G"), ("watch_D", "rollback, arm D"),
                        ("watch_G_rollback", "rollback, arm G")):
         c = comp[key]
-        n["T_w vs T_p, %s: unsafe, posed, difference [95%%], captures, missed" % label] = [
+        n["T_w vs T_p, %s: invalid, posed, difference [95%%], captures, missed" % label] = [
             [c["totals"]["U_X"], c["totals"]["U_Y"]], c["totals"]["posed"],
             [-c["D_U"]["point"], flip(c["D_U"]["interval_95"])],
             [sum(1 for r in c["per_capture"] if r["U_X"] > r["U_Y"]),
@@ -232,7 +234,7 @@ def numbers(results: Path) -> OrderedDict:
             for k, x in cell["dispositions"]["counts"].items():
                 if k.startswith("ALLOW"):
                     allowed[cell["condition"]][k] = allowed[cell["condition"]].get(k, 0) + x
-    n["rollbacks, arm G: unsafe by view; posed"] = [unsafe_rb, posed_rb]
+    n["rollbacks, arm G: invalid by view; posed"] = [unsafe_rb, posed_rb]
     n["rollbacks, arm G: allowed as rollout complete, all allowed"] = OrderedDict(
         (v, [x.get("ALLOW[R7:rollout_complete]", 0), sum(x.values())]) for v, x in allowed.items())
     by_stream = OrderedDict()
@@ -245,7 +247,7 @@ def numbers(results: Path) -> OrderedDict:
                                                if "no_visible_change" in k)
         by_stream[stream] = [[unsafe_s["T_p"], unsafe_s["T_w"]], all(x == 0 for x in unsafe_s.values()),
                              [unseen["T_p"], unseen["T_w"]]]
-    n["arm-D rollbacks by receipt stream: unsafe (T_p, T_w), no view unsafe, allowed unseen (T_p, T_w)"] = by_stream
+    n["arm-D rollbacks by receipt stream: invalid (T_p, T_w), no view invalid, allowed unseen (T_p, T_w)"] = by_stream
     last_request = []
     for s in ("D1", "G1", "G2", "G4"):
         for c in pops[s]:
@@ -258,7 +260,7 @@ def numbers(results: Path) -> OrderedDict:
         if cell["condition"] in ("T_p", "T_w", "R", "L-kappa", "c-hind") and cell["unsafe_executions"]["count"]:
             unsafe_g.setdefault(c, OrderedDict())
             unsafe_g[c][cell["condition"]] = unsafe_g[c].get(cell["condition"], 0) + cell["unsafe_executions"]["count"]
-    n["rollbacks, arm G: unsafe by capture and view"] = OrderedDict(sorted(unsafe_g.items()))
+    n["rollbacks, arm G: invalid by capture and view"] = OrderedDict(sorted(unsafe_g.items()))
 
     # Section 5.2
     n["T_p vs T_p@R: first verdicts that differ"] = summ["agreement"]["T_p vs T_p@R"]["first_verdict_differs"]
@@ -267,15 +269,17 @@ def numbers(results: Path) -> OrderedDict:
         round(max(m["recheck_lag_s"]["max"] for m in summ["meta"].values()), 2)]
     n["T_p@R vs R: missed by delay (0, 10, 30, 80 s)"] = [[delay[v]["delta %d s" % d]["M"] for d in DELAYS]
                                                           for v in ("T_p@R", "R")]
+    lpr = [_load(path)["conditions"]["L_p@R"]["U"] for path in sorted((a / "replays").glob("*.json"))]
+    n["latest snapshot at the recheck's instants: invalid executions, captures"] = [sum(lpr), len(lpr)]
 
-    # Section 5.3 and Fig. 3
+    # Section 5.3 and Fig. 4
     n["posed per delay"] = delay["T_p"]["delta 0 s"]["posed"]
-    n["unsafe by delay (0, 10, 30, 80 s)"] = OrderedDict(
+    n["invalid by delay (0, 10, 30, 80 s)"] = OrderedDict(
         (v, [delay[v]["delta %d s" % d]["U"] for d in DELAYS]) for v in ("T_p", "T@F600", "L-kappa", "R", "T_p@R"))
     n["executions by delay (0, 10, 30, 80 s)"] = OrderedDict(
         (v, [delay[v]["delta %d s" % d]["executions"] for d in DELAYS]) for v in ("T_p", "T@F600", "L-kappa", "R",
                                                                                  "T_p@R"))
-    n["T_p unsafe by cutoff (0, 5, 30 s)"] = [delay["T_p"]["cutoff +%d s" % c]["U"] for c in CUTOFFS]
+    n["T_p invalid by cutoff (0, 5, 30 s)"] = [delay["T_p"]["cutoff +%d s" % c]["U"] for c in CUTOFFS]
     ends = OrderedDict()
     for v in ("T_p", "R"):
         ends[v] = OrderedDict()
@@ -287,10 +291,10 @@ def numbers(results: Path) -> OrderedDict:
                         disp[k.split("[")[0]] = disp.get(k.split("[")[0], 0) + x
             ends[v]["%d s" % d] = [disp.get("EXPIRED", 0), disp.get("CENSORED", 0)]
     n["delays 30 and 80 s: decisions expired, censored at the end of the records"] = ends
-    n["T@F600: unsafe"] = delay["T@F600"]["total"]["U"]
-    n["poller thinned x2, x4: unsafe, missed, executions"] = [
+    n["T@F600: invalid"] = delay["T@F600"]["total"]["U"]
+    n["poller thinned x2, x4: invalid, missed, executions"] = [
         [delay[v]["total"][k] for k in ("U", "M", "executions")] for v in ("T_p[thin 2]", "T_p[thin 4]")]
-    n["poller thinned: unsafe unchanged in every capture"] = all(
+    n["poller thinned: invalid unchanged in every capture"] = all(
         summ["per_capture_U"][c][v] == summ["per_capture_U"][c]["T_p"] for c in summ["per_capture_U"]
         for v in ("T_p[thin 2]", "T_p[thin 4]"))
     n["poller thinned: captures whose missed opportunities changed"] = sorted(
@@ -298,17 +302,17 @@ def numbers(results: Path) -> OrderedDict:
     iv = [m["poll_intervals"] for m in summ["meta"].values()]
     n["Pod-list median intervals (s): captured, x2, x4"] = [_range([x[k]["median_s"] for x in iv], 1)
                                                             for k in ("published", "thin 2", "thin 4")]
-    n["added latency 5 s, 30 s: unsafe, missed, executions"] = [
+    n["added latency 5 s, 30 s: invalid, missed, executions"] = [
         [delay[v]["total"][k] for k in ("U", "M", "executions")] for v in ("T_p[late 5]", "T_p[late 30]")]
 
-    # Section 5.4 and Table 5
+    # Section 5.4 and Table 7
     sur = summ["surrogate"]["by_condition_and_label"]
-    n["Table 5: executions, EndpointSlice not ready, with service traffic, target served a request"] = OrderedDict(
+    n["Table 7: executions, EndpointSlice not ready, with service traffic, target served a request"] = OrderedDict(
         (v, OrderedDict((lab, [sur[v][lab][k] for k in ("executions", "es_target_not_ready", "with_spans",
                                                          "with_target_span_after")])
                         for lab in ("unsafe (V-target)", "neutral", "GT-2-B") if lab in sur[v]))
         for v in ("T_p", "L-kappa", "R"))
-    n["unsafe executions near a call to the target's own address"] = [
+    n["invalid executions near a call to the target's own address"] = [
         sur[v]["unsafe (V-target)"]["with_probes_target_pod"] for v in ("T_p", "L-kappa")]
     pc = summ["surrogate"]["probe_calls_in_captures"]
     n["service-addressed probe calls: failing, all"] = [pc["service_failing"], pc["service"]]
@@ -383,13 +387,13 @@ def numbers(results: Path) -> OrderedDict:
         _range([x["median_s"] for x in dpi], 1), round(max(x["max_s"] for x in dpi), 1),
         round(dev["per_capture"]["I2-002"]["pod_list_intervals"]["ending_with_switch_s"], 1)]
 
-    # Section 5.6 and Fig. 5
+    # Section 5.6 and Fig. 6
     au = summ["audit"]
     late = au["decisions_with_records_valid_before_cutoff_available_after"]
     n["records valid before the cutoff, available after: decisions, kubelet, API; longest kubelet wait (s)"] = [
         late["either"], late["k1"], late["api"], round(au["largest_such_wait_s_max_over_captures"]["k1"], 1)]
     ev = au["event_time_reconstruction"]
-    n["valid-time replay, captured latency: first verdicts, dispositions, executions; its unsafe count"] = [
+    n["valid-time replay, captured latency: first verdicts, dispositions, executions; its invalid count"] = [
         ev["first_verdict_differs"], ev["disposition_differs"], ev["execution_differs"],
         au["event_time_unsafe_and_missed"][0]]
     lr = summ["latency"]["event_time_reconstruction_differs"]
@@ -414,9 +418,142 @@ def numbers(results: Path) -> OrderedDict:
         [finals.get("ALLOW", 0), finals.get("DENY", 0)], unreachable,
         None if unreachable is None else differs - unreachable]
     posed = au["posed"]
-    n["Fig. 5 percentages"] = [round(100.0 * x / posed, 1) for x in (
+    n["audit figure percentages (valid times 0, 5, 30 s; end of capture)"] = [round(100.0 * x / posed, 1) for x in (
         ev["first_verdict_differs"], lr["T_p[late 5]"]["first_verdict_differs"],
         lr["T_p[late 30]"]["first_verdict_differs"], au["final_store_verdict"]["first_verdict_differs"])]
+    n.update(followup_numbers(a, posed))
+    return n
+
+
+def followup_numbers(a: Path, posed: int) -> OrderedDict:
+    """Outcome coverage, invalid-restart targets, parameter sweep, receipt-time audit, store size and diagnosis
+    robustness (results/stage2/analyses/sweeps_summary.json)."""
+    sw = _load(a / "sweeps_summary.json")
+    n = OrderedDict()
+    out = sw["outcomes"]
+    n["Table 4: invalid, valid, uncertain, approval, denied, expired, censored (per view)"] = OrderedDict(
+        (v, [out[v][k] for k in ("invalid", "valid", "uncertain", "approval", "denied", "expired", "censored")])
+        for v in out)
+    n["invalid per execution (%), per view"] = OrderedDict(
+        (v, round(100.0 * out[v]["invalid"] / out[v]["executions"], 2)) for v in out)
+    n["invalid restart targets: gone, terminating, other states (per view)"] = OrderedDict(
+        (v, [out[v]["invalid_by_target_state"].get("gone", 0), out[v]["invalid_by_target_state"].get("terminating", 0),
+             sum(x for k, x in out[v]["invalid_by_target_state"].items() if k not in ("gone", "terminating"))])
+        for v in out)
+    lag = sw["coverage"]["T_p+lag"]
+    n["two-clock gate with the recheck's lag: invalid, executions; targets gone, terminating, other states"] = [
+        lag["invalid"], lag["executions"],
+        [lag["invalid_by_target_state"].get("gone", 0), lag["invalid_by_target_state"].get("terminating", 0),
+         sum(x for k, x in lag["invalid_by_target_state"].items() if k not in ("gone", "terminating"))]]
+    m = sw["mutually_evaluable"]["T_p vs R"]
+    n["T_p vs R on decisions neither left censored: decisions; T_p invalid, executions; R invalid, executions"] = [
+        m["decisions"], m["outcomes"]["a"].get("invalid", 0), sum(m["outcomes"]["a"].get(k, 0) for k in (
+            "invalid", "valid", "uncertain")), m["outcomes"]["b"].get("invalid", 0),
+        sum(m["outcomes"]["b"].get(k, 0) for k in ("invalid", "valid", "uncertain"))]
+    n["recheck executions inside a mitigation window: posed as an opportunity, posed before it"] = [
+        sw["coverage"]["R"]["opportunity_executions"].get("posed as an opportunity", 0),
+        sw["coverage"]["R"]["opportunity_executions"].get("posed before the opportunity", 0)]
+    sweep = OrderedDict()
+    for block, cells in sw["sweep"].items():
+        sweep[block] = OrderedDict((name, [c["invalid"], c["executions"], c["missed"], c["opportunities"]])
+                                   for name, c in cells.items())
+    n["sweep: invalid, executions, missed, opportunities per setting"] = sweep
+    restarts = sw["sweep"]["arm G | B | S0"]
+    n["sweep, restarts: invalid targets below floor, not Ready, terminating, gone (per setting)"] = OrderedDict(
+        (name, [c["invalid_by_target_state"].get(k, 0) for k in ("below_floor", "not_ready", "terminating", "gone")])
+        for name, c in restarts.items())
+    n["sweep, restarts: invalid by dispatch delay 0 and 10 s (N = 0, 10, 30 s)"] = [
+        [restarts[name]["by_dispatch_delay"][d].get("invalid", 0) for d in ("0 s", "10 s")]
+        for name in ("F=30,N=0", "F=30,N=10", "F=30,N=30")]
+    n["sweep, restarts: executions added without the window; approvals of the window at 30 s"] = [
+        restarts["F=30,N=0"]["executions"] - restarts["F=30,N=30"]["executions"],
+        restarts["F=30,N=30"]["declined"].get("NEEDS_APPROVAL[R2]", 0)]
+    n["restart decisions of the two-clock gate declined, by rule"] = sw["coverage"]["T_p"]["declined"]
+    n["arm-D rollbacks posed per receipt stream (S0, S30, Snever)"] = [
+        sw["sweep"]["arm D | A | %s" % s]["F=30,N=30"]["posed"] for s in ("S0", "S30", "Snever")]
+    comp = _load(a / "per_capture_stats.json")["comparisons"]
+    rc = [r["U_X"] - r["U_Y"] for r in comp["recheck"]["per_capture"]]
+    ar = [r["U_Y"] - r["U_X"] for r in comp["approval_reuse"]["per_capture"]]
+    n["capture-level effect: gate minus recheck, approval reuse minus gate (median; range)"] = [
+        [statistics.median(rc), [min(rc), max(rc)]], [statistics.median(ar), [min(ar), max(ar)]]]
+    probe = OrderedDict()
+    for path in sorted((a / "surrogate").glob("*.json")):
+        doc = _load(path)
+        if not doc["surrogate"]["probe_calls_in_capture"]["service_failing"]:
+            continue
+        probe[doc["capture"]] = OrderedDict(
+            (view, OrderedDict((label, v["with_probe_failure_service"]) for label, v in doc["surrogate"][view].items()
+                               if v["with_probe_failure_service"]))
+            for view in ("T_p", "L-kappa", "R"))
+    n["failing service-address probe: capture; executions within 2 s by view and label"] = probe
+    times = {}
+    for path in sorted((a.parent / "adapter").glob("*.json")):
+        for p in _load(path)["labels"]["pods"]:
+            if p.get("deletion_request") and p.get("gone_after"):
+                times.setdefault(p["service"], []).append(_t(p["gone_after"]) - _t(p["deletion_request"]))
+    n["deleted Pods: deletion request to first evidence of removal (s), recommendation, catalog (range)"] = [
+        _range(times.get("recommendationservice", []), 1), _range(times.get("productcatalogservice", []), 1)]
+    rules = set()
+    for path in sorted((a.parent / "adapter").glob("*.json")):
+        for cell in _load(path)["T1_cells"]:
+            for key in cell["dispositions"]["counts"]:
+                if key.split("[")[0] in ("DENY", "NEEDS_APPROVAL"):
+                    rules.update(re.findall(r"R\d+", key))
+    n["rules that declined a decision (every view, stream and action)"] = sorted(rules)
+    stress = _load(a / "diagnosis_stress.json")
+    counts = sorted({r["candidates"] for cap in stress["per_capture"] + stress["development_per_capture"]
+                     for r in cap["rows"] if r["stream"] == "complete" and r["delta_s"] > 0})
+    n["diagnosis: candidates per capture, policy and cutoff after the onset (range)"] = [counts[0], counts[-1]]
+    n["receipt-time audit: first verdicts, dispositions, executions misreported; invalid reported (0, 5, 30 s)"] = \
+        OrderedDict((lat, [v["receipt_time_vs_gate"]["first_verdict_differs"],
+                           v["receipt_time_vs_gate"]["disposition_differs"],
+                           v["receipt_time_vs_gate"]["execution_differs"], v["receipt_time_replay"]["invalid"]])
+                    for lat, v in sw["audit"].items())
+    n["receipt-time audit percentages (0, 5, 30 s)"] = [
+        round(100.0 * v["receipt_time_vs_gate"]["first_verdict_differs"] / posed, 1) for v in sw["audit"].values()]
+    st = sw["store"]
+    n["poller store per arm-G capture: versions, keys (median); versions per key (range)"] = [
+        st["observations"]["median"], st["keys"]["median"],
+        [st["versions_per_key"]["min"], st["versions_per_key"]["max"]]]
+    rob = sw.get("diagnosis_robustness", {}).get("follow_up", {})
+
+    def draws(variant, delta, policies):
+        return [rob["%s | %d s | %s" % (variant, delta, p)]["top1_draws"] for p in policies]
+    snap = ("latest_state", "temporal_join", "bitemporal_abstain_F600")
+    if rob:
+        n["robustness: captures first with the onset 10 s early (temporal join, two-clock, span identity; +5, +30 s)"] = [
+            [rob["onset_shift_-10s | %d s | %s" % (d, p)]["all_draws_top1"] for p in (
+                "temporal_join", "bitemporal_abstain_F600", "hindsight")] for d in (5, 30)]
+        n["robustness: every policy first in every capture for onset shifts of -5..+10 s"] = all(
+            v["all_draws_top1"] == v["captures"] for k, v in rob.items()
+            if k.startswith("onset_shift_") and not k.startswith("onset_shift_-10s")
+            and not k.endswith("bitemporal_abstain_F30"))
+        n["robustness: onset 10 s early, latest state first (+5, +30 s); onset 5 s early, +5 s: captures with every "
+          "policy first"] = [
+            [rob["onset_shift_-10s | %d s | latest_state" % d]["all_draws_top1"] for d in (5, 30)],
+            min(rob["onset_shift_-5s | 5 s | %s" % p]["all_draws_top1"] for p in (
+                "latest_state", "temporal_join", "bitemporal_abstain_F600", "bitemporal_abstain_F30", "hindsight"))]
+        dev = sw["diagnosis_robustness"].get("development", {})
+        if dev:
+            n["robustness, development: temporal join and two-clock first (complete, onset 2 s early; +5 s); span "
+              "identity first (complete, onset 10 s late; +5 s); span identity draws first, half the traces (+5 s)"] = [
+                [[dev["%s | 5 s | %s" % (v, p)]["all_draws_top1"] for v in ("complete", "onset_shift_-2s")]
+                 for p in ("temporal_join", "bitemporal_abstain_F600")],
+                [dev["%s | 5 s | hindsight" % v]["all_draws_top1"] for v in ("complete", "onset_shift_+10s")],
+                [dev["sampled_0.5 | 5 s | hindsight"]["top1_draws"], dev["sampled_0.5 | 5 s | hindsight"]["draws"]]]
+            n["robustness, development: draws first with half the traces (+5 s): temporal join, two-clock, span "
+              "identity"] = [dev["sampled_0.5 | 5 s | %s" % p]["top1_draws"] for p in (
+                "temporal_join", "bitemporal_abstain_F600", "hindsight")]
+        n["robustness: sampled traces, draws with the faulty Pod first (snapshot policies, span identity; 0.5, 0.25, "
+          "0.1; +5 and +30 s)"] = OrderedDict(
+            (p, [[min(draws("sampled_%s" % p, d, snap)), max(draws("sampled_%s" % p, d, snap)),
+                  draws("sampled_%s" % p, d, ("hindsight",))[0]] for d in (5, 30)]) for p in ("0.5", "0.25", "0.1"))
+        n["robustness: spans without Pod identity, span identity draws first (0.5, 0.75, 0.9; +5 and +30 s); "
+          "snapshot policies unaffected"] = [
+            [[draws("identity_missing_%s" % p, d, ("hindsight",))[0] for d in (5, 30)] for p in ("0.5", "0.75", "0.9")],
+            all(rob["identity_missing_%s | %d s | %s" % (p, d, q)]["top1_draws"]
+                == rob["identity_missing_%s | %d s | %s" % (p, d, q)]["draws"]
+                for p in ("0.5", "0.75", "0.9") for d in (5, 30) for q in snap)]
     return n
 
 
@@ -427,7 +564,7 @@ EXPECTED = OrderedDict([
     ("arm-G requests without a server span of the changed service (not posed), requests", [14, 2880]),
     ("arm D: longest Pod-list gap in the observer-validity check (s)", 4.1),
     ("Table 2: terminated target out of service (s), G2 and G3", {"G2": [7.0, 8.0], "G3": [1.0, 2.0]}),
-    ("Table 3 unsafe (G1, G2, G3, G4, all)",
+    ("Table 3 invalid (G1, G2, G3, G4, all)",
      {"T_p": [9, 10, 85, 6, 110], "L_p": [9, 10, 85, 6, 110], "T_w": [9, 10, 85, 6, 110],
       "T_p+lag": [10, 12, 90, 7, 119], "T_p@R": [0, 0, 0, 0, 0], "R": [0, 0, 0, 0, 0],
       "L-kappa": [422, 415, 361, 264, 1462]}),
@@ -436,13 +573,13 @@ EXPECTED = OrderedDict([
       "R": [85, 20227], "L-kappa": [116, 19604]}),
     ("Table 3 posed (G1, G2, G3, G4, all); opportunities", [10800, 10728, 6384, 6480, 34392, 124]),
     ("T_p and L_p: decisions that differ (first verdict, disposition, execution)", [0, 0, 0]),
-    ("T_w and T_p: same unsafe count in every capture", True),
+    ("T_w and T_p: same invalid count in every capture", True),
     ("posed restart decisions per arm-G capture (range)", [2124, 2160]),
     ("Table 3 uncertain executions",
      {"T_p": 178, "L_p": 178, "T_w": 181, "T_p+lag": 173, "T_p@R": 36, "R": 242, "L-kappa": 238}),
-    ("uncertain executions that could be unsafe", {"T_p": 158, "R": 92, "L-kappa": 222}),
+    ("uncertain executions that could be invalid", {"T_p": 158, "R": 92, "L-kappa": 222}),
     ("restart executions labelled V-floor, every view", 0),
-    ("unsafe two-clock restarts: terminating, gone; fault's Pod; rollout-deleted old Pods; last (s)",
+    ("invalid two-clock restarts: terminating, gone; fault's Pod; rollout-deleted old Pods; last (s)",
      [[26, 84], 0, 110, 9.9]),
     ("mitigation opportunities: G1 captures with an established effect; opportunities per capture",
      [["G1-002", "G1-005"], {"G1-002": 68, "G1-005": 56}]),
@@ -451,21 +588,21 @@ EXPECTED = OrderedDict([
     ("recheck per scenario: difference [95%]",
      {"G1": [9, [3, 17]], "G2": [10, [3, 17]], "G3": [85, [84, 87]], "G4": [6, [3, 9]]}),
     ("recheck leave-one-out: range, intervals excluding 0", [[81, 110], [16, 16]]),
-    ("recheck without G3: unsafe, captures, difference [95%], more/equal/fewer",
+    ("recheck without G3: invalid, captures, difference [95%], more/equal/fewer",
      [[25, 0], 13, [25, [14, 36]], [10, 3, 0]]),
     ("recheck missed: difference [95%]", [30, [0, 68]]),
-    ("T_p vs T_p@R: unsafe, missed, difference [95%], captures", [[110, 0], [115, 115], [110, [100, 121]], [13, 3, 0]]),
-    ("T_p@R vs R: unsafe, missed, difference [95%], missed difference [95%], captures",
+    ("T_p vs T_p@R: invalid, missed, difference [95%], captures", [[110, 0], [115, 115], [110, [100, 121]], [13, 3, 0]]),
+    ("T_p@R vs R: invalid, missed, difference [95%], missed difference [95%], captures",
      [[0, 0], [115, 85], [0, [0, 0]], [30, [0, 64]], [0, 16, 0]]),
-    ("T_p+lag vs T_p: unsafe, missed, difference [95%], captures (T_p+lag more/equal/fewer)",
+    ("T_p+lag vs T_p: invalid, missed, difference [95%], captures (T_p+lag more/equal/fewer)",
      [[119, 110], [118, 115], [9, [5, 14]], [7, 9, 0]]),
-    ("approval reuse vs T_p (delays > 0): unsafe, posed, difference [95%], 98.33% excludes 0, captures, missed",
+    ("approval reuse vs T_p (delays > 0): invalid, posed, difference [95%], 98.33% excludes 0, captures, missed",
      [[1462, 110], 25794, [1352, [1300, 1396]], True, 16, [93, 92]]),
-    ("T_w vs T_p, restart, arm G: unsafe, posed, difference [95%], captures, missed",
+    ("T_w vs T_p, restart, arm G: invalid, posed, difference [95%], captures, missed",
      [[110, 110], 34392, [0, [0, 0]], [0, 16, 0], [113, 115]]),
-    ("T_w vs T_p, rollback, arm D: unsafe, posed, difference [95%], captures, missed",
+    ("T_w vs T_p, rollback, arm D: invalid, posed, difference [95%], captures, missed",
      [[0, 50], 5158, [-50, [-56, -44]], [0, 2, 6], [628, 662]]),
-    ("T_w vs T_p, rollback, arm G: unsafe, posed, difference [95%], captures, missed",
+    ("T_w vs T_p, rollback, arm G: invalid, posed, difference [95%], captures, missed",
      [[2, 2], 31352, [0, [0, 0]], [0, 16, 0], [585, 586]]),
     ("watch rollback arm D: missed difference [95%]", [-34, [-36, -30]]),
     ("rollout end of G2-003 (s after the rollout started)", 35),
@@ -473,37 +610,37 @@ EXPECTED = OrderedDict([
      ["D1-001", "D1-002", "D1-003", "D1-004", "D1-005", "D1-006"]),
     ("watch rollback arm G: difference in G2", 0),
     ("98.33% intervals: recheck, approval reuse, watch rollback arm D", [[97, 123], [1287, 1403], [-58, -42]]),
-    ("rollbacks, arm G: unsafe by view; posed", [{"T_p": 2, "T_w": 2, "R": 0, "L-kappa": 2, "c-hind": 0}, 31352]),
+    ("rollbacks, arm G: invalid by view; posed", [{"T_p": 2, "T_w": 2, "R": 0, "L-kappa": 2, "c-hind": 0}, 31352]),
     ("rollbacks, arm G: allowed as rollout complete, all allowed", {"T_p": [13220, 13224], "R": [24906, 24906]}),
-    ("arm-D rollbacks by receipt stream: unsafe (T_p, T_w), no view unsafe, allowed unseen (T_p, T_w)",
+    ("arm-D rollbacks by receipt stream: invalid (T_p, T_w), no view invalid, allowed unseen (T_p, T_w)",
      {"S0": [[0, 0], True, [3, 3]], "S30": [[25, 0], False, [28, 3]], "Snever": [[25, 0], False, [28, 3]]}),
     ("recommendation rollouts: old revision's last workload request after all new Pods were Ready (s)", [-3.6, 2.0]),
-    ("rollbacks, arm G: unsafe by capture and view",
+    ("rollbacks, arm G: invalid by capture and view",
      {"G2-006": {"L-kappa": 1, "T_p": 1, "T_w": 1}, "G4-001": {"L-kappa": 1, "T_p": 1, "T_w": 1}}),
     ("T_p vs T_p@R: first verdicts that differ", 19002),
     ("recheck lag: per-capture medians, maximum (s)", [[0.5, 0.7], 2.19]),
     ("T_p@R vs R: missed by delay (0, 10, 30, 80 s)", [[25, 28, 31, 31], [3, 20, 31, 31]]),
     ("posed per delay", 8598),
-    ("unsafe by delay (0, 10, 30, 80 s)",
+    ("invalid by delay (0, 10, 30, 80 s)",
      {"T_p": [0, 110, 0, 0], "T@F600": [0, 110, 677, 785], "L-kappa": [0, 110, 622, 730], "R": [0, 0, 0, 0],
       "T_p@R": [0, 0, 0, 0]}),
     ("executions by delay (0, 10, 30, 80 s)",
      {"T_p": [4901, 5577, 0, 0], "T@F600": [4901, 5577, 6383, 6383], "L-kappa": [4901, 4901, 4901, 4901],
       "R": [5781, 5641, 5840, 2965], "T_p@R": [4907, 5000, 5738, 2965]}),
-    ("T_p unsafe by cutoff (0, 5, 30 s)", [57, 53, 0]),
+    ("T_p invalid by cutoff (0, 5, 30 s)", [57, 53, 0]),
     ("delays 30 and 80 s: decisions expired, censored at the end of the records",
      {"T_p": {"30 s": [2065, 6533], "80 s": [2065, 6533]}, "R": {"30 s": [0, 1778], "80 s": [0, 5633]}}),
-    ("T@F600: unsafe", 1572),
-    ("poller thinned x2, x4: unsafe, missed, executions", [[110, 120, 10296], [110, 120, 10064]]),
-    ("poller thinned: unsafe unchanged in every capture", True),
+    ("T@F600: invalid", 1572),
+    ("poller thinned x2, x4: invalid, missed, executions", [[110, 120, 10296], [110, 120, 10064]]),
+    ("poller thinned: invalid unchanged in every capture", True),
     ("poller thinned: captures whose missed opportunities changed", ["G1-005"]),
     ("Pod-list median intervals (s): captured, x2, x4", [[2.4, 2.5], [4.9, 5.1], [9.8, 10.2]]),
-    ("added latency 5 s, 30 s: unsafe, missed, executions", [[110, 115, 10428], [0, 124, 0]]),
-    ("Table 5: executions, EndpointSlice not ready, with service traffic, target served a request",
+    ("added latency 5 s, 30 s: invalid, missed, executions", [[110, 115, 10428], [0, 124, 0]]),
+    ("Table 7: executions, EndpointSlice not ready, with service traffic, target served a request",
      {"T_p": {"unsafe (V-target)": [110, 110, 110, 1], "neutral": [10181, 0, 7279, 5667], "GT-2-B": [9, 0, 9, 6]},
       "L-kappa": {"unsafe (V-target)": [1462, 1462, 1410, 1], "neutral": [17896, 0, 7140, 5437], "GT-2-B": [8, 0, 8, 5]},
       "R": {"neutral": [19933, 0, 10311, 8005], "GT-2-B": [52, 0, 52, 23]}}),
-    ("unsafe executions near a call to the target's own address", [0, 0]),
+    ("invalid executions near a call to the target's own address", [0, 0]),
     ("service-addressed probe calls: failing, all", [1, 788]),
     ("server spans with an error status", 0),
     ("failing Pod-address probes by scenario; R executions near one (neutral, U); T_p executions near one",
@@ -534,14 +671,89 @@ EXPECTED = OrderedDict([
      [[3.4, 4.6], 11.1, 7.4]),
     ("records valid before the cutoff, available after: decisions, kubelet, API; longest kubelet wait (s)",
      [3040, 3020, 48, 4.3]),
-    ("valid-time replay, captured latency: first verdicts, dispositions, executions; its unsafe count",
+    ("valid-time replay, captured latency: first verdicts, dispositions, executions; its invalid count",
      [174, 726, 26, 112]),
     ("valid-time replay with 5 s, 30 s latency: first verdicts, executions", [[1508, 84], [14630, 10504]]),
     ("end-of-capture replay: first verdicts; decisions whose context changed", [23451, 8544]),
     ("two-clock first verdicts: abstain, allow, deny, needs approval", [19726, 10473, 2106, 2087]),
     ("end-of-capture replay: target verdicts (allow, deny); abstain/approval misreports; inversions",
      [[45, 44], 21813, 1638]),
-    ("Fig. 5 percentages", [0.5, 4.4, 42.5, 68.2]),
+    ("audit figure percentages (valid times 0, 5, 30 s; end of capture)", [0.5, 4.4, 42.5, 68.2]),
+    ("Table 4: invalid, valid, uncertain, approval, denied, expired, censored (per view)",
+     {"T_p": [110, 10190, 178, 2288, 4430, 4130, 13066], "T_w": [110, 10363, 181, 2522, 4020, 4130, 13066],
+      "L-kappa": [1462, 17904, 238, 5928, 8860, 0, 0], "R": [0, 19985, 242, 1100, 4615, 48, 8402],
+      "T@F600": [1572, 21430, 242, 2288, 8860, 0, 0]}),
+    ("invalid per execution (%), per view", {"T_p": 1.05, "T_w": 1.03, "L-kappa": 7.46, "R": 0.0, "T@F600": 6.76}),
+    ("invalid restart targets: gone, terminating, other states (per view)",
+     {"T_p": [84, 26, 0], "T_w": [84, 26, 0], "L-kappa": [960, 502, 0], "R": [0, 0, 0], "T@F600": [1070, 502, 0]}),
+    ("T_p vs R on decisions neither left censored: decisions; T_p invalid, executions; R invalid, executions",
+     [17676, 47, 10415, 0, 11926]),
+    ("recheck executions inside a mitigation window: posed as an opportunity, posed before it", [39, 13]),
+    ("sweep: invalid, executions, missed, opportunities per setting",
+     {"arm G | A | S0": {"F=30,N=30": [2, 13224, 586, 928], "F=30,N=0": [2, 15676, 579, 928],
+                         "F=30,N=10": [2, 15558, 579, 928], "F=30,N=60": [2, 6348, 928, 928],
+                         "F=30,N=600": [0, 0, 928, 928]},
+      "arm D | A | S0": {"F=10,N=30": [0, 1696, 314, 670], "F=30,N=30": [0, 1696, 314, 670],
+                         "F=60,N=30": [0, 1696, 314, 670], "F=120,N=30": [0, 1696, 314, 670],
+                         "F=600,N=30": [0, 1696, 314, 670], "F=30,N=0": [0, 2562, 0, 670],
+                         "F=30,N=10": [0, 2369, 0, 670], "F=30,N=60": [0, 885, 670, 670],
+                         "F=30,N=600": [0, 0, 670, 670]},
+      "arm D | A | S30": {"F=10,N=30": [25, 1721, 314, 670], "F=30,N=30": [25, 1721, 314, 670],
+                          "F=60,N=30": [25, 1721, 314, 670], "F=120,N=30": [25, 1721, 314, 670],
+                          "F=600,N=30": [25, 1721, 314, 670], "F=30,N=0": [25, 2562, 0, 670],
+                          "F=30,N=10": [25, 2371, 0, 670], "F=30,N=60": [25, 910, 670, 670],
+                          "F=30,N=600": [0, 0, 670, 670]},
+      "arm D | A | Snever": {"F=10,N=30": [25, 1687, 348, 670], "F=30,N=30": [25, 1687, 348, 670],
+                             "F=60,N=30": [25, 1687, 348, 670], "F=120,N=30": [25, 1687, 348, 670],
+                             "F=600,N=30": [25, 1687, 348, 670], "F=30,N=0": [25, 2562, 0, 670],
+                             "F=30,N=10": [25, 2371, 0, 670], "F=30,N=60": [25, 889, 670, 670],
+                             "F=30,N=600": [0, 0, 670, 670]},
+      "arm G | B | S0": {"F=10,N=30": [0, 4901, 116, 124], "F=30,N=30": [110, 10478, 115, 124],
+                         "F=60,N=30": [787, 16861, 115, 124], "F=120,N=30": [1572, 23244, 115, 124],
+                         "F=600,N=30": [1572, 23244, 115, 124], "F=30,N=0": [254, 12766, 82, 124],
+                         "F=30,N=10": [225, 12486, 82, 124], "F=30,N=60": [110, 5308, 124, 124],
+                         "F=30,N=600": [0, 0, 124, 124]}}),
+    ("receipt-time audit: first verdicts, dispositions, executions misreported; invalid reported (0, 5, 30 s)",
+     {"0 s": [152, 72, 15, 110], "5 s": [1404, 1550, 720, 110], "30 s": [11482, 17196, 5726, 528]}),
+    ("receipt-time audit percentages (0, 5, 30 s)", [0.4, 4.1, 33.4]),
+    ("poller store per arm-G capture: versions, keys (median); versions per key (range)",
+     [5014.5, 49.0, [102.2, 106.5]]),
+    ("robustness: captures first with the onset 10 s early (temporal join, two-clock, span identity; +5, +30 s)",
+     [[5, 5, 5], [6, 6, 6]]),
+    ("robustness: every policy first in every capture for onset shifts of -5..+10 s", True),
+    ("robustness: sampled traces, draws with the faulty Pod first (snapshot policies, span identity; 0.5, 0.25, "
+     "0.1; +5 and +30 s)",
+     {"0.5": [[67, 69, 67], [79, 80, 79]], "0.25": [[50, 56, 51], [73, 77, 73]], "0.1": [[13, 21, 14], [40, 56, 41]]}),
+    ("robustness: spans without Pod identity, span identity draws first (0.5, 0.75, 0.9; +5 and +30 s); "
+     "snapshot policies unaffected", [[[68, 79], [45, 77], [21, 49]], True]),
+    ("sweep, restarts: invalid targets below floor, not Ready, terminating, gone (per setting)",
+     {"F=10,N=30": [0, 0, 0, 0], "F=30,N=30": [0, 0, 26, 84], "F=60,N=30": [0, 0, 502, 285],
+      "F=120,N=30": [0, 0, 502, 1070], "F=600,N=30": [0, 0, 502, 1070], "F=30,N=0": [49, 11, 100, 94],
+      "F=30,N=10": [49, 11, 74, 91], "F=30,N=60": [0, 0, 26, 84], "F=30,N=600": [0, 0, 0, 0]}),
+    ("sweep, restarts: invalid by dispatch delay 0 and 10 s (N = 0, 10, 30 s)", [[40, 214], [11, 214], [0, 110]]),
+    ("sweep, restarts: executions added without the window; approvals of the window at 30 s", [2288, 2288]),
+    ("restart decisions of the two-clock gate declined, by rule",
+     {"DENY[R1]": 2882, "DENY[R3]": 1548, "NEEDS_APPROVAL[R2]": 2288}),
+    ("rules that declined a decision (every view, stream and action)", ["R1", "R2", "R3"]),
+    ("diagnosis: candidates per capture, policy and cutoff after the onset (range)", [2, 3]),
+    ("robustness: onset 10 s early, latest state first (+5, +30 s); onset 5 s early, +5 s: captures with every "
+     "policy first", [[8, 8], 8]),
+    ("robustness, development: temporal join and two-clock first (complete, onset 2 s early; +5 s); span identity "
+     "first (complete, onset 10 s late; +5 s); span identity draws first, half the traces (+5 s)",
+     [[[4, 3], [4, 3]], [5, 4], [44, 50]]),
+    ("arm-D rollbacks posed per receipt stream (S0, S30, Snever)", [2579, 2579, 2579]),
+    ("two-clock gate with the recheck's lag: invalid, executions; targets gone, terminating, other states",
+     [119, 10478, [90, 29, 0]]),
+    ("robustness, development: draws first with half the traces (+5 s): temporal join, two-clock, span identity",
+     [28, 28, 44]),
+    ("latest snapshot at the recheck's instants: invalid executions, captures", [0, 16]),
+    ("capture-level effect: gate minus recheck, approval reuse minus gate (median; range)",
+     [[2.5, [0, 29]], [85.5, [62, 94]]]),
+    ("failing service-address probe: capture; executions within 2 s by view and label",
+     {"G3-002": {"T_p": {"U": 16, "unsafe (V-target)": 4}, "L-kappa": {"U": 16, "unsafe (V-target)": 4},
+                 "R": {"U": 7}}}),
+    ("deleted Pods: deletion request to first evidence of removal (s), recommendation, catalog (range)",
+     [[21.2, 29.0], [1.0, 2.1]]),
 ])
 
 

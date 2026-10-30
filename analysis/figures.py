@@ -1,4 +1,4 @@
-"""Figures 2-5 of the paper, drawn from the replay summaries in results/stage2/analyses/.
+"""Figures 3-6 of the paper, drawn from the replay summaries in results/stage2/analyses/.
 
     python -m analysis.figures --out figures
 
@@ -51,7 +51,7 @@ def _clean(ax):
 
 
 def per_capture(summary: dict, captures: dict, out: Path):
-    """Unsafe restarts per capture and view, as a table of printed counts shaded by size."""
+    """Invalid restarts per capture and view, as a table of printed counts shaded by size."""
     plt = _plt()
     views = [("T_p", "two-clock gate (also latest\nsnapshot, watch)"), ("T_p+lag", "two-clock, recheck's lag"),
              ("T_p@R", "two-clock, recheck's instants"), ("R", "fresh recheck"), ("L-kappa", "approval reuse")]
@@ -91,7 +91,7 @@ def per_capture(summary: dict, captures: dict, out: Path):
 
 
 def by_delay(table: dict, out: Path):
-    """Unsafe executions and executions by dispatch delay."""
+    """Invalid executions and executions by dispatch delay."""
     plt = _plt()
     delays = [0, 10, 30, 80]
     series = [("T_p", "two-clock gate, F = 30 s", BLUE, "o", "-"),
@@ -106,7 +106,7 @@ def by_delay(table: dict, out: Path):
                      label=label)
         axes[1].plot(delays, e, color=color, marker=marker, ms=3.8, lw=1.4, ls=ls, mec="white", mew=0.5)
     posed = table["T_p"]["delta 0 s"]["posed"]
-    axes[0].set_title("(a) unsafe executions", loc="left", color=INK)
+    axes[0].set_title("(a) invalid executions", loc="left", color=INK)
     axes[1].set_title("(b) executions (of %s posed per delay)" % format(posed, ","), loc="left", color=INK)
     for ax in axes:
         ax.set_xticks(delays)
@@ -159,34 +159,46 @@ def stress(summary: dict, out: Path):
     plt.close(fig)
 
 
-def audit(summary: dict, out: Path, unreachable: int | None = None):
-    """Share of first verdicts an audit without availability time (valid-time replays) or without history
-    (end-of-capture replay) misreports. ``unreachable``: the end-of-capture misreports that are abstentions or
-    requests for approval, which a replay from complete records cannot produce; drawn as the bar's upper part."""
+def audit(summary: dict, out: Path, unreachable: int | None = None, receipt: dict | None = None):
+    """Share of first verdicts an audit with one clock (valid-time replays; receipt-time replays from
+    ``sweeps_summary.json``, if given) or without history (end-of-capture replay) misreports. ``unreachable``: the
+    end-of-capture misreports that are abstentions or requests for approval, which a replay from complete records
+    cannot produce; drawn as the bar's upper part."""
     plt = _plt()
     a = summary["audit"]
     posed = a["posed"]
     lat = summary["latency"]["event_time_reconstruction_differs"]
-    bars = [("valid times,\ncaptured latency", a["event_time_reconstruction"]["first_verdict_differs"], BLUE),
-            ("valid times,\n+5 s latency", lat["T_p[late 5]"]["first_verdict_differs"], BLUE),
-            ("valid times,\n+30 s latency", lat["T_p[late 30]"]["first_verdict_differs"], BLUE),
-            ("end-of-capture\nstate", a["final_store_verdict"]["first_verdict_differs"], ORANGE)]
-    fig, ax = plt.subplots(figsize=(4.4, 2.3))
-    xs = list(range(len(bars)))
+    bars = [("captured", a["event_time_reconstruction"]["first_verdict_differs"], BLUE),
+            ("+5 s", lat["T_p[late 5]"]["first_verdict_differs"], BLUE),
+            ("+30 s", lat["T_p[late 30]"]["first_verdict_differs"], BLUE)]
+    if receipt:
+        bars += [(label, receipt[key]["receipt_time_vs_gate"]["first_verdict_differs"], AQUA)
+                 for label, key in (("captured", "0 s"), ("+5 s", "5 s"), ("+30 s", "30 s"))]
+    bars.append(("", a["final_store_verdict"]["first_verdict_differs"], ORANGE))
+    fig, ax = plt.subplots(figsize=(6.0 if receipt else 4.4, 2.4))
+    gap = [0.0, 0.0, 0.0] + ([0.45] * 3 if receipt else []) + [0.9 if receipt else 0.45]
+    xs = [i + g for i, g in enumerate(gap)]
     vals = [100.0 * n / posed for _, n, _ in bars]
+    last = len(bars) - 1
+    ax.bar(xs[:last], vals[:last], width=0.62, color=[c for _, _, c in bars[:last]], zorder=3)
     if unreachable is None:
-        ax.bar(xs, vals, width=0.58, color=[c for _, _, c in bars], zorder=3)
+        ax.bar([xs[last]], [vals[last]], width=0.62, color=ORANGE, zorder=3)
     else:
-        ax.bar(xs[:3], vals[:3], width=0.58, color=BLUE, zorder=3)
-        inverted = 100.0 * (bars[3][1] - unreachable) / posed
-        ax.bar([xs[3]], [inverted], width=0.58, color=ORANGE, zorder=3, label="allow and deny inverted")
-        ax.bar([xs[3]], [vals[3] - inverted], width=0.58, bottom=[inverted], color=ORANGE_LIGHT, zorder=3,
+        inverted = 100.0 * (bars[last][1] - unreachable) / posed
+        ax.bar([xs[last]], [inverted], width=0.62, color=ORANGE, zorder=3, label="allow and deny inverted")
+        ax.bar([xs[last]], [vals[last] - inverted], width=0.62, bottom=[inverted], color=ORANGE_LIGHT, zorder=3,
                edgecolor="white", linewidth=0.8, label="abstention or approval request")
         ax.legend(loc="upper left", frameon=False, fontsize=6.5, handlelength=1.2)
     for x, v, (_, n, _) in zip(xs, vals, bars):
-        ax.text(x, v + 1.5, "%.1f%%\n(%s)" % (v, format(n, ",")), ha="center", va="bottom", fontsize=7, color=INK)
+        ax.text(x, v + 1.5, "%.1f%%\n(%s)" % (v, format(n, ",")), ha="center", va="bottom", fontsize=6.6, color=INK)
     ax.set_xticks(xs)
-    ax.set_xticklabels([b for b, _, _ in bars])
+    ax.set_xticklabels([b for b, _, _ in bars], fontsize=7)
+    groups = [("valid times only\n(pipeline latency)", xs[1])]
+    if receipt:
+        groups.append(("receipt times only\n(pipeline latency)", xs[4]))
+    groups.append(("end-of-capture\nstate", xs[last]))
+    for text, x in groups:
+        ax.text(x, -0.22, text, transform=ax.get_xaxis_transform(), ha="center", va="top", fontsize=7, color=INK)
     ax.set_ylabel("first verdicts misreported (%)")
     ax.set_ylim(0, 85)
     _clean(ax)
@@ -222,7 +234,9 @@ def main(argv=None) -> int:
     if (res / "by_delay.json").exists():
         by_delay(json.loads((res / "by_delay.json").read_text(encoding="utf-8")), out)
     stress(json.loads((res / "diagnosis_stress_summary.json").read_text(encoding="utf-8")), out)
-    audit(summary, out, unreachable_misreports(Path(a.results), [c for p in pops for c in p["captures"]]))
+    sweeps = res / "sweeps_summary.json"
+    receipt = json.loads(sweeps.read_text(encoding="utf-8"))["audit"] if sweeps.exists() else None
+    audit(summary, out, unreachable_misreports(Path(a.results), [c for p in pops for c in p["captures"]]), receipt)
     return 0
 
 

@@ -152,7 +152,7 @@ def compute(results) -> OrderedDict:
     lat = [S[a["capture"]]["recheck_read_latency_ms"] for a in included if S[a["capture"]].get("recheck_read_latency_ms")]
     out["recheck_read_ms"] = {"median_range": [round(min(x["median"] for x in lat)), round(max(x["median"] for x in lat))],
                               "max_seconds": round(max(x["max"] for x in lat) / 1000, 2), "captures": len(lat)}
-    # Table 3 and the comparisons
+    # Table 5 and the comparisons
     resamples = {p: ST.draw_resamples(strata_positions(population(reg, p))) for p in ("G", "D")}
     comps = OrderedDict((c["id"], comparison(c, D, resamples)) for c in COMPARISONS)
     out["comparisons"] = comps
@@ -311,8 +311,8 @@ def render(o: dict) -> str:
           "  Clock band %.2f-%.2f s; recheck read median %d-%d ms per capture (maximum %.2f s)" % (
               o["clock_band_seconds"][0], o["clock_band_seconds"][1], o["recheck_read_ms"]["median_range"][0],
               o["recheck_read_ms"]["median_range"][1], o["recheck_read_ms"]["max_seconds"]), ""]
-    L += ["Table 3  Principal remediation results (X vs Y)",
-          "%-58s %-30s %s" % ("Comparison", "Unsafe simulated executions", "Missed opportunities")]
+    L += ["Table 5  Principal remediation results (X vs Y)",
+          "%-58s %-30s %s" % ("Comparison", "Invalid executions", "Missed opportunities")]
     for cid, t in o["table3"].items():
         title = o["comparisons"][cid]["title"]
         L.append("%-58s %-30s %s" % (title, "%d vs %d; %d posed" % (t["unsafe"][0], t["unsafe"][1], t["posed"]),
@@ -320,7 +320,7 @@ def render(o: dict) -> str:
     L.append("")
     for cid, c in o["comparisons"].items():
         du = c["D_U"]
-        L.append("  %-40s Y-X unsafe %+d, 95 %% [%s, %s], 98.33 %% [%s, %s]; captures X more/equal/fewer %d/%d/%d; "
+        L.append("  %-40s Y-X invalid %+d, 95 %% [%s, %s], 98.33 %% [%s, %s]; captures X more/equal/fewer %d/%d/%d; "
                  "design check %d contested of %d in %d of %d captures; %s" % (
                      c["title"][:40], du["point"], du["interval_95"][0], du["interval_95"][1], du["interval_98_33"][0],
                      du["interval_98_33"][1], c["paired"]["more"], c["paired"]["equal"], c["paired"]["fewer"],

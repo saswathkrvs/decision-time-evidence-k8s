@@ -1,0 +1,1400 @@
+{
+ "capture": "G1-001",
+ "arm": "G",
+ "scenario": "G1",
+ "cells": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "delta_s": [
+   0,
+   10,
+   30,
+   80
+  ]
+ },
+ "H": "2026-10-20T08:27:52.208250Z",
+ "store": {
+  "observations": 5008,
+  "identity_facts": 17,
+  "keys": 49
+ },
+ "coverage": {
+  "T_p": {
+   "posed": 2160,
+   "executions": 642,
+   "invalid": 5,
+   "uncertain": 17,
+   "valid": 620,
+   "opportunities": 0,
+   "missed": 0,
+   "expired": 300,
+   "censored": 780,
+   "evaluations": 398386,
+   "declined": {
+    "DENY[R1]": 220,
+    "DENY[R3]": 90,
+    "NEEDS_APPROVAL[R2]": 128
+   },
+   "invalid_by_target_state": {
+    "terminating": 5
+   },
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 7,
+    "floor_count_within_band": 5,
+    "target_deletion_request_within_band": 5
+   },
+   "opportunity_executions": {},
+   "by_dispatch_delay": {
+    "0 s": {
+     "declined": 240,
+     "executions": 300,
+     "posed": 540,
+     "uncertain": 5,
+     "valid": 295
+    },
+    "10 s": {
+     "declined": 198,
+     "executions": 342,
+     "invalid": 5,
+     "posed": 540,
+     "uncertain": 12,
+     "valid": 325
+    },
+    "30 s": {
+     "censored": 390,
+     "expired": 150,
+     "posed": 540
+    },
+    "80 s": {
+     "censored": 390,
+     "expired": 150,
+     "posed": 540
+    }
+   }
+  },
+  "L-kappa": {
+   "posed": 2160,
+   "executions": 1200,
+   "invalid": 87,
+   "uncertain": 20,
+   "valid": 1093,
+   "opportunities": 0,
+   "missed": 0,
+   "expired": 0,
+   "censored": 0,
+   "evaluations": 6932,
+   "declined": {
+    "DENY[R1]": 440,
+    "DENY[R3]": 180,
+    "NEEDS_APPROVAL[R2]": 340
+   },
+   "invalid_by_target_state": {
+    "gone": 48,
+    "terminating": 39
+   },
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 5,
+    "floor_count_within_band": 5,
+    "target_deletion_request_within_band": 10
+   },
+   "opportunity_executions": {},
+   "by_dispatch_delay": {
+    "0 s": {
+     "declined": 240,
+     "executions": 300,
+     "posed": 540,
+     "uncertain": 5,
+     "valid": 295
+    },
+    "10 s": {
+     "declined": 240,
+     "executions": 300,
+     "invalid": 5,
+     "posed": 540,
+     "uncertain": 10,
+     "valid": 285
+    },
+    "30 s": {
+     "declined": 240,
+     "executions": 300,
+     "invalid": 37,
+     "posed": 540,
+     "uncertain": 5,
+     "valid": 258
+    },
+    "80 s": {
+     "declined": 240,
+     "executions": 300,
+     "invalid": 45,
+     "posed": 540,
+     "valid": 255
+    }
+   }
+  },
+  "R": {
+   "posed": 2160,
+   "executions": 1269,
+   "invalid": 0,
+   "uncertain": 46,
+   "valid": 1223,
+   "opportunities": 0,
+   "missed": 0,
+   "expired": 0,
+   "censored": 525,
+   "evaluations": 28621,
+   "declined": {
+    "DENY[R1]": 312,
+    "NEEDS_APPROVAL[R2]": 54
+   },
+   "invalid_by_target_state": {},
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 46
+   },
+   "opportunity_executions": {},
+   "by_dispatch_delay": {
+    "0 s": {
+     "censored": 23,
+     "declined": 158,
+     "executions": 359,
+     "posed": 540,
+     "uncertain": 22,
+     "valid": 337
+    },
+    "10 s": {
+     "censored": 41,
+     "declined": 145,
+     "executions": 354,
+     "posed": 540,
+     "uncertain": 24,
+     "valid": 330
+    },
+    "30 s": {
+     "censored": 117,
+     "declined": 63,
+     "executions": 360,
+     "posed": 540,
+     "valid": 360
+    },
+    "80 s": {
+     "censored": 344,
+     "executions": 196,
+     "posed": 540,
+     "valid": 196
+    }
+   }
+  },
+  "T_p+lag": {
+   "posed": 2160,
+   "executions": 642,
+   "invalid": 6,
+   "uncertain": 15,
+   "valid": 621,
+   "opportunities": 0,
+   "missed": 0,
+   "expired": 300,
+   "censored": 780,
+   "evaluations": 398386,
+   "declined": {
+    "DENY[R1]": 220,
+    "DENY[R3]": 90,
+    "NEEDS_APPROVAL[R2]": 128
+   },
+   "invalid_by_target_state": {
+    "terminating": 6
+   },
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 7,
+    "floor_count_within_band": 2,
+    "target_deletion_request_within_band": 6
+   },
+   "opportunity_executions": {},
+   "by_dispatch_delay": {
+    "0 s": {
+     "declined": 240,
+     "executions": 300,
+     "posed": 540,
+     "uncertain": 5,
+     "valid": 295
+    },
+    "10 s": {
+     "declined": 198,
+     "executions": 342,
+     "invalid": 6,
+     "posed": 540,
+     "uncertain": 10,
+     "valid": 326
+    },
+    "30 s": {
+     "censored": 390,
+     "expired": 150,
+     "posed": 540
+    },
+    "80 s": {
+     "censored": 390,
+     "expired": 150,
+     "posed": 540
+    }
+   }
+  }
+ },
+ "mutually_evaluable": {
+  "T_p vs R": {
+   "posed": 2160,
+   "excluded_censored": 1043,
+   "decisions": 1117,
+   "outcomes": {
+    "a": {
+     "invalid": 5,
+     "not executed": 475,
+     "uncertain": 17,
+     "valid": 620
+    },
+    "b": {
+     "not executed": 366,
+     "uncertain": 46,
+     "valid": 705
+    }
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "decisions": 517,
+     "a": {
+      "not executed": 217,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "b": {
+      "not executed": 158,
+      "uncertain": 22,
+      "valid": 337
+     }
+    },
+    "10 s": {
+     "decisions": 499,
+     "a": {
+      "invalid": 5,
+      "not executed": 157,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "b": {
+      "not executed": 145,
+      "uncertain": 24,
+      "valid": 330
+     }
+    },
+    "30 s": {
+     "decisions": 82,
+     "a": {
+      "not executed": 82
+     },
+     "b": {
+      "not executed": 63,
+      "valid": 19
+     }
+    },
+    "80 s": {
+     "decisions": 19,
+     "a": {
+      "not executed": 19
+     },
+     "b": {
+      "valid": 19
+     }
+    }
+   }
+  },
+  "L-kappa vs R": {
+   "posed": 2160,
+   "excluded_censored": 525,
+   "decisions": 1635,
+   "outcomes": {
+    "a": {
+     "invalid": 37,
+     "not executed": 649,
+     "uncertain": 20,
+     "valid": 929
+    },
+    "b": {
+     "not executed": 366,
+     "uncertain": 46,
+     "valid": 1223
+    }
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "decisions": 517,
+     "a": {
+      "not executed": 217,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "b": {
+      "not executed": 158,
+      "uncertain": 22,
+      "valid": 337
+     }
+    },
+    "10 s": {
+     "decisions": 499,
+     "a": {
+      "invalid": 5,
+      "not executed": 199,
+      "uncertain": 10,
+      "valid": 285
+     },
+     "b": {
+      "not executed": 145,
+      "uncertain": 24,
+      "valid": 330
+     }
+    },
+    "30 s": {
+     "decisions": 423,
+     "a": {
+      "invalid": 32,
+      "not executed": 128,
+      "uncertain": 5,
+      "valid": 258
+     },
+     "b": {
+      "not executed": 63,
+      "valid": 360
+     }
+    },
+    "80 s": {
+     "decisions": 196,
+     "a": {
+      "not executed": 105,
+      "valid": 91
+     },
+     "b": {
+      "valid": 196
+     }
+    }
+   }
+  }
+ },
+ "sweep": {
+  "B | S0": {
+   "F=10,N=30": {
+    "posed": 2160,
+    "executions": 300,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 295,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 450,
+    "censored": 1170,
+    "evaluations": 749130,
+    "declined": {
+     "DENY[R1]": 110,
+     "DENY[R3]": 45,
+     "NEEDS_APPROVAL[R2]": 85
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "F=30,N=30": {
+    "posed": 2160,
+    "executions": 642,
+    "invalid": 5,
+    "uncertain": 17,
+    "valid": 620,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 398386,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90,
+     "NEEDS_APPROVAL[R2]": 128
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "F=60,N=30": {
+    "posed": 2160,
+    "executions": 1027,
+    "invalid": 42,
+    "uncertain": 22,
+    "valid": 963,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 150,
+    "censored": 390,
+    "evaluations": 271769,
+    "declined": {
+     "DENY[R1]": 330,
+     "DENY[R3]": 135,
+     "NEEDS_APPROVAL[R2]": 128
+    },
+    "invalid_by_target_state": {
+     "gone": 3,
+     "terminating": 39
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 10
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 37,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 343
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "F=120,N=30": {
+    "posed": 2160,
+    "executions": 1412,
+    "invalid": 87,
+    "uncertain": 22,
+    "valid": 1303,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 7097,
+    "declined": {
+     "DENY[R1]": 440,
+     "DENY[R3]": 180,
+     "NEEDS_APPROVAL[R2]": 128
+    },
+    "invalid_by_target_state": {
+     "gone": 48,
+     "terminating": 39
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 10
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 37,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 343
+     },
+     "80 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 340
+     }
+    }
+   },
+   "F=600,N=30": {
+    "posed": 2160,
+    "executions": 1412,
+    "invalid": 87,
+    "uncertain": 22,
+    "valid": 1303,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 7097,
+    "declined": {
+     "DENY[R1]": 440,
+     "DENY[R3]": 180,
+     "NEEDS_APPROVAL[R2]": 128
+    },
+    "invalid_by_target_state": {
+     "gone": 48,
+     "terminating": 39
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 10
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 37,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 343
+     },
+     "80 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 340
+     }
+    }
+   },
+   "F=30,N=0": {
+    "posed": 2160,
+    "executions": 770,
+    "invalid": 5,
+    "uncertain": 58,
+    "valid": 707,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 475783,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 48,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 155,
+      "executions": 385,
+      "posed": 540,
+      "uncertain": 27,
+      "valid": 358
+     },
+     "10 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 31,
+      "valid": 349
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "F=30,N=10": {
+    "posed": 2160,
+    "executions": 762,
+    "invalid": 5,
+    "uncertain": 58,
+    "valid": 699,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 479314,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90,
+     "NEEDS_APPROVAL[R2]": 8
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 48,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 163,
+      "executions": 377,
+      "posed": 540,
+      "uncertain": 27,
+      "valid": 350
+     },
+     "10 s": {
+      "declined": 155,
+      "executions": 385,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 31,
+      "valid": 349
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "F=30,N=60": {
+    "posed": 2160,
+    "executions": 321,
+    "invalid": 5,
+    "uncertain": 10,
+    "valid": 306,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 480917,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90,
+     "NEEDS_APPROVAL[R2]": 449
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 409,
+      "executions": 131,
+      "posed": 540,
+      "valid": 131
+     },
+     "10 s": {
+      "declined": 350,
+      "executions": 190,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 10,
+      "valid": 175
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "F=30,N=600": {
+    "posed": 2160,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 398386,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90,
+     "NEEDS_APPROVAL[R2]": 770
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 540,
+      "posed": 540
+     },
+     "10 s": {
+      "declined": 540,
+      "posed": 540
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "A | S0": {
+   "F=30,N=30": {
+    "posed": 1960,
+    "executions": 833,
+    "invalid": 0,
+    "uncertain": 288,
+    "valid": 545,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 208,
+    "censored": 772,
+    "evaluations": 361788,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 147
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "GT-2-A conditions without an established effect": 288
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 147,
+      "executions": 343,
+      "posed": 490,
+      "uncertain": 99,
+      "valid": 244
+     },
+     "10 s": {
+      "executions": 490,
+      "posed": 490,
+      "uncertain": 189,
+      "valid": 301
+     },
+     "30 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     },
+     "80 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     }
+    }
+   },
+   "F=30,N=0": {
+    "posed": 1960,
+    "executions": 980,
+    "invalid": 0,
+    "uncertain": 304,
+    "valid": 676,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 208,
+    "censored": 772,
+    "evaluations": 431373,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "GT-2-A conditions without an established effect": 304
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "executions": 490,
+      "posed": 490,
+      "uncertain": 115,
+      "valid": 375
+     },
+     "10 s": {
+      "executions": 490,
+      "posed": 490,
+      "uncertain": 189,
+      "valid": 301
+     },
+     "30 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     },
+     "80 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     }
+    }
+   },
+   "F=30,N=10": {
+    "posed": 1960,
+    "executions": 980,
+    "invalid": 0,
+    "uncertain": 304,
+    "valid": 676,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 208,
+    "censored": 772,
+    "evaluations": 435142,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "GT-2-A conditions without an established effect": 304
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "executions": 490,
+      "posed": 490,
+      "uncertain": 115,
+      "valid": 375
+     },
+     "10 s": {
+      "executions": 490,
+      "posed": 490,
+      "uncertain": 189,
+      "valid": 301
+     },
+     "30 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     },
+     "80 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     }
+    }
+   },
+   "F=30,N=60": {
+    "posed": 1960,
+    "executions": 399,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 399,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 208,
+    "censored": 772,
+    "evaluations": 436334,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 581
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 319,
+      "executions": 171,
+      "posed": 490,
+      "valid": 171
+     },
+     "10 s": {
+      "declined": 262,
+      "executions": 228,
+      "posed": 490,
+      "valid": 228
+     },
+     "30 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     },
+     "80 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     }
+    }
+   },
+   "F=30,N=600": {
+    "posed": 1960,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 208,
+    "censored": 772,
+    "evaluations": 361788,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 980
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 490,
+      "posed": 490
+     },
+     "10 s": {
+      "declined": 490,
+      "posed": 490
+     },
+     "30 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     },
+     "80 s": {
+      "censored": 386,
+      "expired": 104,
+      "posed": 490
+     }
+    }
+   }
+  }
+ },
+ "audit": {
+  "0 s": {
+   "gate": {
+    "posed": 2160,
+    "executions": 642,
+    "invalid": 5,
+    "uncertain": 17,
+    "valid": 620,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 398386,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90,
+     "NEEDS_APPROVAL[R2]": 128
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "receipt_time_replay": {
+    "posed": 2160,
+    "executions": 642,
+    "invalid": 5,
+    "uncertain": 17,
+    "valid": 620,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 398248,
+    "declined": {
+     "DENY[R1]": 220,
+     "DENY[R3]": 90,
+     "NEEDS_APPROVAL[R2]": 128
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "receipt_time_vs_gate": {
+    "posed": 2160,
+    "first_verdict_differs": 6,
+    "disposition_differs": 0,
+    "execution_differs": 0
+   }
+  },
+  "5 s": {
+   "gate": {
+    "posed": 2160,
+    "executions": 642,
+    "invalid": 5,
+    "uncertain": 17,
+    "valid": 620,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 397077,
+    "declined": {
+     "DENY[R1]": 184,
+     "DENY[R3]": 148,
+     "NEEDS_APPROVAL[R2]": 106
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 240,
+      "executions": 300,
+      "posed": 540,
+      "uncertain": 5,
+      "valid": 295
+     },
+     "10 s": {
+      "declined": 198,
+      "executions": 342,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 12,
+      "valid": 325
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "receipt_time_replay": {
+    "posed": 2160,
+    "executions": 594,
+    "invalid": 5,
+    "uncertain": 10,
+    "valid": 579,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 395731,
+    "declined": {
+     "DENY[R1]": 164,
+     "DENY[R3]": 130,
+     "NEEDS_APPROVAL[R2]": 192
+    },
+    "invalid_by_target_state": {
+     "terminating": 5
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 267,
+      "executions": 273,
+      "posed": 540,
+      "valid": 273
+     },
+     "10 s": {
+      "declined": 219,
+      "executions": 321,
+      "invalid": 5,
+      "posed": 540,
+      "uncertain": 10,
+      "valid": 306
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "receipt_time_vs_gate": {
+    "posed": 2160,
+    "first_verdict_differs": 82,
+    "disposition_differs": 86,
+    "execution_differs": 48
+   }
+  },
+  "30 s": {
+   "gate": {
+    "posed": 2160,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 600,
+    "censored": 1560,
+    "evaluations": 775170,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "10 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "receipt_time_replay": {
+    "posed": 2160,
+    "executions": 348,
+    "invalid": 32,
+    "uncertain": 10,
+    "valid": 306,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 300,
+    "censored": 780,
+    "evaluations": 405970,
+    "declined": {
+     "DENY[R1]": 36,
+     "DENY[R3]": 238,
+     "NEEDS_APPROVAL[R2]": 458
+    },
+    "invalid_by_target_state": {
+     "gone": 14,
+     "terminating": 18
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 409,
+      "executions": 131,
+      "posed": 540,
+      "valid": 131
+     },
+     "10 s": {
+      "declined": 323,
+      "executions": 217,
+      "invalid": 32,
+      "posed": 540,
+      "uncertain": 10,
+      "valid": 175
+     },
+     "30 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 390,
+      "expired": 150,
+      "posed": 540
+     }
+    }
+   },
+   "receipt_time_vs_gate": {
+    "posed": 2160,
+    "first_verdict_differs": 724,
+    "disposition_differs": 1080,
+    "execution_differs": 348
+   }
+  }
+ },
+ "seconds": {
+  "coverage": 52.7,
+  "sweep B S0": 400.6,
+  "sweep A S0": 120.3,
+  "audit 0 s": 56.7,
+  "audit 5 s": 114.6,
+  "audit 30 s": 125.2
+ }
+}

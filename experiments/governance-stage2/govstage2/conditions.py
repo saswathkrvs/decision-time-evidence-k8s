@@ -62,6 +62,7 @@ class Condition:
     role: str
     streams_only: tuple | None = None
     E: float = E_SECONDS
+    N: float = N_SECONDS          # R2's recent-change window (the parameter sweep varies it)
 
     @property
     def causal(self) -> bool:
@@ -69,11 +70,12 @@ class Condition:
 
     @property
     def eval_view(self) -> str:
-        return f"{self.knowledge}@F{self.F:g}"
+        view = f"{self.knowledge}@F{self.F:g}"
+        return view if self.N == N_SECONDS else f"{view}@N{self.N:g}"
 
     def config(self) -> dict:
         return {"condition": self.name, "observer": self.observer, "knowledge": self.knowledge, "F_seconds": self.F,
-                "posing": self.posing, "role": self.role, "E_seconds": self.E, "N_seconds": N_SECONDS,
+                "posing": self.posing, "role": self.role, "E_seconds": self.E, "N_seconds": self.N,
                 "S_seconds": S_SECONDS, "streams_only": list(self.streams_only) if self.streams_only else None,
                 "r7": "state"}
 
@@ -133,8 +135,8 @@ def action_b(capture_id: str, service: str, pod_uid: str) -> ActionSpec:
 # ---------------------------------------------------------------------------------------------------------------
 # Gate configuration and its hash
 # ---------------------------------------------------------------------------------------------------------------
-def gate_config(service_deployments: dict, floors: dict, F: float, freezes=()):
-    base = pga().make_config({"service_deployments": service_deployments}, tuple(freezes), N_SECONDS)
+def gate_config(service_deployments: dict, floors: dict, F: float, freezes=(), N: float = N_SECONDS):
+    base = pga().make_config({"service_deployments": service_deployments}, tuple(freezes), N)
     return dataclasses.replace(base, carry_forward_seconds=F, replica_floor_by_service=tuple(sorted(floors.items())))
 
 
@@ -185,12 +187,14 @@ def is_fact(identifier: str) -> bool:
 
 
 def decide(*, view_name: str, knowledge: str, F: float, store, act: ActionSpec, binding, service_deployments: dict,
-           floors: dict, cutoff_us: int, observation_us: int, freezes=(), view_config: dict) -> tuple[dict, tuple]:
+           floors: dict, cutoff_us: int, observation_us: int, freezes=(), view_config: dict,
+           N: float = N_SECONDS) -> tuple[dict, tuple]:
     """R1-R6 (+ R7 state clause) once, at knowledge cutoff ``cutoff_us`` and observation (dispatch) time
-    ``observation_us`` (>= the cutoff; through the forward view). Returns (entry, record IDs behind the entry)."""
+    ``observation_us`` (>= the cutoff; through the forward view), with R2's window ``N``. Returns (entry, record IDs
+    behind the entry)."""
     before = store.dual.queries
     view = ForwardTracedView(store, dt(observation_us), dt(cutoff_us), carry_forward_seconds=F, engine="dual")
-    decision = evaluate(act.action, view, gate_config(service_deployments, floors, F, freeze_windows(freezes)))
+    decision = evaluate(act.action, view, gate_config(service_deployments, floors, F, freeze_windows(freezes), N=N))
     rules = list(decision.rules)
     state = None
     if binding is not None:

@@ -18,12 +18,24 @@ plus the ``complete`` stream, at knowledge cutoffs Delta = 0, 5, 10, 20, 30, 60 
 policies latest_state, temporal_join, bitemporal_abstain (F = 600 s and 30 s) and the span-identity hindsight
 reference. Per cell: whether the faulty Pod is ranked first, and the time from the switch poll's observation to the
 cutoff. Per capture, the poller's Pod-list intervals (``pod_list_intervals``). Counts of captures only.
+
+With ``--robustness`` (``robustness``; results/stage2/analyses/diagnosis_robustness.json), the complete records only,
+at cutoffs 5 and 30 s after the declared onset:
+
+* ``onset_shift_{e}s``: the declared onset (both windows and the cutoff) moved by e s against the evaluator's onset,
+  for e in ``ONSET_SHIFTS``; the faulty Pod is unchanged;
+* ``sampled_{p}``: only a share p of the traced requests kept (whole traces, ``SEEDS`` seeded draws), for every
+  policy, as with trace sampling;
+* ``identity_missing_{p}``: a share p of the requests whose spans carry no Pod identity (seeded), which affects only
+  span identity (the snapshot policies never read it).
 """
 from __future__ import annotations
 
 import argparse
 import bisect
+import dataclasses
 import json
+import random
 import statistics
 import sys
 from collections import OrderedDict
@@ -42,6 +54,11 @@ from aiops_kg import replay as R  # noqa: E402
 
 DELAYS = (2, 5, 10, 20, 30, 45, 60, 90)
 DELTAS = tuple((f"{d} s", d) for d in (0, 5, 10, 20, 30, 60))
+ROBUST_DELTAS = tuple((f"{d} s", d) for d in (5, 30))
+ONSET_SHIFTS = (-10, -5, -2, 2, 5, 10)
+SAMPLED = (0.5, 0.25, 0.1)
+IDENTITY_MISSING = (0.5, 0.75, 0.9)
+SEEDS = tuple(range(10))
 
 
 def switch_targets(bridge):
@@ -147,6 +164,62 @@ def analyse(capture: Path, *, development: bool = False) -> dict:
                         ("rows", rows)])
 
 
+def _load(capture: Path, development: bool):
+    if development:
+        return B.load_capture_input(capture, root=ROOT), _NoLoader()
+    return DC.load_bridge_input(capture, DC.POLLER)
+
+
+def _top1(block) -> dict:
+    """(delta_s, policy) -> faulty Pod ranked first, for the complete stream and the hindsight reference."""
+    return {(r["delta_seconds"], r["policy"]): bool(r["top1"]) for r in block["rows"] if r["stream"] in ("-",
+                                                                                                         "complete")}
+
+
+def robustness(capture: Path, *, development: bool = False) -> dict:
+    """Onset error and imperfect trace identity on the complete records (see the module docstring)."""
+    policies = DC.make_policies()
+    truth = B.load_capture_truth(capture)
+    bridge, store = _load(capture, development)
+    complete = [{"name": "complete", "family": "complete", "records": bridge.records, "description": "as captured",
+                 "manifest": {"perturbation": "none"}}]
+    grid, DC.DELTAS = DC.DELTAS, ROBUST_DELTAS
+    variants = OrderedDict()
+    try:
+        def run(name, b=bridge, t=truth, requests=None):
+            block = DC.observer_block(b, store, complete, [], policies, t, requests=requests)
+            variants.setdefault(name, []).append(_top1(block))
+        run("complete")
+        for e in ONSET_SHIFTS:
+            run("onset_shift_%+ds" % e, t=dict(truth, onset=truth["onset"] + e * R.US))
+        traces = sorted({bridge.spans.trace_of.get(r.request_id, r.request_id) for r in bridge.spans.requests})
+        for p in SAMPLED:
+            for seed in SEEDS:
+                rng = random.Random("%s|sampled|%g|%d" % (capture.name, p, seed))
+                kept = {t for t in traces if rng.random() < p}
+                reqs = tuple(r for r in bridge.spans.requests
+                             if bridge.spans.trace_of.get(r.request_id, r.request_id) in kept)
+                run("sampled_%g" % p, requests=reqs)
+        ids = sorted(r.request_id for r in bridge.spans.requests)
+        for p in IDENTITY_MISSING:
+            for seed in SEEDS:
+                rng = random.Random("%s|identity|%g|%d" % (capture.name, p, seed))
+                lost = {i for i in ids if rng.random() < p}
+                served = {i: ({svc: None for svc in v} if i in lost else v) for i, v in bridge.spans.served_by.items()}
+                b = dataclasses.replace(bridge, spans=dataclasses.replace(bridge.spans, served_by=served))
+                run("identity_missing_%g" % p, b=b)
+    finally:
+        DC.DELTAS = grid
+    out = OrderedDict()
+    for name, draws in variants.items():
+        keys = sorted(draws[0], key=lambda k: (k[0], k[1]))
+        out[name] = [OrderedDict([("delta_s", d), ("policy", pol), ("draws", len(draws)),
+                                  ("top1", sum(x[(d, pol)] for x in draws))]) for d, pol in keys]
+    return OrderedDict([("capture", capture.name), ("stage", "development" if development else "follow-up"),
+                        ("onset", R.iso(truth["onset"])), ("traced_requests", len(bridge.spans.requests)),
+                        ("variants", out)])
+
+
 def summarise(captures: list) -> dict:
     """Per stream x Delta x policy: in how many captures the faulty Pod is ranked first."""
     table = OrderedDict()
@@ -167,12 +240,29 @@ def main(argv=None) -> int:
     ap.add_argument("--out", default=str(ROOT / "results/stage2/analyses/diagnosis_stress.json"))
     ap.add_argument("--dev-captures-root", default=None,
                     help="also the five development diagnosis captures (I2-002, I3-004, I6-002, I6-003, I7-001)")
+    ap.add_argument("--robustness", action="store_true",
+                    help="onset error and imperfect trace identity (default out: "
+                         "results/stage2/analyses/diagnosis_robustness.json)")
     a = ap.parse_args(argv)
+    if a.robustness and a.out == str(ROOT / "results/stage2/analyses/diagnosis_stress.json"):
+        a.out = str(ROOT / "results/stage2/analyses/diagnosis_robustness.json")
     included = []
     for path in sorted((ROOT / "results/stage2/diagnosis").glob("D*.json")):
         doc = json.loads(path.read_text(encoding="utf-8"))
         if str(doc.get("category", "")).startswith("primary_"):
             included.append(path.stem)
+    if a.robustness:
+        per = [robustness(Path(a.captures_root) / name) for name in included]
+        dev = [robustness(Path(a.dev_captures_root) / name, development=True)
+               for name in ("I2-002", "I3-004", "I6-002", "I6-003", "I7-001")] if a.dev_captures_root else []
+        doc = OrderedDict([("captures", included), ("development_captures", [d["capture"] for d in dev]),
+                           ("deltas_s", [d for _, d in ROBUST_DELTAS]), ("onset_shifts_s", list(ONSET_SHIFTS)),
+                           ("sampled", list(SAMPLED)), ("identity_missing", list(IDENTITY_MISSING)),
+                           ("seeds", len(SEEDS)), ("per_capture", per), ("development_per_capture", dev)])
+        Path(a.out).parent.mkdir(parents=True, exist_ok=True)
+        Path(a.out).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
+        print("written", a.out)
+        return 0
     out = []
     for name in included:
         res = analyse(Path(a.captures_root) / name)

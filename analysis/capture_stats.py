@@ -2,15 +2,15 @@
 
     python -m analysis.capture_stats                 # writes results/stage2/analyses/per_capture_stats.json
 
-For every comparison of Table 3 (and the secondary ones) this computes, from ``results/stage2/adapter/*.json``:
+For every comparison of Table 5 (and the secondary ones) this computes, from ``results/stage2/adapter/*.json``:
 
-* the per-capture unsafe executions and missed opportunities of both views (the rows behind Table 3; the totals are
-  checked against ``analysis.tables`` before anything else is written);
+* the per-capture invalid (``unsafe``) executions and missed opportunities of both views (the rows behind Table 5;
+  the totals are checked against ``analysis.tables`` before anything else is written);
 * leave-one-capture-out: the totals and the stratified capture-bootstrap interval of the difference with each
   capture removed in turn;
 * per scenario: totals and a capture-bootstrap interval within the scenario;
 * the comparison without the three captures of scenario G3 (catalog rollout, container termination), which hold
-  most unsafe executions;
+  most invalid executions;
 * for restart in arm G, the per-capture counts of every gate condition in the same primary cells (including the
   matched latest-snapshot view L_p, the freshness sensitivity F = 600 s and the hindsight view), and the counts by
   dispatch delay and by knowledge cutoff.

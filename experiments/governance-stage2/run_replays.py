@@ -7,9 +7,12 @@
                                                                         # results/stage2/analyses/latency
     python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --surrogate
                                                                         # results/stage2/analyses/surrogate
+    python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --sweeps
+                                                                        # results/stage2/analyses/sweeps
 
 Writes one JSON file per capture (<out>/<capture>.json); a capture whose file exists is skipped, so an interrupted
-run continues where it stopped. The included arm-G captures are read from results/stage2/captures.json.
+run continues where it stopped. The included captures are read from results/stage2/captures.json: arm G for every
+pass, arm D as well for --sweeps (govstage2/sweeps.py).
 """
 from __future__ import annotations
 
@@ -24,7 +27,7 @@ ROOT = HERE.parents[1]
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
-from govstage2 import replays  # noqa: E402
+from govstage2 import replays, sweeps  # noqa: E402
 from govstage2.common import DEFAULT_PLAN  # noqa: E402
 
 
@@ -38,12 +41,15 @@ def main(argv=None) -> int:
     mode = ap.add_mutually_exclusive_group()
     mode.add_argument("--latency", action="store_true", help="the pipeline-latency pass (replays.latency_pass)")
     mode.add_argument("--surrogate", action="store_true", help="the surrogate check (replays.surrogate_pass)")
+    mode.add_argument("--sweeps", action="store_true",
+                      help="coverage, parameter sweep and receipt-time audit (sweeps.sweep_pass), arms G and D")
     a = ap.parse_args(argv)
     if a.out is None:
         a.out = str(ROOT / "results/stage2/analyses" / ("latency" if a.latency else "surrogate" if a.surrogate
-                                                        else "replays"))
+                                                        else "sweeps" if a.sweeps else "replays"))
     register = json.loads((ROOT / "results/stage2/captures.json").read_text(encoding="utf-8"))
-    captures = [c for s in register["populations"]["G"] for c in s["captures"]]
+    arms = ("G", "D") if a.sweeps else ("G",)
+    captures = [c for arm in arms for s in register["populations"][arm] for c in s["captures"]]
     if a.only:
         wanted = a.only.split(",")
         captures = [c for c in captures if c in wanted]
@@ -54,6 +60,12 @@ def main(argv=None) -> int:
             print("skip", cap, flush=True)
             continue
         converted = Path(a.captures_root) / cap / "evidence"
+        if a.sweeps:
+            doc = sweeps.sweep_pass(converted, a.plan, out, progress=lambda m: print(m, file=sys.stderr, flush=True))
+            first = next(iter(doc["sweep"].values()))
+            print(cap, json.dumps({k: (v["invalid"], v["executions"], v["posed"]) for k, v in first.items()}),
+                  flush=True)
+            continue
         if a.latency:
             doc = replays.latency_pass(converted, a.plan, out, progress=lambda m: print(m, file=sys.stderr, flush=True))
         elif a.surrogate:

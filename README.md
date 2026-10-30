@@ -20,9 +20,9 @@ remediation gate; proposed actions are counterfactual and never executed. The ra
 | `experiments/policy-gate-live-v1/` | development gate analysis: label-free, over nine real rollouts |
 | `experiments/governance-pilot-v0/` | development matched rollback pilot |
 | `experiments/policy-gate-v1/`, `experiments/replay-policy-v1/`, `experiments/attribution-lag-v1/` | the analyses of the 22 Sep 2026 rollout that the development stage builds on; the outputs of the first two are kept in their folders (the gate analysis reads them) |
-| `experiments/governance-stage2/` | follow-up governance adapter: decision logs, outcome labels, design check and comparisons, per capture; further replays of the arm-G restart decisions (`govstage2/replays.py`, `run_replays.py`): the views at the recheck's instants and with its lag, the valid-time and end-of-capture audit replays, the thinned and delayed poller, and the check of the labels against traffic and probes |
-| `experiments/diagnosis-control-v1/` | follow-up diagnosis control (arm D) and the diagnosis stress test (`run_diagnosis_stress.py`) |
-| `analysis/` | every table, number and figure of the paper, recomputed from `results/` (`paper_numbers.py`, `tables.py`, `figures.py`, `stats.py`), the summaries of the replay analyses (`capture_stats.py`, `replay_summary.py`, `by_delay.py`, `stress_summary.py`), and a comparison of rerun outputs with `results/` (`compare_outputs.py`) |
+| `experiments/governance-stage2/` | follow-up governance adapter: decision logs, outcome labels, design check and comparisons, per capture; further replays of the arm-G restart decisions (`govstage2/replays.py`, `run_replays.py`): the views at the recheck's instants and with its lag, the valid-time and end-of-capture audit replays, the thinned and delayed poller, and the check of the labels against traffic and probes; decision coverage, the sweep of the freshness limit and the recent-change window, and the receipt-time audit replay (`govstage2/sweeps.py`) |
+| `experiments/diagnosis-control-v1/` | follow-up diagnosis control (arm D), the diagnosis stress test and its robustness test (onset error, sampled traces, spans without Pod identity; `run_diagnosis_stress.py`) |
+| `analysis/` | every table and number of the paper and its data figures (Figures 3-6), recomputed from `results/` (`paper_numbers.py`, `tables.py`, `figures.py`, `stats.py`), the summaries of the replay analyses (`capture_stats.py`, `replay_summary.py`, `by_delay.py`, `stress_summary.py`, `sweeps_summary.py`), and a comparison of rerun outputs with `results/` (`compare_outputs.py`) |
 | `results/` | the per-capture outputs (below) |
 | `tests/` | unit and end-to-end tests on constructed fixtures |
 
@@ -30,12 +30,13 @@ remediation gate; proposed actions are counterfactual and never executed. The ra
 
 ```
 python -m analysis.paper_numbers --check
-python -m analysis.figures --out figures          # Figures 2-5; needs matplotlib
+python -m analysis.figures --out figures          # Figures 3-6; needs matplotlib
 ```
 
-The first recomputes every number of the paper from `results/` and compares each with the published value; it needs
-only the standard library. It includes the check of `analysis.tables`, which covers the captures, the observers, the
-principal comparisons and the diagnosis (`python -m analysis.tables --check` runs it alone).
+The first recomputes every number of the paper (apart from two machine-dependent run times) from `results/` and
+compares each with the published value; it needs only the standard library. It includes the check of
+`analysis.tables`, which covers the captures, the observers, the principal comparisons and the diagnosis
+(`python -m analysis.tables --check` runs it alone).
 
 ## The captures
 
@@ -96,12 +97,16 @@ python -m analysis.by_delay                                                     
 python experiments/diagnosis-control-v1/run_diagnosis_stress.py --captures-root <follow-up> \
     --dev-captures-root <development>                                                    # diagnosis_stress.json
 python -m analysis.stress_summary                                                        # diagnosis_stress_summary.json
+python experiments/governance-stage2/run_replays.py --captures-root <follow-up> --sweeps     # sweeps/<capture>.json
+python experiments/diagnosis-control-v1/run_diagnosis_stress.py --captures-root <follow-up> \
+    --dev-captures-root <development> --robustness                                       # diagnosis_robustness.json
+python -m analysis.sweeps_summary                                                        # sweeps_summary.json
 ```
 
 The three `run_replays.py` passes skip a capture whose output exists, so an interrupted run continues where it
 stopped; each checks that its replay of the published views reproduces the adapter's counts. One core takes about
 1 to 3 minutes per capture for the replays, 1 to 2 minutes for the latency pass, under a minute for the label check
-and about 2 minutes for the stress test on 13 captures; the summaries take about a second each.
+and about 2 minutes for the stress test on 13 captures; the summaries take about a second each. The `--sweeps` pass (arm-G and arm-D captures) takes about 6 to 10 minutes per arm-G capture and under a minute per arm-D capture, the robustness test about 4 minutes in all.
 
 **Development stage.**
 
@@ -140,8 +145,16 @@ the few that read the 22 Sep rollout or a converted capture are skipped.
 | `results/stage2/analyses/per_capture_stats.json` | the principal comparisons per capture and per scenario, with leave-one-capture-out and the comparison without scenario G3; every view's counts by dispatch delay and cutoff |
 | `results/stage2/analyses/replays/<ID>.json` | per arm-G capture: the replayed views (two-clock and latest-snapshot gates at the recheck's instants, with the recheck's lag, thinned poller, valid-time replay), their decisions' counts per cell, agreement with the published views, the audit replays and the poll intervals |
 | `results/stage2/analyses/latency/<ID>.json`, `surrogate/<ID>.json` | the gate with every poller record available 5 s and 30 s later; the label check (EndpointSlice, server spans, probes) at every execution instant |
-| `results/stage2/analyses/replays_summary.json`, `by_delay.json` | the sums and paired comparisons of the replays; every view's posed decisions, executions, unsafe executions and missed opportunities by dispatch delay and cutoff |
+| `results/stage2/analyses/replays_summary.json`, `by_delay.json` | the sums and paired comparisons of the replays; every view's posed decisions, executions, invalid executions and missed opportunities by dispatch delay and cutoff |
 | `results/stage2/analyses/diagnosis_stress.json`, `diagnosis_stress_summary.json` | the diagnosis stress test: every (capture, family, delay, cutoff, policy) cell and each capture's Pod-list intervals, and their summary |
+| `results/stage2/analyses/sweeps/<ID>.json` | per arm-G capture: every posed restart decision of the two-clock gate, approval reuse, the recheck and the two-clock gate with the recheck's lag by outcome (invalid, valid or uncertain execution; approval requested, denied, expired, censored), the decisions both the gate and the recheck could evaluate, the state of each invalid restart's target, and the gate's store size; per arm-G and arm-D capture: the two-clock gate with the freshness limit and the recent-change window varied one at a time (restarts and rollbacks; rollbacks in arm D also with delayed and withheld change receipts); per arm-G capture: the receipt-time audit replay at three latencies |
+| `results/stage2/analyses/diagnosis_robustness.json`, `sweeps_summary.json` | the diagnosis robustness test per capture (declared onset moved, traces sampled, spans without Pod identity; ten seeded draws each), and the totals of the sweeps and of the robustness test |
+
+The outputs count the paper's invalid executions (counterfactual executions whose preconditions do not hold) as
+`unsafe`: `unsafe_executions` in the adapter's cells, and `U` in the tallies of the replay summaries, next to `M`
+(missed opportunities) and `GT2` (opportunities). In `executions_by_label` the keys are the labels themselves:
+`V-target` and `V-floor` (invalid restarts), `V1` (invalid rollbacks), `U` (uncertain), `GT-2-A` and `GT-2-B`
+(opportunities) and `neutral`.
 
 These are the outputs the code here writes; for the gate analysis and the pilot, the published files keep the
 analysis keys of the tools' `results.json`. All times are host times unless a field says otherwise.

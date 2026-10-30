@@ -130,3 +130,20 @@ def test_summarise_counts_captures(f02):
     table = S.summarise([f02["result"], dict(f02["result"], capture="copy")])
     entry = table["delayed_api_20s | 5 s | temporal_join"]
     assert entry == {"top1": 0, "n": 2, "failing": ["D1-F02", "copy"]}
+
+
+def test_robustness_variants_on_the_fixture(f02):
+    """The robustness test on D1-F02: the complete variant equals the stress test's complete stream at the same
+    cutoffs; spans without Pod identity change only span identity (the snapshot policies never read it)."""
+    res = S.robustness(f02["capture"])
+    complete = {(r["delta_s"], r["policy"]): r["top1"] for r in res["variants"]["complete"]}
+    stress = {(r["delta_s"], r["policy"]): int(r["top1"]) for r in f02["result"]["rows"]
+              if r["stream"] in ("complete", "-") and r["delta_s"] in (5, 30)}
+    assert complete == stress
+    assert set(res["variants"]) == {"complete"} | {"onset_shift_%+ds" % e for e in S.ONSET_SHIFTS} | {
+        "sampled_%g" % p for p in S.SAMPLED} | {"identity_missing_%g" % p for p in S.IDENTITY_MISSING}
+    for p in S.IDENTITY_MISSING:
+        for r in res["variants"]["identity_missing_%g" % p]:
+            assert r["draws"] == len(S.SEEDS)
+            if r["policy"] != "hindsight":
+                assert r["top1"] == r["draws"] * complete[(r["delta_s"], r["policy"])], r

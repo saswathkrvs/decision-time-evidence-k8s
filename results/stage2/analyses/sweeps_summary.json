@@ -1,0 +1,4376 @@
+{
+ "captures": {
+  "G": 16,
+  "D": 8
+ },
+ "outcomes": {
+  "T_p": {
+   "posed": 34392,
+   "executions": 10478,
+   "invalid": 110,
+   "valid": 10190,
+   "uncertain": 178,
+   "approval": 2288,
+   "denied": 4430,
+   "expired": 4130,
+   "censored": 13066,
+   "invalid_by_target_state": {
+    "gone": 84,
+    "terminating": 26
+   },
+   "invalid_per_execution": 0.0105
+  },
+  "T_w": {
+   "posed": 34392,
+   "executions": 10654,
+   "invalid": 110,
+   "valid": 10363,
+   "uncertain": 181,
+   "approval": 2522,
+   "denied": 4020,
+   "expired": 4130,
+   "censored": 13066,
+   "invalid_by_target_state": {
+    "gone": 84,
+    "terminating": 26
+   },
+   "invalid_per_execution": 0.01032
+  },
+  "L-kappa": {
+   "posed": 34392,
+   "executions": 19604,
+   "invalid": 1462,
+   "valid": 17904,
+   "uncertain": 238,
+   "approval": 5928,
+   "denied": 8860,
+   "expired": 0,
+   "censored": 0,
+   "invalid_by_target_state": {
+    "gone": 960,
+    "terminating": 502
+   },
+   "invalid_per_execution": 0.07458
+  },
+  "R": {
+   "posed": 34392,
+   "executions": 20227,
+   "invalid": 0,
+   "valid": 19985,
+   "uncertain": 242,
+   "approval": 1100,
+   "denied": 4615,
+   "expired": 48,
+   "censored": 8402,
+   "invalid_by_target_state": {},
+   "invalid_per_execution": 0.0
+  },
+  "T@F600": {
+   "posed": 34392,
+   "executions": 23244,
+   "invalid": 1572,
+   "valid": 21430,
+   "uncertain": 242,
+   "approval": 2288,
+   "denied": 8860,
+   "expired": 0,
+   "censored": 0,
+   "invalid_by_target_state": {
+    "gone": 1070,
+    "terminating": 502
+   },
+   "invalid_per_execution": 0.06763
+  }
+ },
+ "coverage": {
+  "T_p": {
+   "posed": 34392,
+   "executions": 10478,
+   "invalid": 110,
+   "uncertain": 178,
+   "valid": 10190,
+   "opportunities": 124,
+   "missed": 115,
+   "expired": 4130,
+   "censored": 13066,
+   "evaluations": 6043420,
+   "declined": {
+    "DENY[R1]": 2882,
+    "DENY[R3]": 1548,
+    "NEEDS_APPROVAL[R2]": 2288
+   },
+   "invalid_by_target_state": {
+    "gone": 84,
+    "terminating": 26
+   },
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 20,
+    "floor_count_within_band": 87,
+    "target_deletion_request_within_band": 71
+   },
+   "opportunity_executions": {
+    "posed as an opportunity": 9
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "declined": 3697,
+     "executions": 4901,
+     "missed": 23,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 26,
+     "valid": 4875
+    },
+    "10 s": {
+     "declined": 3021,
+     "executions": 5577,
+     "invalid": 110,
+     "missed": 30,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 152,
+     "valid": 5315
+    },
+    "30 s": {
+     "censored": 6533,
+     "expired": 2065,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598
+    },
+    "80 s": {
+     "censored": 6533,
+     "expired": 2065,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598
+    }
+   },
+   "captures_with_invalid": 13,
+   "invalid_per_execution": 0.0105
+  },
+  "L-kappa": {
+   "posed": 34392,
+   "executions": 19604,
+   "invalid": 1462,
+   "uncertain": 238,
+   "valid": 17904,
+   "opportunities": 124,
+   "missed": 116,
+   "expired": 0,
+   "censored": 0,
+   "evaluations": 112348,
+   "declined": {
+    "DENY[R1]": 5764,
+    "DENY[R3]": 3096,
+    "NEEDS_APPROVAL[R2]": 5928
+   },
+   "invalid_by_target_state": {
+    "gone": 960,
+    "terminating": 502
+   },
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 16,
+    "floor_count_within_band": 100,
+    "target_deletion_request_within_band": 122
+   },
+   "opportunity_executions": {
+    "posed as an opportunity": 8
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "declined": 3697,
+     "executions": 4901,
+     "missed": 23,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 26,
+     "valid": 4875
+    },
+    "10 s": {
+     "declined": 3697,
+     "executions": 4901,
+     "invalid": 110,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 148,
+     "valid": 4643
+    },
+    "30 s": {
+     "declined": 3697,
+     "executions": 4901,
+     "invalid": 622,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 64,
+     "valid": 4215
+    },
+    "80 s": {
+     "declined": 3697,
+     "executions": 4901,
+     "invalid": 730,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598,
+     "valid": 4171
+    }
+   },
+   "captures_with_invalid": 16,
+   "invalid_per_execution": 0.07458
+  },
+  "R": {
+   "posed": 34392,
+   "executions": 20227,
+   "invalid": 0,
+   "uncertain": 242,
+   "valid": 19985,
+   "opportunities": 124,
+   "missed": 85,
+   "expired": 48,
+   "censored": 8402,
+   "evaluations": 420222,
+   "declined": {
+    "DENY[R1]": 4370,
+    "DENY[R3]": 245,
+    "NEEDS_APPROVAL[R2]": 1100
+   },
+   "invalid_by_target_state": {},
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 150,
+    "floor_count_within_band": 35,
+    "target_deletion_request_within_band": 9,
+    "target_ready_transition_within_band": 48
+   },
+   "opportunity_executions": {
+    "posed as an opportunity": 39,
+    "posed before the opportunity": 13
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "censored": 325,
+     "declined": 2471,
+     "executions": 5781,
+     "expired": 21,
+     "missed": 3,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 130,
+     "valid": 5651
+    },
+    "10 s": {
+     "censored": 666,
+     "declined": 2264,
+     "executions": 5641,
+     "expired": 27,
+     "missed": 20,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 104,
+     "valid": 5537
+    },
+    "30 s": {
+     "censored": 1778,
+     "declined": 980,
+     "executions": 5840,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 8,
+     "valid": 5832
+    },
+    "80 s": {
+     "censored": 5633,
+     "executions": 2965,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598,
+     "valid": 2965
+    }
+   },
+   "captures_with_invalid": 0,
+   "invalid_per_execution": 0.0
+  },
+  "T_p+lag": {
+   "posed": 34392,
+   "executions": 10478,
+   "invalid": 119,
+   "uncertain": 173,
+   "valid": 10186,
+   "opportunities": 124,
+   "missed": 118,
+   "expired": 4130,
+   "censored": 13066,
+   "evaluations": 6043420,
+   "declined": {
+    "DENY[R1]": 2882,
+    "DENY[R3]": 1548,
+    "NEEDS_APPROVAL[R2]": 2288
+   },
+   "invalid_by_target_state": {
+    "gone": 90,
+    "terminating": 29
+   },
+   "uncertain_by_reason": {
+    "GT-2-B conditions without an established effect": 15,
+    "floor_count_within_band": 80,
+    "target_deletion_request_within_band": 78
+   },
+   "opportunity_executions": {
+    "posed as an opportunity": 6
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "declined": 3697,
+     "executions": 4901,
+     "missed": 26,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 26,
+     "valid": 4875
+    },
+    "10 s": {
+     "declined": 3021,
+     "executions": 5577,
+     "invalid": 119,
+     "missed": 30,
+     "opportunities": 31,
+     "posed": 8598,
+     "uncertain": 147,
+     "valid": 5311
+    },
+    "30 s": {
+     "censored": 6533,
+     "expired": 2065,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598
+    },
+    "80 s": {
+     "censored": 6533,
+     "expired": 2065,
+     "missed": 31,
+     "opportunities": 31,
+     "posed": 8598
+    }
+   },
+   "captures_with_invalid": 13,
+   "invalid_per_execution": 0.01136
+  }
+ },
+ "mutually_evaluable": {
+  "T_p vs R": {
+   "posed": 34392,
+   "excluded_censored": 16716,
+   "decisions": 17676,
+   "outcomes": {
+    "a": {
+     "invalid": 47,
+     "not executed": 7261,
+     "uncertain": 178,
+     "valid": 10190
+    },
+    "b": {
+     "not executed": 5750,
+     "uncertain": 242,
+     "valid": 11684
+    }
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "decisions": 8273,
+     "a": {
+      "not executed": 3372,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "b": {
+      "not executed": 2492,
+      "uncertain": 130,
+      "valid": 5651
+     }
+    },
+    "10 s": {
+     "decisions": 7932,
+     "a": {
+      "invalid": 47,
+      "not executed": 2418,
+      "uncertain": 152,
+      "valid": 5315
+     },
+     "b": {
+      "not executed": 2291,
+      "uncertain": 104,
+      "valid": 5537
+     }
+    },
+    "30 s": {
+     "decisions": 1219,
+     "a": {
+      "not executed": 1219
+     },
+     "b": {
+      "not executed": 967,
+      "uncertain": 8,
+      "valid": 244
+     }
+    },
+    "80 s": {
+     "decisions": 252,
+     "a": {
+      "not executed": 252
+     },
+     "b": {
+      "valid": 252
+     }
+    }
+   }
+  },
+  "L-kappa vs R": {
+   "posed": 34392,
+   "excluded_censored": 8402,
+   "decisions": 25990,
+   "outcomes": {
+    "a": {
+     "invalid": 518,
+     "not executed": 10399,
+     "uncertain": 238,
+     "valid": 14835
+    },
+    "b": {
+     "not executed": 5763,
+     "uncertain": 242,
+     "valid": 19985
+    }
+   },
+   "by_dispatch_delay": {
+    "0 s": {
+     "decisions": 8273,
+     "a": {
+      "not executed": 3372,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "b": {
+      "not executed": 2492,
+      "uncertain": 130,
+      "valid": 5651
+     }
+    },
+    "10 s": {
+     "decisions": 7932,
+     "a": {
+      "invalid": 47,
+      "not executed": 3094,
+      "uncertain": 148,
+      "valid": 4643
+     },
+     "b": {
+      "not executed": 2291,
+      "uncertain": 104,
+      "valid": 5537
+     }
+    },
+    "30 s": {
+     "decisions": 6820,
+     "a": {
+      "invalid": 471,
+      "not executed": 2167,
+      "uncertain": 64,
+      "valid": 4118
+     },
+     "b": {
+      "not executed": 980,
+      "uncertain": 8,
+      "valid": 5832
+     }
+    },
+    "80 s": {
+     "decisions": 2965,
+     "a": {
+      "not executed": 1766,
+      "valid": 1199
+     },
+     "b": {
+      "valid": 2965
+     }
+    }
+   }
+  }
+ },
+ "sweep": {
+  "arm G | A | S0": {
+   "F=30,N=30": {
+    "posed": 31352,
+    "executions": 13224,
+    "invalid": 2,
+    "uncertain": 935,
+    "valid": 12287,
+    "opportunities": 928,
+    "missed": 586,
+    "expired": 2672,
+    "censored": 13004,
+    "evaluations": 5494109,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 2452
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 2
+    },
+    "uncertain_by_reason": {
+     "GT-2-A conditions without an established effect": 933,
+     "U_pre": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 342,
+     "posed before the opportunity": 302
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 2188,
+      "executions": 5650,
+      "missed": 7,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 327,
+      "valid": 5323
+     },
+     "10 s": {
+      "declined": 264,
+      "executions": 7574,
+      "invalid": 2,
+      "missed": 115,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 608,
+      "valid": 6964
+     },
+     "30 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "80 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     }
+    },
+    "captures_with_invalid": 2,
+    "invalid_per_execution": 0.00015
+   },
+   "F=30,N=0": {
+    "posed": 31352,
+    "executions": 15676,
+    "invalid": 2,
+    "uncertain": 1512,
+    "valid": 14162,
+    "opportunities": 928,
+    "missed": 579,
+    "expired": 2672,
+    "censored": 13004,
+    "evaluations": 6582883,
+    "declined": {},
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 2
+    },
+    "uncertain_by_reason": {
+     "GT-2-A conditions without an established effect": 955,
+     "U_pre": 2,
+     "rollout_end_within_band": 555
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 349,
+     "posed before the opportunity": 302
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "executions": 7838,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 904,
+      "valid": 6934
+     },
+     "10 s": {
+      "executions": 7838,
+      "invalid": 2,
+      "missed": 115,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 608,
+      "valid": 7228
+     },
+     "30 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "80 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     }
+    },
+    "captures_with_invalid": 2,
+    "invalid_per_execution": 0.00013
+   },
+   "F=30,N=10": {
+    "posed": 31352,
+    "executions": 15558,
+    "invalid": 2,
+    "uncertain": 1501,
+    "valid": 14055,
+    "opportunities": 928,
+    "missed": 579,
+    "expired": 2672,
+    "censored": 13004,
+    "evaluations": 6625265,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 118
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 2
+    },
+    "uncertain_by_reason": {
+     "GT-2-A conditions without an established effect": 955,
+     "U_pre": 2,
+     "rollout_end_within_band": 544
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 349,
+     "posed before the opportunity": 302
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 118,
+      "executions": 7720,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 893,
+      "valid": 6827
+     },
+     "10 s": {
+      "executions": 7838,
+      "invalid": 2,
+      "missed": 115,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 608,
+      "valid": 7228
+     },
+     "30 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "80 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     }
+    },
+    "captures_with_invalid": 2,
+    "invalid_per_execution": 0.00013
+   },
+   "F=30,N=60": {
+    "posed": 31352,
+    "executions": 6348,
+    "invalid": 2,
+    "uncertain": 2,
+    "valid": 6344,
+    "opportunities": 928,
+    "missed": 928,
+    "expired": 2672,
+    "censored": 13004,
+    "evaluations": 6638448,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 9328
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 2
+    },
+    "uncertain_by_reason": {
+     "U_pre": 2
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 5125,
+      "executions": 2713,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838,
+      "uncertain": 2,
+      "valid": 2711
+     },
+     "10 s": {
+      "declined": 4203,
+      "executions": 3635,
+      "invalid": 2,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838,
+      "valid": 3633
+     },
+     "30 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "80 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     }
+    },
+    "captures_with_invalid": 2,
+    "invalid_per_execution": 0.00032
+   },
+   "F=30,N=600": {
+    "posed": 31352,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 928,
+    "missed": 928,
+    "expired": 2672,
+    "censored": 13004,
+    "evaluations": 5494109,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 15676
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 7838,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "10 s": {
+      "declined": 7838,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "30 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     },
+     "80 s": {
+      "censored": 6502,
+      "expired": 1336,
+      "missed": 232,
+      "opportunities": 232,
+      "posed": 7838
+     }
+    },
+    "captures_with_invalid": 0
+   }
+  },
+  "arm D | A | S0": {
+   "F=10,N=30": {
+    "posed": 2579,
+    "executions": 1696,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6432,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 866
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 866,
+      "executions": 1696,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=30,N=30": {
+    "posed": 2579,
+    "executions": 1696,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6432,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 866
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 866,
+      "executions": 1696,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=60,N=30": {
+    "posed": 2579,
+    "executions": 1696,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6432,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 866
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 866,
+      "executions": 1696,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=120,N=30": {
+    "posed": 2579,
+    "executions": 1696,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6432,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 866
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 866,
+      "executions": 1696,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=600,N=30": {
+    "posed": 2579,
+    "executions": 1696,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6432,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 866
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 866,
+      "executions": 1696,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=30,N=0": {
+    "posed": 2579,
+    "executions": 2562,
+    "invalid": 0,
+    "uncertain": 169,
+    "valid": 2393,
+    "opportunities": 670,
+    "missed": 0,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 7516,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2,
+     "rollout_end_within_band": 164
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 670
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "executions": 2562,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 169,
+      "valid": 2393
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=30,N=10": {
+    "posed": 2579,
+    "executions": 2369,
+    "invalid": 0,
+    "uncertain": 62,
+    "valid": 2307,
+    "opportunities": 670,
+    "missed": 0,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 7498,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 193
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2,
+     "rollout_end_within_band": 57
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 670
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 193,
+      "executions": 2369,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 62,
+      "valid": 2307
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=30,N=60": {
+    "posed": 2579,
+    "executions": 885,
+    "invalid": 0,
+    "uncertain": 5,
+    "valid": 880,
+    "opportunities": 670,
+    "missed": 670,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 7398,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 1677
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 1677,
+      "executions": 885,
+      "missed": 670,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 880
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=30,N=600": {
+    "posed": 2579,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 670,
+    "missed": 670,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6432,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 2562
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 2562,
+      "missed": 670,
+      "opportunities": 670,
+      "posed": 2579
+     }
+    },
+    "captures_with_invalid": 0
+   }
+  },
+  "arm D | A | S30": {
+   "F=10,N=30": {
+    "posed": 2579,
+    "executions": 1721,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 841
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 841,
+      "executions": 1721,
+      "invalid": 25,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01453
+   },
+   "F=30,N=30": {
+    "posed": 2579,
+    "executions": 1721,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 841
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 841,
+      "executions": 1721,
+      "invalid": 25,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01453
+   },
+   "F=60,N=30": {
+    "posed": 2579,
+    "executions": 1721,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 841
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 841,
+      "executions": 1721,
+      "invalid": 25,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01453
+   },
+   "F=120,N=30": {
+    "posed": 2579,
+    "executions": 1721,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 841
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 841,
+      "executions": 1721,
+      "invalid": 25,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01453
+   },
+   "F=600,N=30": {
+    "posed": 2579,
+    "executions": 1721,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1691,
+    "opportunities": 670,
+    "missed": 314,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 841
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 356
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 841,
+      "executions": 1721,
+      "invalid": 25,
+      "missed": 314,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1691
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01453
+   },
+   "F=30,N=0": {
+    "posed": 2579,
+    "executions": 2562,
+    "invalid": 25,
+    "uncertain": 153,
+    "valid": 2384,
+    "opportunities": 670,
+    "missed": 0,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6398,
+    "declined": {},
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2,
+     "rollout_end_within_band": 148
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 670
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "executions": 2562,
+      "invalid": 25,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 153,
+      "valid": 2384
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.00976
+   },
+   "F=30,N=10": {
+    "posed": 2579,
+    "executions": 2371,
+    "invalid": 25,
+    "uncertain": 56,
+    "valid": 2290,
+    "opportunities": 670,
+    "missed": 0,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6380,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 191
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2,
+     "rollout_end_within_band": 51
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 670
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 191,
+      "executions": 2371,
+      "invalid": 25,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 56,
+      "valid": 2290
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01054
+   },
+   "F=30,N=60": {
+    "posed": 2579,
+    "executions": 910,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 880,
+    "opportunities": 670,
+    "missed": 670,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6288,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 1652
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 1652,
+      "executions": 910,
+      "invalid": 25,
+      "missed": 670,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 880
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.02747
+   },
+   "F=30,N=600": {
+    "posed": 2579,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 670,
+    "missed": 670,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 2562
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 2562,
+      "missed": 670,
+      "opportunities": 670,
+      "posed": 2579
+     }
+    },
+    "captures_with_invalid": 0
+   }
+  },
+  "arm D | A | Snever": {
+   "F=10,N=30": {
+    "posed": 2579,
+    "executions": 1687,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1657,
+    "opportunities": 670,
+    "missed": 348,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 875
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 322
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 875,
+      "executions": 1687,
+      "invalid": 25,
+      "missed": 348,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1657
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01482
+   },
+   "F=30,N=30": {
+    "posed": 2579,
+    "executions": 1687,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1657,
+    "opportunities": 670,
+    "missed": 348,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 875
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 322
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 875,
+      "executions": 1687,
+      "invalid": 25,
+      "missed": 348,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1657
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01482
+   },
+   "F=60,N=30": {
+    "posed": 2579,
+    "executions": 1687,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1657,
+    "opportunities": 670,
+    "missed": 348,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 875
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 322
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 875,
+      "executions": 1687,
+      "invalid": 25,
+      "missed": 348,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1657
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01482
+   },
+   "F=120,N=30": {
+    "posed": 2579,
+    "executions": 1687,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1657,
+    "opportunities": 670,
+    "missed": 348,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 875
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 322
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 875,
+      "executions": 1687,
+      "invalid": 25,
+      "missed": 348,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1657
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01482
+   },
+   "F=600,N=30": {
+    "posed": 2579,
+    "executions": 1687,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 1657,
+    "opportunities": 670,
+    "missed": 348,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 875
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 322
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 875,
+      "executions": 1687,
+      "invalid": 25,
+      "missed": 348,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 1657
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01482
+   },
+   "F=30,N=0": {
+    "posed": 2579,
+    "executions": 2562,
+    "invalid": 25,
+    "uncertain": 153,
+    "valid": 2384,
+    "opportunities": 670,
+    "missed": 0,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6398,
+    "declined": {},
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2,
+     "rollout_end_within_band": 148
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 670
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "executions": 2562,
+      "invalid": 25,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 153,
+      "valid": 2384
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.00976
+   },
+   "F=30,N=10": {
+    "posed": 2579,
+    "executions": 2371,
+    "invalid": 25,
+    "uncertain": 56,
+    "valid": 2290,
+    "opportunities": 670,
+    "missed": 0,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6310,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 191
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2,
+     "rollout_end_within_band": 51
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 670
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 191,
+      "executions": 2371,
+      "invalid": 25,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 56,
+      "valid": 2290
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.01054
+   },
+   "F=30,N=60": {
+    "posed": 2579,
+    "executions": 889,
+    "invalid": 25,
+    "uncertain": 5,
+    "valid": 859,
+    "opportunities": 670,
+    "missed": 670,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 6288,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 1673
+    },
+    "invalid_by_target_state": {
+     "inside_physical_rollout_interval": 25
+    },
+    "uncertain_by_reason": {
+     "U_pre": 3,
+     "beyond_label_evidence": 2
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 1673,
+      "executions": 889,
+      "invalid": 25,
+      "missed": 670,
+      "opportunities": 670,
+      "posed": 2579,
+      "uncertain": 5,
+      "valid": 859
+     }
+    },
+    "captures_with_invalid": 6,
+    "invalid_per_execution": 0.02812
+   },
+   "F=30,N=600": {
+    "posed": 2579,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 670,
+    "missed": 670,
+    "expired": 0,
+    "censored": 17,
+    "evaluations": 5519,
+    "declined": {
+     "NEEDS_APPROVAL[R2]": 2562
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 17,
+      "declined": 2562,
+      "missed": 670,
+      "opportunities": 670,
+      "posed": 2579
+     }
+    },
+    "captures_with_invalid": 0
+   }
+  },
+  "arm G | B | S0": {
+   "F=10,N=30": {
+    "posed": 34392,
+    "executions": 4901,
+    "invalid": 0,
+    "uncertain": 26,
+    "valid": 4875,
+    "opportunities": 124,
+    "missed": 116,
+    "expired": 6195,
+    "censored": 19599,
+    "evaluations": 11434460,
+    "declined": {
+     "DENY[R1]": 1441,
+     "DENY[R3]": 774,
+     "NEEDS_APPROVAL[R2]": 1482
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 16,
+     "floor_count_within_band": 5,
+     "target_deletion_request_within_band": 5
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 8
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 0,
+    "invalid_per_execution": 0.0
+   },
+   "F=30,N=30": {
+    "posed": 34392,
+    "executions": 10478,
+    "invalid": 110,
+    "uncertain": 178,
+    "valid": 10190,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6043420,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1548,
+     "NEEDS_APPROVAL[R2]": 2288
+    },
+    "invalid_by_target_state": {
+     "gone": 84,
+     "terminating": 26
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 71
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "declined": 3021,
+      "executions": 5577,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5315
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 13,
+    "invalid_per_execution": 0.0105
+   },
+   "F=60,N=30": {
+    "posed": 34392,
+    "executions": 16861,
+    "invalid": 787,
+    "uncertain": 242,
+    "valid": 15832,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 2065,
+    "censored": 6533,
+    "evaluations": 4106458,
+    "declined": {
+     "DENY[R1]": 4323,
+     "DENY[R3]": 2322,
+     "NEEDS_APPROVAL[R2]": 2288
+    },
+    "invalid_by_target_state": {
+     "gone": 285,
+     "terminating": 502
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 100,
+     "target_deletion_request_within_band": 122
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "declined": 3021,
+      "executions": 5577,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5315
+     },
+     "30 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 677,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 64,
+      "valid": 5642
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 16,
+    "invalid_per_execution": 0.04668
+   },
+   "F=120,N=30": {
+    "posed": 34392,
+    "executions": 23244,
+    "invalid": 1572,
+    "uncertain": 242,
+    "valid": 21430,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 114641,
+    "declined": {
+     "DENY[R1]": 5764,
+     "DENY[R3]": 3096,
+     "NEEDS_APPROVAL[R2]": 2288
+    },
+    "invalid_by_target_state": {
+     "gone": 1070,
+     "terminating": 502
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 100,
+     "target_deletion_request_within_band": 122
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "declined": 3021,
+      "executions": 5577,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5315
+     },
+     "30 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 677,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 64,
+      "valid": 5642
+     },
+     "80 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 785,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "valid": 5598
+     }
+    },
+    "captures_with_invalid": 16,
+    "invalid_per_execution": 0.06763
+   },
+   "F=600,N=30": {
+    "posed": 34392,
+    "executions": 23244,
+    "invalid": 1572,
+    "uncertain": 242,
+    "valid": 21430,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 114641,
+    "declined": {
+     "DENY[R1]": 5764,
+     "DENY[R3]": 3096,
+     "NEEDS_APPROVAL[R2]": 2288
+    },
+    "invalid_by_target_state": {
+     "gone": 1070,
+     "terminating": 502
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 100,
+     "target_deletion_request_within_band": 122
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "declined": 3021,
+      "executions": 5577,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5315
+     },
+     "30 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 677,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 64,
+      "valid": 5642
+     },
+     "80 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 785,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "valid": 5598
+     }
+    },
+    "captures_with_invalid": 16,
+    "invalid_per_execution": 0.06763
+   },
+   "F=30,N=0": {
+    "posed": 34392,
+    "executions": 12766,
+    "invalid": 254,
+    "uncertain": 482,
+    "valid": 12030,
+    "opportunities": 124,
+    "missed": 82,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 7249433,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1548
+    },
+    "invalid_by_target_state": {
+     "below_floor": 49,
+     "gone": 94,
+     "not_ready": 11,
+     "terminating": 100
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 136,
+     "floor_count_within_band": 186,
+     "target_deletion_request_within_band": 97,
+     "target_ready_transition_within_band": 63
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 42,
+     "posed before the opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 40,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 247,
+      "valid": 6096
+     },
+     "10 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 214,
+      "missed": 20,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 235,
+      "valid": 5934
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 14,
+    "invalid_per_execution": 0.0199
+   },
+   "F=30,N=10": {
+    "posed": 34392,
+    "executions": 12486,
+    "invalid": 225,
+    "uncertain": 384,
+    "valid": 11877,
+    "opportunities": 124,
+    "missed": 82,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 7290791,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1548,
+     "NEEDS_APPROVAL[R2]": 280
+    },
+    "invalid_by_target_state": {
+     "below_floor": 49,
+     "gone": 91,
+     "not_ready": 11,
+     "terminating": 74
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 136,
+     "floor_count_within_band": 142,
+     "target_deletion_request_within_band": 71,
+     "target_ready_transition_within_band": 35
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 42,
+     "posed before the opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 2495,
+      "executions": 6103,
+      "invalid": 11,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 149,
+      "valid": 5943
+     },
+     "10 s": {
+      "declined": 2215,
+      "executions": 6383,
+      "invalid": 214,
+      "missed": 20,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 235,
+      "valid": 5934
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 14,
+    "invalid_per_execution": 0.01802
+   },
+   "F=30,N=60": {
+    "posed": 34392,
+    "executions": 5308,
+    "invalid": 110,
+    "uncertain": 158,
+    "valid": 5040,
+    "opportunities": 124,
+    "missed": 124,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 7308427,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1548,
+     "NEEDS_APPROVAL[R2]": 7458
+    },
+    "invalid_by_target_state": {
+     "gone": 84,
+     "terminating": 26
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 71
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 6401,
+      "executions": 2197,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 10,
+      "valid": 2187
+     },
+     "10 s": {
+      "declined": 5487,
+      "executions": 3111,
+      "invalid": 110,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 148,
+      "valid": 2853
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 13,
+    "invalid_per_execution": 0.02072
+   },
+   "F=30,N=600": {
+    "posed": 34392,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 124,
+    "missed": 124,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6043420,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1548,
+     "NEEDS_APPROVAL[R2]": 12766
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 8598,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "10 s": {
+      "declined": 8598,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "captures_with_invalid": 0
+   }
+  }
+ },
+ "audit": {
+  "0 s": {
+   "gate": {
+    "posed": 34392,
+    "executions": 10478,
+    "invalid": 110,
+    "uncertain": 178,
+    "valid": 10190,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6043420,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1548,
+     "NEEDS_APPROVAL[R2]": 2288
+    },
+    "invalid_by_target_state": {
+     "gone": 84,
+     "terminating": 26
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 71
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "declined": 3021,
+      "executions": 5577,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5315
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "invalid_per_execution": 0.0105
+   },
+   "receipt_time_replay": {
+    "posed": 34392,
+    "executions": 10481,
+    "invalid": 110,
+    "uncertain": 178,
+    "valid": 10193,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6040781,
+    "declined": {
+     "DENY[R1]": 2882,
+     "DENY[R3]": 1482,
+     "NEEDS_APPROVAL[R2]": 2351
+    },
+    "invalid_by_target_state": {
+     "gone": 84,
+     "terminating": 26
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 71
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3700,
+      "executions": 4898,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4872
+     },
+     "10 s": {
+      "declined": 3015,
+      "executions": 5583,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5321
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "invalid_per_execution": 0.0105
+   },
+   "receipt_time_vs_gate": {
+    "posed": 34392,
+    "first_verdict_differs": 152,
+    "disposition_differs": 72,
+    "execution_differs": 15
+   }
+  },
+  "5 s": {
+   "gate": {
+    "posed": 34392,
+    "executions": 10428,
+    "invalid": 110,
+    "uncertain": 178,
+    "valid": 10140,
+    "opportunities": 124,
+    "missed": 115,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6040766,
+    "declined": {
+     "DENY[R1]": 2462,
+     "DENY[R3]": 2296,
+     "NEEDS_APPROVAL[R2]": 2010
+    },
+    "invalid_by_target_state": {
+     "gone": 84,
+     "terminating": 26
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 20,
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 71
+    },
+    "opportunity_executions": {
+     "posed as an opportunity": 9
+    },
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 3697,
+      "executions": 4901,
+      "missed": 23,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 26,
+      "valid": 4875
+     },
+     "10 s": {
+      "declined": 3071,
+      "executions": 5527,
+      "invalid": 110,
+      "missed": 30,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 152,
+      "valid": 5265
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "invalid_per_execution": 0.01055
+   },
+   "receipt_time_replay": {
+    "posed": 34392,
+    "executions": 9716,
+    "invalid": 110,
+    "uncertain": 158,
+    "valid": 9448,
+    "opportunities": 124,
+    "missed": 124,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6014325,
+    "declined": {
+     "DENY[R1]": 2160,
+     "DENY[R3]": 1764,
+     "NEEDS_APPROVAL[R2]": 3556
+    },
+    "invalid_by_target_state": {
+     "gone": 84,
+     "terminating": 26
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 71
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 4128,
+      "executions": 4470,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 10,
+      "valid": 4460
+     },
+     "10 s": {
+      "declined": 3352,
+      "executions": 5246,
+      "invalid": 110,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 148,
+      "valid": 4988
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "invalid_per_execution": 0.01132
+   },
+   "receipt_time_vs_gate": {
+    "posed": 34392,
+    "first_verdict_differs": 1404,
+    "disposition_differs": 1550,
+    "execution_differs": 720
+   }
+  },
+  "30 s": {
+   "gate": {
+    "posed": 34392,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 124,
+    "missed": 124,
+    "expired": 8260,
+    "censored": 26132,
+    "evaluations": 11826790,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "10 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    }
+   },
+   "receipt_time_replay": {
+    "posed": 34392,
+    "executions": 5726,
+    "invalid": 528,
+    "uncertain": 164,
+    "valid": 5034,
+    "opportunities": 124,
+    "missed": 124,
+    "expired": 4130,
+    "censored": 13066,
+    "evaluations": 6158836,
+    "declined": {
+     "DENY[R1]": 352,
+     "DENY[R3]": 2514,
+     "NEEDS_APPROVAL[R2]": 8604
+    },
+    "invalid_by_target_state": {
+     "gone": 257,
+     "terminating": 271
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 87,
+     "target_deletion_request_within_band": 77
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 6392,
+      "executions": 2206,
+      "invalid": 10,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 10,
+      "valid": 2186
+     },
+     "10 s": {
+      "declined": 5078,
+      "executions": 3520,
+      "invalid": 518,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598,
+      "uncertain": 154,
+      "valid": 2848
+     },
+     "30 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     },
+     "80 s": {
+      "censored": 6533,
+      "expired": 2065,
+      "missed": 31,
+      "opportunities": 31,
+      "posed": 8598
+     }
+    },
+    "invalid_per_execution": 0.09221
+   },
+   "receipt_time_vs_gate": {
+    "posed": 34392,
+    "first_verdict_differs": 11482,
+    "disposition_differs": 17196,
+    "execution_differs": 5726
+   }
+  }
+ },
+ "store": {
+  "observations": {
+   "median": 5014.5,
+   "min": 4878,
+   "max": 5029
+  },
+  "keys": {
+   "median": 49.0,
+   "min": 46,
+   "max": 49
+  },
+  "versions_per_key": {
+   "median": 102.4,
+   "min": 102.2,
+   "max": 106.5
+  },
+  "ms_per_decision": {
+   "median": 13.5,
+   "min": 5.9,
+   "max": 25.0
+  }
+ },
+ "diagnosis_robustness": {
+  "follow_up": {
+   "complete | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "complete | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-10s | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 5,
+    "draws": 8,
+    "top1_draws": 5
+   },
+   "onset_shift_-10s | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 5,
+    "draws": 8,
+    "top1_draws": 5
+   },
+   "onset_shift_-10s | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 5,
+    "draws": 8,
+    "top1_draws": 5
+   },
+   "onset_shift_-10s | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-10s | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 5,
+    "draws": 8,
+    "top1_draws": 5
+   },
+   "onset_shift_-10s | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 6,
+    "draws": 8,
+    "top1_draws": 6
+   },
+   "onset_shift_-10s | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 6,
+    "draws": 8,
+    "top1_draws": 6
+   },
+   "onset_shift_-10s | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 6,
+    "draws": 8,
+    "top1_draws": 6
+   },
+   "onset_shift_-10s | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-10s | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 6,
+    "draws": 8,
+    "top1_draws": 6
+   },
+   "onset_shift_-5s | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-5s | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_-2s | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+2s | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+5s | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "onset_shift_+10s | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 8,
+    "top1_draws": 8
+   },
+   "sampled_0.5 | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 2,
+    "draws": 80,
+    "top1_draws": 67
+   },
+   "sampled_0.5 | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 2,
+    "draws": 80,
+    "top1_draws": 67
+   },
+   "sampled_0.5 | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 2,
+    "draws": 80,
+    "top1_draws": 67
+   },
+   "sampled_0.5 | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 2,
+    "draws": 80,
+    "top1_draws": 69
+   },
+   "sampled_0.5 | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 2,
+    "draws": 80,
+    "top1_draws": 67
+   },
+   "sampled_0.5 | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 7,
+    "draws": 80,
+    "top1_draws": 79
+   },
+   "sampled_0.5 | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 7,
+    "draws": 80,
+    "top1_draws": 79
+   },
+   "sampled_0.5 | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 7,
+    "draws": 80,
+    "top1_draws": 79
+   },
+   "sampled_0.5 | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "sampled_0.5 | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 7,
+    "draws": 80,
+    "top1_draws": 79
+   },
+   "sampled_0.25 | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 1,
+    "draws": 80,
+    "top1_draws": 50
+   },
+   "sampled_0.25 | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 1,
+    "draws": 80,
+    "top1_draws": 50
+   },
+   "sampled_0.25 | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 1,
+    "draws": 80,
+    "top1_draws": 51
+   },
+   "sampled_0.25 | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 1,
+    "draws": 80,
+    "top1_draws": 56
+   },
+   "sampled_0.25 | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 1,
+    "draws": 80,
+    "top1_draws": 50
+   },
+   "sampled_0.25 | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 4,
+    "draws": 80,
+    "top1_draws": 73
+   },
+   "sampled_0.25 | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 4,
+    "draws": 80,
+    "top1_draws": 73
+   },
+   "sampled_0.25 | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 4,
+    "draws": 80,
+    "top1_draws": 73
+   },
+   "sampled_0.25 | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 6,
+    "draws": 80,
+    "top1_draws": 77
+   },
+   "sampled_0.25 | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 4,
+    "draws": 80,
+    "top1_draws": 73
+   },
+   "sampled_0.1 | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 13
+   },
+   "sampled_0.1 | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 13
+   },
+   "sampled_0.1 | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 14
+   },
+   "sampled_0.1 | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 21
+   },
+   "sampled_0.1 | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 13
+   },
+   "sampled_0.1 | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 40
+   },
+   "sampled_0.1 | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 40
+   },
+   "sampled_0.1 | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 41
+   },
+   "sampled_0.1 | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 56
+   },
+   "sampled_0.1 | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 40
+   },
+   "identity_missing_0.5 | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 3,
+    "draws": 80,
+    "top1_draws": 68
+   },
+   "identity_missing_0.5 | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 7,
+    "draws": 80,
+    "top1_draws": 79
+   },
+   "identity_missing_0.5 | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.5 | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 45
+   },
+   "identity_missing_0.75 | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 5,
+    "draws": 80,
+    "top1_draws": 77
+   },
+   "identity_missing_0.75 | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.75 | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 5 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 5 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 5 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 21
+   },
+   "identity_missing_0.9 | 5 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 5 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 30 s | bitemporal_abstain_F30": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 30 s | bitemporal_abstain_F600": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 30 s | hindsight": {
+    "captures": 8,
+    "all_draws_top1": 0,
+    "draws": 80,
+    "top1_draws": 49
+   },
+   "identity_missing_0.9 | 30 s | latest_state": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   },
+   "identity_missing_0.9 | 30 s | temporal_join": {
+    "captures": 8,
+    "all_draws_top1": 8,
+    "draws": 80,
+    "top1_draws": 80
+   }
+  },
+  "development": {
+   "complete | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "complete | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "complete | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "complete | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "complete | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "complete | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "complete | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "complete | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "complete | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "complete | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_-10s | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 5,
+    "top1_draws": 2
+   },
+   "onset_shift_-10s | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 5,
+    "top1_draws": 2
+   },
+   "onset_shift_-10s | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-10s | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-10s | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 5,
+    "top1_draws": 2
+   },
+   "onset_shift_-10s | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 5,
+    "top1_draws": 2
+   },
+   "onset_shift_-10s | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 5,
+    "top1_draws": 2
+   },
+   "onset_shift_-10s | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-10s | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-10s | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 5,
+    "top1_draws": 2
+   },
+   "onset_shift_-5s | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-5s | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-5s | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-5s | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_-5s | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-5s | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-5s | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-5s | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-5s | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-5s | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-2s | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-2s | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-2s | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-2s | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-2s | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-2s | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-2s | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_-2s | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-2s | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_-2s | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 5,
+    "top1_draws": 3
+   },
+   "onset_shift_+2s | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+2s | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+5s | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+10s | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+10s | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "onset_shift_+10s | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 5,
+    "top1_draws": 5
+   },
+   "onset_shift_+10s | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 5,
+    "top1_draws": 4
+   },
+   "sampled_0.5 | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 28
+   },
+   "sampled_0.5 | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 28
+   },
+   "sampled_0.5 | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 44
+   },
+   "sampled_0.5 | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 50,
+    "top1_draws": 46
+   },
+   "sampled_0.5 | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 28
+   },
+   "sampled_0.5 | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 50,
+    "top1_draws": 33
+   },
+   "sampled_0.5 | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 50,
+    "top1_draws": 33
+   },
+   "sampled_0.5 | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 50,
+    "top1_draws": 48
+   },
+   "sampled_0.5 | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "sampled_0.5 | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 50,
+    "top1_draws": 33
+   },
+   "sampled_0.25 | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 22
+   },
+   "sampled_0.25 | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 22
+   },
+   "sampled_0.25 | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 34
+   },
+   "sampled_0.25 | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 37
+   },
+   "sampled_0.25 | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 22
+   },
+   "sampled_0.25 | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 28
+   },
+   "sampled_0.25 | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 28
+   },
+   "sampled_0.25 | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 42
+   },
+   "sampled_0.25 | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 3,
+    "draws": 50,
+    "top1_draws": 48
+   },
+   "sampled_0.25 | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 1,
+    "draws": 50,
+    "top1_draws": 28
+   },
+   "sampled_0.1 | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 5
+   },
+   "sampled_0.1 | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 5
+   },
+   "sampled_0.1 | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 9
+   },
+   "sampled_0.1 | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 15
+   },
+   "sampled_0.1 | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 5
+   },
+   "sampled_0.1 | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 17
+   },
+   "sampled_0.1 | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 17
+   },
+   "sampled_0.1 | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 21
+   },
+   "sampled_0.1 | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 34
+   },
+   "sampled_0.1 | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 17
+   },
+   "identity_missing_0.5 | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.5 | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.5 | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 2,
+    "draws": 50,
+    "top1_draws": 43
+   },
+   "identity_missing_0.5 | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "identity_missing_0.5 | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.5 | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.5 | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.5 | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 47
+   },
+   "identity_missing_0.5 | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "identity_missing_0.5 | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 29
+   },
+   "identity_missing_0.75 | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "identity_missing_0.75 | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.75 | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "identity_missing_0.75 | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.9 | 5 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.9 | 5 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.9 | 5 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 14
+   },
+   "identity_missing_0.9 | 5 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "identity_missing_0.9 | 5 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.9 | 30 s | bitemporal_abstain_F30": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.9 | 30 s | bitemporal_abstain_F600": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   },
+   "identity_missing_0.9 | 30 s | hindsight": {
+    "captures": 5,
+    "all_draws_top1": 0,
+    "draws": 50,
+    "top1_draws": 26
+   },
+   "identity_missing_0.9 | 30 s | latest_state": {
+    "captures": 5,
+    "all_draws_top1": 5,
+    "draws": 50,
+    "top1_draws": 50
+   },
+   "identity_missing_0.9 | 30 s | temporal_join": {
+    "captures": 5,
+    "all_draws_top1": 4,
+    "draws": 50,
+    "top1_draws": 40
+   }
+  }
+ }
+}

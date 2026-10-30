@@ -153,9 +153,10 @@ def _freshness_boundaries(items, keep_all: bool, f_us, delta_us: int) -> list[in
     return out
 
 
-def schedule_instants(model, H: int, delta_us: int, *, relevant=None, hindsight: bool = False) -> tuple[int, ...]:
-    n_us, s_us = s_to_us(N_SECONDS), s_to_us(S_SECONDS) + 1
-    f_us = [s_to_us(f) for f in F_SCHEDULE]
+def schedule_instants(model, H: int, delta_us: int, *, relevant=None, hindsight: bool = False,
+                      F_values=F_SCHEDULE, N_values=(N_SECONDS,)) -> tuple[int, ...]:
+    n_list, s_us = [s_to_us(n) for n in N_values], s_to_us(S_SECONDS) + 1
+    f_us = [s_to_us(f) for f in F_values]
     instants = {H}
     groups = defaultdict(list)
     for o in model.observations:
@@ -168,9 +169,10 @@ def schedule_instants(model, H: int, delta_us: int, *, relevant=None, hindsight:
         if starts is not None:
             instants.add(starts - delta_us)
         if o.predicate == GENERATION:
-            instants.add(observed + n_us - delta_us)
-            if starts is not None:
-                instants.add(starts + n_us - delta_us)
+            for n_us in n_list:
+                instants.add(observed + n_us - delta_us)
+                if starts is not None:
+                    instants.add(starts + n_us - delta_us)
         if hindsight and o.record_id in model.cluster_observations:
             instants.add(observed - delta_us)
     for items in groups.values():
@@ -323,11 +325,16 @@ class ObserverContext:
         return [f for f in m.freezes if f.available_at <= tau
                 and not (f.id in m.freeze_withdrawals and m.freeze_withdrawals[f.id] <= tau)]
 
-    def schedule(self, delta_us: int, *, hindsight: bool = False) -> tuple[int, ...]:
-        key = (delta_us, hindsight)
+    def schedule(self, delta_us: int, *, hindsight: bool = False, F: float | None = None,
+                 N: float | None = None) -> tuple[int, ...]:
+        """Retry instants: every record arrival and every instant at which a rule's time limit passes, for the
+        freshness limits F_SCHEDULE (plus ``F``) and R2's window N_SECONDS (plus ``N``)."""
+        F_values = F_SCHEDULE if F is None or F in F_SCHEDULE else tuple(sorted(set(F_SCHEDULE) | {F}))
+        N_values = (N_SECONDS,) if N is None or N == N_SECONDS else (N_SECONDS, N)
+        key = (delta_us, hindsight, F_values, N_values)
         if key not in self._schedules:
             self._schedules[key] = schedule_instants(self.model, self.capture.H, delta_us, relevant=self.relevant,
-                                                     hindsight=hindsight)
+                                                     hindsight=hindsight, F_values=F_values, N_values=N_values)
         return self._schedules[key]
 
     def engine_counts(self) -> dict:
@@ -343,7 +350,8 @@ class ObserverContext:
         return f"{self.capture.capture_id}|{self.observer}|{self.stream}|{view}|{act.key}|{cutoff}|{observation}"
 
     def compute(self, knowledge: str, F: float, act: ActionSpec, cutoff: int, observation: int, *,
-                hindsight: bool = False, condition_config: dict | None = None) -> tuple[dict, object, tuple]:
+                hindsight: bool = False, condition_config: dict | None = None,
+                N: float = N_SECONDS) -> tuple[dict, object, tuple]:
         """One evaluation without the memo or the log: (entry, store, record IDs behind it)."""
         cap = self.capture
         view_name = f"{knowledge}@F{F:g}"
@@ -352,17 +360,17 @@ class ObserverContext:
             entry, records = decide(view_name=view_name, knowledge=knowledge, F=F, store=store, act=act,
                                     binding=cap.binding, service_deployments=cap.service_deployments,
                                     floors=cap.floors, cutoff_us=observation, observation_us=observation,
-                                    freezes=self.usable_freezes(cutoff), view_config=condition_config or {})
+                                    freezes=self.usable_freezes(cutoff), view_config=condition_config or {}, N=N)
             entry["hindsight"] = dict(extra, kind="future-snapshot sensitivity (hindsight, not a live read)",
                                       knowledge_cutoff_for_change_records_us=cutoff)
             return entry, store, records
         store = self.store(knowledge)
-        view_config = {"view": view_name, "knowledge": knowledge, "F_seconds": F, "N_seconds": N_SECONDS,
+        view_config = {"view": view_name, "knowledge": knowledge, "F_seconds": F, "N_seconds": N,
                        "S_seconds": S_SECONDS, "r7": "state", "observer": self.observer}
         entry, records = decide(view_name=view_name, knowledge=knowledge, F=F, store=store, act=act,
                                 binding=cap.binding, service_deployments=cap.service_deployments, floors=cap.floors,
                                 cutoff_us=cutoff, observation_us=observation, freezes=self.usable_freezes(cutoff),
-                                view_config=view_config)
+                                view_config=view_config, N=N)
         return entry, store, records
 
     def evaluate(self, cond: Condition, act: ActionSpec, cutoff: int, observation: int) -> dict:
@@ -372,7 +380,7 @@ class ObserverContext:
         cap = self.capture
         hind = cond.posing == HINDSIGHT
         entry, store, records = self.compute(cond.knowledge, cond.F, act, cutoff, observation, hindsight=hind,
-                                             condition_config=cond.config())
+                                             condition_config=cond.config(), N=cond.N)
         if not hind:
             check_causal(dict(entry, view=cond.eval_view), records, self, cutoff)
             self._provenance(entry, store, cutoff)
@@ -383,7 +391,7 @@ class ObserverContext:
             self.log.facts(cap.capture_id, self.observer, self.stream, store, entry_fact_ids(entry))
         compact = {"eval_id": entry["eval_id"], "verdict": entry["verdict"], "deciding": entry["deciding"],
                    "first_rules": first_rules(entry), "r7_reason": r7_reason(entry),
-                   **relied_bounds(entry, store, cond.F)}
+                   **relied_bounds(entry, store, cond.F, cond.N)}
         self.memo[key] = compact
         return compact
 
@@ -423,11 +431,11 @@ class ObserverContext:
             self.provenance["failures"].append(entry.get("eval_id") or f"{entry['view']}|{entry['cutoff_us']}")
 
 
-def relied_bounds(entry: dict, store, F: float) -> dict:
+def relied_bounds(entry: dict, store, F: float, N: float = N_SECONDS) -> dict:
     """For the H-G2 design check, from the facts this evaluation relied on: the instants at which a relied-on
     known-open fact's freshness ends (confirmed_at + F) and R2's window end (the newest GENERATION start R2 resolved
     + N)."""
-    f_us, n_us = s_to_us(F), s_to_us(N_SECONDS)
+    f_us, n_us = s_to_us(F), s_to_us(N)
     ends = set()
     for fid in entry_fact_ids(entry):
         f = store.fact(fid)
@@ -710,7 +718,7 @@ def run_request(cond: Condition, ctx, capture: Stage2Capture, family: str, k: in
     else:
         raise AdapterError(f"unknown posing {cond.posing}")
     hind = cond.posing == HINDSIGHT
-    schedule = ctx.schedule(sched_delta, hindsight=hind)
+    schedule = ctx.schedule(sched_delta, hindsight=hind, F=cond.F, N=cond.N)
     key = None
     if log is not None:
         key = log.schedule(ctx.observer, ctx.stream, "hindsight" if hind else "causal", sched_delta / 1e6, schedule)
