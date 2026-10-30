@@ -9,6 +9,10 @@
                                                                         # results/stage2/analyses/surrogate
     python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --sweeps
                                                                         # results/stage2/analyses/sweeps
+    python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --decision-log
+                                                                        # results/stage2/analyses/decision_log
+    python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --check-to-act
+                                                                        # results/stage2/analyses/check_to_act
 
 Writes one JSON file per capture (<out>/<capture>.json); a capture whose file exists is skipped, so an interrupted
 run continues where it stopped. The included captures are read from results/stage2/captures.json: arm G for every
@@ -43,10 +47,16 @@ def main(argv=None) -> int:
     mode.add_argument("--surrogate", action="store_true", help="the surrogate check (replays.surrogate_pass)")
     mode.add_argument("--sweeps", action="store_true",
                       help="coverage, parameter sweep and receipt-time audit (sweeps.sweep_pass), arms G and D")
+    mode.add_argument("--decision-log", action="store_true",
+                      help="a log of each decision's inputs against re-evaluation (sweeps.decision_log_pass), arm G")
+    mode.add_argument("--check-to-act", action="store_true",
+                      help="the recheck's executions labelled after a read-to-action gap (sweeps.check_to_act_pass)")
     a = ap.parse_args(argv)
     if a.out is None:
         a.out = str(ROOT / "results/stage2/analyses" / ("latency" if a.latency else "surrogate" if a.surrogate
-                                                        else "sweeps" if a.sweeps else "replays"))
+                                                        else "sweeps" if a.sweeps
+                                                        else "decision_log" if a.decision_log
+                                                        else "check_to_act" if a.check_to_act else "replays"))
     register = json.loads((ROOT / "results/stage2/captures.json").read_text(encoding="utf-8"))
     arms = ("G", "D") if a.sweeps else ("G",)
     captures = [c for arm in arms for s in register["populations"][arm] for c in s["captures"]]
@@ -60,6 +70,17 @@ def main(argv=None) -> int:
             print("skip", cap, flush=True)
             continue
         converted = Path(a.captures_root) / cap / "evidence"
+        if a.check_to_act:
+            doc = sweeps.check_to_act_pass(converted, a.plan, out,
+                                           progress=lambda m: print(m, file=sys.stderr, flush=True))
+            print(cap, json.dumps(doc["executions_by_lag"]), flush=True)
+            continue
+        if a.decision_log:
+            doc = sweeps.decision_log_pass(converted, a.plan, out,
+                                           progress=lambda m: print(m, file=sys.stderr, flush=True))
+            print(cap, json.dumps({k: (v["outcome_changed"], v["changed_own_log"], v["posed"])
+                                   for k, v in doc["questions"].items()}), flush=True)
+            continue
         if a.sweeps:
             doc = sweeps.sweep_pass(converted, a.plan, out, progress=lambda m: print(m, file=sys.stderr, flush=True))
             first = next(iter(doc["sweep"].values()))

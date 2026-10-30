@@ -1,0 +1,96 @@
+{
+ "capture": "G2-003",
+ "arm": "G",
+ "scenario": "G2",
+ "decisions": 2160,
+ "posed": 2124,
+ "log": {
+  "records_per_decision": {
+   "median": 536,
+   "max": 638
+  },
+  "record_references": 993724,
+  "distinct_records": 790
+ },
+ "store": {
+  "records": 1900,
+  "versions": 5029
+ },
+ "questions": {
+  "F=10,N=30": {
+   "posed": 2124,
+   "own_log": 1593,
+   "all_logs": 2124,
+   "outcome_changed": 531,
+   "changed_own_log": 0,
+   "changed_all_logs": 531
+  },
+  "F=60,N=30": {
+   "posed": 2124,
+   "own_log": 1500,
+   "all_logs": 2064,
+   "outcome_changed": 531,
+   "changed_own_log": 0,
+   "changed_all_logs": 531
+  },
+  "F=120,N=30": {
+   "posed": 2124,
+   "own_log": 969,
+   "all_logs": 2019,
+   "outcome_changed": 1062,
+   "changed_own_log": 0,
+   "changed_all_logs": 1017
+  },
+  "F=600,N=30": {
+   "posed": 2124,
+   "own_log": 969,
+   "all_logs": 2004,
+   "outcome_changed": 1062,
+   "changed_own_log": 0,
+   "changed_all_logs": 1002
+  },
+  "F=30,N=0": {
+   "posed": 2124,
+   "own_log": 2124,
+   "all_logs": 2124,
+   "outcome_changed": 120,
+   "changed_own_log": 120,
+   "changed_all_logs": 120
+  },
+  "F=30,N=10": {
+   "posed": 2124,
+   "own_log": 2124,
+   "all_logs": 2124,
+   "outcome_changed": 120,
+   "changed_own_log": 120,
+   "changed_all_logs": 120
+  },
+  "F=30,N=60": {
+   "posed": 2124,
+   "own_log": 2124,
+   "all_logs": 2124,
+   "outcome_changed": 299,
+   "changed_own_log": 299,
+   "changed_all_logs": 299
+  },
+  "F=30,N=600": {
+   "posed": 2124,
+   "own_log": 2124,
+   "all_logs": 2124,
+   "outcome_changed": 520,
+   "changed_own_log": 520,
+   "changed_all_logs": 520
+  },
+  "at the recheck's instants": {
+   "posed": 2124,
+   "own_log": 448,
+   "all_logs": 1853,
+   "outcome_changed": 988,
+   "changed_own_log": 0,
+   "changed_all_logs": 734
+  }
+ },
+ "seconds": {
+  "decision log": 252.7
+ }
+}

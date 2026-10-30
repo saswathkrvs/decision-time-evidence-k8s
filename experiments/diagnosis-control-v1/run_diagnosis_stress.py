@@ -28,6 +28,14 @@ at cutoffs 5 and 30 s after the declared onset:
   policy, as with trace sampling;
 * ``identity_missing_{p}``: a share p of the requests whose spans carry no Pod identity (seeded), which affects only
   span identity (the snapshot policies never read it).
+
+With ``--attribution`` (``attribution``; results/stage2/analyses/diagnosis_attribution.json), at cutoffs 5 and 30 s
+after the onset, on the captured records and with every API record delayed (development captures: also the switch
+poll's records delayed or corrected late): per policy, the faulty Pod's attribution counts per window (requests
+attributed to it that it served, requests it served, requests attributed to it), whether it is a candidate and
+whether it is ranked first. Attribution, not the first rank, is what the context policies differ in: in every
+diagnosis capture the faulty Pod is the recommendation service's serving Pod (field
+``faulty_pod_is_the_recommendation_service_s_serving_pod``), so a first rank alone cannot tell the policies apart.
 """
 from __future__ import annotations
 
@@ -220,6 +228,60 @@ def robustness(capture: Path, *, development: bool = False) -> dict:
                         ("variants", out)])
 
 
+ATTRIBUTION_DELTAS = ROBUST_DELTAS
+
+
+def faulty_pod_attribution(cell: dict, truth_entity: str) -> OrderedDict:
+    """Per window, for the faulty Pod: [requests attributed to it that it served, requests it served, requests
+    attributed to it whose serving Pod is known] (span identity decides who served; evaluator only). Recall is the
+    first over the second, precision the first over the third."""
+    ent = cell["entities"].get(truth_entity)
+    out = OrderedDict()
+    for w in B.WINDOWS:
+        if ent is None:                 # shown neither as a candidate, nor in view, nor as a serving Pod
+            out[w] = [0, 0, 0]
+            continue
+        s = ent[w]
+        correct = s["n"] - s["mis_attributed"] - s["truth_unknown"]
+        out[w] = [correct, correct + s["lost_to_other"] + s["lost_to_abstain"], s["n"] - s["truth_unknown"]]
+    return out
+
+
+def attribution(capture: Path, *, development: bool = False) -> dict:
+    """Which Pod each request is attributed to, the quantity the context policies differ in: per stream (the
+    captured records and every API record delayed by d s; for the development captures also the switch poll's
+    records delayed or corrected late), cutoff and policy, the faulty Pod's attribution counts per window
+    (``faulty_pod_attribution``), whether it is a candidate, and whether it is ranked first."""
+    policies = DC.make_policies()
+    truth = B.load_capture_truth(capture)
+    bridge, store = _load(capture, development)
+    streams, at, _ = stress_streams(bridge)
+    if not development:
+        streams = [s for s in streams if s["family"] in ("complete", "delayed_api")]
+    onset, te = truth["onset"], truth["truth_entity"]
+    windows = B.Windows.seconds(onset, DC.W_BEFORE, DC.W_AFTER)
+    rec = next(s for s in bridge.services if s.service == "recommendationservice")
+    serving = [c.key for c in rec.candidates if c.label in ("new", "p1")]
+    rows = []
+    for s in streams:
+        stream = R.Stream(s["records"])
+        for label, d in ATTRIBUTION_DELTAS:
+            c = B.decision_cutoff(onset, d)
+            for policy in (None,) + tuple(policies):
+                cell = B.evaluate_cell(stream, bridge.services, bridge.spans.requests, c, windows, policy,
+                                       bridge.spans.served_by, te)
+                rows.append(OrderedDict([("stream", s["name"]), ("delta_s", d),
+                                         ("policy", B.HINDSIGHT if policy is None else policy.name),
+                                         ("candidate", te in cell["candidates"]["policy"]),
+                                         ("top1", bool(cell["truth"].get("top1"))),
+                                         ("faulty_pod", faulty_pod_attribution(cell, te)),
+                                         ("cutoff_minus_switch_s", None if at is None else round((c - at) / 1e6,
+                                                                                                 3))]))
+    return OrderedDict([("capture", capture.name), ("stage", "development" if development else "follow-up"),
+                        ("faulty_pod_is_the_recommendation_service_s_serving_pod", serving == [te]),
+                        ("rows", rows)])
+
+
 def summarise(captures: list) -> dict:
     """Per stream x Delta x policy: in how many captures the faulty Pod is ranked first."""
     table = OrderedDict()
@@ -243,14 +305,32 @@ def main(argv=None) -> int:
     ap.add_argument("--robustness", action="store_true",
                     help="onset error and imperfect trace identity (default out: "
                          "results/stage2/analyses/diagnosis_robustness.json)")
+    ap.add_argument("--attribution", action="store_true",
+                    help="the faulty Pod's attribution precision and recall per stream, cutoff and policy (default "
+                         "out: results/stage2/analyses/diagnosis_attribution.json)")
     a = ap.parse_args(argv)
     if a.robustness and a.out == str(ROOT / "results/stage2/analyses/diagnosis_stress.json"):
         a.out = str(ROOT / "results/stage2/analyses/diagnosis_robustness.json")
+    if a.attribution and a.out == str(ROOT / "results/stage2/analyses/diagnosis_stress.json"):
+        a.out = str(ROOT / "results/stage2/analyses/diagnosis_attribution.json")
     included = []
     for path in sorted((ROOT / "results/stage2/diagnosis").glob("D*.json")):
         doc = json.loads(path.read_text(encoding="utf-8"))
         if str(doc.get("category", "")).startswith("primary_"):
             included.append(path.stem)
+    if a.attribution:
+        per = [attribution(Path(a.captures_root) / name) for name in included]
+        dev = [attribution(Path(a.dev_captures_root) / name, development=True)
+               for name in ("I2-002", "I3-004", "I6-002", "I6-003", "I7-001")] if a.dev_captures_root else []
+        doc = OrderedDict([("captures", included), ("development_captures", [d["capture"] for d in dev]),
+                           ("deltas_s", [d for _, d in ATTRIBUTION_DELTAS]), ("delays_s", list(DELAYS)),
+                           ("counts", "per window: [attributed to the faulty Pod and served by it, served by it, "
+                                      "attributed to it with a known serving Pod]"),
+                           ("per_capture", per), ("development_per_capture", dev)])
+        Path(a.out).parent.mkdir(parents=True, exist_ok=True)
+        Path(a.out).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
+        print("written", a.out)
+        return 0
     if a.robustness:
         per = [robustness(Path(a.captures_root) / name) for name in included]
         dev = [robustness(Path(a.dev_captures_root) / name, development=True)

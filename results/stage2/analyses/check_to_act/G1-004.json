@@ -1,0 +1,29 @@
+{
+ "capture": "G1-004",
+ "scenario": "G1",
+ "executions_by_lag": {
+  "0 s": {
+   "invalid": 0,
+   "uncertain": 59,
+   "valid": 1203
+  },
+  "0.1 s": {
+   "invalid": 0,
+   "uncertain": 59,
+   "valid": 1203
+  },
+  "0.5 s": {
+   "invalid": 0,
+   "uncertain": 57,
+   "valid": 1205
+  },
+  "1 s": {
+   "invalid": 0,
+   "uncertain": 57,
+   "valid": 1205
+  }
+ },
+ "seconds": {
+  "check to act": 1.2
+ }
+}

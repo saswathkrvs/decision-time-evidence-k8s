@@ -4372,5 +4372,122 @@
     "top1_draws": 40
    }
   }
+ },
+ "decision_log": {
+  "captures": 16,
+  "posed": 34392,
+  "records_per_decision_median": {
+   "median": 543.0,
+   "min": 471,
+   "max": 552
+  },
+  "record_references": 15531080,
+  "distinct_records": 12083,
+  "store_records": 30222,
+  "store_versions": 79876,
+  "distinct_records_share_of_store_records": {
+   "median": 0.415,
+   "min": 0.334,
+   "max": 0.431
+  },
+  "questions": {
+   "F=10,N=30": {
+    "posed": 34392,
+    "own_log": 25794,
+    "all_logs": 34392,
+    "outcome_changed": 8598,
+    "changed_own_log": 0,
+    "changed_all_logs": 8598
+   },
+   "F=60,N=30": {
+    "posed": 34392,
+    "own_log": 22077,
+    "all_logs": 31777,
+    "outcome_changed": 8598,
+    "changed_own_log": 0,
+    "changed_all_logs": 8598
+   },
+   "F=120,N=30": {
+    "posed": 34392,
+    "own_log": 11936,
+    "all_logs": 27572,
+    "outcome_changed": 17196,
+    "changed_own_log": 0,
+    "changed_all_logs": 14534
+   },
+   "F=600,N=30": {
+    "posed": 34392,
+    "own_log": 11936,
+    "all_logs": 26076,
+    "outcome_changed": 17196,
+    "changed_own_log": 0,
+    "changed_all_logs": 13038
+   },
+   "F=30,N=0": {
+    "posed": 34392,
+    "own_log": 34392,
+    "all_logs": 34392,
+    "outcome_changed": 2288,
+    "changed_own_log": 2288,
+    "changed_all_logs": 2288
+   },
+   "F=30,N=10": {
+    "posed": 34392,
+    "own_log": 34392,
+    "all_logs": 34392,
+    "outcome_changed": 2008,
+    "changed_own_log": 2008,
+    "changed_all_logs": 2008
+   },
+   "F=30,N=60": {
+    "posed": 34392,
+    "own_log": 34392,
+    "all_logs": 34392,
+    "outcome_changed": 5170,
+    "changed_own_log": 5170,
+    "changed_all_logs": 5170
+   },
+   "F=30,N=600": {
+    "posed": 34392,
+    "own_log": 34392,
+    "all_logs": 34392,
+    "outcome_changed": 10478,
+    "changed_own_log": 10478,
+    "changed_all_logs": 10478
+   },
+   "at the recheck's instants": {
+    "posed": 34392,
+    "own_log": 8096,
+    "all_logs": 30295,
+    "outcome_changed": 15662,
+    "changed_own_log": 17,
+    "changed_all_logs": 11876
+   }
+  }
+ },
+ "check_to_act": {
+  "captures": 16,
+  "executions_by_lag": {
+   "0 s": {
+    "invalid": 0,
+    "uncertain": 242,
+    "valid": 19985
+   },
+   "0.1 s": {
+    "invalid": 0,
+    "uncertain": 209,
+    "valid": 20018
+   },
+   "0.5 s": {
+    "invalid": 0,
+    "uncertain": 181,
+    "valid": 20046
+   },
+   "1 s": {
+    "invalid": 0,
+    "uncertain": 187,
+    "valid": 20040
+   }
+  }
  }
 }

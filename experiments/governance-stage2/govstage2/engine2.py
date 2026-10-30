@@ -284,6 +284,10 @@ class ObserverContext:
         self.provenance = {"n": 0, "x": 0, "failures": []}
         self.fact_cache = fact_cache
         self._hind_index = None
+        # Off unless an analysis sets them (sweeps.decision_log_pass): evaluation key -> input records behind it, and
+        # the evaluation keys requested since ``trace`` was last set to a list. Neither changes any evaluation.
+        self.input_log: dict | None = None
+        self.trace: list | None = None
 
     @property
     def _hind(self) -> "_HindsightIndex":
@@ -375,6 +379,8 @@ class ObserverContext:
 
     def evaluate(self, cond: Condition, act: ActionSpec, cutoff: int, observation: int) -> dict:
         key = (cond.eval_view, act.key, cutoff, observation)
+        if self.trace is not None:
+            self.trace.append(key)
         if key in self.memo:
             return self.memo[key]
         cap = self.capture
@@ -384,6 +390,8 @@ class ObserverContext:
         if not hind:
             check_causal(dict(entry, view=cond.eval_view), records, self, cutoff)
             self._provenance(entry, store, cutoff)
+            if self.input_log is not None:
+                self.input_log[key] = frozenset(self.records_behind(entry, store))
         entry = dict(entry, eval_id=self.eval_id(cond.eval_view, act, cutoff, observation), capture=cap.capture_id,
                      observer=self.observer, stream=self.stream)
         if self.log is not None:
@@ -394,6 +402,22 @@ class ObserverContext:
                    **relied_bounds(entry, store, cond.F, cond.N)}
         self.memo[key] = compact
         return compact
+
+    def records_behind(self, entry: dict, store) -> set:
+        """The input records behind one evaluation: every record a rule cites, the records behind every cited fact,
+        and the input records behind those (the set that reconstruction check 3 verifies in ``_provenance``)."""
+        m = self.model
+        records = set()
+        for r in entry["rules"]:
+            for identifier in r["ids"]:
+                if not is_fact(identifier):
+                    records.add(identifier.split(":", 1)[1])
+                else:
+                    records.update(store.support.get(identifier, ()))
+        behind = set(records)
+        for rid in records:
+            behind.update(m.provenance.get(rid, (rid,)))
+        return behind
 
     def _provenance(self, entry: dict, store, tau: int) -> None:
         """Reconstruction check 3 on one evaluation (govpilot.checks.check_provenance's conditions, from the facts the entry

@@ -34,6 +34,21 @@ delays delta.
     from their availability), as an auditor holding an append-only log with receipt timestamps only would replay
     them -- at the captured latency and with every poller record 5 and 30 s later, against the gate's own decisions
     on the same records (first verdict, disposition, execution), with the invalid executions the replay reports.
+
+``decision_log_pass`` (arm G, action B, stream S0; results/stage2/analyses/decision_log/<capture>.json)
+    a log that keeps, with every decision of T_p, the input records behind each of its evaluations (cited records,
+    the records behind cited facts and their input records; ``ObserverContext.records_behind``), against the
+    questions a retrospective audit asks: the same decisions under every other setting of ``settings()``, and decided
+    at the recheck's instants (T_p@R, ``replays.at_recheck_instants``). A decision's re-evaluation can be answered
+    from the log only if every input record it needs is in the log: from the decision's own entry, or at best from
+    the union of all entries. Per question: posed decisions, decisions whose disposition differs from the gate's,
+    and how many of each the decision's own entry and the union of all entries cover; with the log's size against
+    the records and versions of the two-clock store.
+
+``check_to_act_pass`` (arm G, action B, stream S0; results/stage2/analyses/check_to_act/<capture>.json)
+    the fresh recheck's executions (R decides and executes at the receipt x_R of a response) labelled as if the
+    deletion took effect ``ACT_LAGS`` seconds after x_R: how many would then have met an invalid, an uncertain or a
+    valid state, i.e. how much a gap between the recheck's read and the action could matter.
 """
 from __future__ import annotations
 
@@ -48,11 +63,11 @@ from aiops_kg.policy_gate import ALLOW
 from .capture import arm_plan, manifest_grace_seconds, raw_capture_of, read_decision_inputs, read_label_inputs
 from .common import iso
 from .conditions import CONDITIONS as ADAPTER_CONDITIONS
-from .engine2 import RecheckContext, run_request
+from .engine2 import RecheckContext, pose, run_request
 from .labels import GT2A, GT2B, U, UNSAFE, Labeller
 from .mapping2 import ClampLog
 from .pipeline import build_capture
-from .replays import BASE, delayed_poller, first_tick_receipt, poller_context, verdict_agreement
+from .replays import BASE, at_recheck_instants, delayed_poller, first_tick_receipt, poller_context, verdict_agreement
 
 SWEEP_F = (10.0, 30.0, 60.0, 120.0, 600.0)
 SWEEP_N = (0.0, 10.0, 30.0, 60.0, 600.0)
@@ -316,6 +331,132 @@ def sweep_pass(converted, plan_path, out_path, *, raw=None, progress=None) -> di
             note("audit %d s" % latency, started)
         doc["audit"] = audit
     doc["seconds"] = timing
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
+    return doc
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# A log of each decision's inputs against re-evaluation
+# ---------------------------------------------------------------------------------------------------------------
+def log_coverage(base: list, other: list, union: frozenset) -> OrderedDict:
+    """``base`` and ``other``: (row, input records) per decision, in the same order. Counts over the posed decisions:
+    whose disposition differs, and which the decision's own log entry, or the union of all entries, covers."""
+    out = OrderedDict((k, 0) for k in ("posed", "own_log", "all_logs", "outcome_changed", "changed_own_log",
+                                       "changed_all_logs"))
+    for (b, logged), (r, needed) in zip(base, other):
+        if not b.get("posed"):
+            continue
+        own, every = needed <= logged, needed <= union
+        out["posed"] += 1
+        out["own_log"] += own
+        out["all_logs"] += every
+        if r.get("disposition") != b.get("disposition"):
+            out["outcome_changed"] += 1
+            out["changed_own_log"] += own
+            out["changed_all_logs"] += every
+    return out
+
+
+def decision_log_pass(converted, plan_path, out_path, *, raw=None, progress=None) -> dict:
+    """See the module docstring (``decision_log_pass``)."""
+    inputs = read_decision_inputs(converted, raw=raw)
+    plan_doc = json.loads(Path(plan_path).read_text(encoding="utf-8"))
+    capture = build_capture(inputs, plan_doc, conditions=list(BASE))
+    if capture.plan.arm != "G":
+        raise ValueError("arm-G captures only")
+    Tp = ADAPTER_CONDITIONS["T_p"]
+    timing = OrderedDict()
+    started = time.perf_counter()
+    ctx, k1_index = poller_context(capture, inputs)
+    rctx = RecheckContext(capture, inputs.recheck_ticks, ClampLog(), None)
+    ctx.input_log = {}
+
+    def logged(run):
+        ctx.trace = []
+        row = run()
+        keys, ctx.trace = ctx.trace, None
+        needed = set()
+        for key in keys:
+            needed |= ctx.input_log.get(key, frozenset())
+        return row, frozenset(needed)
+
+    reqs = list(requests(capture))
+
+    def decide(cond):
+        return [logged(lambda q=q: run_request(cond, ctx, capture, "B", q[2], q[3], q[0], q[1], None,
+                                               k1_index=k1_index)) for q in reqs]
+    base = decide(Tp)
+    union = frozenset().union(*(needed for _, needed in base))
+    sizes = sorted(len(needed) for row, needed in base if row.get("posed"))
+    questions = OrderedDict()
+    for name, F, N in settings():
+        if (F, N) == (30.0, 30.0):
+            continue
+        questions[name] = log_coverage(base, decide(dataclasses.replace(Tp, name="T_p[%s]" % name, F=F, N=N)),
+                                       union)
+    at_r = []
+    for q, (tp, _) in zip(reqs, base):
+        if not tp.get("posed"):
+            at_r.append((tp, frozenset()))
+            continue
+        act = pose(capture, "B", q[2], q[3], q[0])[2]
+        at_r.append(logged(lambda tp=tp, act=act: at_recheck_instants(Tp, ctx, rctx, capture, act, tp)))
+    questions["at the recheck's instants"] = log_coverage(base, at_r, union)
+    m = ctx.model
+    store_records = len(m.availability)
+    ctx.close()
+    rctx.close()
+    timing["decision log"] = round(time.perf_counter() - started, 1)
+    if progress:
+        progress("%s decision log %.1f s" % (capture.capture_id, timing["decision log"]))
+    doc = OrderedDict([
+        ("capture", capture.capture_id), ("arm", capture.plan.arm), ("scenario", capture.plan.scenario),
+        ("decisions", len(reqs)), ("posed", len(sizes)),
+        ("log", OrderedDict([("records_per_decision", OrderedDict([
+                                 ("median", sizes[len(sizes) // 2] if sizes else 0),
+                                 ("max", sizes[-1] if sizes else 0)])),
+                             ("record_references", sum(sizes)), ("distinct_records", len(union))])),
+        ("store", OrderedDict([("records", store_records), ("versions", len(m.observations))])),
+        ("questions", questions), ("seconds", timing)])
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
+    return doc
+
+
+
+ACT_LAGS = (0.0, 0.1, 0.5, 1.0)
+
+
+def check_to_act_pass(converted, plan_path, out_path, *, raw=None, progress=None) -> dict:
+    """See the module docstring (``check_to_act_pass``)."""
+    inputs = read_decision_inputs(converted, raw=raw)
+    plan_doc = json.loads(Path(plan_path).read_text(encoding="utf-8"))
+    capture = build_capture(inputs, plan_doc, conditions=list(BASE))
+    if capture.plan.arm != "G":
+        raise ValueError("arm-G captures only")
+    raw_dir = Path(raw).resolve() if raw else raw_capture_of(Path(converted).resolve())
+    labeller = Labeller.build(capture, inputs, read_label_inputs(Path(converted).resolve(), raw_dir),
+                              manifest_grace_seconds(inputs.configuration))
+    started = time.perf_counter()
+    rctx = RecheckContext(capture, inputs.recheck_ticks, ClampLog(), None)
+    rows = _rows(ADAPTER_CONDITIONS["R"], rctx, capture, "B")
+    rctx.close()
+    counts = OrderedDict(("%g s" % lag, Counter()) for lag in ACT_LAGS)
+    for row in rows:
+        if not row.get("posed") or row.get("disposition") != ALLOW or row.get("dispatch_us") is None:
+            continue
+        for lag in ACT_LAGS:
+            label, _, _ = labeller.label_b(row["dispatch_us"] + int(round(lag * 1e6)), row["target_uid"])
+            kind = "invalid" if label in UNSAFE["B"] else "uncertain" if label == U else "valid"
+            counts["%g s" % lag][kind] += 1
+    seconds = round(time.perf_counter() - started, 1)
+    if progress:
+        progress("%s check to act %.1f s" % (capture.capture_id, seconds))
+    doc = OrderedDict([("capture", capture.capture_id), ("scenario", capture.plan.scenario),
+                       ("executions_by_lag", OrderedDict((k, OrderedDict((x, v.get(x, 0)) for x in (
+                           "invalid", "uncertain", "valid"))) for k, v in counts.items())),
+                       ("seconds", {"check to act": seconds})])
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     Path(out_path).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
     return doc

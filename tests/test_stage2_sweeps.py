@@ -103,3 +103,41 @@ def test_lagged_view_executes_the_gates_allows_later(fast):
     lag, tp = cov["T_p+lag"], cov["T_p"]
     assert lag["posed"] == tp["posed"] and lag["declined"] == tp["declined"] and lag["expired"] == tp["expired"]
     assert lag["executions"] + (lag["censored"] - tp["censored"]) == tp["executions"]
+
+
+def test_input_log_does_not_change_a_decision(fast):
+    """The decision-log hook (``ObserverContext.input_log``/``trace``) only records; every row is unchanged."""
+    inputs = read_decision_inputs(fast["converted"])
+    plan_doc = json.loads(Path(fast["plan"]).read_text(encoding="utf-8"))
+    capture = P.build_capture(inputs, plan_doc, conditions=list(RV.BASE))
+    tp = C.CONDITIONS["T_p"]
+    plain, k1 = RV.poller_context(capture, inputs)
+    logged, k1b = RV.poller_context(capture, inputs)
+    logged.input_log, logged.trace = {}, []
+    a = SW._rows(tp, plain, capture, "B", k1_index=k1)
+    b = SW._rows(tp, logged, capture, "B", k1_index=k1b)
+    assert a == b
+    assert logged.input_log and len(logged.trace) >= len(logged.input_log)
+    plain.close()
+    logged.close()
+
+
+def test_decision_log_counts_are_consistent(fast, tmp_path):
+    doc = SW.decision_log_pass(fast["converted"], fast["plan"], tmp_path / "FX-FAST.json")
+    assert doc["posed"] == fast["doc"]["coverage"]["T_p"]["posed"]
+    assert set(doc["questions"]) == {name for name, F, N in SW.settings() if (F, N) != (30.0, 30.0)} | {
+        "at the recheck's instants"}
+    for name, q in doc["questions"].items():
+        assert q["posed"] == doc["posed"], name
+        assert q["own_log"] <= q["all_logs"] <= q["posed"], name
+        assert q["changed_own_log"] <= q["changed_all_logs"] <= q["outcome_changed"] <= q["posed"], name
+    assert 0 < doc["log"]["distinct_records"] <= doc["store"]["records"]
+
+
+def test_check_to_act_at_zero_lag_is_the_recheck_itself(fast, tmp_path):
+    doc = SW.check_to_act_pass(fast["converted"], fast["plan"], tmp_path / "FX-FAST.json")
+    r = fast["doc"]["coverage"]["R"]
+    zero = doc["executions_by_lag"]["0 s"]
+    assert (zero["invalid"], zero["uncertain"], zero["valid"]) == (r["invalid"], r["uncertain"], r["valid"])
+    for lag, v in doc["executions_by_lag"].items():
+        assert sum(v.values()) == r["executions"], lag

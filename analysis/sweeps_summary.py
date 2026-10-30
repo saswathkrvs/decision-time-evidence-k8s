@@ -1,8 +1,10 @@
-"""Totals of the coverage, parameter-sweep and receipt-time-audit replays, and of the diagnosis robustness test.
+"""Totals of the coverage, parameter-sweep and receipt-time-audit replays, the decision log, the check-to-act gap and
+the diagnosis robustness test.
 
     python -m analysis.sweeps_summary      # writes results/stage2/analyses/sweeps_summary.json
 
-Reads results/stage2/analyses/sweeps/<capture>.json (experiments/governance-stage2/run_replays.py --sweeps) and
+Reads results/stage2/analyses/sweeps/<capture>.json (experiments/governance-stage2/run_replays.py --sweeps),
+decision_log/<capture>.json (--decision-log), check_to_act/<capture>.json (--check-to-act) and
 results/stage2/analyses/diagnosis_robustness.json (experiments/diagnosis-control-v1/run_diagnosis_stress.py
 --robustness). Sums over the included captures (results/stage2/captures.json); every count keeps the number of
 captures it covers. ``store``: the poller store's versions and keys per arm-G capture, and the wall time of one
@@ -205,6 +207,38 @@ def compute(results=ANALYSES) -> OrderedDict:
                         entry["top1_draws"] += row["top1"]
             r_out[stage] = table
         out["diagnosis_robustness"] = r_out
+    # a log of each decision's inputs (arm G)
+    if all((results / "decision_log" / (c + ".json")).exists() for c in G):
+        logs = {c: json.loads((results / "decision_log" / (c + ".json")).read_text(encoding="utf-8")) for c in G}
+        questions = OrderedDict()
+        for name in logs[G[0]]["questions"]:
+            total = Counter()
+            for c in G:
+                total.update(logs[c]["questions"][name])
+            questions[name] = OrderedDict((k, total[k]) for k in logs[G[0]]["questions"][name])
+        per_decision = [logs[c]["log"]["records_per_decision"]["median"] for c in G]
+        share = [logs[c]["log"]["distinct_records"] / logs[c]["store"]["records"] for c in G]
+        out["decision_log"] = OrderedDict([
+            ("captures", len(G)), ("posed", sum(logs[c]["posed"] for c in G)),
+            ("records_per_decision_median", {"median": statistics.median(per_decision), "min": min(per_decision),
+                                             "max": max(per_decision)}),
+            ("record_references", sum(logs[c]["log"]["record_references"] for c in G)),
+            ("distinct_records", sum(logs[c]["log"]["distinct_records"] for c in G)),
+            ("store_records", sum(logs[c]["store"]["records"] for c in G)),
+            ("store_versions", sum(logs[c]["store"]["versions"] for c in G)),
+            ("distinct_records_share_of_store_records", {"median": round(statistics.median(share), 3),
+                                                         "min": round(min(share), 3), "max": round(max(share), 3)}),
+            ("questions", questions)])
+    # the recheck's executions labelled after a read-to-action gap (arm G)
+    if all((results / "check_to_act" / (c + ".json")).exists() for c in G):
+        acts = {c: json.loads((results / "check_to_act" / (c + ".json")).read_text(encoding="utf-8")) for c in G}
+        lags = OrderedDict()
+        for lag in acts[G[0]]["executions_by_lag"]:
+            total = Counter()
+            for c in G:
+                total.update(acts[c]["executions_by_lag"][lag])
+            lags[lag] = OrderedDict((k, total[k]) for k in ("invalid", "uncertain", "valid"))
+        out["check_to_act"] = OrderedDict([("captures", len(G)), ("executions_by_lag", lags)])
     return out
 
 

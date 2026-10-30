@@ -1,0 +1,29 @@
+{
+ "capture": "G3-001",
+ "scenario": "G3",
+ "executions_by_lag": {
+  "0 s": {
+   "invalid": 0,
+   "uncertain": 6,
+   "valid": 1344
+  },
+  "0.1 s": {
+   "invalid": 0,
+   "uncertain": 6,
+   "valid": 1344
+  },
+  "0.5 s": {
+   "invalid": 0,
+   "uncertain": 6,
+   "valid": 1344
+  },
+  "1 s": {
+   "invalid": 0,
+   "uncertain": 12,
+   "valid": 1338
+  }
+ },
+ "seconds": {
+  "check to act": 0.8
+ }
+}

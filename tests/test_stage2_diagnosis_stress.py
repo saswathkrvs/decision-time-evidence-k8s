@@ -147,3 +147,26 @@ def test_robustness_variants_on_the_fixture(f02):
             assert r["draws"] == len(S.SEEDS)
             if r["policy"] != "hindsight":
                 assert r["top1"] == r["draws"] * complete[(r["delta_s"], r["policy"])], r
+
+
+def test_attribution_on_the_fixture(f02):
+    """The attribution analysis on D1-F02: span identity attributes exactly; with every API record 20 s late at the
+    +5 s cutoff (beyond the 12 s from the switch poll to the cutoff) no fault-window request reaches NEW, which is not
+    a candidate, while 10 s late every one does; the faulty Pod is the recommendation service's serving Pod."""
+    res = S.attribution(f02["capture"])
+    assert res["faulty_pod_is_the_recommendation_service_s_serving_pod"] is True
+
+    def one(stream, delta, policy):
+        out = [r for r in res["rows"] if (r["stream"], r["delta_s"], r["policy"]) == (stream, delta, policy)]
+        assert len(out) == 1
+        return out[0]
+    for delta in (5, 30):
+        exact = one("complete", delta, "hindsight")["faulty_pod"]
+        for window, (correct, served, attributed) in exact.items():
+            assert correct == served == attributed, window
+    for policy in SNAPSHOT_POLICIES:
+        late = one("delayed_api_20s", 5, policy)
+        assert late["faulty_pod"]["anomalous"][0] == 0 and not late["candidate"] and not late["top1"], policy
+        timely = one("delayed_api_10s", 5, policy)
+        correct, served, attributed = timely["faulty_pod"]["anomalous"]
+        assert served > 0 and correct == served == attributed and timely["top1"], policy

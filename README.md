@@ -20,8 +20,8 @@ remediation gate; proposed actions are counterfactual and never executed. The ra
 | `experiments/policy-gate-live-v1/` | development gate analysis: label-free, over nine real rollouts |
 | `experiments/governance-pilot-v0/` | development matched rollback pilot |
 | `experiments/policy-gate-v1/`, `experiments/replay-policy-v1/`, `experiments/attribution-lag-v1/` | the analyses of the 22 Sep 2026 rollout that the development stage builds on; the outputs of the first two are kept in their folders (the gate analysis reads them) |
-| `experiments/governance-stage2/` | follow-up governance adapter: decision logs, outcome labels, design check and comparisons, per capture; further replays of the arm-G restart decisions (`govstage2/replays.py`, `run_replays.py`): the views at the recheck's instants and with its lag, the valid-time and end-of-capture audit replays, the thinned and delayed poller, and the check of the labels against traffic and probes; decision coverage, the sweep of the freshness limit and the recent-change window, and the receipt-time audit replay (`govstage2/sweeps.py`) |
-| `experiments/diagnosis-control-v1/` | follow-up diagnosis control (arm D), the diagnosis stress test and its robustness test (onset error, sampled traces, spans without Pod identity; `run_diagnosis_stress.py`) |
+| `experiments/governance-stage2/` | follow-up governance adapter: decision logs, outcome labels, design check and comparisons, per capture; further replays of the arm-G restart decisions (`govstage2/replays.py`, `run_replays.py`): the views at the recheck's instants and with its lag, the valid-time and end-of-capture audit replays, the thinned and delayed poller, and the check of the labels against traffic and probes; decision coverage, the sweep of the freshness limit and the recent-change window, the receipt-time audit replay, the log of each decision's inputs and the check-to-act labels (`govstage2/sweeps.py`) |
+| `experiments/diagnosis-control-v1/` | follow-up diagnosis control (arm D), the diagnosis stress test, its attribution measures (recall and precision of the faulty Pod's requests) and its robustness test (onset error, sampled traces, spans without Pod identity; `run_diagnosis_stress.py`) |
 | `analysis/` | every table and number of the paper and its data figures (Figures 3-6), recomputed from `results/` (`paper_numbers.py`, `tables.py`, `figures.py`, `stats.py`), the summaries of the replay analyses (`capture_stats.py`, `replay_summary.py`, `by_delay.py`, `stress_summary.py`, `sweeps_summary.py`), and a comparison of rerun outputs with `results/` (`compare_outputs.py`) |
 | `results/` | the per-capture outputs (below) |
 | `tests/` | unit and end-to-end tests on constructed fixtures |
@@ -37,6 +37,8 @@ The first recomputes every number of the paper (apart from two machine-dependent
 compares each with the published value; it needs only the standard library. It includes the check of
 `analysis.tables`, which covers the captures, the observers, the principal comparisons and the diagnosis
 (`python -m analysis.tables --check` runs it alone).
+
+The paper refers to the release tagged `v1.0`: `git checkout v1.0` gives exactly the code and records it reports.
 
 ## The captures
 
@@ -98,15 +100,19 @@ python experiments/diagnosis-control-v1/run_diagnosis_stress.py --captures-root 
     --dev-captures-root <development>                                                    # diagnosis_stress.json
 python -m analysis.stress_summary                                                        # diagnosis_stress_summary.json
 python experiments/governance-stage2/run_replays.py --captures-root <follow-up> --sweeps     # sweeps/<capture>.json
+python experiments/governance-stage2/run_replays.py --captures-root <follow-up> --decision-log  # decision_log/<capture>.json
+python experiments/governance-stage2/run_replays.py --captures-root <follow-up> --check-to-act  # check_to_act/<capture>.json
 python experiments/diagnosis-control-v1/run_diagnosis_stress.py --captures-root <follow-up> \
     --dev-captures-root <development> --robustness                                       # diagnosis_robustness.json
+python experiments/diagnosis-control-v1/run_diagnosis_stress.py --captures-root <follow-up> \
+    --dev-captures-root <development> --attribution                                      # diagnosis_attribution.json
 python -m analysis.sweeps_summary                                                        # sweeps_summary.json
 ```
 
-The three `run_replays.py` passes skip a capture whose output exists, so an interrupted run continues where it
+The `run_replays.py` passes skip a capture whose output exists, so an interrupted run continues where it
 stopped; each checks that its replay of the published views reproduces the adapter's counts. One core takes about
 1 to 3 minutes per capture for the replays, 1 to 2 minutes for the latency pass, under a minute for the label check
-and about 2 minutes for the stress test on 13 captures; the summaries take about a second each. The `--sweeps` pass (arm-G and arm-D captures) takes about 6 to 10 minutes per arm-G capture and under a minute per arm-D capture, the robustness test about 4 minutes in all.
+and about 2 minutes for the stress test on 13 captures; the summaries take about a second each. The `--sweeps` pass (arm-G and arm-D captures) takes about 3 to 7 minutes per arm-G capture and under a minute per arm-D capture, the `--decision-log` pass about 2 to 5 minutes and the `--check-to-act` pass a few seconds per arm-G capture, the robustness test about 4 minutes and the attribution analysis under a minute in all.
 
 **Development stage.**
 
@@ -148,7 +154,10 @@ the few that read the 22 Sep rollout or a converted capture are skipped.
 | `results/stage2/analyses/replays_summary.json`, `by_delay.json` | the sums and paired comparisons of the replays; every view's posed decisions, executions, invalid executions and missed opportunities by dispatch delay and cutoff |
 | `results/stage2/analyses/diagnosis_stress.json`, `diagnosis_stress_summary.json` | the diagnosis stress test: every (capture, family, delay, cutoff, policy) cell and each capture's Pod-list intervals, and their summary |
 | `results/stage2/analyses/sweeps/<ID>.json` | per arm-G capture: every posed restart decision of the two-clock gate, approval reuse, the recheck and the two-clock gate with the recheck's lag by outcome (invalid, valid or uncertain execution; approval requested, denied, expired, censored), the decisions both the gate and the recheck could evaluate, the state of each invalid restart's target, and the gate's store size; per arm-G and arm-D capture: the two-clock gate with the freshness limit and the recent-change window varied one at a time (restarts and rollbacks; rollbacks in arm D also with delayed and withheld change receipts); per arm-G capture: the receipt-time audit replay at three latencies |
-| `results/stage2/analyses/diagnosis_robustness.json`, `sweeps_summary.json` | the diagnosis robustness test per capture (declared onset moved, traces sampled, spans without Pod identity; ten seeded draws each), and the totals of the sweeps and of the robustness test |
+| `results/stage2/analyses/decision_log/<ID>.json` | per arm-G capture: the size of a log that keeps, with every restart decision of the two-clock gate, the input records behind its evaluations, and for every other freshness limit and recent-change window of the sweep, and for decisions at the recheck's instants, how many decisions change and how many of those the decision's own log entry, or the union of all entries, could re-evaluate |
+| `results/stage2/analyses/check_to_act/<ID>.json` | per arm-G capture: the recheck's executions labelled as if the deletion took effect 0, 0.1, 0.5 or 1 s after its response |
+| `results/stage2/analyses/diagnosis_attribution.json` | per diagnosis capture, policy and cutoff: the faulty Pod's requests attributed to it (recall) and the requests attributed to it that it served (precision), before and after the onset, under every record delay of the stress test |
+| `results/stage2/analyses/diagnosis_robustness.json`, `sweeps_summary.json` | the diagnosis robustness test per capture (declared onset moved, traces sampled, spans without Pod identity; ten seeded draws each), and the totals of the sweeps, the decision log, the check-to-act labels and the robustness test |
 
 The outputs count the paper's invalid executions (counterfactual executions whose preconditions do not hold) as
 `unsafe`: `unsafe_executions` in the adapter's cells, and `U` in the tallies of the replay summaries, next to `M`

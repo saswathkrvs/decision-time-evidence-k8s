@@ -6,8 +6,9 @@
 Runs the check of :mod:`analysis.tables` (captures, observers, principal comparisons, development diagnosis) and
 reads the replay analyses in ``results/stage2/analyses/`` (written by the commands in the README):
 ``per_capture_stats.json``, ``replays_summary.json``, ``by_delay.json``, ``diagnosis_stress_summary.json`` and the
-per-capture ``replays/`` and ``surrogate/`` files, ``diagnosis_stress.json``, ``sweeps_summary.json`` (coverage,
-parameter sweep, receipt-time audit, store size, diagnosis robustness), plus the governance adapter's outputs
+per-capture ``replays/`` and ``surrogate/`` files, ``diagnosis_stress.json``, ``diagnosis_attribution.json``,
+``sweeps_summary.json`` (coverage, parameter sweep, receipt-time audit, store size, decision log, check-to-act labels,
+diagnosis robustness), plus the governance adapter's outputs
 (``results/stage2/adapter/``: cells, labels and rollout timing), the diagnosis control's outputs
 (``results/stage2/diagnosis/``) and the capture summaries. Standard library only.
 """
@@ -422,6 +423,57 @@ def numbers(results: Path) -> OrderedDict:
         ev["first_verdict_differs"], lr["T_p[late 5]"]["first_verdict_differs"],
         lr["T_p[late 30]"]["first_verdict_differs"], au["final_store_verdict"]["first_verdict_differs"])]
     n.update(followup_numbers(a, posed))
+    n.update(attribution_numbers(a))
+    return n
+
+
+ATTRIBUTION_POLICIES = ("hindsight", "latest_state", "temporal_join", "bitemporal_abstain_F600", "bitemporal_abstain_F30")
+
+
+def attribution_numbers(a: Path) -> OrderedDict:
+    """Diagnosis by attribution (results/stage2/analyses/diagnosis_attribution.json): the faulty Pod's requests per
+    window, [attributed to it and served by it, served by it, attributed to it], summed over captures."""
+    n = OrderedDict()
+    path = a / "diagnosis_attribution.json"
+    if not path.exists():
+        return n
+    doc = _load(path)
+    caps_all = doc["per_capture"] + doc["development_per_capture"]
+
+    def row(cap, stream, delta, policy):
+        return next(r for r in cap["rows"] if r["stream"] == stream and r["delta_s"] == delta and r["policy"] == policy)
+
+    def summed(caps, delta, policy, window):
+        tot = [0, 0, 0]
+        for cap in caps:
+            tot = [t + v for t, v in zip(tot, row(cap, "complete", delta, policy)["faulty_pod"][window])]
+        return tot
+    n["diagnosis: captures whose faulty Pod is the recommendation service's serving Pod / captures"] = [
+        sum(1 for c in caps_all if c["faulty_pod_is_the_recommendation_service_s_serving_pod"]), len(caps_all)]
+    for stage, caps in (("follow-up", doc["per_capture"]), ("development", doc["development_per_capture"])):
+        for delta in (5, 30):
+            n["attribution, %s, captured records, %d s cutoff: faulty Pod's [attributed and served, served, attributed] "
+              "before and after the onset (span identity, latest state, temporal join, two-clock 600 s, 30 s)"
+              % (stage, delta)] = [[summed(caps, delta, p, w) for w in ("normal", "anomalous")]
+                                   for p in ATTRIBUTION_POLICIES]
+    snap = ("latest_state", "temporal_join", "bitemporal_abstain_F600")
+    delayed = [r for c in doc["per_capture"] for r in c["rows"]
+               if r["stream"].startswith("delayed_api_") and r["policy"] in snap]
+    beyond = [r for r in delayed if int(r["stream"].split("_")[-1][:-1]) >= r["cutoff_minus_switch_s"]]
+    within = [r for r in delayed if int(r["stream"].split("_")[-1][:-1]) < r["cutoff_minus_switch_s"]]
+    n["attribution, follow-up, every API record delayed (5 and 30 s cutoffs; latest state, temporal join, two-clock "
+      "600 s): cells delayed at least the switch-to-cutoff time, of these with no fault-window request attributed to "
+      "the faulty Pod and the Pod not a candidate; other cells, of these with every fault-window request attributed to "
+      "it, none wrongly, and the Pod ranked first"] = [
+        len(beyond), sum(1 for r in beyond if r["faulty_pod"]["anomalous"][0] == 0 and not r["candidate"]),
+        len(within), sum(1 for r in within if r["top1"]
+                         and r["faulty_pod"]["anomalous"][0] == r["faulty_pod"]["anomalous"][1]
+                         == r["faulty_pod"]["anomalous"][2])]
+    i2 = next(c for c in doc["development_per_capture"] if c["capture"] == "I2-002")
+    n["attribution, development capture I2-002, 5 s cutoff, before the onset (span identity, latest state, temporal "
+      "join); ranked first"] = [[row(i2, "complete", 5, p)["faulty_pod"]["normal"] for p in (
+        "hindsight", "latest_state", "temporal_join")], [row(i2, "complete", 5, p)["top1"] for p in (
+        "hindsight", "latest_state", "temporal_join")]]
     return n
 
 
@@ -515,6 +567,20 @@ def followup_numbers(a: Path, posed: int) -> OrderedDict:
     n["poller store per arm-G capture: versions, keys (median); versions per key (range)"] = [
         st["observations"]["median"], st["keys"]["median"],
         [st["versions_per_key"]["min"], st["versions_per_key"]["max"]]]
+    dl = sw["decision_log"]
+    n["decision log: input records per decision (median of capture medians; range); references; distinct records; "
+      "store records, versions"] = [
+        dl["records_per_decision_median"]["median"],
+        [dl["records_per_decision_median"]["min"], dl["records_per_decision_median"]["max"]],
+        dl["record_references"], dl["distinct_records"], dl["store_records"], dl["store_versions"]]
+    n["decision log: distinct records per store records (%, range over captures)"] = [
+        round(100 * dl["distinct_records_share_of_store_records"]["min"], 1),
+        round(100 * dl["distinct_records_share_of_store_records"]["max"], 1)]
+    n["Table 8: decisions changed; re-evaluable from their own entry, from all entries (per re-evaluation)"] = \
+        OrderedDict((q, [v["outcome_changed"], v["changed_own_log"], v["changed_all_logs"]])
+                    for q, v in dl["questions"].items())
+    n["check to act: recheck executions invalid, uncertain, valid per lag (0, 0.1, 0.5, 1 s)"] = OrderedDict(
+        (lag, [v["invalid"], v["uncertain"], v["valid"]]) for lag, v in sw["check_to_act"]["executions_by_lag"].items())
     rob = sw.get("diagnosis_robustness", {}).get("follow_up", {})
 
     def draws(variant, delta, policies):
@@ -718,6 +784,17 @@ EXPECTED = OrderedDict([
     ("receipt-time audit percentages (0, 5, 30 s)", [0.4, 4.1, 33.4]),
     ("poller store per arm-G capture: versions, keys (median); versions per key (range)",
      [5014.5, 49.0, [102.2, 106.5]]),
+    ("decision log: input records per decision (median of capture medians; range); references; distinct records; "
+     "store records, versions", [543.0, [471, 552], 15531080, 12083, 30222, 79876]),
+    ("decision log: distinct records per store records (%, range over captures)", [33.4, 43.1]),
+    ("Table 8: decisions changed; re-evaluable from their own entry, from all entries (per re-evaluation)",
+     OrderedDict([("F=10,N=30", [8598, 0, 8598]), ("F=60,N=30", [8598, 0, 8598]), ("F=120,N=30", [17196, 0, 14534]),
+                  ("F=600,N=30", [17196, 0, 13038]), ("F=30,N=0", [2288, 2288, 2288]),
+                  ("F=30,N=10", [2008, 2008, 2008]), ("F=30,N=60", [5170, 5170, 5170]),
+                  ("F=30,N=600", [10478, 10478, 10478]), ("at the recheck's instants", [15662, 17, 11876])])),
+    ("check to act: recheck executions invalid, uncertain, valid per lag (0, 0.1, 0.5, 1 s)",
+     OrderedDict([("0 s", [0, 242, 19985]), ("0.1 s", [0, 209, 20018]), ("0.5 s", [0, 181, 20046]),
+                  ("1 s", [0, 187, 20040])])),
     ("robustness: captures first with the onset 10 s early (temporal join, two-clock, span identity; +5, +30 s)",
      [[5, 5, 5], [6, 6, 6]]),
     ("robustness: every policy first in every capture for onset shifts of -5..+10 s", True),
@@ -754,6 +831,20 @@ EXPECTED = OrderedDict([
                  "R": {"U": 7}}}),
     ("deleted Pods: deletion request to first evidence of removal (s), recommendation, catalog (range)",
      [[21.2, 29.0], [1.0, 2.1]]),
+    ("diagnosis: captures whose faulty Pod is the recommendation service's serving Pod / captures",
+     [13, 13]),
+    ("attribution, follow-up, captured records, 5 s cutoff: faulty Pod's [attributed and served, served, attributed] before and after the onset (span identity, latest state, temporal join, two-clock 600 s, 30 s)",
+     [[[203, 203, 203], [72, 72, 72]], [[203, 203, 306], [72, 72, 72]], [[195, 203, 196], [72, 72, 72]], [[195, 203, 196], [72, 72, 72]], [[195, 203, 196], [72, 72, 72]]]),
+    ("attribution, follow-up, captured records, 30 s cutoff: faulty Pod's [attributed and served, served, attributed] before and after the onset (span identity, latest state, temporal join, two-clock 600 s, 30 s)",
+     [[[203, 203, 203], [290, 290, 290]], [[203, 203, 306], [290, 290, 290]], [[195, 203, 196], [290, 290, 290]], [[195, 203, 196], [290, 290, 290]], [[195, 203, 196], [290, 290, 290]]]),
+    ("attribution, development, captured records, 5 s cutoff: faulty Pod's [attributed and served, served, attributed] before and after the onset (span identity, latest state, temporal join, two-clock 600 s, 30 s)",
+     [[[117, 117, 117], [43, 43, 43]], [[117, 117, 183], [43, 43, 43]], [[87, 117, 87], [42, 43, 42]], [[87, 117, 87], [42, 43, 42]], [[87, 117, 87], [42, 43, 42]]]),
+    ("attribution, development, captured records, 30 s cutoff: faulty Pod's [attributed and served, served, attributed] before and after the onset (span identity, latest state, temporal join, two-clock 600 s, 30 s)",
+     [[[117, 117, 117], [173, 173, 173]], [[117, 117, 183], [173, 173, 173]], [[87, 117, 87], [172, 173, 172]], [[87, 117, 87], [172, 173, 172]], [[87, 117, 87], [172, 173, 172]]]),
+    ("attribution, follow-up, every API record delayed (5 and 30 s cutoffs; latest state, temporal join, two-clock 600 s): cells delayed at least the switch-to-cutoff time, of these with no fault-window request attributed to the faulty Pod and the Pod not a candidate; other cells, of these with every fault-window request attributed to it, none wrongly, and the Pod ranked first",
+     [144, 144, 240, 240]),
+    ("attribution, development capture I2-002, 5 s cutoff, before the onset (span identity, latest state, temporal join); ranked first",
+     [[[12, 12, 12], [12, 12, 38], [0, 12, 0]], [True, True, False]]),
 ])
 
 
