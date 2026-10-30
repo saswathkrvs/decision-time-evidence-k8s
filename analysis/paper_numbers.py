@@ -8,7 +8,8 @@ reads the replay analyses in ``results/stage2/analyses/`` (written by the comman
 ``per_capture_stats.json``, ``replays_summary.json``, ``by_delay.json``, ``diagnosis_stress_summary.json`` and the
 per-capture ``replays/`` and ``surrogate/`` files, ``diagnosis_stress.json``, ``diagnosis_attribution.json``,
 ``sweeps_summary.json`` (coverage, parameter sweep, receipt-time audit, store size, decision log, check-to-act labels,
-uncertain labels on the mutually evaluable decisions, diagnosis robustness), plus the governance adapter's outputs
+uncertain labels on the mutually evaluable decisions, diagnosis robustness), ``snapshots_summary.json`` (state
+histories kept as periodic snapshots), plus the governance adapter's outputs
 (``results/stage2/adapter/``: cells, labels and rollout timing), the diagnosis control's outputs
 (``results/stage2/diagnosis/``) and the capture summaries. Standard library only.
 """
@@ -424,6 +425,107 @@ def numbers(results: Path) -> OrderedDict:
         lr["T_p[late 30]"]["first_verdict_differs"], au["final_store_verdict"]["first_verdict_differs"])]
     n.update(followup_numbers(a, posed))
     n.update(attribution_numbers(a))
+    n.update(snapshot_numbers(a))
+    return n
+
+
+def snapshot_numbers(a: Path) -> OrderedDict:
+    """State histories kept as periodic snapshots of the poller's lists (results/stage2/analyses/snapshots_summary.json):
+    k = 1, 6, 12, 24 polls per kept list; S read with one clock, T with the objects' own timestamps, W the watch."""
+    path = a / "snapshots_summary.json"
+    n = OrderedDict()
+    if not path.exists():
+        return n
+    sn = _load(path)
+    K = ("1", "6", "12", "24")
+    short = ("starting", "not_ready", "terminating")
+    ep = sn["episodes"]
+    n["snapshots: realised list intervals (s; median over captures)"] = [
+        round(sn["intervals"][k]["median_s"], 2 if k == "1" else 1) for k in K]
+    n["snapshots: Pods; episodes starting, ready, not ready, terminating; short episodes"] = [
+        sn["pods"], [ep["by_type"][t] for t in ("starting", "ready", "not_ready", "terminating")],
+        sum(ep["by_type"][t] for t in short)]
+    n["snapshots: short episodes recorded, one clock and objects' timestamps (per interval); watch"] = [
+        [round(sum(ep["recorded"]["S"][k][t] for t in short), 1) for k in K],
+        [round(sum(ep["recorded"]["T"][k][t] for t in short), 1) for k in K],
+        sum(ep["recorded"]["W"][t] for t in short)]
+    n["snapshots: start-ups, restarts, terminations recorded (one clock; objects' timestamps; per interval)"] = \
+        OrderedDict((h, OrderedDict((k, [round(ep["recorded"][h][k][t], 1) for t in short]) for k in K))
+                    for h in ("S", "T"))
+    exp = ep["uniform_phase_expectation_closed"]
+    n["snapshots: short episodes expected by min(1, d / interval) at the realised 15, 30, 60 s and at 300 s"] = [
+        round(sum(exp[k][t] for t in short), 1) for k in ("k=6", "k=12", "k=24", "300 s")]
+    span = ep["replacement_span_s"]
+    n["snapshots: replacement from the first new Pod's creation to the last old Pod's removal (s; min, median, "
+      "max)"] = [round(span["min"], 1), round(span["median"], 1), round(span["max"], 1)]
+    n["snapshots: recorded starts, one clock: median delay (s) per interval; objects' timestamps: placed within 1 s "
+      "(%) per interval"] = [
+        [round(ep["start_lag_s"]["S"][k]["median_s"], 1) for k in K],
+        [round(100 * ep["start_lag_s"]["T"][k]["share_within_1s"], 1) for k in K]]
+    st = sn["status"]
+
+    def wrong(h, k):
+        v = st[h][k]
+        return round(100.0 * v["wrong"] / (v["seconds"] - v["unknown"]), 2)
+    n["snapshots: wrong Pod status, % of answered Pod-seconds (one clock; objects' timestamps; per interval); "
+      "Pod-seconds; watch wrong"] = [[wrong("S", k) for k in K], [wrong("T", k) for k in K],
+                                     int(round(st["S"]["1"]["seconds"])), st["W"]["wrong"]]
+    obj = sn["object_states"]
+    total = sum(obj["watch"].values())
+    n["snapshots: object states the watch delivered; shown by the kept lists (%, per interval)"] = [
+        total, [round(100.0 * sum(obj["shown_by_kept_lists"][k].values()) / total, 1) for k in K]]
+    by = sn["decisions"]["by_interval"]
+    n["snapshots: gate F = 30 s per interval: executions (mean over phases), invalid (mean; range), missed (mean)"] = \
+        OrderedDict((k, [round(by[k]["T F30"]["executions"]["mean"], 1), round(by[k]["T F30"]["invalid"]["mean"], 1),
+                         [by[k]["T F30"]["invalid"]["min"], by[k]["T F30"]["invalid"]["max"]],
+                         round(by[k]["T F30"]["missed"]["mean"], 1)]) for k in K)
+    n["snapshots: gate F = 600 s invalid per interval (mean over phases)"] = [
+        round(by[k]["T F600"]["invalid"]["mean"], 1) for k in K]
+    ci = sn["intervals_of_differences"]
+
+    def pi(v):
+        return [round(v["point"], 1), [round(x, 1) for x in v["interval_95"]]]
+    n["snapshots: gate F = 30 s minus captured, invalid and executions (point, 95%; 15, 30, 60 s)"] = OrderedDict(
+        (k, [pi(ci["gate invalid on T (F = 30 s) minus captured, k=%s" % k]),
+             pi(ci["gate executions on T (F = 30 s) minus captured, k=%s" % k])]) for k in K[1:])
+
+    def share(v):
+        return [round(100 * v["point"], 2), [round(100 * x, 2) for x in v["interval_95"]]]
+    n["snapshots: audit, first verdicts misreported (%; point, 95%) from one clock (2.45, 15, 30, 60 s) and from the "
+      "objects' timestamps (15, 30, 60 s)"] = OrderedDict([
+        ("S", [share(ci["audit from S: first verdicts reported differently (share), k=%s" % k]) for k in K]),
+        ("T", [share(ci["audit from T: first verdicts reported differently (share), k=%s" % k]) for k in K[1:]])])
+    n["snapshots: short episodes recorded, objects' timestamps minus one clock (point, 95%; 15, 30, 60 s)"] = [
+        pi(ci["short episodes recorded, T - S, k=%s" % k]) for k in K[1:]]
+    n["snapshots: wrong Pod-seconds, one clock minus objects' timestamps (point, 95%; 15, 30, 60 s)"] = [
+        pi(ci["wrong Pod-seconds, S - T, k=%s" % k]) for k in K[1:]]
+    n["snapshots: gate F = 30 s, decisions declined for target identity (R1), recent change (R2), replica floor (R3) "
+      "(mean over phases; per interval)"] = OrderedDict(
+        (k, [round(by[k]["T F30 declined (mean over phases)"].get(r, 0), 1)
+             for r in ("DENY[R1]", "NEEDS_APPROVAL[R2]", "DENY[R3]")]) for k in K)
+    n["snapshots: executions at dispatch delays of 0 and 10 s, F = 30 s and 600 s (mean over phases; per interval)"] = \
+        OrderedDict((k, [round(by[k]["T F30 executions at dispatch delays of 0 and 10 s (mean over phases)"], 1),
+                         round(by[k]["T F600 executions at dispatch delays of 0 and 10 s (mean over phases)"], 1)])
+                    for k in K)
+    n["snapshots: lists every 60 s, invalid executions at the 10 s delay per phase, F = 30 s and 600 s"] = [
+        by["24"]["T F30 invalid at the 10 s dispatch delay (per phase)"],
+        by["24"]["T F600 invalid at the 10 s dispatch delay (per phase)"]]
+    n["snapshots: lists every 30 s, invalid executions at the 10 s delay per phase, F = 30 s and 600 s"] = [
+        by["12"]["T F30 invalid at the 10 s dispatch delay (per phase)"],
+        by["12"]["T F600 invalid at the 10 s dispatch delay (per phase)"]]
+    n["snapshots: missed opportunities, F = 30 s and 600 s (mean over phases; per interval)"] = [
+        [round(sum(by[k][v + " missed (per phase)"]) / len(by[k][v + " missed (per phase)"]), 1) for k in K]
+        for v in ("T F30", "T F600")]
+    dur = ep["closed_durations_s"]
+    n["snapshots: episode durations, median s (start-ups, not ready after a container restart, terminations)"] = [
+        int(round(dur[t]["median"])) for t in short]
+    n["snapshots: expected by min(1, d / interval), start-ups, restarts, terminations (realised 15, 30, 60 s)"] = [
+        [round(exp[k][t], 1) for t in short] for k in ("k=6", "k=12", "k=24")]
+    vol = sn["volume"]
+    n["snapshots: records per hour, lists (per interval); after merging duplicates (15, 60 s); watch events per "
+      "hour; hours"] = [[vol["poller"][k]["records_per_hour"] for k in K],
+                        [vol["poller"][k]["merged_records_per_hour"] for k in ("6", "24")],
+                        vol["watch"]["events_per_hour"], round(vol["hours"], 2)]
     return n
 
 
@@ -868,6 +970,61 @@ EXPECTED = OrderedDict([
      [144, 144, 240, 240]),
     ("attribution, development capture I2-002, 5 s cutoff, before the onset (span identity, latest state, temporal join); ranked first",
      [[[12, 12, 12], [12, 12, 38], [0, 12, 0]], [True, True, False]]),
+    ("snapshots: realised list intervals (s; median over captures)", [2.45, 15.0, 30.0, 60.1]),
+    ("snapshots: Pods; episodes starting, ready, not ready, terminating; short episodes", [90, [44, 53, 8, 45], 97]),
+    ("snapshots: short episodes recorded, one clock and objects' timestamps (per interval); watch",
+     [[89.0, 61.3, 40.7, 20.3], [94.0, 90.8, 78.9, 62.0], 97]),
+    ("snapshots: start-ups, restarts, terminations recorded (one clock; objects' timestamps; per interval)",
+     OrderedDict([("S", OrderedDict([("1", [42.0, 5.0, 42.0]), ("6", [19.7, 2.2, 39.5]), ("12", [9.8, 1.1, 29.8]),
+                                     ("24", [4.9, 0.5, 14.9])])),
+                  ("T", OrderedDict([("1", [44.0, 8.0, 42.0]), ("6", [43.3, 8.0, 39.5]), ("12", [41.2, 8.0, 29.8]),
+                                     ("24", [39.1, 8.0, 14.9])]))])),
+    ("snapshots: short episodes expected by min(1, d / interval) at the realised 15, 30, 60 s and at 300 s",
+     [62.1, 42.3, 21.1, 4.2]),
+    ("snapshots: replacement from the first new Pod's creation to the last old Pod's removal (s; min, median, max)",
+     [3.0, 44.4, 62.1]),
+    ("snapshots: recorded starts, one clock: median delay (s) per interval; objects' timestamps: placed within 1 s "
+     "(%) per interval", [[1.7, 6.7, 11.8, 19.8], [100.0, 99.2, 98.9, 99.4]]),
+    ("snapshots: wrong Pod status, % of answered Pod-seconds (one clock; objects' timestamps; per interval); "
+     "Pod-seconds; watch wrong", [[0.35, 4.25, 8.6, 15.52], [0.0, 0.04, 1.55, 3.82], 14377, 0]),
+    ("snapshots: object states the watch delivered; shown by the kept lists (%, per interval)",
+     [1151, [47.6, 36.3, 31.3, 28.0]]),
+    ("snapshots: gate F = 30 s per interval: executions (mean over phases), invalid (mean; range), missed (mean)",
+     OrderedDict([("1", [10478.0, 110.0, [110, 110], 115.0]), ("6", [9447.3, 110.0, [110, 110], 122.7]),
+                  ("12", [9055.0, 108.0, [92, 129], 118.3]), ("24", [4749.3, 39.3, [0, 103], 124.0])])),
+    ("snapshots: gate F = 600 s invalid per interval (mean over phases)", [1572.0, 1472.0, 1485.3, 1485.3]),
+    ("snapshots: gate F = 30 s minus captured, invalid and executions (point, 95%; 15, 30, 60 s)",
+     OrderedDict([("6", [[0, [0, 0]], [-1030.7, [-1138.0, -928.3]]]),
+                  ("12", [[-2, [-22, 19]], [-1423, [-1729.3, -1146.3]]]),
+                  ("24", [[-70.7, [-86.0, -55.7]], [-5728.7, [-6011.7, -5402]]])])),
+    ("snapshots: audit, first verdicts misreported (%; point, 95%) from one clock (2.45, 15, 30, 60 s) and from the "
+     "objects' timestamps (15, 30, 60 s)",
+     OrderedDict([("S", [[0.44, [0.28, 0.62]], [9.22, [8.76, 9.76]], [22.65, [21.83, 23.52]],
+                         [37.16, [36.47, 37.78]]]),
+                  ("T", [[7.26, [6.86, 7.64]], [19.63, [18.81, 20.64]], [36.51, [35.71, 37.19]]])])),
+    ("snapshots: short episodes recorded, objects' timestamps minus one clock (point, 95%; 15, 30, 60 s)",
+     [[29.5, [27.5, 31.3]], [38.2, [37.3, 39.2]], [41.6, [41.2, 42.1]]]),
+    ("snapshots: wrong Pod-seconds, one clock minus objects' timestamps (point, 95%; 15, 30, 60 s)",
+     [[592.5, [561.0, 620.0]], [960.8, [939.4, 981.4]], [1485.1, [1453.7, 1522.4]]]),
+    ("snapshots: records per hour, lists (per interval); after merging duplicates (15, 60 s); watch events per "
+     "hour; hours", [[18597, 3099, 1550, 775], [309, 241], 751, 1.34]),
+    ("snapshots: gate F = 30 s, decisions declined for target identity (R1), recent change (R2), replica floor (R3) "
+     "(mean over phases; per interval)",
+     OrderedDict([("1", [2882.0, 2288.0, 1548.0]), ("6", [2586.7, 2752.7, 2409.3]), ("12", [2635.3, 3823.3, 1682.3]),
+                  ("24", [3447.0, 7528.0, 1423.3])])),
+    ("snapshots: executions at dispatch delays of 0 and 10 s, F = 30 s and 600 s (mean over phases; per interval)",
+     OrderedDict([("1", [10478.0, 10478.0]), ("6", [9447.3, 9447.3]), ("12", [9055.0, 9035.7]),
+                  ("24", [4749.3, 5260.7])])),
+    ("snapshots: lists every 60 s, invalid executions at the 10 s delay per phase, F = 30 s and 600 s",
+     [[15, 103, 0], [110, 120, 110]]),
+    ("snapshots: lists every 30 s, invalid executions at the 10 s delay per phase, F = 30 s and 600 s",
+     [[129, 92, 103], [110, 110, 120]]),
+    ("snapshots: missed opportunities, F = 30 s and 600 s (mean over phases; per interval)",
+     [[115.0, 122.7, 118.3, 124.0], [115.0, 122.7, 118.3, 124.0]]),
+    ("snapshots: episode durations, median s (start-ups, not ready after a container restart, terminations)",
+     [7, 7, 22]),
+    ("snapshots: expected by min(1, d / interval), start-ups, restarts, terminations (realised 15, 30, 60 s)",
+     [[19.7, 2.8, 39.7], [9.8, 1.4, 31.1], [4.9, 0.7, 15.5]]),
 ])
 
 

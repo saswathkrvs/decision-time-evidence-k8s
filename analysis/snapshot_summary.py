@@ -15,7 +15,9 @@ Per interval (k polls per kept list; k = 1 is the captured stream) it sums over 
 * the watch's object states and how many the kept lists show;
 * the status answers per Pod-second (wrong, unknown);
 * the gate's restart decisions on T (F = 30 and 600 s) and on S, and the audit of the gate's decisions from T and S,
-  per decision phase and as the mean over the phases (with the smallest and largest phase);
+  per decision phase and as the mean over the phases (with the smallest and largest phase); for T, the decisions
+  declined by verdict and rule and the executions at dispatch delays of 0 and 10 s (means over the phases), and the
+  invalid executions at the 10 s delay and the missed opportunities per phase;
 * the records kept per hour and the watch's events per hour.
 
 Capture-bootstrap intervals (analysis.stats: 10,000 resamples within scenario strata, seed 0) are given for the
@@ -210,6 +212,21 @@ def compute(results=ANALYSES) -> OrderedDict:
                                                              ("max", max(audit[p][v][m] for p in keys))]))
                                             for m in AGREE[1:])
         row["posed"] = decisions[keys[0]]["T F30"]["posed"]
+        for v in ("T F30", "T F600"):
+            declined = {}
+            for p in keys:
+                for c in G:
+                    for rule, cnt in docs[c]["decisions"][p][v]["declined"].items():
+                        declined[rule] = declined.get(rule, 0) + cnt
+            row[v + " declined (mean over phases)"] = OrderedDict(
+                (rule, round(declined[rule] / len(keys), 3)) for rule in sorted(declined))
+            row[v + " executions at dispatch delays of 0 and 10 s (mean over phases)"] = round(sum(
+                docs[c]["decisions"][p][v]["by_dispatch_delay"].get(d, {}).get("executions", 0)
+                for p in keys for c in G for d in ("0 s", "10 s")) / len(keys), 3)
+            row[v + " invalid at the 10 s dispatch delay (per phase)"] = [sum(
+                docs[c]["decisions"][p][v]["by_dispatch_delay"].get("10 s", {}).get("invalid", 0) for c in G)
+                for p in keys]
+            row[v + " missed (per phase)"] = [decisions[p][v]["missed"] for p in keys]
         by_interval[k] = row
     out["decisions"] = OrderedDict([("by_phase", decisions), ("audit_by_phase", audit), ("by_interval", by_interval)])
 

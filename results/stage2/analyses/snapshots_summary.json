@@ -888,7 +888,31 @@
       "max": 15
      }
     },
-    "posed": 34392
+    "posed": 34392,
+    "T F30 declined (mean over phases)": {
+     "DENY[R1]": 2882.0,
+     "DENY[R3]": 1548.0,
+     "NEEDS_APPROVAL[R2]": 2288.0
+    },
+    "T F30 executions at dispatch delays of 0 and 10 s (mean over phases)": 10478.0,
+    "T F30 invalid at the 10 s dispatch delay (per phase)": [
+     110
+    ],
+    "T F30 missed (per phase)": [
+     115
+    ],
+    "T F600 declined (mean over phases)": {
+     "DENY[R1]": 5764.0,
+     "DENY[R3]": 3096.0,
+     "NEEDS_APPROVAL[R2]": 2288.0
+    },
+    "T F600 executions at dispatch delays of 0 and 10 s (mean over phases)": 10478.0,
+    "T F600 invalid at the 10 s dispatch delay (per phase)": [
+     110
+    ],
+    "T F600 missed (per phase)": [
+     115
+    ]
    },
    "6": {
     "phases": [
@@ -1011,7 +1035,39 @@
       "max": 1449
      }
     },
-    "posed": 34392
+    "posed": 34392,
+    "T F30 declined (mean over phases)": {
+     "DENY[R1]": 2586.667,
+     "DENY[R3]": 2409.333,
+     "NEEDS_APPROVAL[R2]": 2752.667
+    },
+    "T F30 executions at dispatch delays of 0 and 10 s (mean over phases)": 9447.333,
+    "T F30 invalid at the 10 s dispatch delay (per phase)": [
+     110,
+     110,
+     110
+    ],
+    "T F30 missed (per phase)": [
+     124,
+     120,
+     124
+    ],
+    "T F600 declined (mean over phases)": {
+     "DENY[R1]": 5173.333,
+     "DENY[R3]": 4818.667,
+     "NEEDS_APPROVAL[R2]": 2752.667
+    },
+    "T F600 executions at dispatch delays of 0 and 10 s (mean over phases)": 9447.333,
+    "T F600 invalid at the 10 s dispatch delay (per phase)": [
+     110,
+     110,
+     110
+    ],
+    "T F600 missed (per phase)": [
+     124,
+     120,
+     124
+    ]
    },
    "12": {
     "phases": [
@@ -1134,7 +1190,39 @@
       "max": 3248
      }
     },
-    "posed": 34392
+    "posed": 34392,
+    "T F30 declined (mean over phases)": {
+     "DENY[R1]": 2635.333,
+     "DENY[R3]": 1682.333,
+     "NEEDS_APPROVAL[R2]": 3823.333
+    },
+    "T F30 executions at dispatch delays of 0 and 10 s (mean over phases)": 9055.0,
+    "T F30 invalid at the 10 s dispatch delay (per phase)": [
+     129,
+     92,
+     103
+    ],
+    "T F30 missed (per phase)": [
+     124,
+     124,
+     107
+    ],
+    "T F600 declined (mean over phases)": {
+     "DENY[R1]": 4621.333,
+     "DENY[R3]": 4518.667,
+     "NEEDS_APPROVAL[R2]": 3590.333
+    },
+    "T F600 executions at dispatch delays of 0 and 10 s (mean over phases)": 9035.667,
+    "T F600 invalid at the 10 s dispatch delay (per phase)": [
+     110,
+     110,
+     120
+    ],
+    "T F600 missed (per phase)": [
+     124,
+     124,
+     107
+    ]
    },
    "24": {
     "phases": [
@@ -1257,7 +1345,39 @@
       "max": 7171
      }
     },
-    "posed": 34392
+    "posed": 34392,
+    "T F30 declined (mean over phases)": {
+     "DENY[R1]": 3447.0,
+     "DENY[R3]": 1423.333,
+     "NEEDS_APPROVAL[R2]": 7528.0
+    },
+    "T F30 executions at dispatch delays of 0 and 10 s (mean over phases)": 4749.333,
+    "T F30 invalid at the 10 s dispatch delay (per phase)": [
+     15,
+     103,
+     0
+    ],
+    "T F30 missed (per phase)": [
+     124,
+     124,
+     124
+    ],
+    "T F600 declined (mean over phases)": {
+     "DENY[R1]": 6078.667,
+     "DENY[R3]": 2708.0,
+     "NEEDS_APPROVAL[R2]": 7542.0
+    },
+    "T F600 executions at dispatch delays of 0 and 10 s (mean over phases)": 5260.667,
+    "T F600 invalid at the 10 s dispatch delay (per phase)": [
+     110,
+     120,
+     110
+    ],
+    "T F600 missed (per phase)": [
+     124,
+     124,
+     124
+    ]
    }
   }
  },
