@@ -8,7 +8,7 @@ reads the replay analyses in ``results/stage2/analyses/`` (written by the comman
 ``per_capture_stats.json``, ``replays_summary.json``, ``by_delay.json``, ``diagnosis_stress_summary.json`` and the
 per-capture ``replays/`` and ``surrogate/`` files, ``diagnosis_stress.json``, ``diagnosis_attribution.json``,
 ``sweeps_summary.json`` (coverage, parameter sweep, receipt-time audit, store size, decision log, check-to-act labels,
-diagnosis robustness), plus the governance adapter's outputs
+uncertain labels on the mutually evaluable decisions, diagnosis robustness), plus the governance adapter's outputs
 (``results/stage2/adapter/``: cells, labels and rollout timing), the diagnosis control's outputs
 (``results/stage2/diagnosis/``) and the capture summaries. Standard library only.
 """
@@ -581,6 +581,21 @@ def followup_numbers(a: Path, posed: int) -> OrderedDict:
                     for q, v in dl["questions"].items())
     n["check to act: recheck executions invalid, uncertain, valid per lag (0, 0.1, 0.5, 1 s)"] = OrderedDict(
         (lag, [v["invalid"], v["uncertain"], v["valid"]]) for lag, v in sw["check_to_act"]["executions_by_lag"].items())
+    um = sw["uncertain_mutually_evaluable"]
+    no_effect = "GT-2-B conditions without an established effect"
+
+    def possible(view, key="executions"):
+        return sum(c[key] for r, c in um["views"][view]["uncertain"].items() if r != no_effect)
+    n["mutually evaluable decisions: decisions; T_p invalid, uncertain, possibly invalid; R invalid, uncertain, "
+      "possibly invalid, possibly invalid with a target request in the next 2 s"] = [
+        um["decisions"],
+        [um["views"]["T_p"]["invalid"], sum(c["executions"] for c in um["views"]["T_p"]["uncertain"].values()),
+         possible("T_p")],
+        [um["views"]["R"]["invalid"], sum(c["executions"] for c in um["views"]["R"]["uncertain"].values()),
+         possible("R"), possible("R", "target_served_after")]]
+    n["mutually evaluable decisions: gate minus recheck, scored / every possibly invalid uncertain recheck execution "
+      "invalid / only those without a target request after (point, 95%, 98.33%)"] = OrderedDict(
+        (k, [v["point"], v["interval_95"], v["interval_98_33"]]) for k, v in um["gate_minus_recheck"].items())
     rob = sw.get("diagnosis_robustness", {}).get("follow_up", {})
 
     def draws(variant, delta, policies):
@@ -792,6 +807,14 @@ EXPECTED = OrderedDict([
                   ("F=600,N=30", [17196, 0, 13038]), ("F=30,N=0", [2288, 2288, 2288]),
                   ("F=30,N=10", [2008, 2008, 2008]), ("F=30,N=60", [5170, 5170, 5170]),
                   ("F=30,N=600", [10478, 10478, 10478]), ("at the recheck's instants", [15662, 17, 11876])])),
+    ("mutually evaluable decisions: decisions; T_p invalid, uncertain, possibly invalid; R invalid, uncertain, "
+     "possibly invalid, possibly invalid with a target request in the next 2 s",
+     [17676, [47, 178, 158], [0, 242, 92, 74]]),
+    ("mutually evaluable decisions: gate minus recheck, scored / every possibly invalid uncertain recheck execution "
+     "invalid / only those without a target request after (point, 95%, 98.33%)",
+     OrderedDict([("scored", [47, [36, 58], [34, 61]]),
+                  ("recheck_possibly_invalid_counted", [-45, [-113, 15], [-130, 24]]),
+                  ("recheck_possibly_invalid_without_target_request_after_counted", [29, [14, 45], [11, 48]])])),
     ("check to act: recheck executions invalid, uncertain, valid per lag (0, 0.1, 0.5, 1 s)",
      OrderedDict([("0 s", [0, 242, 19985]), ("0.1 s", [0, 209, 20018]), ("0.5 s", [0, 181, 20046]),
                   ("1 s", [0, 187, 20040])])),

@@ -1,15 +1,20 @@
-"""Totals of the coverage, parameter-sweep and receipt-time-audit replays, the decision log, the check-to-act gap and
-the diagnosis robustness test.
+"""Totals of the coverage, parameter-sweep and receipt-time-audit replays, the decision log, the check-to-act gap, the
+uncertain labels on the mutually evaluable decisions and the diagnosis robustness test.
 
     python -m analysis.sweeps_summary      # writes results/stage2/analyses/sweeps_summary.json
 
 Reads results/stage2/analyses/sweeps/<capture>.json (experiments/governance-stage2/run_replays.py --sweeps),
-decision_log/<capture>.json (--decision-log), check_to_act/<capture>.json (--check-to-act) and
+decision_log/<capture>.json (--decision-log), check_to_act/<capture>.json (--check-to-act),
+uncertain/<capture>.json (--uncertain) and
 results/stage2/analyses/diagnosis_robustness.json (experiments/diagnosis-control-v1/run_diagnosis_stress.py
 --robustness). Sums over the included captures (results/stage2/captures.json); every count keeps the number of
 captures it covers. ``store``: the poller store's versions and keys per arm-G capture, and the wall time of one
 restart decision of the swept gate (all its evaluations and retries; the replay's own timing, on the machine that ran
-it). Standard library only.
+it). ``uncertain_mutually_evaluable``: on the decisions that neither T_p nor R left censored, both views' invalid
+executions and uncertain ones by reason; a reason other than "GT-2-B conditions without an established effect" could
+hide an invalid execution; with stratified capture-bootstrap intervals (analysis.capture_stats) of the gate's excess
+over the recheck counting the scored labels only, every possibly invalid uncertain execution of the recheck as invalid,
+and only those whose target served no request in the 2 s after the execution. Standard library only.
 """
 from __future__ import annotations
 
@@ -26,6 +31,9 @@ ANALYSES = ROOT / "results/stage2/analyses"
 SCALARS = ("posed", "executions", "invalid", "uncertain", "valid", "opportunities", "missed", "expired", "censored",
            "evaluations")
 DICTS = ("declined", "invalid_by_target_state", "uncertain_by_reason", "opportunity_executions")
+
+
+NO_EFFECT = "GT-2-B conditions without an established effect"   # uncertain for the opportunity count only
 
 
 def captures(arm: str) -> list:
@@ -239,6 +247,42 @@ def compute(results=ANALYSES) -> OrderedDict:
                 total.update(acts[c]["executions_by_lag"][lag])
             lags[lag] = OrderedDict((k, total[k]) for k in ("invalid", "uncertain", "valid"))
         out["check_to_act"] = OrderedDict([("captures", len(G)), ("executions_by_lag", lags)])
+    # uncertain labels on the mutually evaluable decisions (arm G)
+    if all((results / "uncertain" / (c + ".json")).exists() for c in G):
+        from analysis import capture_stats as CS, tables as TB
+        unc = {c: json.loads((results / "uncertain" / (c + ".json")).read_text(encoding="utf-8"))["mutually_evaluable"]
+               for c in G}
+        views = OrderedDict()
+        per = OrderedDict()
+        for v in ("T_p", "R"):
+            reasons = defaultdict(Counter)
+            for c in G:
+                for reason, cnt in unc[c]["views"][v]["uncertain"].items():
+                    reasons[reason].update(cnt)
+            views[v] = OrderedDict([("invalid", sum(unc[c]["views"][v]["invalid"] for c in G)),
+                                    ("uncertain", OrderedDict((r, dict(reasons[r])) for r in sorted(reasons)))])
+            per[v] = OrderedDict()
+            for c in G:
+                d = unc[c]["views"][v]
+                possible = [x for r, x in d["uncertain"].items() if r != NO_EFFECT]
+                per[v][c] = OrderedDict([
+                    ("invalid", d["invalid"]),
+                    ("possibly_invalid", sum(x["executions"] for x in possible)),
+                    ("possibly_invalid_no_target_request_after", sum(x["executions"] - x["target_served_after"]
+                                                                     for x in possible))])
+        strata = TB.population(json.loads((ROOT / "results/stage2/captures.json").read_text(encoding="utf-8")), "G")
+        tp, r = per["T_p"], per["R"]
+        cis = OrderedDict([
+            ("scored", CS.boot(strata, {c: tp[c]["invalid"] - r[c]["invalid"] for c in G})),
+            ("recheck_possibly_invalid_counted", CS.boot(strata, {c: tp[c]["invalid"] - r[c]["invalid"]
+                                                                 - r[c]["possibly_invalid"] for c in G})),
+            ("recheck_possibly_invalid_without_target_request_after_counted",
+             CS.boot(strata, {c: tp[c]["invalid"] - r[c]["invalid"]
+                              - r[c]["possibly_invalid_no_target_request_after"] for c in G}))])
+        out["uncertain_mutually_evaluable"] = OrderedDict([
+            ("captures", len(G)), ("decisions", sum(unc[c]["decisions"] for c in G)),
+            ("window_s", unc[G[0]]["window_s"]), ("views", views), ("per_capture", per),
+            ("gate_minus_recheck", cis)])
     return out
 
 

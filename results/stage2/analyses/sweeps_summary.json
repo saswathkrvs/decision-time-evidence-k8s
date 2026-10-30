@@ -4489,5 +4489,274 @@
     "valid": 20040
    }
   }
+ },
+ "uncertain_mutually_evaluable": {
+  "captures": 16,
+  "decisions": 17676,
+  "window_s": 2.0,
+  "views": {
+   "T_p": {
+    "invalid": 47,
+    "uncertain": {
+     "GT-2-B conditions without an established effect": {
+      "executions": 20,
+      "target_served_before": 16,
+      "target_served_after": 17,
+      "target_served_before_and_after": 13
+     },
+     "floor_count_within_band": {
+      "executions": 87,
+      "target_served_before": 72,
+      "target_served_after": 55,
+      "target_served_before_and_after": 48
+     },
+     "target_deletion_request_within_band": {
+      "executions": 71,
+      "target_served_before": 57,
+      "target_served_after": 36,
+      "target_served_before_and_after": 27
+     }
+    }
+   },
+   "R": {
+    "invalid": 0,
+    "uncertain": {
+     "GT-2-B conditions without an established effect": {
+      "executions": 150,
+      "target_served_before": 88,
+      "target_served_after": 103,
+      "target_served_before_and_after": 56
+     },
+     "floor_count_within_band": {
+      "executions": 35,
+      "target_served_before": 25,
+      "target_served_after": 24,
+      "target_served_before_and_after": 18
+     },
+     "target_deletion_request_within_band": {
+      "executions": 9,
+      "target_served_before": 9,
+      "target_served_after": 2,
+      "target_served_before_and_after": 2
+     },
+     "target_ready_transition_within_band": {
+      "executions": 48,
+      "target_served_before": 33,
+      "target_served_after": 48,
+      "target_served_before_and_after": 33
+     }
+    }
+   }
+  },
+  "per_capture": {
+   "T_p": {
+    "G1-005": {
+     "invalid": 1,
+     "possibly_invalid": 9,
+     "possibly_invalid_no_target_request_after": 1
+    },
+    "G1-003": {
+     "invalid": 2,
+     "possibly_invalid": 8,
+     "possibly_invalid_no_target_request_after": 6
+    },
+    "G1-002": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G1-004": {
+     "invalid": 1,
+     "possibly_invalid": 10,
+     "possibly_invalid_no_target_request_after": 5
+    },
+    "G1-001": {
+     "invalid": 5,
+     "possibly_invalid": 10,
+     "possibly_invalid_no_target_request_after": 3
+    },
+    "G2-005": {
+     "invalid": 3,
+     "possibly_invalid": 10,
+     "possibly_invalid_no_target_request_after": 2
+    },
+    "G2-002": {
+     "invalid": 3,
+     "possibly_invalid": 11,
+     "possibly_invalid_no_target_request_after": 2
+    },
+    "G2-003": {
+     "invalid": 0,
+     "possibly_invalid": 1,
+     "possibly_invalid_no_target_request_after": 1
+    },
+    "G2-004": {
+     "invalid": 0,
+     "possibly_invalid": 11,
+     "possibly_invalid_no_target_request_after": 6
+    },
+    "G2-006": {
+     "invalid": 4,
+     "possibly_invalid": 7,
+     "possibly_invalid_no_target_request_after": 5
+    },
+    "G3-002": {
+     "invalid": 6,
+     "possibly_invalid": 18,
+     "possibly_invalid_no_target_request_after": 6
+    },
+    "G3-003": {
+     "invalid": 8,
+     "possibly_invalid": 14,
+     "possibly_invalid_no_target_request_after": 9
+    },
+    "G3-001": {
+     "invalid": 8,
+     "possibly_invalid": 17,
+     "possibly_invalid_no_target_request_after": 7
+    },
+    "G4-002": {
+     "invalid": 2,
+     "possibly_invalid": 9,
+     "possibly_invalid_no_target_request_after": 6
+    },
+    "G4-001": {
+     "invalid": 3,
+     "possibly_invalid": 12,
+     "possibly_invalid_no_target_request_after": 3
+    },
+    "G4-003": {
+     "invalid": 1,
+     "possibly_invalid": 11,
+     "possibly_invalid_no_target_request_after": 5
+    }
+   },
+   "R": {
+    "G1-005": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G1-003": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G1-002": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G1-004": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G1-001": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G2-005": {
+     "invalid": 0,
+     "possibly_invalid": 18,
+     "possibly_invalid_no_target_request_after": 4
+    },
+    "G2-002": {
+     "invalid": 0,
+     "possibly_invalid": 17,
+     "possibly_invalid_no_target_request_after": 7
+    },
+    "G2-003": {
+     "invalid": 0,
+     "possibly_invalid": 39,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G2-004": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G2-006": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G3-002": {
+     "invalid": 0,
+     "possibly_invalid": 7,
+     "possibly_invalid_no_target_request_after": 2
+    },
+    "G3-003": {
+     "invalid": 0,
+     "possibly_invalid": 5,
+     "possibly_invalid_no_target_request_after": 5
+    },
+    "G3-001": {
+     "invalid": 0,
+     "possibly_invalid": 6,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G4-002": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G4-001": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    },
+    "G4-003": {
+     "invalid": 0,
+     "possibly_invalid": 0,
+     "possibly_invalid_no_target_request_after": 0
+    }
+   }
+  },
+  "gate_minus_recheck": {
+   "scored": {
+    "point": 47,
+    "interval_95": [
+     36,
+     58
+    ],
+    "interval_98_33": [
+     34,
+     61
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   },
+   "recheck_possibly_invalid_counted": {
+    "point": -45,
+    "interval_95": [
+     -113,
+     15
+    ],
+    "interval_98_33": [
+     -130,
+     24
+    ],
+    "excludes_0_95": false,
+    "includes_0_95": true,
+    "excludes_0_98_33": false
+   },
+   "recheck_possibly_invalid_without_target_request_after_counted": {
+    "point": 29,
+    "interval_95": [
+     14,
+     45
+    ],
+    "interval_98_33": [
+     11,
+     48
+    ],
+    "excludes_0_95": true,
+    "includes_0_95": false,
+    "excludes_0_98_33": true
+   }
+  }
  }
 }

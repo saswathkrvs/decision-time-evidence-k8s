@@ -1,0 +1,35 @@
+{
+ "capture": "G4-002",
+ "scenario": "G4",
+ "mutually_evaluable": {
+  "decisions": 1132,
+  "window_s": 2.0,
+  "views": {
+   "T_p": {
+    "invalid": 2,
+    "uncertain": {
+     "floor_count_within_band": {
+      "executions": 7,
+      "target_served_before": 4,
+      "target_served_after": 1,
+      "target_served_before_and_after": 1
+     },
+     "target_deletion_request_within_band": {
+      "executions": 2,
+      "target_served_before": 2,
+      "target_served_after": 2,
+      "target_served_before_and_after": 2
+     }
+    }
+   },
+   "R": {
+    "invalid": 0,
+    "uncertain": {}
+   }
+  }
+ },
+ "seconds": {
+  "T_p, R": 25.6,
+  "labels and evidence": 0.2
+ }
+}

@@ -47,6 +47,11 @@ to the target Pod's own address (count, failures, distinct failing calls). Unsaf
 side by side. The executions are counterfactual: nothing was restarted during the capture, so this evidence
 describes the state of the service at x, not an effect of the restart. The same pass records how long the fault's
 target Pod stayed not ready after the first kill, from the labeller's kubelet (K1) history (``fault_not_ready``).
+
+Uncertain labels on the mutually evaluable decisions (``uncertain_pass``, a separate pass): on the posed decisions
+that neither T_p nor R left censored (as ``sweeps.mutually_evaluable``), the invalid executions of both views and
+every execution with an uncertain label, by the label's reason, with whether the target Pod itself served a request
+(a server span starting) in the 2 s before and in the 2 s after the execution instant.
 """
 from __future__ import annotations
 
@@ -64,7 +69,7 @@ from .capture import manifest_grace_seconds, read_decision_inputs, read_label_in
 from .common import R, iso, s_to_us
 from .conditions import CONDITIONS as ADAPTER_CONDITIONS
 from .engine2 import ObserverContext, RecheckContext, pose, run_request
-from .labels import GT2B, UNSAFE, Labeller
+from .labels import GT2B, U, UNSAFE, Labeller
 from .mapping2 import ClampLog, gate_records, k1_for_store, snapshot_pod_rows
 from .pipeline import build_capture, service_pod_uids
 from govpilot.inputs import STREAM_BY_NAME  # noqa: E402
@@ -533,6 +538,68 @@ def surrogate_pass(converted, plan_path, out_path, *, raw=None, progress=None) -
                                                probe_calls(raw_dir, labeller.service))),
                        ("executions_not_neutral", executions_not_neutral(chosen, labeller)),
                        ("fault_not_ready", fault_not_ready(labeller))])
+    meta["seconds"]["labels and evidence"] = round(time.perf_counter() - started, 1)
+    doc["seconds"] = meta["seconds"]
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
+    return doc
+
+
+UNCERTAIN_VIEWS = ("T_p", "R")
+
+
+def target_traffic(spans, starts, x: int, target: str) -> tuple:
+    """Whether ``target`` served a request starting in [x - 2 s, x) and in [x, x + 2 s]."""
+    lo, mid = bisect.bisect_left(starts, x - WINDOW_US), bisect.bisect_left(starts, x)
+    hi = bisect.bisect_right(starts, x + WINDOW_US)
+    return (any(spans[i][2] == target for i in range(lo, mid)),
+            any(spans[i][2] == target for i in range(mid, hi)))
+
+
+def uncertain_on_mutual(rows_tp, rows_r, labeller, spans) -> OrderedDict:
+    """Invalid executions and executions with an uncertain label, per view, on the posed decisions that neither T_p
+    nor R left censored; the uncertain ones by reason, with the target's own traffic around the execution."""
+    starts = [sp[0] for sp in spans]
+    views = OrderedDict((v, OrderedDict([("invalid", 0), ("uncertain", OrderedDict())])) for v in UNCERTAIN_VIEWS)
+    decided = 0
+    for a, b in zip(rows_tp, rows_r):
+        assert (a["k"], a["Delta_s"], a["delta_s"]) == (b["k"], b["Delta_s"], b["delta_s"])
+        if not a.get("posed") or "CENSORED" in (a.get("disposition"), b.get("disposition")):
+            continue
+        decided += 1
+        for name, row in (("T_p", a), ("R", b)):
+            if row.get("disposition") != ALLOW or row.get("dispatch_us") is None:
+                continue
+            x, target = row["dispatch_us"], row["target_uid"]
+            label, reason, _ = labeller.label_b(x, target)
+            if label in UNSAFE[ACTION]:
+                views[name]["invalid"] += 1
+            elif label == U:
+                before, after = target_traffic(spans, starts, x, target)
+                c = views[name]["uncertain"].setdefault(reason, OrderedDict([
+                    ("executions", 0), ("target_served_before", 0), ("target_served_after", 0),
+                    ("target_served_before_and_after", 0)]))
+                c["executions"] += 1
+                c["target_served_before"] += before
+                c["target_served_after"] += after
+                c["target_served_before_and_after"] += before and after
+    for v in views.values():
+        v["uncertain"] = OrderedDict(sorted(v["uncertain"].items()))
+    return OrderedDict([("decisions", decided), ("window_s", WINDOW_US / 1e6), ("views", views)])
+
+
+def uncertain_pass(converted, plan_path, out_path, *, raw=None, progress=None) -> dict:
+    """See the module docstring (uncertain labels on the mutually evaluable decisions)."""
+    inputs, capture, rows, meta = decisions(converted, plan_path, raw=raw, which=UNCERTAIN_VIEWS, audit=False,
+                                            progress=progress)
+    from .capture import raw_capture_of
+    raw_dir = Path(raw).resolve() if raw else raw_capture_of(Path(converted).resolve())
+    started = time.perf_counter()
+    labeller = Labeller.build(capture, inputs, read_label_inputs(Path(converted).resolve(), raw_dir),
+                              manifest_grace_seconds(inputs.configuration))
+    spans = span_rows(Path(converted).resolve(), labeller.service)
+    doc = OrderedDict([("capture", capture.capture_id), ("scenario", capture.plan.scenario),
+                       ("mutually_evaluable", uncertain_on_mutual(rows["T_p"], rows["R"], labeller, spans))])
     meta["seconds"]["labels and evidence"] = round(time.perf_counter() - started, 1)
     doc["seconds"] = meta["seconds"]
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)

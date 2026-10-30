@@ -141,3 +141,22 @@ def test_check_to_act_at_zero_lag_is_the_recheck_itself(fast, tmp_path):
     assert (zero["invalid"], zero["uncertain"], zero["valid"]) == (r["invalid"], r["uncertain"], r["valid"])
     for lag, v in doc["executions_by_lag"].items():
         assert sum(v.values()) == r["executions"], lag
+
+
+def test_uncertain_labels_on_mutual_decisions_match_the_mutual_outcomes(fast):
+    from govstage2.capture import manifest_grace_seconds, raw_capture_of, read_label_inputs
+    from govstage2.labels import Labeller
+    inputs, capture, rows, _ = RV.decisions(fast["converted"], fast["plan"], which=RV.UNCERTAIN_VIEWS, audit=False)
+    converted = Path(fast["converted"]).resolve()
+    labeller = Labeller.build(capture, inputs, read_label_inputs(converted, raw_capture_of(converted)),
+                              manifest_grace_seconds(inputs.configuration))
+    doc = RV.uncertain_on_mutual(rows["T_p"], rows["R"], labeller, RV.span_rows(converted, labeller.service))
+    mutual = SW.mutually_evaluable(rows["T_p"], rows["R"], labeller, "B")
+    assert doc["decisions"] == mutual["decisions"]
+    for view, side in (("T_p", "a"), ("R", "b")):
+        v = doc["views"][view]
+        assert v["invalid"] == mutual["outcomes"][side].get("invalid", 0), view
+        assert sum(c["executions"] for c in v["uncertain"].values()) == mutual["outcomes"][side].get("uncertain", 0)
+        for c in v["uncertain"].values():
+            assert c["target_served_before_and_after"] <= min(c["target_served_before"], c["target_served_after"])
+            assert max(c["target_served_before"], c["target_served_after"]) <= c["executions"]

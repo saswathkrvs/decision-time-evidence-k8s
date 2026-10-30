@@ -1,0 +1,48 @@
+{
+ "capture": "G1-001",
+ "scenario": "G1",
+ "mutually_evaluable": {
+  "decisions": 1117,
+  "window_s": 2.0,
+  "views": {
+   "T_p": {
+    "invalid": 5,
+    "uncertain": {
+     "GT-2-B conditions without an established effect": {
+      "executions": 7,
+      "target_served_before": 7,
+      "target_served_after": 6,
+      "target_served_before_and_after": 6
+     },
+     "floor_count_within_band": {
+      "executions": 5,
+      "target_served_before": 5,
+      "target_served_after": 3,
+      "target_served_before_and_after": 3
+     },
+     "target_deletion_request_within_band": {
+      "executions": 5,
+      "target_served_before": 1,
+      "target_served_after": 4,
+      "target_served_before_and_after": 0
+     }
+    }
+   },
+   "R": {
+    "invalid": 0,
+    "uncertain": {
+     "GT-2-B conditions without an established effect": {
+      "executions": 46,
+      "target_served_before": 26,
+      "target_served_after": 34,
+      "target_served_before_and_after": 14
+     }
+    }
+   }
+  }
+ },
+ "seconds": {
+  "T_p, R": 26.9,
+  "labels and evidence": 0.4
+ }
+}

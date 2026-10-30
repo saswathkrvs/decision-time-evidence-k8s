@@ -1,0 +1,48 @@
+{
+ "capture": "G3-002",
+ "scenario": "G3",
+ "mutually_evaluable": {
+  "decisions": 945,
+  "window_s": 2.0,
+  "views": {
+   "T_p": {
+    "invalid": 6,
+    "uncertain": {
+     "floor_count_within_band": {
+      "executions": 8,
+      "target_served_before": 8,
+      "target_served_after": 8,
+      "target_served_before_and_after": 8
+     },
+     "target_deletion_request_within_band": {
+      "executions": 10,
+      "target_served_before": 10,
+      "target_served_after": 4,
+      "target_served_before_and_after": 4
+     }
+    }
+   },
+   "R": {
+    "invalid": 0,
+    "uncertain": {
+     "floor_count_within_band": {
+      "executions": 5,
+      "target_served_before": 5,
+      "target_served_after": 5,
+      "target_served_before_and_after": 5
+     },
+     "target_deletion_request_within_band": {
+      "executions": 2,
+      "target_served_before": 2,
+      "target_served_after": 0,
+      "target_served_before_and_after": 0
+     }
+    }
+   }
+  }
+ },
+ "seconds": {
+  "T_p, R": 17.8,
+  "labels and evidence": 0.4
+ }
+}

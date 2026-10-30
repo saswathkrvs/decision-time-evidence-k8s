@@ -1,0 +1,22 @@
+{
+ "capture": "G1-002",
+ "scenario": "G1",
+ "mutually_evaluable": {
+  "decisions": 1160,
+  "window_s": 2.0,
+  "views": {
+   "T_p": {
+    "invalid": 0,
+    "uncertain": {}
+   },
+   "R": {
+    "invalid": 0,
+    "uncertain": {}
+   }
+  }
+ },
+ "seconds": {
+  "T_p, R": 27.6,
+  "labels and evidence": 0.5
+ }
+}
