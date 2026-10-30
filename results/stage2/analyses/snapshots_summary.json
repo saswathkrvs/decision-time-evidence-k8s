@@ -1,0 +1,1504 @@
+{
+ "captures": 16,
+ "pods": 90,
+ "window_seconds": 4810.665,
+ "intervals": {
+  "1": {
+   "median_s": 2.4524999999999997,
+   "min_s": 2.429,
+   "max_s": 2.539
+  },
+  "6": {
+   "median_s": 15.01075,
+   "min_s": 14.799,
+   "max_s": 15.236
+  },
+  "12": {
+   "median_s": 30.018,
+   "min_s": 29.674500000000002,
+   "max_s": 30.6625
+  },
+  "24": {
+   "median_s": 60.083749999999995,
+   "min_s": 59.569,
+   "max_s": 61.89
+  }
+ },
+ "episodes": {
+  "by_type": {
+   "starting": 44,
+   "ready": 53,
+   "not_ready": 8,
+   "terminating": 45
+  },
+  "recorded": {
+   "S": {
+    "1": {
+     "starting": 42.0,
+     "ready": 53.0,
+     "not_ready": 5.0,
+     "terminating": 42.0
+    },
+    "6": {
+     "starting": 19.667,
+     "ready": 50.667,
+     "not_ready": 2.167,
+     "terminating": 39.5
+    },
+    "12": {
+     "starting": 9.833,
+     "ready": 48.0,
+     "not_ready": 1.083,
+     "terminating": 29.75
+    },
+    "24": {
+     "starting": 4.917,
+     "ready": 46.5,
+     "not_ready": 0.542,
+     "terminating": 14.875
+    }
+   },
+   "T": {
+    "1": {
+     "starting": 44.0,
+     "ready": 53.0,
+     "not_ready": 8.0,
+     "terminating": 42.0
+    },
+    "6": {
+     "starting": 43.333,
+     "ready": 50.833,
+     "not_ready": 8.0,
+     "terminating": 39.5
+    },
+    "12": {
+     "starting": 41.167,
+     "ready": 48.083,
+     "not_ready": 8.0,
+     "terminating": 29.75
+    },
+    "24": {
+     "starting": 39.083,
+     "ready": 46.542,
+     "not_ready": 8.0,
+     "terminating": 14.875
+    }
+   },
+   "W": {
+    "starting": 44,
+    "ready": 53,
+    "not_ready": 8,
+    "terminating": 45
+   }
+  },
+  "start_lag_s": {
+   "S": {
+    "1": {
+     "n": 142,
+     "median_s": 1.672,
+     "p90_s": 2.953,
+     "max_s": 3.873,
+     "share_within_1s": 0.0915
+    },
+    "6": {
+     "n": 672,
+     "median_s": 6.657,
+     "p90_s": 13.886,
+     "max_s": 17.894,
+     "share_within_1s": 0.0193
+    },
+    "12": {
+     "n": 1064,
+     "median_s": 11.829,
+     "p90_s": 25.588,
+     "max_s": 39.82,
+     "share_within_1s": 0.0122
+    },
+    "24": {
+     "n": 1604,
+     "median_s": 19.829,
+     "p90_s": 52.732,
+     "max_s": 77.482,
+     "share_within_1s": 0.0081
+    }
+   },
+   "T": {
+    "1": {
+     "n": 147,
+     "median_s": 0.0,
+     "p90_s": 0.0,
+     "max_s": 0.0,
+     "share_within_1s": 1.0
+    },
+    "6": {
+     "n": 850,
+     "median_s": 0.0,
+     "p90_s": 0.0,
+     "max_s": 6.868,
+     "share_within_1s": 0.9918
+    },
+    "12": {
+     "n": 1524,
+     "median_s": 0.0,
+     "p90_s": 0.0,
+     "max_s": 12.441,
+     "share_within_1s": 0.9888
+    },
+    "24": {
+     "n": 2604,
+     "median_s": 0.0,
+     "p90_s": 0.0,
+     "max_s": 12.441,
+     "share_within_1s": 0.9935
+    }
+   }
+  },
+  "replacement_span_s": {
+   "captures": 16,
+   "min": 3.035,
+   "median": 44.364,
+   "max": 62.065
+  },
+  "closed_durations_s": {
+   "starting": {
+    "n": 44,
+    "median": 7.0,
+    "min": 1.0,
+    "max": 12.0
+   },
+   "ready": {
+    "n": 8,
+    "median": 9.5,
+    "min": 6.0,
+    "max": 21.0
+   },
+   "not_ready": {
+    "n": 8,
+    "median": 7.0,
+    "min": 1.0,
+    "max": 8.0
+   },
+   "terminating": {
+    "n": 45,
+    "median": 22.48,
+    "min": 1.035,
+    "max": 28.95
+   }
+  },
+  "uniform_phase_expectation_closed": {
+   "k=6": {
+    "interval_s": 15.01075,
+    "starting": 19.653,
+    "ready": 5.731,
+    "not_ready": 2.798,
+    "terminating": 39.678
+   },
+   "k=12": {
+    "interval_s": 30.018,
+    "starting": 9.827,
+    "ready": 3.131,
+    "not_ready": 1.399,
+    "terminating": 31.076
+   },
+   "k=24": {
+    "interval_s": 60.083749999999995,
+    "starting": 4.91,
+    "ready": 1.564,
+    "not_ready": 0.699,
+    "terminating": 15.525
+   },
+   "60 s": {
+    "interval_s": 60.0,
+    "starting": 4.917,
+    "ready": 1.567,
+    "not_ready": 0.7,
+    "terminating": 15.547
+   },
+   "300 s": {
+    "interval_s": 300.0,
+    "starting": 0.983,
+    "ready": 0.313,
+    "not_ready": 0.14,
+    "terminating": 3.109
+   }
+  }
+ },
+ "object_states": {
+  "watch": {
+   "Pod": 525,
+   "ReplicaSet": 379,
+   "Deployment": 247
+  },
+  "shown_by_kept_lists": {
+   "1": {
+    "Pod": 267.0,
+    "ReplicaSet": 163.0,
+    "Deployment": 118.0
+   },
+   "6": {
+    "Pod": 210.167,
+    "ReplicaSet": 118.5,
+    "Deployment": 89.0
+   },
+   "12": {
+    "Pod": 184.75,
+    "ReplicaSet": 99.25,
+    "Deployment": 76.5
+   },
+   "24": {
+    "Pod": 162.875,
+    "ReplicaSet": 89.625,
+    "Deployment": 70.25
+   }
+  }
+ },
+ "status": {
+  "S": {
+   "1": {
+    "seconds": 14377.0,
+    "wrong": 50.0,
+    "unknown": 0.0
+   },
+   "6": {
+    "seconds": 14377.0,
+    "wrong": 597.833,
+    "unknown": 296.167
+   },
+   "12": {
+    "seconds": 14377.0,
+    "wrong": 1181.5,
+    "unknown": 638.833
+   },
+   "24": {
+    "seconds": 14377.0,
+    "wrong": 2026.916,
+    "unknown": 1321.125
+   }
+  },
+  "T": {
+   "1": {
+    "seconds": 14377.0,
+    "wrong": 0.0,
+    "unknown": 0.0
+   },
+   "6": {
+    "seconds": 14377.0,
+    "wrong": 5.333,
+    "unknown": 88.834
+   },
+   "12": {
+    "seconds": 14377.0,
+    "wrong": 220.667,
+    "unknown": 150.583
+   },
+   "24": {
+    "seconds": 14377.0,
+    "wrong": 541.833,
+    "unknown": 196.792
+   }
+  },
+  "W": {
+   "seconds": 14377,
+   "wrong": 0,
+   "unknown": 0
+  }
+ },
+ "decisions": {
+  "by_phase": {
+   "1/0": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 10478,
+     "invalid": 110,
+     "uncertain": 178,
+     "opportunities": 124,
+     "missed": 115,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 23244,
+     "invalid": 1572,
+     "uncertain": 242,
+     "opportunities": 124,
+     "missed": 115,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 10481,
+     "invalid": 110,
+     "uncertain": 178,
+     "opportunities": 124,
+     "missed": 115,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "6/0": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 9175,
+     "invalid": 110,
+     "uncertain": 158,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 21271,
+     "invalid": 1462,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 9375,
+     "invalid": 110,
+     "uncertain": 158,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "6/2": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 9832,
+     "invalid": 110,
+     "uncertain": 158,
+     "opportunities": 124,
+     "missed": 120,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 21708,
+     "invalid": 1492,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 120,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 10271,
+     "invalid": 110,
+     "uncertain": 158,
+     "opportunities": 124,
+     "missed": 120,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "6/4": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 9335,
+     "invalid": 110,
+     "uncertain": 158,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 21963,
+     "invalid": 1462,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 9716,
+     "invalid": 110,
+     "uncertain": 158,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "12/0": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 9246,
+     "invalid": 129,
+     "uncertain": 186,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 21304,
+     "invalid": 1462,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 9470,
+     "invalid": 129,
+     "uncertain": 186,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "12/4": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 6904,
+     "invalid": 92,
+     "uncertain": 147,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 19278,
+     "invalid": 1462,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 8938,
+     "invalid": 92,
+     "uncertain": 147,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "12/8": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 11015,
+     "invalid": 103,
+     "uncertain": 130,
+     "opportunities": 124,
+     "missed": 107,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 24403,
+     "invalid": 1532,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 107,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 11654,
+     "invalid": 103,
+     "uncertain": 130,
+     "opportunities": 124,
+     "missed": 107,
+     "expired": 4130,
+     "censored": 13066
+    }
+   },
+   "24/0": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 7430,
+     "invalid": 15,
+     "uncertain": 38,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13066
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 18964,
+     "invalid": 1462,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 8152,
+     "invalid": 15,
+     "uncertain": 38,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4148,
+     "censored": 13999
+    }
+   },
+   "24/8": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 4615,
+     "invalid": 103,
+     "uncertain": 130,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13132
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 18159,
+     "invalid": 1532,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 8138,
+     "invalid": 103,
+     "uncertain": 130,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13775
+    }
+   },
+   "24/16": {
+    "T F30": {
+     "posed": 34392,
+     "executions": 2203,
+     "invalid": 0,
+     "uncertain": 0,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4130,
+     "censored": 13145
+    },
+    "T F600": {
+     "posed": 34392,
+     "executions": 17067,
+     "invalid": 1462,
+     "uncertain": 222,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 0,
+     "censored": 0
+    },
+    "S F30": {
+     "posed": 34392,
+     "executions": 5753,
+     "invalid": 0,
+     "uncertain": 0,
+     "opportunities": 124,
+     "missed": 124,
+     "expired": 4200,
+     "censored": 13822
+    }
+   }
+  },
+  "audit_by_phase": {
+   "1/0": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 0,
+     "disposition_differs": 0,
+     "execution_differs": 0
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 152,
+     "disposition_differs": 72,
+     "execution_differs": 15
+    }
+   },
+   "6/0": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 2807,
+     "disposition_differs": 2083,
+     "execution_differs": 1353
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 3345,
+     "disposition_differs": 2175,
+     "execution_differs": 1449
+    }
+   },
+   "6/2": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 2456,
+     "disposition_differs": 1605,
+     "execution_differs": 708
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 3079,
+     "disposition_differs": 1636,
+     "execution_differs": 797
+    }
+   },
+   "6/4": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 2226,
+     "disposition_differs": 1741,
+     "execution_differs": 1143
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 3089,
+     "disposition_differs": 1660,
+     "execution_differs": 1072
+    }
+   },
+   "12/0": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 5908,
+     "disposition_differs": 2753,
+     "execution_differs": 1996
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 7103,
+     "disposition_differs": 2801,
+     "execution_differs": 2044
+    }
+   },
+   "12/4": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 7797,
+     "disposition_differs": 4362,
+     "execution_differs": 3574
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 8225,
+     "disposition_differs": 3794,
+     "execution_differs": 3248
+    }
+   },
+   "12/8": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 6552,
+     "disposition_differs": 3074,
+     "execution_differs": 2765
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 8045,
+     "disposition_differs": 2975,
+     "execution_differs": 2722
+    }
+   },
+   "24/0": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 11172,
+     "disposition_differs": 4271,
+     "execution_differs": 3530
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 11328,
+     "disposition_differs": 4468,
+     "execution_differs": 3618
+    }
+   },
+   "24/8": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 12922,
+     "disposition_differs": 6675,
+     "execution_differs": 5865
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 13175,
+     "disposition_differs": 5315,
+     "execution_differs": 4844
+    }
+   },
+   "24/16": {
+    "T": {
+     "posed": 34392,
+     "first_verdict_differs": 13576,
+     "disposition_differs": 9063,
+     "execution_differs": 8275
+    },
+    "S": {
+     "posed": 34392,
+     "first_verdict_differs": 13834,
+     "disposition_differs": 7802,
+     "execution_differs": 7171
+    }
+   }
+  },
+  "by_interval": {
+   "1": {
+    "phases": [
+     "1/0"
+    ],
+    "T F30": {
+     "executions": {
+      "mean": 10478.0,
+      "min": 10478,
+      "max": 10478
+     },
+     "invalid": {
+      "mean": 110.0,
+      "min": 110,
+      "max": 110
+     },
+     "uncertain": {
+      "mean": 178.0,
+      "min": 178,
+      "max": 178
+     },
+     "missed": {
+      "mean": 115.0,
+      "min": 115,
+      "max": 115
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "T F600": {
+     "executions": {
+      "mean": 23244.0,
+      "min": 23244,
+      "max": 23244
+     },
+     "invalid": {
+      "mean": 1572.0,
+      "min": 1572,
+      "max": 1572
+     },
+     "uncertain": {
+      "mean": 242.0,
+      "min": 242,
+      "max": 242
+     },
+     "missed": {
+      "mean": 115.0,
+      "min": 115,
+      "max": 115
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "S F30": {
+     "executions": {
+      "mean": 10481.0,
+      "min": 10481,
+      "max": 10481
+     },
+     "invalid": {
+      "mean": 110.0,
+      "min": 110,
+      "max": 110
+     },
+     "uncertain": {
+      "mean": 178.0,
+      "min": 178,
+      "max": 178
+     },
+     "missed": {
+      "mean": 115.0,
+      "min": 115,
+      "max": 115
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "audit T": {
+     "first_verdict_differs": {
+      "mean": 0.0,
+      "min": 0,
+      "max": 0
+     },
+     "disposition_differs": {
+      "mean": 0.0,
+      "min": 0,
+      "max": 0
+     },
+     "execution_differs": {
+      "mean": 0.0,
+      "min": 0,
+      "max": 0
+     }
+    },
+    "audit S": {
+     "first_verdict_differs": {
+      "mean": 152.0,
+      "min": 152,
+      "max": 152
+     },
+     "disposition_differs": {
+      "mean": 72.0,
+      "min": 72,
+      "max": 72
+     },
+     "execution_differs": {
+      "mean": 15.0,
+      "min": 15,
+      "max": 15
+     }
+    },
+    "posed": 34392
+   },
+   "6": {
+    "phases": [
+     "6/0",
+     "6/2",
+     "6/4"
+    ],
+    "T F30": {
+     "executions": {
+      "mean": 9447.333,
+      "min": 9175,
+      "max": 9832
+     },
+     "invalid": {
+      "mean": 110.0,
+      "min": 110,
+      "max": 110
+     },
+     "uncertain": {
+      "mean": 158.0,
+      "min": 158,
+      "max": 158
+     },
+     "missed": {
+      "mean": 122.667,
+      "min": 120,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "T F600": {
+     "executions": {
+      "mean": 21647.333,
+      "min": 21271,
+      "max": 21963
+     },
+     "invalid": {
+      "mean": 1472.0,
+      "min": 1462,
+      "max": 1492
+     },
+     "uncertain": {
+      "mean": 222.0,
+      "min": 222,
+      "max": 222
+     },
+     "missed": {
+      "mean": 122.667,
+      "min": 120,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "S F30": {
+     "executions": {
+      "mean": 9787.333,
+      "min": 9375,
+      "max": 10271
+     },
+     "invalid": {
+      "mean": 110.0,
+      "min": 110,
+      "max": 110
+     },
+     "uncertain": {
+      "mean": 158.0,
+      "min": 158,
+      "max": 158
+     },
+     "missed": {
+      "mean": 122.667,
+      "min": 120,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "audit T": {
+     "first_verdict_differs": {
+      "mean": 2496.333,
+      "min": 2226,
+      "max": 2807
+     },
+     "disposition_differs": {
+      "mean": 1809.667,
+      "min": 1605,
+      "max": 2083
+     },
+     "execution_differs": {
+      "mean": 1068.0,
+      "min": 708,
+      "max": 1353
+     }
+    },
+    "audit S": {
+     "first_verdict_differs": {
+      "mean": 3171.0,
+      "min": 3079,
+      "max": 3345
+     },
+     "disposition_differs": {
+      "mean": 1823.667,
+      "min": 1636,
+      "max": 2175
+     },
+     "execution_differs": {
+      "mean": 1106.0,
+      "min": 797,
+      "max": 1449
+     }
+    },
+    "posed": 34392
+   },
+   "12": {
+    "phases": [
+     "12/0",
+     "12/4",
+     "12/8"
+    ],
+    "T F30": {
+     "executions": {
+      "mean": 9055.0,
+      "min": 6904,
+      "max": 11015
+     },
+     "invalid": {
+      "mean": 108.0,
+      "min": 92,
+      "max": 129
+     },
+     "uncertain": {
+      "mean": 154.333,
+      "min": 130,
+      "max": 186
+     },
+     "missed": {
+      "mean": 118.333,
+      "min": 107,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "T F600": {
+     "executions": {
+      "mean": 21661.667,
+      "min": 19278,
+      "max": 24403
+     },
+     "invalid": {
+      "mean": 1485.333,
+      "min": 1462,
+      "max": 1532
+     },
+     "uncertain": {
+      "mean": 222.0,
+      "min": 222,
+      "max": 222
+     },
+     "missed": {
+      "mean": 118.333,
+      "min": 107,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "S F30": {
+     "executions": {
+      "mean": 10020.667,
+      "min": 8938,
+      "max": 11654
+     },
+     "invalid": {
+      "mean": 108.0,
+      "min": 92,
+      "max": 129
+     },
+     "uncertain": {
+      "mean": 154.333,
+      "min": 130,
+      "max": 186
+     },
+     "missed": {
+      "mean": 118.333,
+      "min": 107,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "audit T": {
+     "first_verdict_differs": {
+      "mean": 6752.333,
+      "min": 5908,
+      "max": 7797
+     },
+     "disposition_differs": {
+      "mean": 3396.333,
+      "min": 2753,
+      "max": 4362
+     },
+     "execution_differs": {
+      "mean": 2778.333,
+      "min": 1996,
+      "max": 3574
+     }
+    },
+    "audit S": {
+     "first_verdict_differs": {
+      "mean": 7791.0,
+      "min": 7103,
+      "max": 8225
+     },
+     "disposition_differs": {
+      "mean": 3190.0,
+      "min": 2801,
+      "max": 3794
+     },
+     "execution_differs": {
+      "mean": 2671.333,
+      "min": 2044,
+      "max": 3248
+     }
+    },
+    "posed": 34392
+   },
+   "24": {
+    "phases": [
+     "24/0",
+     "24/8",
+     "24/16"
+    ],
+    "T F30": {
+     "executions": {
+      "mean": 4749.333,
+      "min": 2203,
+      "max": 7430
+     },
+     "invalid": {
+      "mean": 39.333,
+      "min": 0,
+      "max": 103
+     },
+     "uncertain": {
+      "mean": 56.0,
+      "min": 0,
+      "max": 130
+     },
+     "missed": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "T F600": {
+     "executions": {
+      "mean": 18063.333,
+      "min": 17067,
+      "max": 18964
+     },
+     "invalid": {
+      "mean": 1485.333,
+      "min": 1462,
+      "max": 1532
+     },
+     "uncertain": {
+      "mean": 222.0,
+      "min": 222,
+      "max": 222
+     },
+     "missed": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "S F30": {
+     "executions": {
+      "mean": 7347.667,
+      "min": 5753,
+      "max": 8152
+     },
+     "invalid": {
+      "mean": 39.333,
+      "min": 0,
+      "max": 103
+     },
+     "uncertain": {
+      "mean": 56.0,
+      "min": 0,
+      "max": 130
+     },
+     "missed": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     },
+     "opportunities": {
+      "mean": 124.0,
+      "min": 124,
+      "max": 124
+     }
+    },
+    "audit T": {
+     "first_verdict_differs": {
+      "mean": 12556.667,
+      "min": 11172,
+      "max": 13576
+     },
+     "disposition_differs": {
+      "mean": 6669.667,
+      "min": 4271,
+      "max": 9063
+     },
+     "execution_differs": {
+      "mean": 5890.0,
+      "min": 3530,
+      "max": 8275
+     }
+    },
+    "audit S": {
+     "first_verdict_differs": {
+      "mean": 12779.0,
+      "min": 11328,
+      "max": 13834
+     },
+     "disposition_differs": {
+      "mean": 5861.667,
+      "min": 4468,
+      "max": 7802
+     },
+     "execution_differs": {
+      "mean": 5211.0,
+      "min": 3618,
+      "max": 7171
+     }
+    },
+    "posed": 34392
+   }
+  }
+ },
+ "volume": {
+  "hours": 1.3363,
+  "records_per_poll_median": 13.0,
+  "poller": {
+   "1": {
+    "records": 24851.0,
+    "merged_records": 545.0,
+    "projected_bytes": 42368806,
+    "merged_projected_bytes": 923063,
+    "records_per_hour": 18597,
+    "merged_records_per_hour": 408
+   },
+   "6": {
+    "records": 4141.833,
+    "merged_records": 413.167,
+    "projected_bytes": 7061468,
+    "merged_projected_bytes": 705124,
+    "records_per_hour": 3099,
+    "merged_records_per_hour": 309
+   },
+   "12": {
+    "records": 2070.917,
+    "merged_records": 358.833,
+    "projected_bytes": 3530734,
+    "merged_projected_bytes": 614252,
+    "records_per_hour": 1550,
+    "merged_records_per_hour": 269
+   },
+   "24": {
+    "records": 1035.458,
+    "merged_records": 321.917,
+    "projected_bytes": 1765367,
+    "merged_projected_bytes": 548909,
+    "records_per_hour": 775,
+    "merged_records_per_hour": 241
+   }
+  },
+  "watch": {
+   "events": 1004,
+   "list_objects": 192,
+   "projected_bytes": 1909413,
+   "event_line_bytes": 8752997,
+   "events_per_hour": 751
+  }
+ },
+ "intervals_of_differences": {
+  "short episodes recorded, T - S, k=6": {
+   "point": 29.5001,
+   "interval_95": [
+    27.5,
+    31.3335
+   ],
+   "interval_98_33": [
+    27,
+    31.6669
+   ],
+   "excludes_0_95": true
+  },
+  "wrong Pod-seconds, S - T, k=6": {
+   "point": 592.4999,
+   "interval_95": [
+    560.9955,
+    620.0043
+   ],
+   "interval_98_33": [
+    555.1665,
+    625.1665
+   ],
+   "excludes_0_95": true
+  },
+  "gate invalid on T (F = 30 s) minus captured, k=6": {
+   "point": 0,
+   "interval_95": [
+    0,
+    0
+   ],
+   "interval_98_33": [
+    0,
+    0
+   ],
+   "excludes_0_95": false
+  },
+  "gate executions on T (F = 30 s) minus captured, k=6": {
+   "point": -1030.6667,
+   "interval_95": [
+    -1138.0083,
+    -928.325
+   ],
+   "interval_98_33": [
+    -1163.6667,
+    -906.4417
+   ],
+   "excludes_0_95": true
+  },
+  "audit from S: first verdicts reported differently (share), k=6": {
+   "point": 0.0922,
+   "interval_95": [
+    0.0876,
+    0.0976
+   ]
+  },
+  "audit from T: first verdicts reported differently (share), k=6": {
+   "point": 0.0726,
+   "interval_95": [
+    0.0686,
+    0.0764
+   ]
+  },
+  "short episodes recorded, T - S, k=12": {
+   "point": 38.25,
+   "interval_95": [
+    37.3332,
+    39.1667
+   ],
+   "interval_98_33": [
+    37.0834,
+    39.3333
+   ],
+   "excludes_0_95": true
+  },
+  "wrong Pod-seconds, S - T, k=12": {
+   "point": 960.8332,
+   "interval_95": [
+    939.4167,
+    981.4165
+   ],
+   "interval_98_33": [
+    934.7498,
+    986.3332
+   ],
+   "excludes_0_95": true
+  },
+  "gate invalid on T (F = 30 s) minus captured, k=12": {
+   "point": -2,
+   "interval_95": [
+    -22,
+    19
+   ],
+   "interval_98_33": [
+    -26.3333,
+    23.3333
+   ],
+   "excludes_0_95": false
+  },
+  "gate executions on T (F = 30 s) minus captured, k=12": {
+   "point": -1423,
+   "interval_95": [
+    -1729.3417,
+    -1146.3333
+   ],
+   "interval_98_33": [
+    -1811,
+    -1092.4417
+   ],
+   "excludes_0_95": true
+  },
+  "audit from S: first verdicts reported differently (share), k=12": {
+   "point": 0.2265,
+   "interval_95": [
+    0.2183,
+    0.2352
+   ]
+  },
+  "audit from T: first verdicts reported differently (share), k=12": {
+   "point": 0.1963,
+   "interval_95": [
+    0.1881,
+    0.2064
+   ]
+  },
+  "short episodes recorded, T - S, k=24": {
+   "point": 41.625,
+   "interval_95": [
+    41.1665,
+    42.0833
+   ],
+   "interval_98_33": [
+    41.0417,
+    42.1666
+   ],
+   "excludes_0_95": true
+  },
+  "wrong Pod-seconds, S - T, k=24": {
+   "point": 1485.0832,
+   "interval_95": [
+    1453.707,
+    1522.4177
+   ],
+   "interval_98_33": [
+    1449.3886,
+    1530.5979
+   ],
+   "excludes_0_95": true
+  },
+  "gate invalid on T (F = 30 s) minus captured, k=24": {
+   "point": -70.6667,
+   "interval_95": [
+    -86.0083,
+    -55.6667
+   ],
+   "interval_98_33": [
+    -89,
+    -53.3333
+   ],
+   "excludes_0_95": true
+  },
+  "gate executions on T (F = 30 s) minus captured, k=24": {
+   "point": -5728.6667,
+   "interval_95": [
+    -6011.6667,
+    -5402
+   ],
+   "interval_98_33": [
+    -6055.8917,
+    -5316.1083
+   ],
+   "excludes_0_95": true
+  },
+  "audit from S: first verdicts reported differently (share), k=24": {
+   "point": 0.3716,
+   "interval_95": [
+    0.3647,
+    0.3778
+   ]
+  },
+  "audit from T: first verdicts reported differently (share), k=24": {
+   "point": 0.3651,
+   "interval_95": [
+    0.3571,
+    0.3719
+   ]
+  },
+  "audit from S: first verdicts reported differently (share), k=1": {
+   "point": 0.0044,
+   "interval_95": [
+    0.0028,
+    0.0062
+   ]
+  }
+ }
+}

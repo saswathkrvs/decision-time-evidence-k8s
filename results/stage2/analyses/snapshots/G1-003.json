@@ -1,0 +1,2671 @@
+{
+ "capture": "G1-003",
+ "scenario": "G1",
+ "service": "recommendationservice",
+ "H": "2026-10-20T09:18:35.644939Z",
+ "window": {
+  "first_list": "2026-10-20T09:14:32.901718Z",
+  "last_list": "2026-10-20T09:19:32.300392Z",
+  "seconds": 299.399,
+  "pods": 6,
+  "clock_band_s": 1.221543
+ },
+ "intervals": {
+  "1": {
+   "phases": 1,
+   "median_interval_s_by_phase": [
+    2.471
+   ],
+   "median_interval_s": 2.471
+  },
+  "6": {
+   "phases": 6,
+   "median_interval_s_by_phase": [
+    15.13,
+    15.079,
+    14.976,
+    15.095,
+    15.109,
+    15.007
+   ],
+   "median_interval_s": 15.087
+  },
+  "12": {
+   "phases": 12,
+   "median_interval_s_by_phase": [
+    30.068,
+    30.22,
+    29.965,
+    29.988,
+    30.07,
+    30.178,
+    29.97,
+    29.927,
+    30.026,
+    30.088,
+    30.07,
+    30.053
+   ],
+   "median_interval_s": 30.0605
+  },
+  "24": {
+   "phases": 24,
+   "median_interval_s_by_phase": [
+    60.344,
+    60.597,
+    60.312,
+    60.093,
+    60.109,
+    60.27,
+    60.219,
+    60.339,
+    60.242,
+    60.269,
+    60.276,
+    60.285,
+    60.199,
+    60.181,
+    60.022,
+    59.967,
+    60.07,
+    60.046,
+    60.055,
+    60.077,
+    60.135,
+    60.099,
+    59.976,
+    60.024
+   ],
+   "median_interval_s": 60.158
+  }
+ },
+ "episodes": {
+  "reference": [
+   {
+    "pod": "0b5c6a4c-7414-4bf8-bf15-31eafe7f906d",
+    "type": "terminating",
+    "begin": "2026-10-20T09:16:27.000000Z",
+    "end": "2026-10-20T09:16:48.571892Z",
+    "seconds": 21.572,
+    "open_at_end": false
+   },
+   {
+    "pod": "0ec391b0-dc39-42f3-aa89-f04537a8e2da",
+    "type": "starting",
+    "begin": "2026-10-20T09:16:08.000000Z",
+    "end": "2026-10-20T09:16:15.000000Z",
+    "seconds": 7.0,
+    "open_at_end": false
+   },
+   {
+    "pod": "0ec391b0-dc39-42f3-aa89-f04537a8e2da",
+    "type": "ready",
+    "begin": "2026-10-20T09:16:15.000000Z",
+    "end": null,
+    "seconds": 197.3,
+    "open_at_end": true
+   },
+   {
+    "pod": "19008552-d236-4dd4-969e-107620fae53e",
+    "type": "terminating",
+    "begin": "2026-10-20T09:16:15.000000Z",
+    "end": "2026-10-20T09:16:39.487214Z",
+    "seconds": 24.487,
+    "open_at_end": false
+   },
+   {
+    "pod": "576fc067-7887-428a-8a89-1528229b11f3",
+    "type": "starting",
+    "begin": "2026-10-20T09:16:15.000000Z",
+    "end": "2026-10-20T09:16:27.000000Z",
+    "seconds": 12.0,
+    "open_at_end": false
+   },
+   {
+    "pod": "576fc067-7887-428a-8a89-1528229b11f3",
+    "type": "ready",
+    "begin": "2026-10-20T09:16:27.000000Z",
+    "end": null,
+    "seconds": 185.3,
+    "open_at_end": true
+   },
+   {
+    "pod": "e7b02414-8d7b-48fb-87f6-967da187f29c",
+    "type": "terminating",
+    "begin": "2026-10-20T09:16:34.000000Z",
+    "end": "2026-10-20T09:16:55.581788Z",
+    "seconds": 21.582,
+    "open_at_end": false
+   },
+   {
+    "pod": "ed45e06c-494a-4912-b78a-8f07cfc9f492",
+    "type": "starting",
+    "begin": "2026-10-20T09:16:27.000000Z",
+    "end": "2026-10-20T09:16:34.000000Z",
+    "seconds": 7.0,
+    "open_at_end": false
+   },
+   {
+    "pod": "ed45e06c-494a-4912-b78a-8f07cfc9f492",
+    "type": "ready",
+    "begin": "2026-10-20T09:16:34.000000Z",
+    "end": null,
+    "seconds": 178.3,
+    "open_at_end": true
+   }
+  ],
+  "by_type": {
+   "starting": 3,
+   "ready": 3,
+   "not_ready": 0,
+   "terminating": 3
+  },
+  "recorded": {
+   "S": {
+    "1": {
+     "starting": 3.0,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 3.0
+    },
+    "6": {
+     "starting": 1.6667,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 3.0
+    },
+    "12": {
+     "starting": 0.8333,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 2.1667
+    },
+    "24": {
+     "starting": 0.4167,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 1.0833
+    }
+   },
+   "T": {
+    "1": {
+     "starting": 3.0,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 3.0
+    },
+    "6": {
+     "starting": 3.0,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 3.0
+    },
+    "12": {
+     "starting": 3.0,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 2.1667
+    },
+    "24": {
+     "starting": 3.0,
+     "ready": 3.0,
+     "not_ready": 0.0,
+     "terminating": 1.0833
+    }
+   },
+   "W": {
+    "events": {
+     "starting": 3,
+     "ready": 3,
+     "not_ready": 0,
+     "terminating": 3
+    }
+   }
+  },
+  "start_lag_s": {
+   "S": {
+    "1": [
+     1.021,
+     1.021,
+     1.021,
+     1.539,
+     1.539,
+     2.492,
+     2.798,
+     2.798,
+     2.798
+    ],
+    "6": [
+     1.021,
+     1.021,
+     1.021,
+     1.539,
+     1.539,
+     2.492,
+     2.798,
+     2.798,
+     2.798,
+     3.531,
+     3.531,
+     3.531,
+     4.299,
+     4.299,
+     4.925,
+     5.499,
+     5.499,
+     5.499,
+     5.924,
+     5.924,
+     5.924,
+     6.731,
+     6.731,
+     7.362,
+     8.132,
+     8.132,
+     8.132,
+     8.539,
+     8.539,
+     9.446,
+     9.446,
+     10.521,
+     10.521,
+     10.521,
+     11.299,
+     11.299,
+     11.829,
+     11.829,
+     13.021,
+     13.021,
+     13.731,
+     13.731,
+     14.295,
+     14.295,
+     15.531,
+     15.531
+    ],
+    "12": [
+     1.021,
+     1.021,
+     1.021,
+     1.539,
+     1.539,
+     2.492,
+     2.798,
+     2.798,
+     2.798,
+     3.531,
+     3.531,
+     3.531,
+     4.299,
+     4.299,
+     4.925,
+     5.499,
+     5.499,
+     5.499,
+     5.924,
+     5.924,
+     5.924,
+     6.731,
+     6.731,
+     7.362,
+     8.132,
+     8.132,
+     8.132,
+     8.539,
+     8.539,
+     9.446,
+     9.446,
+     10.521,
+     10.521,
+     10.521,
+     11.299,
+     11.299,
+     11.829,
+     11.829,
+     13.021,
+     13.021,
+     13.731,
+     13.731,
+     14.295,
+     14.295,
+     15.531,
+     15.531,
+     16.446,
+     16.446,
+     16.669,
+     16.669,
+     17.924,
+     17.924,
+     18.829,
+     18.829,
+     19.152,
+     19.152,
+     20.539,
+     20.539,
+     21.295,
+     21.295,
+     21.707,
+     23.299,
+     23.299,
+     23.669,
+     24.108,
+     25.731,
+     26.152,
+     26.572,
+     28.446,
+     28.707,
+     28.972,
+     30.829
+    ],
+    "24": [
+     1.021,
+     1.021,
+     1.021,
+     1.539,
+     1.539,
+     2.492,
+     2.798,
+     2.798,
+     2.798,
+     3.531,
+     3.531,
+     3.531,
+     4.299,
+     4.299,
+     4.925,
+     5.499,
+     5.499,
+     5.499,
+     5.924,
+     5.924,
+     5.924,
+     6.731,
+     6.731,
+     7.362,
+     8.132,
+     8.132,
+     8.132,
+     8.539,
+     8.539,
+     9.446,
+     9.446,
+     10.521,
+     10.521,
+     10.521,
+     11.299,
+     11.299,
+     11.829,
+     11.829,
+     13.021,
+     13.021,
+     13.731,
+     13.731,
+     14.295,
+     14.295,
+     15.531,
+     15.531,
+     16.446,
+     16.446,
+     16.669,
+     16.669,
+     17.924,
+     17.924,
+     18.829,
+     18.829,
+     19.152,
+     19.152,
+     20.539,
+     20.539,
+     21.295,
+     21.295,
+     21.707,
+     23.299,
+     23.299,
+     23.669,
+     24.108,
+     25.731,
+     26.152,
+     26.572,
+     28.446,
+     28.707,
+     28.972,
+     30.829,
+     31.108,
+     31.431,
+     33.295,
+     33.572,
+     33.798,
+     35.669,
+     35.972,
+     36.188,
+     38.152,
+     38.431,
+     38.576,
+     40.707,
+     40.798,
+     40.936,
+     43.108,
+     43.188,
+     43.51,
+     45.572,
+     45.576,
+     45.889,
+     47.936,
+     47.972,
+     48.366,
+     50.431,
+     50.51,
+     50.767,
+     52.798,
+     52.889,
+     53.157,
+     55.188,
+     55.366,
+     55.612,
+     57.576,
+     57.767,
+     58.001,
+     59.936
+    ]
+   },
+   "T": {
+    "1": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "6": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "12": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "24": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ "object_states": {
+  "watch": {
+   "Pod": 33,
+   "ReplicaSet": 24,
+   "Deployment": 15
+  },
+  "recorded": {
+   "1": {
+    "Pod": 17.0,
+    "ReplicaSet": 10.0,
+    "Deployment": 7.0
+   },
+   "6": {
+    "Pod": 13.8333,
+    "ReplicaSet": 8.0,
+    "Deployment": 5.6667
+   },
+   "12": {
+    "Pod": 12.0,
+    "ReplicaSet": 6.5,
+    "Deployment": 4.8333
+   },
+   "24": {
+    "Pod": 10.5,
+    "ReplicaSet": 5.75,
+    "Deployment": 4.4167
+   }
+  }
+ },
+ "status": {
+  "S": {
+   "1": {
+    "seconds": 971.0,
+    "wrong": 2.0,
+    "unknown": 0.0
+   },
+   "6": {
+    "seconds": 971.0,
+    "wrong": 40.3333,
+    "unknown": 24.0
+   },
+   "12": {
+    "seconds": 971.0,
+    "wrong": 82.0,
+    "unknown": 47.25
+   },
+   "24": {
+    "seconds": 971.0,
+    "wrong": 138.0833,
+    "unknown": 92.75
+   }
+  },
+  "T": {
+   "1": {
+    "seconds": 971.0,
+    "wrong": 0.0,
+    "unknown": 0.0
+   },
+   "6": {
+    "seconds": 971.0,
+    "wrong": 0.0,
+    "unknown": 7.0
+   },
+   "12": {
+    "seconds": 971.0,
+    "wrong": 17.4167,
+    "unknown": 12.0
+   },
+   "24": {
+    "seconds": 971.0,
+    "wrong": 40.2083,
+    "unknown": 14.5
+   }
+  },
+  "W": {
+   "events": {
+    "seconds": 971,
+    "wrong": 0,
+    "unknown": 0
+   }
+  }
+ },
+ "volume": {
+  "poller": {
+   "polls": 120,
+   "records_per_poll": 13.0,
+   "records": 1558,
+   "projected_bytes": 2651524,
+   "intervals": {
+    "1": {
+     "records": 1558.0,
+     "projected_bytes": 2651524.0,
+     "merged_records": 34.0,
+     "merged_projected_bytes": 57699.0
+    },
+    "6": {
+     "records": 259.6667,
+     "projected_bytes": 441920.6667,
+     "merged_records": 27.5,
+     "merged_projected_bytes": 46609.8333
+    },
+    "12": {
+     "records": 129.8333,
+     "projected_bytes": 220960.3333,
+     "merged_records": 23.3333,
+     "merged_projected_bytes": 39779.8333
+    },
+    "24": {
+     "records": 64.9167,
+     "projected_bytes": 110480.1667,
+     "merged_records": 20.6667,
+     "merged_projected_bytes": 35140.4167
+    }
+   }
+  },
+  "watch": {
+   "events": 63,
+   "list_objects": 12,
+   "projected_bytes": 119159,
+   "event_line_bytes": 549788
+  }
+ },
+ "cells": {
+  "action": "B",
+  "stream": "S0",
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "delta_s": [
+   0,
+   10,
+   30,
+   80
+  ]
+ },
+ "decisions": {
+  "1/0": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 589,
+    "invalid": 2,
+    "uncertain": 15,
+    "valid": 572,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 423320,
+    "declined": {
+     "DENY[R1]": 234,
+     "DENY[R3]": 122,
+     "NEEDS_APPROVAL[R2]": 135
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 270,
+      "executions": 270,
+      "posed": 540,
+      "uncertain": 7,
+      "valid": 263
+     },
+     "10 s": {
+      "declined": 221,
+      "executions": 319,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 309
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1313,
+    "invalid": 87,
+    "uncertain": 17,
+    "valid": 1209,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 9356,
+    "declined": {
+     "DENY[R1]": 468,
+     "DENY[R3]": 244,
+     "NEEDS_APPROVAL[R2]": 135
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 270,
+      "executions": 270,
+      "posed": 540,
+      "uncertain": 7,
+      "valid": 263
+     },
+     "10 s": {
+      "declined": 221,
+      "executions": 319,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 309
+     },
+     "30 s": {
+      "declined": 178,
+      "executions": 362,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 320
+     },
+     "80 s": {
+      "declined": 178,
+      "executions": 362,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 317
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 589,
+    "invalid": 2,
+    "uncertain": 15,
+    "valid": 572,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 422233,
+    "declined": {
+     "DENY[R1]": 234,
+     "DENY[R3]": 122,
+     "NEEDS_APPROVAL[R2]": 135
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "GT-2-B conditions without an established effect": 7,
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 270,
+      "executions": 270,
+      "posed": 540,
+      "uncertain": 7,
+      "valid": 263
+     },
+     "10 s": {
+      "declined": 221,
+      "executions": 319,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 309
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "6/0": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 512,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 502,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 77571,
+    "declined": {
+     "DENY[R1]": 200,
+     "DENY[R3]": 140,
+     "NEEDS_APPROVAL[R2]": 228
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 258,
+      "executions": 282,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 272
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1252,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 1155,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 4435,
+    "declined": {
+     "DENY[R1]": 400,
+     "DENY[R3]": 280,
+     "NEEDS_APPROVAL[R2]": 228
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 258,
+      "executions": 282,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 272
+     },
+     "30 s": {
+      "declined": 170,
+      "executions": 370,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 328
+     },
+     "80 s": {
+      "declined": 170,
+      "executions": 370,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 325
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 512,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 502,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 76724,
+    "declined": {
+     "DENY[R1]": 200,
+     "DENY[R3]": 140,
+     "NEEDS_APPROVAL[R2]": 228
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 258,
+      "executions": 282,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 272
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "6/2": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 455,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 445,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 74438,
+    "declined": {
+     "DENY[R1]": 186,
+     "DENY[R3]": 164,
+     "NEEDS_APPROVAL[R2]": 275
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 339,
+      "executions": 201,
+      "posed": 540,
+      "valid": 201
+     },
+     "10 s": {
+      "declined": 286,
+      "executions": 254,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 244
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1185,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 1088,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 5511,
+    "declined": {
+     "DENY[R1]": 372,
+     "DENY[R3]": 328,
+     "NEEDS_APPROVAL[R2]": 275
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 339,
+      "executions": 201,
+      "posed": 540,
+      "valid": 201
+     },
+     "10 s": {
+      "declined": 286,
+      "executions": 254,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 244
+     },
+     "30 s": {
+      "declined": 175,
+      "executions": 365,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 323
+     },
+     "80 s": {
+      "declined": 175,
+      "executions": 365,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 320
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 455,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 445,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 74487,
+    "declined": {
+     "DENY[R1]": 186,
+     "DENY[R3]": 164,
+     "NEEDS_APPROVAL[R2]": 275
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 339,
+      "executions": 201,
+      "posed": 540,
+      "valid": 201
+     },
+     "10 s": {
+      "declined": 286,
+      "executions": 254,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 244
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "6/4": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 562,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 552,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 74284,
+    "declined": {
+     "DENY[R1]": 188,
+     "DENY[R3]": 226,
+     "NEEDS_APPROVAL[R2]": 104
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 285,
+      "executions": 255,
+      "posed": 540,
+      "valid": 255
+     },
+     "10 s": {
+      "declined": 233,
+      "executions": 307,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 297
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1228,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 1131,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 5819,
+    "declined": {
+     "DENY[R1]": 376,
+     "DENY[R3]": 452,
+     "NEEDS_APPROVAL[R2]": 104
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 285,
+      "executions": 255,
+      "posed": 540,
+      "valid": 255
+     },
+     "10 s": {
+      "declined": 233,
+      "executions": 307,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 297
+     },
+     "30 s": {
+      "declined": 207,
+      "executions": 333,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 291
+     },
+     "80 s": {
+      "declined": 207,
+      "executions": 333,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 288
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 562,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 552,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 73330,
+    "declined": {
+     "DENY[R1]": 188,
+     "DENY[R3]": 226,
+     "NEEDS_APPROVAL[R2]": 104
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 285,
+      "executions": 255,
+      "posed": 540,
+      "valid": 255
+     },
+     "10 s": {
+      "declined": 233,
+      "executions": 307,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 297
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "12/0": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 513,
+    "invalid": 2,
+    "uncertain": 37,
+    "valid": 474,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 44151,
+    "declined": {
+     "DENY[R1]": 160,
+     "DENY[R3]": 134,
+     "NEEDS_APPROVAL[R2]": 273
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 29,
+     "target_deletion_request_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 257,
+      "executions": 283,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 37,
+      "valid": 244
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1298,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 1201,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 5758,
+    "declined": {
+     "DENY[R1]": 320,
+     "DENY[R3]": 268,
+     "NEEDS_APPROVAL[R2]": 274
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 258,
+      "executions": 282,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 272
+     },
+     "30 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 351
+     },
+     "80 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 348
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 513,
+    "invalid": 2,
+    "uncertain": 37,
+    "valid": 474,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 43396,
+    "declined": {
+     "DENY[R1]": 160,
+     "DENY[R3]": 134,
+     "NEEDS_APPROVAL[R2]": 273
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 29,
+     "target_deletion_request_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 257,
+      "executions": 283,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 37,
+      "valid": 244
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "12/4": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 389,
+    "invalid": 0,
+    "uncertain": 4,
+    "valid": 385,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 42434,
+    "declined": {
+     "DENY[R1]": 218,
+     "DENY[R3]": 166,
+     "NEEDS_APPROVAL[R2]": 307
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "floor_count_within_band": 4
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 369,
+      "executions": 171,
+      "posed": 540,
+      "valid": 171
+     },
+     "10 s": {
+      "declined": 322,
+      "executions": 218,
+      "posed": 540,
+      "uncertain": 4,
+      "valid": 214
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1177,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 1080,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 8734,
+    "declined": {
+     "DENY[R1]": 272,
+     "DENY[R3]": 336,
+     "NEEDS_APPROVAL[R2]": 375
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 369,
+      "executions": 171,
+      "posed": 540,
+      "valid": 171
+     },
+     "10 s": {
+      "declined": 310,
+      "executions": 230,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 220
+     },
+     "30 s": {
+      "declined": 152,
+      "executions": 388,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 346
+     },
+     "80 s": {
+      "declined": 152,
+      "executions": 388,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 343
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 389,
+    "invalid": 0,
+    "uncertain": 4,
+    "valid": 385,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 43402,
+    "declined": {
+     "DENY[R1]": 218,
+     "DENY[R3]": 166,
+     "NEEDS_APPROVAL[R2]": 307
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "floor_count_within_band": 4
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 369,
+      "executions": 171,
+      "posed": 540,
+      "valid": 171
+     },
+     "10 s": {
+      "declined": 322,
+      "executions": 218,
+      "posed": 540,
+      "uncertain": 4,
+      "valid": 214
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "12/8": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 286,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 276,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 43680,
+    "declined": {
+     "DENY[R1]": 224,
+     "DENY[R3]": 70,
+     "NEEDS_APPROVAL[R2]": 500
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 426,
+      "executions": 114,
+      "posed": 540,
+      "valid": 114
+     },
+     "10 s": {
+      "declined": 368,
+      "executions": 172,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 162
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1072,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 975,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 8775,
+    "declined": {
+     "DENY[R1]": 448,
+     "DENY[R3]": 140,
+     "NEEDS_APPROVAL[R2]": 500
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 426,
+      "executions": 114,
+      "posed": 540,
+      "valid": 114
+     },
+     "10 s": {
+      "declined": 368,
+      "executions": 172,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 162
+     },
+     "30 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 351
+     },
+     "80 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 348
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 286,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 276,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 44945,
+    "declined": {
+     "DENY[R1]": 224,
+     "DENY[R3]": 70,
+     "NEEDS_APPROVAL[R2]": 500
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 426,
+      "executions": 114,
+      "posed": 540,
+      "valid": 114
+     },
+     "10 s": {
+      "declined": 368,
+      "executions": 172,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 162
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "24/0": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 458,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 458,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 29148,
+    "declined": {
+     "DENY[R1]": 172,
+     "DENY[R3]": 178,
+     "NEEDS_APPROVAL[R2]": 272
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 320,
+      "executions": 220,
+      "posed": 540,
+      "valid": 220
+     },
+     "10 s": {
+      "declined": 302,
+      "executions": 238,
+      "posed": 540,
+      "valid": 238
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1298,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 1201,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 5080,
+    "declined": {
+     "DENY[R1]": 320,
+     "DENY[R3]": 268,
+     "NEEDS_APPROVAL[R2]": 274
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 310,
+      "executions": 230,
+      "posed": 540,
+      "valid": 230
+     },
+     "10 s": {
+      "declined": 258,
+      "executions": 282,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 272
+     },
+     "30 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 351
+     },
+     "80 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 348
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 458,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 458,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 27829,
+    "declined": {
+     "DENY[R1]": 172,
+     "DENY[R3]": 178,
+     "NEEDS_APPROVAL[R2]": 272
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 320,
+      "executions": 220,
+      "posed": 540,
+      "valid": 220
+     },
+     "10 s": {
+      "declined": 302,
+      "executions": 238,
+      "posed": 540,
+      "valid": 238
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "24/8": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 286,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 276,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 26047,
+    "declined": {
+     "DENY[R1]": 294,
+     "NEEDS_APPROVAL[R2]": 500
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 426,
+      "executions": 114,
+      "posed": 540,
+      "valid": 114
+     },
+     "10 s": {
+      "declined": 368,
+      "executions": 172,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 162
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 1072,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 975,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 9365,
+    "declined": {
+     "DENY[R1]": 588,
+     "NEEDS_APPROVAL[R2]": 500
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 426,
+      "executions": 114,
+      "posed": 540,
+      "valid": 114
+     },
+     "10 s": {
+      "declined": 368,
+      "executions": 172,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 162
+     },
+     "30 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 351
+     },
+     "80 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 348
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 286,
+    "invalid": 2,
+    "uncertain": 8,
+    "valid": 276,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 26048,
+    "declined": {
+     "DENY[R1]": 294,
+     "NEEDS_APPROVAL[R2]": 500
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 8
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 426,
+      "executions": 114,
+      "posed": 540,
+      "valid": 114
+     },
+     "10 s": {
+      "declined": 368,
+      "executions": 172,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 162
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  },
+  "24/16": {
+   "T F30": {
+    "posed": 2160,
+    "executions": 60,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 60,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 30662,
+    "declined": {
+     "DENY[R1]": 384,
+     "NEEDS_APPROVAL[R2]": 636
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 520,
+      "executions": 20,
+      "posed": 540,
+      "valid": 20
+     },
+     "10 s": {
+      "declined": 500,
+      "executions": 40,
+      "posed": 540,
+      "valid": 40
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   },
+   "T F600": {
+    "posed": 2160,
+    "executions": 936,
+    "invalid": 87,
+    "uncertain": 10,
+    "valid": 839,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 0,
+    "censored": 0,
+    "evaluations": 14591,
+    "declined": {
+     "DENY[R1]": 588,
+     "NEEDS_APPROVAL[R2]": 636
+    },
+    "invalid_by_target_state": {
+     "gone": 45,
+     "terminating": 42
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 475,
+      "executions": 65,
+      "posed": 540,
+      "valid": 65
+     },
+     "10 s": {
+      "declined": 455,
+      "executions": 85,
+      "invalid": 2,
+      "posed": 540,
+      "uncertain": 8,
+      "valid": 75
+     },
+     "30 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 40,
+      "posed": 540,
+      "uncertain": 2,
+      "valid": 351
+     },
+     "80 s": {
+      "declined": 147,
+      "executions": 393,
+      "invalid": 45,
+      "posed": 540,
+      "valid": 348
+     }
+    }
+   },
+   "S F30": {
+    "posed": 2160,
+    "executions": 60,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 60,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 352,
+    "censored": 728,
+    "evaluations": 30858,
+    "declined": {
+     "DENY[R1]": 384,
+     "NEEDS_APPROVAL[R2]": 636
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 520,
+      "executions": 20,
+      "posed": 540,
+      "valid": 20
+     },
+     "10 s": {
+      "declined": 500,
+      "executions": 40,
+      "posed": 540,
+      "valid": 40
+     },
+     "30 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     },
+     "80 s": {
+      "censored": 364,
+      "expired": 176,
+      "posed": 540
+     }
+    }
+   }
+  }
+ },
+ "audit": {
+  "1/0": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 0,
+    "disposition_differs": 0,
+    "execution_differs": 0
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 4,
+    "disposition_differs": 0,
+    "execution_differs": 0
+   }
+  },
+  "6/0": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 107,
+    "disposition_differs": 93,
+    "execution_differs": 77
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 107,
+    "disposition_differs": 93,
+    "execution_differs": 77
+   }
+  },
+  "6/2": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 220,
+    "disposition_differs": 160,
+    "execution_differs": 134
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 220,
+    "disposition_differs": 160,
+    "execution_differs": 134
+   }
+  },
+  "6/4": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 149,
+    "disposition_differs": 85,
+    "execution_differs": 27
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 149,
+    "disposition_differs": 85,
+    "execution_differs": 27
+   }
+  },
+  "12/0": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 250,
+    "disposition_differs": 138,
+    "execution_differs": 76
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 250,
+    "disposition_differs": 138,
+    "execution_differs": 76
+   }
+  },
+  "12/4": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 439,
+    "disposition_differs": 248,
+    "execution_differs": 200
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 439,
+    "disposition_differs": 248,
+    "execution_differs": 200
+   }
+  },
+  "12/8": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 588,
+    "disposition_differs": 365,
+    "execution_differs": 303
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 588,
+    "disposition_differs": 365,
+    "execution_differs": 303
+   }
+  },
+  "24/0": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 529,
+    "disposition_differs": 193,
+    "execution_differs": 131
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 529,
+    "disposition_differs": 193,
+    "execution_differs": 131
+   }
+  },
+  "24/8": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 740,
+    "disposition_differs": 365,
+    "execution_differs": 303
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 740,
+    "disposition_differs": 365,
+    "execution_differs": 303
+   }
+  },
+  "24/16": {
+   "T": {
+    "posed": 2160,
+    "first_verdict_differs": 860,
+    "disposition_differs": 591,
+    "execution_differs": 529
+   },
+   "S": {
+    "posed": 2160,
+    "first_verdict_differs": 860,
+    "disposition_differs": 591,
+    "execution_differs": 529
+   }
+  }
+ },
+ "seconds": {
+  "state measures": 0.4,
+  "captured": 34.3,
+  "1/0": 28.3,
+  "6/0": 15.0,
+  "6/2": 14.9,
+  "6/4": 14.3,
+  "12/0": 9.1,
+  "12/4": 8.5,
+  "12/8": 8.9,
+  "24/0": 8.6,
+  "24/8": 7.6,
+  "24/16": 6.7
+ }
+}
