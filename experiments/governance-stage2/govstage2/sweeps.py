@@ -49,6 +49,15 @@ delays delta.
     the fresh recheck's executions (R decides and executes at the receipt x_R of a response) labelled as if the
     deletion took effect ``ACT_LAGS`` seconds after x_R: how many would then have met an invalid, an uncertain or a
     valid state, i.e. how much a gap between the recheck's read and the action could matter.
+
+``own_timestamps_pass`` (arm G, action B, stream S0; results/stage2/analyses/own_timestamps/<capture>.json)
+    T_p's decisions replayed from a log that stamps every record on receipt but keeps the timestamps the records
+    themselves carry (``own_timestamps_model``): the observations made from the poller's lists, and the absences
+    they show, hold from their availability, whereas the kubelet transition times (K1 points), the objects' creation
+    times (the creation ceilings that open a run, and the identity facts' valid times) and the times recorded in the
+    change records are kept. The receipt-time audit of ``sweep_pass`` discards all of these. At the captured latency
+    and with every poller record 5 and 30 s later, as the receipt-time audit: the gate's own decisions on that stream
+    against the replay (first verdict, disposition, execution), with the replay's executions and invalid ones.
 """
 from __future__ import annotations
 
@@ -457,6 +466,70 @@ def check_to_act_pass(converted, plan_path, out_path, *, raw=None, progress=None
                        ("executions_by_lag", OrderedDict((k, OrderedDict((x, v.get(x, 0)) for x in (
                            "invalid", "uncertain", "valid"))) for k, v in counts.items())),
                        ("seconds", {"check to act": seconds})])
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
+    return doc
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# A receipt-stamped log that keeps the records' own timestamps
+# ---------------------------------------------------------------------------------------------------------------
+def own_timestamps_model(model, k1_ids, change_ids):
+    """The same records stamped on receipt, keeping the timestamps the records carry (see the module docstring):
+    every observation except the K1 points and the change records' observations holds from its availability, its
+    creation ceiling (``starts_at``) kept; identity facts unchanged."""
+    observations = []
+    for o in model.observations:
+        own = o.record_id in k1_ids or o.record_id.split("#", 1)[0] in change_ids
+        if own or o.observed_at == o.available_at:
+            observations.append(o)
+        else:
+            observations.append(dataclasses.replace(o, observed_at=o.available_at))
+    return dataclasses.replace(model, observations=tuple(observations))
+
+
+def to_own_timestamps(ctx, change_ids):
+    ctx.close()
+    ctx.model = own_timestamps_model(ctx.model, ctx.k1_ids, change_ids)
+    ctx._stores, ctx.memo, ctx._schedules, ctx._hind_index = {}, {}, {}, None
+    return ctx
+
+
+def own_timestamps_pass(converted, plan_path, out_path, *, raw=None, progress=None) -> dict:
+    """See the module docstring (``own_timestamps_pass``)."""
+    inputs = read_decision_inputs(converted, raw=raw)
+    plan_doc = json.loads(Path(plan_path).read_text(encoding="utf-8"))
+    capture = build_capture(inputs, plan_doc, conditions=list(BASE))
+    if capture.plan.arm != "G":
+        raise ValueError("arm-G captures only")
+    raw_dir = Path(raw).resolve() if raw else raw_capture_of(Path(converted).resolve())
+    labeller = Labeller.build(capture, inputs, read_label_inputs(Path(converted).resolve(), raw_dir),
+                              manifest_grace_seconds(inputs.configuration))
+    Tp = ADAPTER_CONDITIONS["T_p"]
+    change_ids = frozenset(r.id for r in inputs.base_records)
+    timing, audit = OrderedDict(), OrderedDict()
+    for latency in (0,) + LATENCIES:
+        started = time.perf_counter()
+        if latency == 0:
+            api, k1 = None, None
+        else:
+            api, k1 = delayed_poller(inputs, latency)
+        tctx, k1_index = poller_context(capture, inputs, api=api, k1_rows=k1)
+        truth = _rows(Tp, tctx, capture, "B", k1_index=k1_index)
+        tctx.close()
+        octx, _ = poller_context(capture, inputs, api=api, k1_rows=k1)
+        replay = _rows(Tp, to_own_timestamps(octx, change_ids), capture, "B", name="T_p[own timestamps]")
+        octx.close()
+        audit["%d s" % latency] = OrderedDict([
+            ("gate", tally(truth, labeller, "B")),
+            ("own_timestamps_replay", tally(replay, labeller, "B")),
+            ("own_timestamps_vs_gate", verdict_agreement(truth, replay))])
+        timing["%d s" % latency] = round(time.perf_counter() - started, 1)
+        if progress:
+            progress("%s own timestamps %d s %.1f s" % (capture.capture_id, latency, timing["%d s" % latency]))
+    doc = OrderedDict([("capture", capture.capture_id), ("scenario", capture.plan.scenario),
+                       ("cells", {"Delta_s": list(capture.plan.deltas), "delta_s": list(capture.plan.dispatch)}),
+                       ("audit", audit), ("seconds", timing)])
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     Path(out_path).write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
     return doc

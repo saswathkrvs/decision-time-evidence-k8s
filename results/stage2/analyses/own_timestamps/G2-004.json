@@ -1,0 +1,337 @@
+{
+ "capture": "G2-004",
+ "scenario": "G2",
+ "cells": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "delta_s": [
+   0,
+   10,
+   30,
+   80
+  ]
+ },
+ "audit": {
+  "0 s": {
+   "gate": {
+    "posed": 2148,
+    "executions": 637,
+    "invalid": 0,
+    "uncertain": 11,
+    "valid": 626,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 298,
+    "censored": 776,
+    "evaluations": 392515,
+    "declined": {
+     "DENY[R1]": 144,
+     "DENY[R3]": 130,
+     "NEEDS_APPROVAL[R2]": 163
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "floor_count_within_band": 10,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 238,
+      "executions": 299,
+      "posed": 537,
+      "valid": 299
+     },
+     "10 s": {
+      "declined": 199,
+      "executions": 338,
+      "posed": 537,
+      "uncertain": 11,
+      "valid": 327
+     },
+     "30 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "80 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     }
+    }
+   },
+   "own_timestamps_replay": {
+    "posed": 2148,
+    "executions": 637,
+    "invalid": 0,
+    "uncertain": 11,
+    "valid": 626,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 298,
+    "censored": 776,
+    "evaluations": 393151,
+    "declined": {
+     "DENY[R1]": 144,
+     "DENY[R3]": 130,
+     "NEEDS_APPROVAL[R2]": 163
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "floor_count_within_band": 10,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 238,
+      "executions": 299,
+      "posed": 537,
+      "valid": 299
+     },
+     "10 s": {
+      "declined": 199,
+      "executions": 338,
+      "posed": 537,
+      "uncertain": 11,
+      "valid": 327
+     },
+     "30 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "80 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     }
+    }
+   },
+   "own_timestamps_vs_gate": {
+    "posed": 2148,
+    "first_verdict_differs": 0,
+    "disposition_differs": 0,
+    "execution_differs": 0
+   }
+  },
+  "5 s": {
+   "gate": {
+    "posed": 2148,
+    "executions": 626,
+    "invalid": 0,
+    "uncertain": 11,
+    "valid": 615,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 298,
+    "censored": 776,
+    "evaluations": 391909,
+    "declined": {
+     "DENY[R1]": 122,
+     "DENY[R3]": 172,
+     "NEEDS_APPROVAL[R2]": 154
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "floor_count_within_band": 10,
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 238,
+      "executions": 299,
+      "posed": 537,
+      "valid": 299
+     },
+     "10 s": {
+      "declined": 210,
+      "executions": 327,
+      "posed": 537,
+      "uncertain": 11,
+      "valid": 316
+     },
+     "30 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "80 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     }
+    }
+   },
+   "own_timestamps_replay": {
+    "posed": 2148,
+    "executions": 637,
+    "invalid": 10,
+    "uncertain": 23,
+    "valid": 604,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 298,
+    "censored": 776,
+    "evaluations": 390806,
+    "declined": {
+     "DENY[R1]": 106,
+     "DENY[R3]": 140,
+     "NEEDS_APPROVAL[R2]": 191
+    },
+    "invalid_by_target_state": {
+     "terminating": 10
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 13,
+     "target_deletion_request_within_band": 10
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 243,
+      "executions": 294,
+      "posed": 537,
+      "uncertain": 5,
+      "valid": 289
+     },
+     "10 s": {
+      "declined": 194,
+      "executions": 343,
+      "invalid": 10,
+      "posed": 537,
+      "uncertain": 18,
+      "valid": 315
+     },
+     "30 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "80 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     }
+    }
+   },
+   "own_timestamps_vs_gate": {
+    "posed": 2148,
+    "first_verdict_differs": 66,
+    "disposition_differs": 85,
+    "execution_differs": 85
+   }
+  },
+  "30 s": {
+   "gate": {
+    "posed": 2148,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 596,
+    "censored": 1552,
+    "evaluations": 769104,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "10 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "30 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "80 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     }
+    }
+   },
+   "own_timestamps_replay": {
+    "posed": 2148,
+    "executions": 547,
+    "invalid": 135,
+    "uncertain": 44,
+    "valid": 368,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 298,
+    "censored": 776,
+    "evaluations": 402288,
+    "declined": {
+     "DENY[R1]": 14,
+     "DENY[R3]": 126,
+     "NEEDS_APPROVAL[R2]": 387
+    },
+    "invalid_by_target_state": {
+     "gone": 9,
+     "not_ready": 23,
+     "terminating": 103
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 21,
+     "target_deletion_request_within_band": 23
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 292,
+      "executions": 245,
+      "invalid": 59,
+      "posed": 537,
+      "uncertain": 23,
+      "valid": 163
+     },
+     "10 s": {
+      "declined": 235,
+      "executions": 302,
+      "invalid": 76,
+      "posed": 537,
+      "uncertain": 21,
+      "valid": 205
+     },
+     "30 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     },
+     "80 s": {
+      "censored": 388,
+      "expired": 149,
+      "posed": 537
+     }
+    }
+   },
+   "own_timestamps_vs_gate": {
+    "posed": 2148,
+    "first_verdict_differs": 710,
+    "disposition_differs": 1074,
+    "execution_differs": 547
+   }
+  }
+ },
+ "seconds": {
+  "0 s": 44.8,
+  "5 s": 44.3,
+  "30 s": 50.1
+ }
+}

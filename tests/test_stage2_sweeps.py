@@ -134,6 +134,35 @@ def test_decision_log_counts_are_consistent(fast, tmp_path):
     assert 0 < doc["log"]["distinct_records"] <= doc["store"]["records"]
 
 
+def test_own_timestamps_model_keeps_only_the_times_the_records_carry(fast):
+    inputs = read_decision_inputs(fast["converted"])
+    capture = P.build_capture(inputs, fast_plan(), conditions=list(RV.BASE))
+    ctx, _ = RV.poller_context(capture, inputs)
+    change_ids = frozenset(r.id for r in inputs.base_records)
+    model = SW.own_timestamps_model(ctx.model, ctx.k1_ids, change_ids)
+    assert len(model.observations) == len(ctx.model.observations)
+    assert model.identity_facts == ctx.model.identity_facts
+    kept = moved = 0
+    for before, after in zip(ctx.model.observations, model.observations):
+        assert after.available_at == before.available_at and after.starts_at == before.starts_at
+        if before.record_id in ctx.k1_ids or before.record_id.split("#", 1)[0] in change_ids:
+            assert after == before
+            kept += 1
+        else:
+            assert after.observed_at == after.available_at
+            moved += before.observed_at != before.available_at
+    assert kept and moved
+    ctx.close()
+
+
+def test_own_timestamps_audit_matches_the_gate_and_the_receipt_time_audit(fast, tmp_path):
+    doc = SW.own_timestamps_pass(fast["converted"], fast["plan"], tmp_path / "FX-FAST.json")
+    assert list(doc["audit"]) == ["0 s", "5 s", "30 s"]
+    for latency, a in doc["audit"].items():
+        assert a["gate"] == fast["doc"]["audit"][latency]["gate"], latency
+        assert a["own_timestamps_vs_gate"]["posed"] == a["gate"]["posed"] == a["own_timestamps_replay"]["posed"]
+
+
 def test_check_to_act_at_zero_lag_is_the_recheck_itself(fast, tmp_path):
     doc = SW.check_to_act_pass(fast["converted"], fast["plan"], tmp_path / "FX-FAST.json")
     r = fast["doc"]["coverage"]["R"]

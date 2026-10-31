@@ -17,6 +17,8 @@
                                                                         # results/stage2/analyses/uncertain
     python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --snapshots
                                                                         # results/stage2/analyses/snapshots
+    python3 experiments/governance-stage2/run_replays.py --captures-root phase3/captures_stage2 --own-timestamps
+                                                                        # results/stage2/analyses/own_timestamps
 
 Writes one JSON file per capture (<out>/<capture>.json); a capture whose file exists is skipped, so an interrupted
 run continues where it stopped. The included captures are read from results/stage2/captures.json: arm G for every
@@ -59,6 +61,9 @@ def main(argv=None) -> int:
                       help="uncertain labels on the mutually evaluable decisions (replays.uncertain_pass), arm G")
     mode.add_argument("--snapshots", action="store_true",
                       help="snapshot-based state histories at longer intervals (snapshots.snapshot_pass), arm G")
+    mode.add_argument("--own-timestamps", action="store_true",
+                      help="audit replay from a receipt log that keeps the records' own timestamps "
+                           "(sweeps.own_timestamps_pass), arm G")
     a = ap.parse_args(argv)
     if a.out is None:
         a.out = str(ROOT / "results/stage2/analyses" / ("latency" if a.latency else "surrogate" if a.surrogate
@@ -66,7 +71,8 @@ def main(argv=None) -> int:
                                                         else "decision_log" if a.decision_log
                                                         else "check_to_act" if a.check_to_act
                                                         else "uncertain" if a.uncertain
-                                                        else "snapshots" if a.snapshots else "replays"))
+                                                        else "snapshots" if a.snapshots
+                                                        else "own_timestamps" if a.own_timestamps else "replays"))
     register = json.loads((ROOT / "results/stage2/captures.json").read_text(encoding="utf-8"))
     arms = ("G", "D") if a.sweeps else ("G",)
     captures = [c for arm in arms for s in register["populations"][arm] for c in s["captures"]]
@@ -80,6 +86,13 @@ def main(argv=None) -> int:
             print("skip", cap, flush=True)
             continue
         converted = Path(a.captures_root) / cap / "evidence"
+        if a.own_timestamps:
+            doc = sweeps.own_timestamps_pass(converted, a.plan, out,
+                                             progress=lambda m: print(m, file=sys.stderr, flush=True))
+            print(cap, json.dumps({k: (v["own_timestamps_vs_gate"]["first_verdict_differs"],
+                                       v["own_timestamps_vs_gate"]["posed"]) for k, v in doc["audit"].items()}),
+                  flush=True)
+            continue
         if a.snapshots:
             doc = snapshots.snapshot_pass(converted, a.plan, out,
                                           progress=lambda m: print(m, file=sys.stderr, flush=True))

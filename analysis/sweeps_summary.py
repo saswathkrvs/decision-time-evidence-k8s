@@ -1,10 +1,12 @@
-"""Totals of the coverage, parameter-sweep and receipt-time-audit replays, the decision log, the check-to-act gap, the
-uncertain labels on the mutually evaluable decisions and the diagnosis robustness test.
+"""Totals of the coverage, parameter-sweep and receipt-time-audit replays, the audit from a receipt log that keeps the
+records' own timestamps, the decision log, the check-to-act gap, the uncertain labels on the mutually evaluable
+decisions and the diagnosis robustness test.
 
     python -m analysis.sweeps_summary      # writes results/stage2/analyses/sweeps_summary.json
 
 Reads results/stage2/analyses/sweeps/<capture>.json (experiments/governance-stage2/run_replays.py --sweeps),
-decision_log/<capture>.json (--decision-log), check_to_act/<capture>.json (--check-to-act),
+own_timestamps/<capture>.json (--own-timestamps), decision_log/<capture>.json (--decision-log),
+check_to_act/<capture>.json (--check-to-act),
 uncertain/<capture>.json (--uncertain) and
 results/stage2/analyses/diagnosis_robustness.json (experiments/diagnosis-control-v1/run_diagnosis_stress.py
 --robustness). Sums over the included captures (results/stage2/captures.json); every count keeps the number of
@@ -176,6 +178,27 @@ def compute(results=ANALYSES) -> OrderedDict:
         audit[latency] = OrderedDict([("gate", finish(gate)), ("receipt_time_replay", finish(replay)),
                                       ("receipt_time_vs_gate", dict(agree))])
     out["audit"] = audit
+    # the audit from a receipt log that keeps the records' own timestamps (arm G)
+    if all((results / "own_timestamps" / (c + ".json")).exists() for c in G):
+        own = {c: json.loads((results / "own_timestamps" / (c + ".json")).read_text(encoding="utf-8")) for c in G}
+        section = OrderedDict()
+        for latency in own[G[0]]["audit"]:
+            gate, replay = OrderedDict(), OrderedDict()
+            agree = Counter()
+            per_capture = OrderedDict()
+            for c in G:
+                a = own[c]["audit"][latency]
+                add(gate, a["gate"])
+                add(replay, a["own_timestamps_replay"])
+                agree.update(a["own_timestamps_vs_gate"])
+                per_capture[c] = OrderedDict([
+                    ("posed", a["own_timestamps_vs_gate"]["posed"]),
+                    ("first_verdict_differs", a["own_timestamps_vs_gate"]["first_verdict_differs"]),
+                    ("receipt_time_first_verdict_differs",
+                     docs[c]["audit"][latency]["receipt_time_vs_gate"]["first_verdict_differs"])])
+            section[latency] = OrderedDict([("gate", finish(gate)), ("own_timestamps_replay", finish(replay)),
+                                            ("own_timestamps_vs_gate", dict(agree)), ("per_capture", per_capture)])
+        out["own_timestamps_audit"] = section
     # store and evaluation cost
     obs = [docs[c]["store"]["observations"] for c in G]
     keys = [docs[c]["store"]["keys"] for c in G]

@@ -665,6 +665,20 @@ def followup_numbers(a: Path, posed: int) -> OrderedDict:
                     for lat, v in sw["audit"].items())
     n["receipt-time audit percentages (0, 5, 30 s)"] = [
         round(100.0 * v["receipt_time_vs_gate"]["first_verdict_differs"] / posed, 1) for v in sw["audit"].values()]
+    if "own_timestamps_audit" in sw:
+        own = sw["own_timestamps_audit"]
+        n["audit from a receipt log with the records' own timestamps: first verdicts, dispositions, executions "
+          "misreported; executions and invalid ones reported (0, 5, 30 s)"] = OrderedDict(
+            (lat, [v["own_timestamps_vs_gate"]["first_verdict_differs"], v["own_timestamps_vs_gate"]["disposition_differs"],
+                   v["own_timestamps_vs_gate"]["execution_differs"], v["own_timestamps_replay"]["executions"],
+                   v["own_timestamps_replay"]["invalid"]]) for lat, v in own.items())
+        n["audit from a receipt log with the records' own timestamps: percentages (0, 5, 30 s)"] = [
+            round(100.0 * v["own_timestamps_vs_gate"]["first_verdict_differs"] / posed, 1) for v in own.values()]
+        n["gate's executions with the poller's records 0, 5, 30 s later"] = [
+            v["gate"]["executions"] for v in own.values()]
+        n["audit replays' approval requests by the recent-change rule (receipt time, own timestamps; 5 and 30 s)"] = [
+            [sw["audit"][lat]["receipt_time_replay"]["declined"].get("NEEDS_APPROVAL[R2]", 0),
+             own[lat]["own_timestamps_replay"]["declined"].get("NEEDS_APPROVAL[R2]", 0)] for lat in ("5 s", "30 s")]
     st = sw["store"]
     n["poller store per arm-G capture: versions, keys (median); versions per key (range)"] = [
         st["observations"]["median"], st["keys"]["median"],
@@ -899,6 +913,13 @@ EXPECTED = OrderedDict([
     ("receipt-time audit: first verdicts, dispositions, executions misreported; invalid reported (0, 5, 30 s)",
      {"0 s": [152, 72, 15, 110], "5 s": [1404, 1550, 720, 110], "30 s": [11482, 17196, 5726, 528]}),
     ("receipt-time audit percentages (0, 5, 30 s)", [0.4, 4.1, 33.4]),
+    ("audit from a receipt log with the records' own timestamps: first verdicts, dispositions, executions "
+     "misreported; executions and invalid ones reported (0, 5, 30 s)",
+     {"0 s": [0, 0, 0, 10478, 110], "5 s": [1292, 1494, 1494, 10490, 322], "30 s": [11608, 17196, 9071, 9071, 2122]}),
+    ("audit from a receipt log with the records' own timestamps: percentages (0, 5, 30 s)", [0.0, 3.8, 33.8]),
+    ("gate's executions with the poller's records 0, 5, 30 s later", [10478, 10428, 0]),
+    ("audit replays' approval requests by the recent-change rule (receipt time, own timestamps; 5 and 30 s)",
+     [[3556, 2726], [8604, 5117]]),
     ("poller store per arm-G capture: versions, keys (median); versions per key (range)",
      [5014.5, 49.0, [102.2, 106.5]]),
     ("decision log: input records per decision (median of capture medians; range); references; distinct records; "

@@ -1,0 +1,333 @@
+{
+ "capture": "G2-003",
+ "scenario": "G2",
+ "cells": {
+  "Delta_s": [
+   0,
+   5,
+   30
+  ],
+  "delta_s": [
+   0,
+   10,
+   30,
+   80
+  ]
+ },
+ "audit": {
+  "0 s": {
+   "gate": {
+    "posed": 2124,
+    "executions": 520,
+    "invalid": 0,
+    "uncertain": 1,
+    "valid": 519,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 302,
+    "censored": 760,
+    "evaluations": 404624,
+    "declined": {
+     "DENY[R1]": 222,
+     "DENY[R3]": 200,
+     "NEEDS_APPROVAL[R2]": 120
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 294,
+      "executions": 237,
+      "posed": 531,
+      "valid": 237
+     },
+     "10 s": {
+      "declined": 248,
+      "executions": 283,
+      "posed": 531,
+      "uncertain": 1,
+      "valid": 282
+     },
+     "30 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "80 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     }
+    }
+   },
+   "own_timestamps_replay": {
+    "posed": 2124,
+    "executions": 520,
+    "invalid": 0,
+    "uncertain": 1,
+    "valid": 519,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 302,
+    "censored": 760,
+    "evaluations": 405046,
+    "declined": {
+     "DENY[R1]": 222,
+     "DENY[R3]": 200,
+     "NEEDS_APPROVAL[R2]": 120
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 294,
+      "executions": 237,
+      "posed": 531,
+      "valid": 237
+     },
+     "10 s": {
+      "declined": 248,
+      "executions": 283,
+      "posed": 531,
+      "uncertain": 1,
+      "valid": 282
+     },
+     "30 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "80 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     }
+    }
+   },
+   "own_timestamps_vs_gate": {
+    "posed": 2124,
+    "first_verdict_differs": 0,
+    "disposition_differs": 0,
+    "execution_differs": 0
+   }
+  },
+  "5 s": {
+   "gate": {
+    "posed": 2124,
+    "executions": 520,
+    "invalid": 0,
+    "uncertain": 1,
+    "valid": 519,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 302,
+    "censored": 760,
+    "evaluations": 404845,
+    "declined": {
+     "DENY[R1]": 184,
+     "DENY[R3]": 278,
+     "NEEDS_APPROVAL[R2]": 80
+    },
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {
+     "target_deletion_request_within_band": 1
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 294,
+      "executions": 237,
+      "posed": 531,
+      "valid": 237
+     },
+     "10 s": {
+      "declined": 248,
+      "executions": 283,
+      "posed": 531,
+      "uncertain": 1,
+      "valid": 282
+     },
+     "30 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "80 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     }
+    }
+   },
+   "own_timestamps_replay": {
+    "posed": 2124,
+    "executions": 530,
+    "invalid": 2,
+    "uncertain": 11,
+    "valid": 517,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 302,
+    "censored": 760,
+    "evaluations": 402886,
+    "declined": {
+     "DENY[R1]": 178,
+     "DENY[R3]": 230,
+     "NEEDS_APPROVAL[R2]": 124
+    },
+    "invalid_by_target_state": {
+     "terminating": 2
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 9,
+     "target_deletion_request_within_band": 2
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 289,
+      "executions": 242,
+      "posed": 531,
+      "valid": 242
+     },
+     "10 s": {
+      "declined": 243,
+      "executions": 288,
+      "invalid": 2,
+      "posed": 531,
+      "uncertain": 11,
+      "valid": 275
+     },
+     "30 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "80 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     }
+    }
+   },
+   "own_timestamps_vs_gate": {
+    "posed": 2124,
+    "first_verdict_differs": 84,
+    "disposition_differs": 98,
+    "execution_differs": 98
+   }
+  },
+  "30 s": {
+   "gate": {
+    "posed": 2124,
+    "executions": 0,
+    "invalid": 0,
+    "uncertain": 0,
+    "valid": 0,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 604,
+    "censored": 1520,
+    "evaluations": 796193,
+    "declined": {},
+    "invalid_by_target_state": {},
+    "uncertain_by_reason": {},
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "10 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "30 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "80 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     }
+    }
+   },
+   "own_timestamps_replay": {
+    "posed": 2124,
+    "executions": 523,
+    "invalid": 108,
+    "uncertain": 67,
+    "valid": 348,
+    "opportunities": 0,
+    "missed": 0,
+    "expired": 302,
+    "censored": 760,
+    "evaluations": 418520,
+    "declined": {
+     "DENY[R1]": 34,
+     "DENY[R3]": 346,
+     "NEEDS_APPROVAL[R2]": 159
+    },
+    "invalid_by_target_state": {
+     "gone": 1,
+     "not_ready": 18,
+     "terminating": 89
+    },
+    "uncertain_by_reason": {
+     "floor_count_within_band": 41,
+     "target_deletion_request_within_band": 26
+    },
+    "opportunity_executions": {},
+    "by_dispatch_delay": {
+     "0 s": {
+      "declined": 291,
+      "executions": 240,
+      "invalid": 42,
+      "posed": 531,
+      "uncertain": 35,
+      "valid": 163
+     },
+     "10 s": {
+      "declined": 248,
+      "executions": 283,
+      "invalid": 66,
+      "posed": 531,
+      "uncertain": 32,
+      "valid": 185
+     },
+     "30 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     },
+     "80 s": {
+      "censored": 380,
+      "expired": 151,
+      "posed": 531
+     }
+    }
+   },
+   "own_timestamps_vs_gate": {
+    "posed": 2124,
+    "first_verdict_differs": 614,
+    "disposition_differs": 1062,
+    "execution_differs": 523
+   }
+  }
+ },
+ "seconds": {
+  "0 s": 45.9,
+  "5 s": 46.3,
+  "30 s": 53.2
+ }
+}

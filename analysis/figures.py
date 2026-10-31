@@ -159,11 +159,13 @@ def stress(summary: dict, out: Path):
     plt.close(fig)
 
 
-def audit(summary: dict, out: Path, unreachable: int | None = None, receipt: dict | None = None):
+def audit(summary: dict, out: Path, unreachable: int | None = None, receipt: dict | None = None,
+          own: dict | None = None):
     """Share of first verdicts an audit with one clock (valid-time replays; receipt-time replays from
-    ``sweeps_summary.json``, if given) or without history (end-of-capture replay) misreports. ``unreachable``: the
-    end-of-capture misreports that are abstentions or requests for approval, which a replay from complete records
-    cannot produce; drawn as the bar's upper part."""
+    ``sweeps_summary.json``, if given), from a receipt log that keeps the records' own timestamps (``own``, the
+    summary's ``own_timestamps_audit``, if given) or without history (end-of-capture replay) misreports.
+    ``unreachable``: the end-of-capture misreports that are abstentions or requests for approval, which a replay from
+    complete records cannot produce; drawn as the bar's upper part."""
     plt = _plt()
     a = summary["audit"]
     posed = a["posed"]
@@ -171,12 +173,18 @@ def audit(summary: dict, out: Path, unreachable: int | None = None, receipt: dic
     bars = [("captured", a["event_time_reconstruction"]["first_verdict_differs"], BLUE),
             ("+5 s", lat["T_p[late 5]"]["first_verdict_differs"], BLUE),
             ("+30 s", lat["T_p[late 30]"]["first_verdict_differs"], BLUE)]
+    groups_n = 1
     if receipt:
         bars += [(label, receipt[key]["receipt_time_vs_gate"]["first_verdict_differs"], AQUA)
                  for label, key in (("captured", "0 s"), ("+5 s", "5 s"), ("+30 s", "30 s"))]
+        groups_n += 1
+    if receipt and own:
+        bars += [(label, own[key]["own_timestamps_vs_gate"]["first_verdict_differs"], YELLOW)
+                 for label, key in (("captured", "0 s"), ("+5 s", "5 s"), ("+30 s", "30 s"))]
+        groups_n += 1
     bars.append(("", a["final_store_verdict"]["first_verdict_differs"], ORANGE))
-    fig, ax = plt.subplots(figsize=(6.0 if receipt else 4.4, 2.4))
-    gap = [0.0, 0.0, 0.0] + ([0.45] * 3 if receipt else []) + [0.9 if receipt else 0.45]
+    fig, ax = plt.subplots(figsize=({1: 4.4, 2: 6.0, 3: 7.6}[groups_n], 2.4))
+    gap = [0.45 * (i // 3) for i in range(3 * groups_n)] + [0.45 * groups_n + (0.6 if groups_n == 3 else 0.0)]
     xs = [i + g for i, g in enumerate(gap)]
     vals = [100.0 * n / posed for _, n, _ in bars]
     last = len(bars) - 1
@@ -196,6 +204,8 @@ def audit(summary: dict, out: Path, unreachable: int | None = None, receipt: dic
     groups = [("valid times only\n(pipeline latency)", xs[1])]
     if receipt:
         groups.append(("receipt times only\n(pipeline latency)", xs[4]))
+    if receipt and own:
+        groups.append(("receipt times and the records'\nown timestamps (pipeline latency)", xs[7]))
     groups.append(("end-of-capture\nstate", xs[last]))
     for text, x in groups:
         ax.text(x, -0.22, text, transform=ax.get_xaxis_transform(), ha="center", va="top", fontsize=7, color=INK)
@@ -235,8 +245,9 @@ def main(argv=None) -> int:
         by_delay(json.loads((res / "by_delay.json").read_text(encoding="utf-8")), out)
     stress(json.loads((res / "diagnosis_stress_summary.json").read_text(encoding="utf-8")), out)
     sweeps = res / "sweeps_summary.json"
-    receipt = json.loads(sweeps.read_text(encoding="utf-8"))["audit"] if sweeps.exists() else None
-    audit(summary, out, unreachable_misreports(Path(a.results), [c for p in pops for c in p["captures"]]), receipt)
+    sw = json.loads(sweeps.read_text(encoding="utf-8")) if sweeps.exists() else {}
+    audit(summary, out, unreachable_misreports(Path(a.results), [c for p in pops for c in p["captures"]]),
+          sw.get("audit"), sw.get("own_timestamps_audit"))
     return 0
 
 
